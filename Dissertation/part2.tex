@@ -1,0 +1,111 @@
+\chapter{Mathematical models and algorithms for text classification} \label{chapt2}
+
+\section{Words representations} \label{sect2_1}
+
+
+In supervised learning domain, to perform classification tasks, usually our goal is to find a parametrized model, best in its class: 
+
+\begin{equation}
+\label{eq:equation1}
+A(X, \hat{w}): A(X, \hat{w}) \simeq f(X) \Leftrightarrow A(X, \hat{w}) = \operatorname*{arg\,min}_w \left\|A(X, w) - f(X)\right\|
+\end{equation}
+
+Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into specific numerical format, in another words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways.[тут вставить список литературы]
+
+\subsection{Bag-of-Words Approach} \label{subsect2_1_1}
+
+Bag-of-words - an unordered set of words, with their exact position ignored.\cite[p.641]{jurafsky}, 
+
+
+\noindent In bag-of-words approach we work under the following assumptions:
+\begin{itemize}
+	\item The text can be analyzed without taking into account the word/token order.
+	\item It is only necessary to know which words/tokens the text consists of and how many times.
+\end{itemize}
+
+Formally, there is a collection of texts $T_1, T_2, ... , T_n$. Unique tokens $w_1, w_2, ..., w_m$ are extracted to form a dictionary. Thus, each text $T_i$ is represented by feature vector $F_j = \{x_{ij},\ j \in [1,m]\}$, where $x_{ij}$ corresponds to number of occurrences of word $w_j$ in text $T_i$.
+
+Example:
+Our corpus represented by 2 texts:
+["The sun is yellow", "The sky is blue"]
+
+Our tokens are simple unigrams, therefore there are 6 unique words: {the, sun, is, yellow, sky, blue}. Then, given corpus is mapped to feature vectors:
+$T_1=(1,1,1,1,0,0)$, $T_2=(1,0,1,0,1,1)$ 
+
+\begin{table} [htbp]
+	\centering
+	\parbox{15cm}{\caption{Feature vector}\label{Ts0Sib_}}
+	%  \begin{center}
+	\begin{tabular}{| p{1cm} || p{1cm} | p{1cm} | p{1cm} | p{2cm} | p{1cm} | p{1cm}l |}
+		\hline
+		\hline
+		Text & \centering the  & \centering sun  & \centering is  &\centering yellow &\centering sky  & \centering  blue & \\
+		\hline
+		$T_{1}$ &\centering  1   &\centering  1  &\centering  1   &\centering  1 &\centering  0 &\centering 0 &   \\
+		$T_{2}$ &\centering  1   &\centering  0  &\centering  1   &\centering  0 &\centering  1 &\centering 1 &   \\
+		\hline
+		\hline
+	\end{tabular}
+	%  \end{center}
+\end{table}
+
+\noindent Benefits:
+\begin{itemize}
+	\item Despite its simplicity, demonstrate good results.
+	\item Fast preprocessing.
+	\item Built-in in many scientific/NLP libraries
+\end{itemize}
+
+\noindent Drawbacks:
+\begin{itemize}
+	\item Huge corpus usually leads to huge vocabulary size.
+	\item Not memory-efficient: if we have corpus with 20 thousand texts then this textual corpus might spawn a dictionary with around 100 thousand elements. Thus, storing feature vectors as an array of type int32 would require 20000 x 100000 x 4 bytes $~$ 8GB in RAM.
+	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us to distinguish between sentences, built from the same words while having opposite meanings:"This paintings don't feel like ugly - buy them!" (positive) and "This paintings feel like ugly - don't buy them!" (negative) 
+\end{itemize}
+
+In order to capture dependencies between words \textbf{N-grams} technique can be used. N-gram is a sequence of $N$ basic tokens, which can be defined in different ways. 
+
+\begin{enumerate}
+	\item \textbf{Word n-grams - catches more semantics} :
+	\begin{itemize}
+		\item unigrams: "The sun is yellow." $\rightarrow$ ['The', 'sun', 'is' ...]
+		\item bigrams: "The sun is yellow." $\rightarrow$
+		['The sun', 'sun is' ...]
+		\item 3-grams: "The sun is yellow." $\rightarrow$
+		['The sun is ', 'sun is yellow']
+	\end{itemize}
+	\item \textbf{Character n-grams - helps to deal with misspelling}:
+	\begin{itemize}
+		\item 4-grams: "The sun is yellow." $\rightarrow$ ['The ', 'sun ', 'is y', 'ello' ...]
+	\end{itemize}
+	\item \textbf{Skip-n-gram - sequence of $N$ basic tokens, having distance of $\leq K$ tokens between them}  
+	\begin{itemize}
+		\item 1-skip-2-grams:: "The sun is yellow." $\rightarrow$ ['The is', 'sun yellow ']
+	\end{itemize}
+\end{enumerate}
+
+In TF-IDF approach (term frequency - inverse document frequency), in addition to usual BoW-model, the following augmentation is made:
+
+\subsection{TF-IDF  Approach} \label{subsect2_1_2}
+Instead of just counting up the overlapping words, the algorithms applies a weight to each overlapping word. The TF weight measures how many times the word occurs in particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the IDF content words is high.\cite[p.647]{jurafsky} Formaly it can be defined: 
+
+
+
+\begin{equation}
+\label{eq:equation2}
+\begin{cases} TF(w,T)=n_{Tw} \\ IDF(w, T)= log{\frac{N}{n_{w}}}\end{cases} \implies
+TF\text{-}IDF(w, T) = n_{Tw}\ log{\frac{N}{n_{w}}} \ \ \ \ \forall w \in W
+\end{equation}
+\hfill \break 
+where $T$ corresponds to current document (text), \hfill \break 
+$w$ - selected word in document T, \hfill \break
+$n_{Tw}$ - number of occurences of $w$ in text $T$, \hfill \break
+$n_{w}$ - number of documents, containing word $w$, \hfill \break
+$N$ - total number of documents in a corpus.
+
+\begin{equation}
+\label{eq:equation3}
+\lim_{n_{w} \to N} {TF\text{-}IDF(w, T)} = 0
+\end{equation}
+
+\subsection{TF-IDF  Approach} \label{subsect2_1_2}

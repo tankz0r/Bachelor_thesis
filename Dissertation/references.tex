@@ -1,0 +1,38 @@
+\clearpage                                  % В том числе гарантирует, что список литературы в оглавлении будет с правильным номером страницы
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}	% Добавляем список литературы в оглавление
+%\hypersetup{ urlcolor=black }               % Ссылки делаем чёрными
+%\providecommand*{\BibDash}{}                % В стилях ugost2008 отключаем использование тире как разделителя 
+\urlstyle{rm}                               % ссылки URL обычным шрифтом
+\insertbiblioother                          % Подключаем Bib-базы
+\urlstyle{tt}                               % возвращаем установки шрифта ссылок URL
+%\hypersetup{ urlcolor={urlcolor} }          % Восстанавливаем цвет ссылок
+
+
+\begin{thebibliography}
+	{1} 
+	\bibitem{jurafsky} Jurafsky D. Speech and Language Processing / D. Jurafsky, M. James H. – New Jersey, 2008. – 1031 с. – (Pearson). – (ISBN: 0131873210). 
+	 {2}
+	 \bibitem{manning} Manning C. An Introduction to Information Retrieval / C. Manning, P. Raghavan, H. Schütze. – Cambridge, England: Online edition, 2009. – 544 p. – (Cambridge University Press).  (ISBN: 0521865719).
+	 {3}
+	 \bibitem{foundationsml}  Mohri M. Foundations of Machine Learning / M. Mohri, A. Rostamizadeh, A. Talwalkar. – Cambridge, Massachusetts, 2012. – 412 с. – (The MIT Press). – (ISBN: 9780262018258).
+	 {4}
+	 \bibitem{handsonml} Géron A. Hands-On Machine Learning with Scikit- Learn and TensorFlow / Aurélien Géron. – Gravenstein Highway North, Sebastopol, CA, 2017. – 751 с. – (O’Reilly Media). – (ISBN: 8009989938).
+	 {5}
+	 \bibitem{LR}Yang, Yiming, and Xin Liu. 1999. A re-examination of text categorization methods.
+	 In Proc. SIGIR, pp. 42–49. ACM Press. 2
+	 {}
+	 \bibitem{NB1}McCallum, Andrew, and Kamal Nigam. 1998. A comparison of event models for
+	 Naive Bayes text classification. In AAAI/ICML Workshop on Learning for Text Categorization,
+	 pp. 41–48.
+	 {}
+	 \bibitem{NB2}Rennie, Jason D., Lawrence Shih, Jaime Teevan, and David R. Karger. 2003. Tackling
+	 the poor assumptions of naive Bayes text classifiers. In Proc. ICML, pp. 616–623.
+	 {}
+	  \bibitem{svm}Tong, Simon, and Daphne Koller. 2001. Support vector machine active learning with
+	 applications to text classification. JMLR 2:45–66
+	 {}
+	 \bibitem{info_retrievel}Zavrel, Jakub, Peter Berck, and Willem Lavrijssen. 2000. Information extraction by text classification: Corpus mining for features. In Workshop Information Extraction
+	 Meets Corpus Linguistics. URL: www.cnts.ua.ac.be/Publications/2000/ZBL00. Held in
+	 conjunction with LREC-2000.
+\end{thebibliography}
