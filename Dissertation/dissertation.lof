@@ -1,9 +1,11 @@
-\select@language {russian}
+\babel@toc {russian}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Classes, training set, and test set in text classification.\relax }}{7}{figure.caption.2}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning work flow.\relax }}{8}{figure.caption.3}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Naive Bayes algorithm (multinomial model): Training and testing.\relax }}{10}{figure.caption.4}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Neural Network\relax }}{14}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The Skip-gram model architecture. The training objective is to learn word vector representations that are good at predicting the nearby words.\relax }}{16}{figure.caption.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

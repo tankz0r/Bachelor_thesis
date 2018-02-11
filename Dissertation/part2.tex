@@ -92,7 +92,7 @@ Instead of just counting up the overlapping words, the algorithms applies a weig
 
 
 \begin{equation}
-\label{eq:equation2}
+\label{eq:equation2_2}
 \begin{cases} TF(w,T)=n_{Tw} \\ IDF(w, T)= log{\frac{N}{n_{w}}}\end{cases} \implies
 TF\text{-}IDF(w, T) = n_{Tw}\ log{\frac{N}{n_{w}}} \ \ \ \ \forall w \in W
 \end{equation}
@@ -104,8 +104,185 @@ $n_{w}$ - number of documents, containing word $w$, \hfill \break
 $N$ - total number of documents in a corpus.
 
 \begin{equation}
-\label{eq:equation3}
+\label{eq:equation2_3}
 \lim_{n_{w} \to N} {TF\text{-}IDF(w, T)} = 0
 \end{equation}
 
-\subsection{TF-IDF  Approach} \label{subsect2_1_2}
+\subsection{Embeddings} \label{subsect2_1_2}
+
+Core idea:	A	word’s	meaning	is	given	by	the	words	that frequently	appear	close-by. 
+
+тут вставить информацию про работі проведенные в данной области. 
+https://arxiv.org/pdf/1301.3781.pdf
+https://arxiv.org/pdf/1310.4546.pdf
+
+1. \textbf{Skip-gram model}
+
+\noindent To begin with key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
+
+\begin{equation}
+\label{eq:equation2_4}
+\textrm{softmax}({\bf x})_{i} = \frac{e^{x_{i}}}{\sum_{j=1}{e^{x_{j}}}}
+\end{equation}
+
+\begin{equation}
+\label{eq:equation2_5}
+\textrm{softmax} = \sigma(z) = \frac{1}{1 + e^{-z}}.
+\end{equation}
+
+\noindent The gradient of sigmoid function is follows:
+
+\begin{equation}
+\label{eq:equation2_6}
+\sigma^{\prime}(z) = \sigma(z)(1 - \sigma(z))
+\end{equation}
+
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {FCNN}
+	\caption{Neural Network} 
+	\label{img:FCNN}  
+\end{figure}
+
+\noindent where $x$ is one-hot input vector, $h$ - hidden layer, y is the one-hot label vector, and ŷ is the predicted probability vector for all classes.The neural network employs sigmoid activation function for the hidden layer, and softmax for the output layer and cross entropy cost ~\ref{eq:equation2_7} is used.
+
+\begin{equation}
+\label{eq:equation2_8}
+\textrm{CE}({\bf y},{\bf\hat{y}}) = -\sum_{i}{y_{i}\log{\hat{y_{i}}}}
+\end{equation}
+
+Now, we will compute the gradient of cross entropy:
+
+\begin{equation}
+\label{eq:equation2_8}
+  \begin{multlined}
+	\frac{\partial(\textrm{CE})}{\partial{{x}_{k}}} = -\frac{\partial(-\sum_{i}{y_{i}\log{\hat{y_{i}}}})}{\partial{{x}_{k}}} = -\sum_{i}{y_{i}\frac{\partial \hat{y_{i}}}{\partial{{x}_{k}}}}\frac{1}{\hat{y_{i}}} = \\
+	= -y_k(1-\hat{y_k}) - \sum_{i \neq k}{y_i\frac{1}{\hat{y_i}}}{(-\hat{y_k}\hat{y_i})} 
+	= -y_k(1-\hat{y_k}) + \sum_{i \neq k}{y_i\hat{y_k}} = \\
+	= \hat{y_k}\sum_{i}{y_i} - y_k 
+  \end{multlined}
+\end{equation}
+
+Requiring $y_{k}$ to be non-zero, imposes that the auxiliary condition, $k=i$ and $y_{k}=1$, hence it follows immediately,
+\begin{equation}
+\label{eq:equation2_9}
+\frac{\partial(\textrm{CE})}{\partial{x_{k}}} = \begin{cases}
+(\hat{y}_{k} - 1)&\text{ for }k=i \\
+\hat{y}_{k}&\text{ for }k\neq i
+\end{cases}
+\end{equation}
+Which is equivalent to 
+\begin{equation}
+\frac{\partial(\textrm{CE})}{\partial{X}} = \bf{\hat{y}} - \bf{y}
+\end{equation}
+
+\noindent Forward propagation is as follows:
+\begin{equation}
+\label{eq:equation2_6}
+{\bf h} = \textrm{sigmoid}({\bf x\textrm{W}_{1} + b_{1}}) 
+\end{equation}
+
+\begin{equation}
+\label{eq:equation2_7}
+{\bf \hat{y}} = \textrm{softmax}({\bf h\textrm{W}_{2} + b_{2})}
+\end{equation}
+
+\noindent where $\bf{\textrm{W}}_i$ and $\bf{b}_{i}$ ($i\in\{1,2\}$) are
+the weights and biases, respectively of the two layers.
+\indent To optimize weights for each layer of neural network the back propagation algorithm is used. Therefore, it is necessary to calculate the gradients for each layer.
+  
+\noindent In order to simplify the notation used to solve the problem, define the following terms:
+\begin{equation}
+\label{eq:equation2_10}
+\begin{multlined}
+		{\bf x}^{(2)} \equiv \quad{\bf h} \\
+		{\bf z}_{i}     \equiv \quad{\bf x^{(i)}\textrm{W}_{i} + b_{i}}
+\end{multlined}
+\end{equation}
+
+Starting with the results from ~\ref{eq:equation2_8}:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{\bf z}_{2}} = \bf{\hat{y}} - \bf{y}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eq:equation2_11}
+\frac{\partial{\bf z}_{i}}{\partial{{\bf x}^{(i)}}} = {\bf \textrm{W}^{\top}_{i}}
+\end{equation}
+
+Sigmoid ($\sigma$) derivative ~\ref{eq:equation2_6}:
+
+\begin{equation}
+\frac{\partial{{\bf x}^{(2)}}}{\partial{{\bf z}_{1}}}\equiv\sigma^{\prime}(z_{1})
+\end{equation}
+
+Combining these, and using $\cdot$ to denote element-wise product:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{z_{i}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})
+\end{equation}
+
+Finally, using the results from Equation~\ref{eq:equation2_11}:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{{\bf x}^{(1)}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})\cdot{\bf \textrm{W}^{\top}_{1}}
+\end{equation}  
+
+We have everything to update our weights: 
+
+
+Now, turn definitely to skip-gram model:
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {skip_gram_model}
+	\caption{The Skip-gram model architecture. The training objective is to learn word vector representations
+		that are good at predicting the nearby words.} 
+	\label{img:skip_gram_model}  
+\end{figure}
+
+
+
+\noindent Assume you are given a predicted word vector ${\boldsymbol v}_{c}$ corresponding to the center word $c$ for
+\texttt{skipgram}, and word prediction is made with the \texttt{softmax} function found in \texttt{word2vec} models
+\begin{equation}
+{\hat{\boldsymbol y}}_{\boldsymbol o} = p(~{\boldsymbol o} \mid {\boldsymbol c}~) = \frac{\exp{({\boldsymbol u}^{\top}_{o}{\boldsymbol v}_{c})}}{\sum^{\vert{W}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}}
+\end{equation}
+where $w$ denotes the $w$-th word and ${\boldsymbol u}_{w}$ ($w=1,...,\vert\textrm{W}\vert$)  are the `output' word vectors for all words in the vocabulary ($v^{\prime}_{w}$ in the lecture notes). Assume the cross entropy cost is applied to this prediction and word $o$ is the expected word (the $o$-th element of the one-hot label vector is one), derive the gradients with respect to ${\boldsymbol v}_{c}$.\\
+
+\noindent \textbf{Hint:} It will be helpful to use notation from question 2. For instance, letting ${\hat{\boldsymbol y}}$ be the vector of the softmax
+prediction for every word, ${\boldsymbol y}$ as the expected word vector, and the loss function
+\begin{equation}
+J_{\textrm{softmax-CE}}({\boldsymbol o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = CE({\boldsymbol y},{\hat{\boldsymbol y}})
+\end{equation}
+where ${\boldsymbol U} = [ {\boldsymbol u}_{1}, {\boldsymbol u}_{2},...,{\boldsymbol u}_{\vert\textrm{W}\vert}]$ is the matrix of all the output vectors. \textit{Make sure you state the orientation of your vectors and matrices.}\vspace{5mm}
+
+\noindent\rule{\textwidth}{0.4pt}\vspace{5mm}
+Applying cross-entropy cost to the above softmax probability defined above:
+\begin{equation}
+J =-\log{p} = - {\boldsymbol u}_{o}^{\top}{\boldsymbol v}_{c} + \log\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c})}
+\end{equation}
+Let $z_{j}={\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c}$, and $\delta^{i}_{j}$ be the indicator function (Kronecker delta), then
+\begin{equation}
+\frac{\partial J}{\partial{z_{k}}} = - \delta^{i}_{k} + \frac{\exp{({\boldsymbol u}_{i}^{\top}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c})}}
+\end{equation}
+Now, using the chain rule, we can calculate,
+\begin{align}
+\frac{\partial J}{\partial{{\boldsymbol v}_{c}}} =& \frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{{\boldsymbol v}_{c}}} \\
+=& \sum^{\vert{V}\vert}_{j=1}{\boldsymbol u}_{j}^{\top}\left(\frac{e^{z_{j}}}{\sum^{\vert{V}\vert}_{k=1}e^{z_{k}}} -  1\right) \\
+=& \sum^{\vert{V}\vert}_{k=1}{\boldsymbol P}({\boldsymbol u}_{j} \vert {\boldsymbol v}_{c} ){\boldsymbol u}_{j} - {\boldsymbol u}_{j}
+\end{align}
+
+
+\noindent As in the previous problem, derive gradients for the `output' word vectors ${\boldsymbol u}_{w}$'s (including ${\boldsymbol u}_{o}$)\vspace{5mm}
+
+
+\noindent\rule{\textwidth}{0.4pt}\vspace{5mm}
+This follows immediately from the chain rule:
+\begin{align}
+\frac{\partial J}{\partial{\boldsymbol u}_{j}} = &\frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{\boldsymbol u}_{j}} \\
+= &{\boldsymbol v}_{c}\left(\frac{\exp{({\boldsymbol u}^{\top}_{0}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}} - \delta^{0}_{j}\right)
+\end{align}
