@@ -108,7 +108,7 @@ $N$ - total number of documents in a corpus.
 \lim_{n_{w} \to N} {TF\text{-}IDF(w, T)} = 0
 \end{equation}
 
-\subsection{Embeddings} \label{subsect2_1_2}
+\subsection{Embeddings} \label{subsect2_1_3}
 
 Core idea:	A	word’s	meaning	is	given	by	the	words	that frequently	appear	close-by. 
 
@@ -155,31 +155,65 @@ https://arxiv.org/pdf/1310.4546.pdf
 Now, we will compute the gradient of cross entropy:
 
 \begin{equation}
-\label{eq:equation2_8}
-  \begin{multlined}
-	\frac{\partial(\textrm{CE})}{\partial{{x}_{k}}} = -\frac{\partial(-\sum_{i}{y_{i}\log{\hat{y_{i}}}})}{\partial{{x}_{k}}} = -\sum_{i}{y_{i}\frac{\partial \hat{y_{i}}}{\partial{{x}_{k}}}}\frac{1}{\hat{y_{i}}} = \\
-	= -y_k(1-\hat{y_k}) - \sum_{i \neq k}{y_i\frac{1}{\hat{y_i}}}{(-\hat{y_k}\hat{y_i})} 
-	= -y_k(1-\hat{y_k}) + \sum_{i \neq k}{y_i\hat{y_k}} = \\
-	= \hat{y_k}\sum_{i}{y_i} - y_k 
-  \end{multlined}
+\label{eq:equation_CE_2}
+\frac{\partial(\textrm{CE})}{\partial{\hat{y}_{i}}} = -\frac{y_{j}}{\hat{y}_{i}}
+\end{equation}
+That leads, 
+
+\begin{equation}
+\frac{\partial(\textrm{CE})}{\partial{\theta_{k}}} =  \frac{\partial(\textrm{CE})}{\partial{\hat{y}_{i}}}\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}} 
+=-\frac{y_{j}}{\hat{y}_{i}}\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}}
 \end{equation}
 
-Requiring $y_{k}$ to be non-zero, imposes that the auxiliary condition, $k=i$ and $y_{k}=1$, hence it follows immediately,
+Calculating the partial derivative of $\hat{y_{i}}$ (where $i=k$)
+
 \begin{equation}
-\label{eq:equation2_9}
-\frac{\partial(\textrm{CE})}{\partial{x_{k}}} = \begin{cases}
-(\hat{y}_{k} - 1)&\text{ for }k=i \\
-\hat{y}_{k}&\text{ for }k\neq i
+\begin{multlined}
+\label{eq:equation_CE_3}
+\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{i}}} =  \frac{\partial}{\partial{\theta_{i}}}\left( \frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}}\right) =\\
+= \frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}} - \left(\frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}}\right)^{2} = \\
+= \hat{y}_{i}\cdot(1 - \hat{y}_{i})
+\end{multlined}
+\end{equation}
+
+and (where $i\neq k$),
+
+\begin{equation}
+\label{eq:equation_CE_4}
+\begin{multlined}
+\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}} =  \frac{\partial}{\partial{\theta_{k}}}\left( \frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}}\right) = \\
+=-\left(\frac{e^{\theta_{i}}e^{\theta_{k}}}{\sum_{j=1}{e^{\theta_{j}}}}\right)
+= - \hat{y}_{i}\hat{y}_{k}
+\end{multlined}
+\end{equation}
+
+After combination of equations~\ref{eq:equation_CE_2},~\ref{eq:equation_CE_3},~\ref{eq:equation_CE_4}, 
+
+\begin{equation}
+\frac{\partial(\textrm{CE})}{\partial{\theta_{k}}} = \begin{cases}
+-y_{j}(1 - \hat{y}_{k})&\text{ for }i=k \\
+y_{j}\hat{y}_{k}&\text{ for }i\neq k
 \end{cases}
 \end{equation}
-Which is equivalent to 
+
+$y_{j}$ should be non-zero, $k=j$ and $y_{j}=1$, leads to,
+
 \begin{equation}
-\frac{\partial(\textrm{CE})}{\partial{X}} = \bf{\hat{y}} - \bf{y}
+\label{eq:equation_CE_5}
+\frac{\partial(\textrm{CE})}{\partial{\theta_{j}}} = \begin{cases}
+(\hat{y}_{j} - 1)&\text{ for }i=j \\
+\hat{y}_{j}&\text{ for }i\neq j
+\end{cases}
+\end{equation}
+
+Which is equivalent to,
+
+\begin{equation}
+\frac{\partial(\textrm{CE})}{\partial{\boldsymbol\theta}} = \bf{\hat{y}} - \bf{y}
 \end{equation}
 
 \noindent Forward propagation is as follows:
 \begin{equation}
-\label{eq:equation2_6}
 {\bf h} = \textrm{sigmoid}({\bf x\textrm{W}_{1} + b_{1}}) 
 \end{equation}
 
@@ -196,8 +230,8 @@ the weights and biases, respectively of the two layers.
 \begin{equation}
 \label{eq:equation2_10}
 \begin{multlined}
-		{\bf x}^{(2)} \equiv \quad{\bf h} \\
-		{\bf z}_{i}     \equiv \quad{\bf x^{(i)}\textrm{W}_{i} + b_{i}}
+		 {\bf z}_{1}\equiv \quad{\bf x\textrm{W}_{1} + b_{1}} \\
+		{\bf z}_{2}\equiv \quad{\bf h\textrm{W}_{2} + b_{2}}
 \end{multlined}
 \end{equation}
 
@@ -211,13 +245,13 @@ and
 
 \begin{equation}
 \label{eq:equation2_11}
-\frac{\partial{\bf z}_{i}}{\partial{{\bf x}^{(i)}}} = {\bf \textrm{W}^{\top}_{i}}
+\frac{\partial{\bf z}_{2}}{\partial{{\bf h}}} = {\bf \textrm{W}^{\top}_{2}}
 \end{equation}
 
 Sigmoid ($\sigma$) derivative ~\ref{eq:equation2_6}:
 
 \begin{equation}
-\frac{\partial{{\bf x}^{(2)}}}{\partial{{\bf z}_{1}}}\equiv\sigma^{\prime}(z_{1})
+\frac{\partial{{\bf h}}}{\partial{{\bf z}_{1}}}\equiv\sigma^{\prime}(z_{1})
 \end{equation}
 
 Combining these, and using $\cdot$ to denote element-wise product:
@@ -229,7 +263,11 @@ Combining these, and using $\cdot$ to denote element-wise product:
 Finally, using the results from Equation~\ref{eq:equation2_11}:
 
 \begin{equation}
-\frac{\partial{J}}{\partial{{\bf x}^{(1)}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})\cdot{\bf \textrm{W}^{\top}_{1}}
+\frac{\partial{J}}{\partial{{\bf W}^{(1)}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})\cdot{\bf \textrm{X}^{\top}}
+\end{equation}  
+
+\begin{equation}
+\frac{\partial{J}}{\partial{{\bf W}^{(2)}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{h}^{\top}}
 \end{equation}  
 
 We have everything to update our weights: 

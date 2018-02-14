@@ -1,5 +1,5 @@
 ~\hfill {\IeC {\CYRS }\IeC {\cyrt }\IeC {\cyrr }.}\par 
-\babel@toc {russian}{}
+\select@language {russian}
 \contentsline {chapter}{\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{4}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Text classification}{6}{chapter.1}
 \contentsline {section}{\numberline {1.1}Relevance of the problem}{6}{section.1.1}
