@@ -273,54 +273,194 @@ Finally, using the results from Equation~\ref{eq:equation2_11}:
 We have everything to update our weights: 
 
 
-Now, turn definitely to skip-gram model:
+Now, turn definitely to skip-gram model shown in Figure ~\ref{img:skip_gram_model}\cite{cbow_skip}:
 \begin{figure}[ht] 
 	\center
 	\includegraphics [scale=0.5] {skip_gram_model}
-	\caption{The Skip-gram model architecture. The training objective is to learn word vector representations
-		that are good at predicting the nearby words.} 
+	\caption{The Skip-gram model architecture.} 
 	\label{img:skip_gram_model}  
 \end{figure}
 
 
 
-\noindent Assume you are given a predicted word vector ${\boldsymbol v}_{c}$ corresponding to the center word $c$ for
-\texttt{skipgram}, and word prediction is made with the \texttt{softmax} function found in \texttt{word2vec} models
+\noindent Now, let`s transfer knowledge from above to our skip-gram model.    
+We have a word vector ${\boldsymbol v}_{c}$ corresponding to the center word $c$ for
+\texttt{skip-gram}, and word prediction is made with the \texttt{softmax} function: 
+
 \begin{equation}
 {\hat{\boldsymbol y}}_{\boldsymbol o} = p(~{\boldsymbol o} \mid {\boldsymbol c}~) = \frac{\exp{({\boldsymbol u}^{\top}_{o}{\boldsymbol v}_{c})}}{\sum^{\vert{W}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}}
 \end{equation}
-where $w$ denotes the $w$-th word and ${\boldsymbol u}_{w}$ ($w=1,...,\vert\textrm{W}\vert$)  are the `output' word vectors for all words in the vocabulary ($v^{\prime}_{w}$ in the lecture notes). Assume the cross entropy cost is applied to this prediction and word $o$ is the expected word (the $o$-th element of the one-hot label vector is one), derive the gradients with respect to ${\boldsymbol v}_{c}$.\\
 
-\noindent \textbf{Hint:} It will be helpful to use notation from question 2. For instance, letting ${\hat{\boldsymbol y}}$ be the vector of the softmax
-prediction for every word, ${\boldsymbol y}$ as the expected word vector, and the loss function
-\begin{equation}
-J_{\textrm{softmax-CE}}({\boldsymbol o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = CE({\boldsymbol y},{\hat{\boldsymbol y}})
-\end{equation}
-where ${\boldsymbol U} = [ {\boldsymbol u}_{1}, {\boldsymbol u}_{2},...,{\boldsymbol u}_{\vert\textrm{W}\vert}]$ is the matrix of all the output vectors. \textit{Make sure you state the orientation of your vectors and matrices.}\vspace{5mm}
+where $w$ denotes the $w$-th word and ${\boldsymbol u}_{w}$ ($w=1,...,\vert\textrm{W}\vert$)  are the `output' word vectors for all words in the vocabulary. Cross entropy cost is applied to this prediction and word $o$ is the expected word (the $o$-th element of the one-hot label vector is one). ${\boldsymbol U} = [ {\boldsymbol u}_{1}, {\boldsymbol u}_{2},...,{\boldsymbol u}_{\vert\textrm{W}\vert}]$ is the matrix of all the output vectors. 
 
-\noindent\rule{\textwidth}{0.4pt}\vspace{5mm}
-Applying cross-entropy cost to the above softmax probability defined above:
+Applying cross-entropy cost to the softmax probability defined above:
+
 \begin{equation}
 J =-\log{p} = - {\boldsymbol u}_{o}^{\top}{\boldsymbol v}_{c} + \log\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c})}
 \end{equation}
-Let $z_{j}={\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c}$, and $\delta^{i}_{j}$ be the indicator function (Kronecker delta), then
+
+Let $z_{j}={\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c}$, and $\delta^{i}_{j}$ ~\ref{eq:indicator} be the indicator function, then
+
+\begin{equation}
+\label{eq:indicator}
+\delta^{i}_{j} =  
+	\begin{cases}
+	1, &\text{ for }i=j \\
+	0, &\text{ for }i\neq j
+	\end{cases}
+\end{equation}
+
+
 \begin{equation}
 \frac{\partial J}{\partial{z_{k}}} = - \delta^{i}_{k} + \frac{\exp{({\boldsymbol u}_{i}^{\top}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c})}}
 \end{equation}
+
 Now, using the chain rule, we can calculate,
-\begin{align}
-\frac{\partial J}{\partial{{\boldsymbol v}_{c}}} =& \frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{{\boldsymbol v}_{c}}} \\
-=& \sum^{\vert{V}\vert}_{j=1}{\boldsymbol u}_{j}^{\top}\left(\frac{e^{z_{j}}}{\sum^{\vert{V}\vert}_{k=1}e^{z_{k}}} -  1\right) \\
-=& \sum^{\vert{V}\vert}_{k=1}{\boldsymbol P}({\boldsymbol u}_{j} \vert {\boldsymbol v}_{c} ){\boldsymbol u}_{j} - {\boldsymbol u}_{j}
-\end{align}
+
+\begin{equation}
+	\begin{multlined}
+	\frac{\partial J}{\partial{{\boldsymbol v}_{c}}} =  \frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{{\boldsymbol v}_{c}}} =\\
+	= \sum^{\vert{V}\vert}_{j=1}{\boldsymbol u}_{j}^{\top}\left(\frac{e^{z_{j}}}{\sum^{\vert{V}\vert}_{k=1}e^{z_{k}}} -  1\right) =\\
+	= \sum^{\vert{V}\vert}_{k=1}{\boldsymbol P}({\boldsymbol u}_{j} \vert {\boldsymbol v}_{c} ){\boldsymbol u}_{j} - {\boldsymbol u}_{j}
+	\end{multlined}
+\end{equation}
 
 
-\noindent As in the previous problem, derive gradients for the `output' word vectors ${\boldsymbol u}_{w}$'s (including ${\boldsymbol u}_{o}$)\vspace{5mm}
+\noindent For the `output' word vectors ${\boldsymbol u}_{w}$'s
+
+\begin{equation}
+	\begin{multlined}
+	\frac{\partial J}{\partial{\boldsymbol u}_{j}} = \frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{\boldsymbol u}_{j}} =\\
+	= {\boldsymbol v}_{c}\left(\frac{\exp{({\boldsymbol u}^{\top}_{0}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}} - \delta^{0}_{j}\right)
+	\end{multlined}
+\end{equation}
+
+\noindent We have calculated gradient for one particular word, now we will generalize this to a number of words. We have a set of context words [$\texttt{word}_{c-\textbf{m}},...,\texttt{word}_{c-\textbf{1}},\texttt{word}_{c},\texttt{word}_{c+\textbf{1}},...,\texttt{word}_{c+\textbf{m}}$ ], where \textbf{m} is the context size. We denote the `input' and `output' word vectors for $\texttt{word}_{k}$ as ${\boldsymbol v}_{k}$ and ${\boldsymbol u}_{k}$ respectively for
+convenience. \\
+
+\noindent Also it is a good idea to use $F({\boldsymbol o}, {\boldsymbol v}_{c})$ (where ${\boldsymbol o}$ is the expected word) as a placeholder for $J({\boldsymbol o}, {\boldsymbol v}_{c}, ...)$ cost functions.
+
+\noindent Then we can rewrite cost function as follows:
+
+\begin{equation}
+J =   \sum_{-m\le j\le m, j\neq0}F({\boldsymbol w}_{c+j}, {\boldsymbol v}_{c})
+\end{equation}
+
+where ${\boldsymbol w}_{c+j}$ refers to the word at the $j$-th index from the center.\\
+
+The derivative of the loss has two terms, ${\boldsymbol w}_{c+j}$ and ${\boldsymbol v}_{c}$, which yields the following ~\cite{assignment1},
+
+\begin{equation}
+	\begin{multlined}
+	\frac{\partial{J}}{\partial{\boldsymbol w}_{k}} = \\ =\frac{\partial}{\partial{\boldsymbol w}_{k}}\sum_{-m\le j\le m, j\neq0}F({\boldsymbol w}_{c+j}, {\boldsymbol v}_{c})= \\
+	= \sum_{-m\le j\le m, j\neq0} \frac{\partial{F}}{\partial{\boldsymbol w}_{i+j}}\delta^{i+j}_{k}
+	\end{multlined}
+\end{equation}
+
+and
+
+\begin{equation}
+\frac{\partial{J}}{\partial{\boldsymbol v}_{c}} = \sum_{-m\le j\le m, j\neq0} \frac{\partial{F}}{\partial{\boldsymbol v}_{c}}
+\end{equation}
+
+Now, we can update our weight using gradient descent algorithm:
+
+\begin{equation}\\
+	\begin{multlined}
+	w^{new}_{k} = w^{old}_{k} - \eta \frac{\partial{J}}{\partial{w}_{k}} \\
+	v^{new}_{c} = v^{old}_{c} - \eta \frac{\partial{J}}{\partial{v}_{c}}
+	\end{multlined}
+\end{equation}
+
+where $\eta$ is a learning rate.
+
+After training the skip-gram model, we take the hidden layer weight matrix that will represent our words in the multidimensional space. If we make projection into two dimensional space, we can have the following Figure ~\ref{img:embed}:
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4] {embed}
+	\caption{Words representation} 
+	\label{img:embed}  
+\end{figure}
 
 
-\noindent\rule{\textwidth}{0.4pt}\vspace{5mm}
-This follows immediately from the chain rule:
-\begin{align}
-\frac{\partial J}{\partial{\boldsymbol u}_{j}} = &\frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{\boldsymbol u}_{j}} \\
-= &{\boldsymbol v}_{c}\left(\frac{\exp{({\boldsymbol u}^{\top}_{0}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}} - \delta^{0}_{j}\right)
-\end{align}
+However, this type of architecture, where for each output we need to compute separate $softmax$ function are very expensive in terms of computational resources and as a result time. Therefore, there are different ways to approximate the expensive $softmax$ function. The most famous of them are:
+
+\begin{itemize}
+	\item Negative Sampling technique
+	\item Hierarchical Softmax
+\end{itemize}
+ 
+~\\ 
+\textbf{Negative Sampling technique} \\
+
+\noindent The only difference from the original model is that we introduce new loss function - negative sampling loss for the predicted vector ${\boldsymbol v}_{c}$, and 
+the expected output word is ${\boldsymbol o}({\boldsymbol u}_{o})$. Assume that $K$ negative samples (words) are drawn, and they are ${\boldsymbol u}_{1},...,{\boldsymbol u}_{k}$, respectively for simplicity of notation ($k\in\{1,...,K\}$ and $o\notin\{1,...,K\}$). Again for a given word, ${\boldsymbol o}$, denote its output vector as ${\boldsymbol u}_{o}$. The negative sampling loss function in this case is,
+
+\begin{equation}
+J({\boldsymbol u}_{o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = -\log(\sigma( {\boldsymbol u}^{\top}_{o}{\boldsymbol v}_{c})) - \sum^{K}_{k=1}\log(\sigma(- {\boldsymbol u}^{\top}_{k}{\boldsymbol v}_{c}))
+\end{equation}
+
+\noindent where $\sigma(\cdot)$ is the sigmoid function.\\
+As it can be clearly seen, now we make calculation not on whole vocabulary $V$, but only on part of it, which randomly generated each time. 
+
+~\\ 
+\textbf{Hierarchical Softmax} \\
+H-Softmax is an approximation which uses binary tree to compute the necessary probability. 
+This gives us a possibility to decompose calculating the probability of one word into a sequence of probability calculations. Balanced thees have a maximum depth of $log_2(|V|)$, that means that in the worst case we need to calculate $log_2(|V|)$ nodes to find the necessary probability of certain word.  
+
+Both methods give us a possibility to significantly decrease amount of time for computation.
+
+2. \textbf{CBOW model}
+This model is very similar to skip-gram, but CBOW predicts target word from the bag of words context. From the practical point of view: skip-gram works well with small amount of the training data and represents well even rare words or phrases. CBOW - several times faster to train than the skip-gram, slightly better accuracy for the frequent words. This model presented in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.6] {CBOW}
+	\caption{The CBOW model architecture.} 
+	\label{img:CBOW}  
+\end{figure}
+
+\section{Deep learning algorithms for text classification}\label{sect2_2}
+Nowadays, there are a great number of NN architectures which are used for text classification. In this section I would like to consider the most powerful and efficient ones.
+
+\subsection{Convolution Neural Networks}  
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {CNN}
+	\caption{Convolution Neural Networks architecture for text classification} 
+	\label{img:CNN}  
+\end{figure}
+
+The model architecture, shown in Figure ~\ref{img:CNN} \cite{CNN}, is a variant of the CNN architecture. Let $x_i \in \mathbb{X}$ be the k-dimensional word vector corresponding to the i-th word in the sentence, a sentence of length n. In general, let $x_{i:i+j}$ refer to the concatenation of words $\{x_{i}, x_{i+1}, . . . , x_{i+j}\}$.\cite{CNN}
+
+~\\ 
+\textbf{Convolution} \\
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {convolution}
+	\caption{Basic variables which are used in the convolution layer} 
+	\label{img:convolution}  
+\end{figure}
+
+In a convolution neural network, a limited matrix of small weights is used in the convolution operation, which is moved along the entire processed layer, forming after each shift the activation signal for the neuron of the next layer with the same position. The same matrix of weights, called kernel, is used for different neurons of the output layer.  
+The schema of this process illustrated in the Figure ~\ref{img:convolution} \cite{CNN_habr}.
+
+The following equation ~\ref{eq:convolution} describes words above into mathematical way:
+
+\begin{equation}
+\label{eq:convolution}
+x^l_{ij}=\sum_{a=-\infty}^{+\infty}\sum_{b=-\infty}^{+\infty}w^l_{ab}\cdot y^{l-1}_{(i\cdot s-a)(j\cdot s-b)}+b^l \qquad \forall i\in (0,...,N) \enspace \forall j\in (0,...,M) 
+\end{equation}
+
+where $i, j, a, b$ - indexes of elements in matrices, $s$ - step's size of convolution
+
+\noindent The superscripts $l$ and $l-1$ are the indices of the network layers.
+$x_{l-1}$ - the output of some previous function, or the input of the network \\
+$y_{l-1}$ - $x_{l-1}$ after passing the activation function \\
+$w_{l}$ - the convolution kernel \\
+$b_{l}$ - bias or offset \\
+$x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension $(N, M)$.   
+ 
