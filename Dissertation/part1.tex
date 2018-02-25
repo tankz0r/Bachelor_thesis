@@ -112,4 +112,120 @@ To eliminate zeros, we use add-one or Laplace smoothing, which simply adds one t
 2.\textbf{Logistic Regression}.
 For now, we will focus on the binary classification problem in which y can take on only two values, 0 and 1
 
+\section{Model evaluation} \label{sect1_4}
+Model evaluation is not just the end point of our machine learning pipeline. Before we handle any data, we want to plan ahead and use techniques and metrics that are suited for our purposes.
 
+\subsection{Model Evaluation Applications}
+
+\textbf{Generalization performance} - We want to estimate the predictive performance of our model on future (unseen) data.
+- Ideally, the estimated performance of a model tells how well it performs on unseen data – making predictions on future data is often the main problem we want to solve.
+
+\textbf{Model selection} - We want to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
+- Typically, machine learning involves a lot of experimentation. Running a learning algorithm over a training dataset with different hyperparameter settings and different features will result in different models. Since we are typically interested in selecting the best-performing model from this set, we need to find a way to estimate their respective performances in order to rank them against each other.
+
+\textbf{Algorithm selection} - We want to compare different ML algorithms, selecting the best-performing one.
+- We are usually not only experimenting with the one single algorithm that we think would be the “best solution” under the given circumstances. More often than not, we want to compare different algorithms to each other, oftentimes in terms of predictive and computational performance.
+
+Although these three sub-tasks have all in common that we want to estimate the performance of a model, they all require different approaches. 
+
+\subsection{Model Evaluation Techniques}
+\textbf{Holdout method} (simple train/test split)
+The holdout method is the simplest model evaluation technique. We take our labeled dataset and split it randomly into two parts: A **training set** and a **test set**
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=1] {eval1}
+	\caption{.} 
+	\label{img:eval1}  
+\end{figure}
+
+Then, we fit a model to the training data and predict the labels of the test set.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=1] {eval2}
+	\caption{.} 
+	\label{img:eval2}  
+\end{figure}
+
+And the fraction of correct predictions constitutes our estimate of the prediction accuracy.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=1] {eval3}
+	\caption{.} 
+	\label{img:eval3}  
+\end{figure}
+
+We really don’t want to train and evaluate our model on the same training dataset, since it would introduce \textbf{overfitting}. In other words, we can’t tell whether the model simply memorized the training data or not, or whether it generalizes well to new, unseen data. \cite{model_evaluation}
+
+
+\section{Classification metrics}
+
+Classification problems are probably the most common type of ML problem and as such there are many metrics that can be used to evaluate predictions for these problems. We will review some of them.
+
+
+\textbf{Accuracy}
+~\\
+Accuracy simply measures what percent of your predictions were correct. It's the ratio between the number of correct predictions and the total number of predictions.
+
+\begin{equation}
+accuracy = {\frac{correct}{predictions}}
+\end{equation}
+
+Accuracy is also the most misused metric. It is really **only suitable** when there are an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important*, which is often not the case.
+
+\textbf{Confusion Matrix}
+~\\
+The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
+
+
+\newcommand\MyBox[2]{
+	\fbox{\lower0.75cm
+		\vbox to 1.7cm{\vfil
+			\hbox to 1.7cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+			\vfil}%
+	}%
+}
+
+\noindent
+\renewcommand\arraystretch{1.5}
+\setlength\tabcolsep{0pt}
+\begin{tabular}
+	{c >{\bfseries}r @{\hspace{0.7em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
+	\multirow{10}{*}{\parbox{1.1cm}{\bfseries\raggedleft actual\\ value}} & 
+	& \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
+	& & \bfseries p & \bfseries n & \bfseries total \\
+	& p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
+	& n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
+	& total & P & N &
+\end{tabular}
+
+Confusion matrix allows you to compute various classification metrics, and these metrics can guide your model selection.
+
+\textbf{Precision and Recall}
+~\\
+Precision and recall are actually two metrics. But they are often used together.
+
+\textbf{Precision} answers the question: What percent of positive predictions were correct?
+
+\begin{equation}
+precision = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ positive}}
+\end{equation}
+
+\textbf{Recall} answers the question: What percent of the positive cases did you catch?
+
+\begin{equation}
+recall = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ negative}}
+\end{equation}
+
+\textbf{F1-score}
+~\\
+The F1-score (sometimes known as the balanced F-beta score) is a single metric that combines both precision and recall via their harmonic mean:
+
+\begin{equation}
+F_1 = 2 {\frac{precision * recall}{precision + recall}}
+\end{equation}
+
+
+Unlike the arithmetic mean, the harmonic mean tends toward the smaller of the two elements. Hence the F1 score will be small if either precision or recall is small.

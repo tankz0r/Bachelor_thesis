@@ -127,7 +127,7 @@ https://arxiv.org/pdf/1310.4546.pdf
 
 \begin{equation}
 \label{eq:equation2_5}
-\textrm{softmax} = \sigma(z) = \frac{1}{1 + e^{-z}}.
+\textrm{sigmoid} = \sigma(z) = \frac{1}{1 + e^{-z}}.
 \end{equation}
 
 \noindent The gradient of sigmoid function is follows:
@@ -165,7 +165,7 @@ That leads,
 =-\frac{y_{j}}{\hat{y}_{i}}\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}}
 \end{equation}
 
-Calculating the partial derivative of $\hat{y_{i}}$ (where $i=k$)
+Function $softmax$ for i-th output depends not only on its $\theta_{i}$, but also on all other $\theta_{k}$, the sum of which lies in the denominator of the formula for direct passage through the network. Therefore, the formula for back propagation "splits" into two: the partial derivative with respect to $\theta_{i}$ and $\theta_{k}$:
 
 \begin{equation}
 \begin{multlined}
@@ -190,6 +190,7 @@ and (where $i\neq k$),
 After combination of equations~\ref{eq:equation_CE_2},~\ref{eq:equation_CE_3},~\ref{eq:equation_CE_4}, 
 
 \begin{equation}
+\label{eq:CE_gradient}
 \frac{\partial(\textrm{CE})}{\partial{\theta_{k}}} = \begin{cases}
 -y_{j}(1 - \hat{y}_{k})&\text{ for }i=k \\
 y_{j}\hat{y}_{k}&\text{ for }i\neq k
@@ -457,10 +458,158 @@ x^l_{ij}=\sum_{a=-\infty}^{+\infty}\sum_{b=-\infty}^{+\infty}w^l_{ab}\cdot y^{l-
 
 where $i, j, a, b$ - indexes of elements in matrices, $s$ - step's size of convolution
 
-\noindent The superscripts $l$ and $l-1$ are the indices of the network layers.
+\noindent The superscripts $l$ and $l-1$ are the indices of the network layers.\\
 $x_{l-1}$ - the output of some previous function, or the input of the network \\
 $y_{l-1}$ - $x_{l-1}$ after passing the activation function \\
 $w_{l}$ - the convolution kernel \\
 $b_{l}$ - bias or offset \\
-$x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension $(N, M)$.   
- 
+$x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension $(N, M)$.
+
+The important moment which I should put attention is \textbf{Central Core Element}, because indexing of the elements takes place depending on the location of the central element. In fact, the central element determines the origin of the "coordinate axis" of the convolution kernel. 
+
+~ \\
+\noindent \textbf{Activation functions} \\
+\indent Activation function is transformation which has such general view $y^l=f(x^l)$. I do not cover all activations functions which exist, I chose only these which were used in current model. 
+
+1) \textbf{ReLu} \ref{eq:Relu} - this activation function was used at Convolution layers. It has the following properties:
+
+
+\begin{equation}
+\label{eq:Relu}
+f_{ReLU}=max(0,x)
+\end{equation}
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4] {Relu}
+	\caption{ReLu activation function} 
+	\label{img:Relu}  
+\end{figure}
+
+
+2) \textbf{Softmax }\ref{eq:equation2_4} - I am dealing with multi class classification, therefore this activation was picked.
+
+
+~ \\
+\noindent \textbf{Max pulling layer} \\ 
+\indent This layer allows you to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features we can use for classification.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5]{max_pulling}
+	\caption{Max pulling layer} 
+	\label{img:max_pulling}  
+\end{figure}
+
+
+
+~ \\
+\noindent \textbf{Fully connected layer} \\
+\indent After layers of the convolution and max pooling, we obtain a set of feature cards. We connect them into one vector and this vector will be fed into the fully connected network.
+The Figure \ref{Ts0Sib_} describes this stage.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {CNN_FNN_layer}
+	\caption{Fully connected layer of CNN} 
+	\label{img:CNN_FNN_layer}  
+\end{figure}
+
+\begin{equation}
+x^l_i=\sum_{k=0}^{m}w^l_{ki}y^{l-1}_k+b^l_i \qquad \forall i\in (0,...,n)
+\end{equation}
+
+in matrix representation:
+
+\begin{equation}
+	X^l=Y^{l-1}W^l+B^l_i 
+\end{equation}
+
+\noindent \textbf{Loss function} for the model is Cross Entropy \ref{eq:equation2_8} described above.
+
+Now after all components of CNN are known, we need to optimize weights for each layer. Therefore, it is necessary to derive of the formula for back propagation through the loss function. 
+
+1) Hopefully, the gradient for loss function was already founded \ref{eq:equation_CE_3}, \ref{eq:equation_CE_4}, \ref{eq:CE_gradient}.
+Therefore, we have following equation \ref{eq:CNN_softmax_grad}: 
+
+\begin{equation}
+	\label{eq:CNN_softmax_grad}
+	\begin{multlined}
+	 \frac{\partial J}{\partial x^l_i} = \sum_{k=0}^{n} \frac{\partial J}{\partial y^l_k} \frac {\partial y^l_k} {\partial x^l_i} = \frac{\partial J}{\partial y^l_0} \frac {\partial y^l_0} {\partial x^l_i} + ... \\ + \frac{\partial J}{\partial y^l_1} \frac {\partial y^l_1} {\partial x^l_i} + ...
+	 + \frac{\partial J}{\partial y^l_n} \frac {\partial y^l_n} {\partial x^l_i} \qquad \forall i \in (0,...n)
+	\end{multlined}
+\end{equation}
+
+or 
+\begin{equation}
+\label{eq:CNN_softmax_grad_long}
+	\begin{multlined}
+	\begin{bmatrix} 
+	&\frac{\partial J}{\partial x^{l}_{0}} &\frac{\partial J}{\partial x^{l}_{1}} & ... &\frac{\partial J}{\partial x^{l}_{n}} 
+	\end{bmatrix} 
+	= \\= \scriptsize 
+	\begin{bmatrix} & (\frac{\partial J}{\partial y^{l}_{0}}\frac{\partial y^{l}_{0}}{\partial x^{l}_{0}}+\frac{\partial J}{\partial y^{l}_{1}}\frac{\partial y^{l}_{1}}{\partial x^{l}_{0}}+\ldots+\frac{\partial J}{\partial y^{l}_{n}}\frac{\partial y^{l}_{n}}{\partial x^{l}_{0}}) & (\frac{\partial J}{\partial y^{l}_{0}}\frac{\partial y^{l}_{0}}{\partial x^{l}_{1}}+\frac{\partial J}{\partial y^{l}_{1}}\frac{\partial y^{l}_{1}}{\partial x^{l}_{1}}+\ldots+\frac{\partial J}{\partial y^{l}_{n}}\frac{\partial y^{l}_{n}}{\partial x^{l}_{1}}) & ... & (\frac{\partial J}{\partial y^{l}_{0}}\frac{\partial y^{l}_{0}}{\partial x^{l}_{n}}+\frac{\partial J}{\partial y^{l}_{1}}\frac{\partial y^{l}_{1}}{\partial x^{l}_{n}}+\ldots+\frac{\partial J}{\partial y^{l}_{n}}\frac{\partial y^{l}_{n}}{\partial x^{l}_{n}}) 
+	\end{bmatrix} \\= 
+	\begin{bmatrix} &\frac{\partial J}{\partial y^{l}_{0}} &\frac{\partial J}{\partial y^{l}_{1}} & ... &\frac{\partial J}{\partial y^{l}_{n}} 
+	\end{bmatrix} 
+	\begin{bmatrix} &\frac{\partial y^{l}_{0}}{\partial x^{l}_{0}} &\frac{\partial y^{l}_{0}}{\partial x^{l}_{1}}&...&\frac{\partial y^{l}_{0}}{\partial x^{l}_{n}}\\ &\frac{\partial y^{l}_{1}}{\partial x^{l}_{0}} &\frac{\partial y^{l}_{1}}{\partial x^{l}_{1}}&...&\frac{\partial y^{l}_{1}}{\partial x^{l}_{n}}\\ &...&...&...&...\\ &\frac{\partial y^{l}_{n}}{\partial x^{l}_{0}} &\frac{\partial y^{l}_{n}}{\partial x^{l}_{1}}&...&\frac{\partial y^{l}_{n}}{\partial x^{l}_{n}}\\ 
+	\end{bmatrix}
+	\end{multlined}
+\end{equation}
+
+Next, we should update weight of fully connected layer matrix $w^l$. 
+\begin{equation}
+\frac{\partial J}{\partial w^l} = \dfrac{\partial J}{\partial y^l}\dfrac{\partial y^l}{\partial x^l}\dfrac{\partial x^l}{\partial w^l} = \delta^l \cdot \dfrac{\partial x^l}{\partial w^l} = \left(y^{l-1} \right)^T \cdot \delta^l    
+\end{equation}
+
+and $b^l$
+
+\begin{equation}
+\frac{\partial J}{\partial b^l}=\delta^l
+\end{equation}
+
+Jquation for back propagation through $y^{l-1}$
+
+\begin{equation}
+ \dfrac{\partial J}{\partial y^{l-1}} = \delta^l \cdot \dfrac{\partial x^l}{\partial y^{l-1}}= \delta^l \cdot (w^l)^{T} = \delta^{l-1}
+\end{equation} 
+
+After this we need to go with backprop through the layer of max pulling.
+The error "passes" only through those values of the original matrix, which were chosen by the maximum at the step of the max puling. The remaining error values for the matrix will be zero. 
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5]{backprog_max_pulling}
+	\caption{Back propagation through max pulling layer} 
+	\label{img:backprog_max_pulling}  
+\end{figure}
+
+It is necessary to derive weights update for kernel  \ref{img:conv_grad}. 
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4]{conv_grad}
+	\caption{Back propagation through convolution layer} 
+	\label{img:conv_grad}  
+\end{figure}
+
+\begin{equation}
+\begin{array}{rcl} 
+\dfrac{\partial J}{\partial w^l_{ab}}&=&\sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\dfrac{\partial x^l_{ij}}{\partial w^l_{ab}}\\ &=&^{(1)}\sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\cdot \dfrac{\partial \left( \sum_{a'=-\infty}^{+\infty} \sum_{b'=-\infty}^{+\infty} w^l_{a'b'} \cdot y^{l-1}_{(is-a')(js-b')}+b^l \right)}{\partial w^l_{ab}}\\ &=&^{(2)}\sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}} \cdot y^{l-1}_{(is-a)(js-b)} \\ &&\forall a \in (-\infty,...,+\infty) \enspace \forall b \in (-\infty,...,+\infty) 
+\end{array}\\
+\end{equation}
+
+all partial derivatives in the numerator, except those for which $a^{'}= a, b^{'} = b$, will be zero. 
+
+~\\
+Derivation of gradient for the bias element. 
+\begin{equation}
+ \dfrac{\partial J}{\partial b^l} = \sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\dfrac{\partial x^l_{ij}}{\partial b^l} = \sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}} 
+\end{equation}
+
+\noindent The derivation of the equation for backprop through the convolution layer.
+
+\begin{equation}
+\frac{\partial J}{\partial y^{l-1}_{ij}}= \sum_{i'}\sum_{j'} \frac{\partial J}{\partial y^l_{i'j'}}\frac{\partial y^l_{i'j'}}{\partial x^l_{i'j'}} \cdot w^{l}_{(i-i's)(j-j's)}
+\end{equation}
+
