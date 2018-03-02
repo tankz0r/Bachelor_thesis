@@ -1,0 +1,615 @@
+\chapter{Mathematical models and algorithms for text classification} \label{chapt2}
+
+\section{Words representations} \label{sect2_1}
+
+
+In supervised learning domain, to perform classification tasks, usually our goal is to find a parametrized model, best in its class: 
+
+\begin{equation}
+\label{eq:equation1}
+A(X, \hat{w}): A(X, \hat{w}) \simeq f(X) \Leftrightarrow A(X, \hat{w}) = \operatorname*{arg\,min}_w \left\|A(X, w) - f(X)\right\|
+\end{equation}
+
+Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into specific numerical format, in another words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways.[тут вставить список литературы]
+
+\subsection{Bag-of-Words Approach} \label{subsect2_1_1}
+
+Bag-of-words - an unordered set of words, with their exact position ignored.\cite[p.641]{jurafsky}, 
+
+
+\noindent In bag-of-words approach we work under the following assumptions:
+\begin{itemize}
+	\item The text can be analyzed without taking into account the word/token order.
+	\item It is only necessary to know which words/tokens the text consists of and how many times.
+\end{itemize}
+
+Formally, there is a collection of texts $T_1, T_2, ... , T_n$. Unique tokens $w_1, w_2, ..., w_m$ are extracted to form a dictionary. Thus, each text $T_i$ is represented by feature vector $F_j = \{x_{ij},\ j \in [1,m]\}$, where $x_{ij}$ corresponds to number of occurrences of word $w_j$ in text $T_i$.
+
+Example:
+Our corpus represented by 2 texts:
+["The sun is yellow", "The sky is blue"]
+
+Our tokens are simple unigrams, therefore there are 6 unique words: {the, sun, is, yellow, sky, blue}. Then, given corpus is mapped to feature vectors:
+$T_1=(1,1,1,1,0,0)$, $T_2=(1,0,1,0,1,1)$ 
+
+\begin{table} [htbp]
+	\centering
+	\parbox{15cm}{\caption{Feature vector}\label{Ts0Sib_}}
+	%  \begin{center}
+	\begin{tabular}{| p{1cm} || p{1cm} | p{1cm} | p{1cm} | p{2cm} | p{1cm} | p{1cm}l |}
+		\hline
+		\hline
+		Text & \centering the  & \centering sun  & \centering is  &\centering yellow &\centering sky  & \centering  blue & \\
+		\hline
+		$T_{1}$ &\centering  1   &\centering  1  &\centering  1   &\centering  1 &\centering  0 &\centering 0 &   \\
+		$T_{2}$ &\centering  1   &\centering  0  &\centering  1   &\centering  0 &\centering  1 &\centering 1 &   \\
+		\hline
+		\hline
+	\end{tabular}
+	%  \end{center}
+\end{table}
+
+\noindent Benefits:
+\begin{itemize}
+	\item Despite its simplicity, demonstrate good results.
+	\item Fast preprocessing.
+	\item Built-in in many scientific/NLP libraries
+\end{itemize}
+
+\noindent Drawbacks:
+\begin{itemize}
+	\item Huge corpus usually leads to huge vocabulary size.
+	\item Not memory-efficient: if we have corpus with 20 thousand texts then this textual corpus might spawn a dictionary with around 100 thousand elements. Thus, storing feature vectors as an array of type int32 would require 20000 x 100000 x 4 bytes $~$ 8GB in RAM.
+	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us to distinguish between sentences, built from the same words while having opposite meanings:"This paintings don't feel like ugly - buy them!" (positive) and "This paintings feel like ugly - don't buy them!" (negative) 
+\end{itemize}
+
+In order to capture dependencies between words \textbf{N-grams} technique can be used. N-gram is a sequence of $N$ basic tokens, which can be defined in different ways. 
+
+\begin{enumerate}
+	\item \textbf{Word n-grams - catches more semantics} :
+	\begin{itemize}
+		\item unigrams: "The sun is yellow." $\rightarrow$ ['The', 'sun', 'is' ...]
+		\item bigrams: "The sun is yellow." $\rightarrow$
+		['The sun', 'sun is' ...]
+		\item 3-grams: "The sun is yellow." $\rightarrow$
+		['The sun is ', 'sun is yellow']
+	\end{itemize}
+	\item \textbf{Character n-grams - helps to deal with misspelling}:
+	\begin{itemize}
+		\item 4-grams: "The sun is yellow." $\rightarrow$ ['The ', 'sun ', 'is y', 'ello' ...]
+	\end{itemize}
+	\item \textbf{Skip-n-gram - sequence of $N$ basic tokens, having distance of $\leq K$ tokens between them}  
+	\begin{itemize}
+		\item 1-skip-2-grams:: "The sun is yellow." $\rightarrow$ ['The is', 'sun yellow ']
+	\end{itemize}
+\end{enumerate}
+
+In TF-IDF approach (term frequency - inverse document frequency), in addition to usual BoW-model, the following augmentation is made:
+
+\subsection{TF-IDF  Approach} \label{subsect2_1_2}
+Instead of just counting up the overlapping words, the algorithms applies a weight to each overlapping word. The TF weight measures how many times the word occurs in particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the IDF content words is high.\cite[p.647]{jurafsky} Formaly it can be defined: 
+
+
+
+\begin{equation}
+\label{eq:equation2_2}
+\begin{cases} TF(w,T)=n_{Tw} \\ IDF(w, T)= log{\frac{N}{n_{w}}}\end{cases} \implies
+TF\text{-}IDF(w, T) = n_{Tw}\ log{\frac{N}{n_{w}}} \ \ \ \ \forall w \in W
+\end{equation}
+\hfill \break 
+where $T$ corresponds to current document (text), \hfill \break 
+$w$ - selected word in document T, \hfill \break
+$n_{Tw}$ - number of occurences of $w$ in text $T$, \hfill \break
+$n_{w}$ - number of documents, containing word $w$, \hfill \break
+$N$ - total number of documents in a corpus.
+
+\begin{equation}
+\label{eq:equation2_3}
+\lim_{n_{w} \to N} {TF\text{-}IDF(w, T)} = 0
+\end{equation}
+
+\subsection{Embeddings} \label{subsect2_1_3}
+
+Core idea:	A	word’s	meaning	is	given	by	the	words	that frequently	appear	close-by. 
+
+тут вставить информацию про работі проведенные в данной области. 
+https://arxiv.org/pdf/1301.3781.pdf
+https://arxiv.org/pdf/1310.4546.pdf
+
+1. \textbf{Skip-gram model}
+
+\noindent To begin with key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
+
+\begin{equation}
+\label{eq:equation2_4}
+\textrm{softmax}({\bf x})_{i} = \frac{e^{x_{i}}}{\sum_{j=1}{e^{x_{j}}}}
+\end{equation}
+
+\begin{equation}
+\label{eq:equation2_5}
+\textrm{sigmoid} = \sigma(z) = \frac{1}{1 + e^{-z}}.
+\end{equation}
+
+\noindent The gradient of sigmoid function is follows:
+
+\begin{equation}
+\label{eq:equation2_6}
+\sigma^{\prime}(z) = \sigma(z)(1 - \sigma(z))
+\end{equation}
+
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {FCNN}
+	\caption{Neural Network} 
+	\label{img:FCNN}  
+\end{figure}
+
+\noindent where $x$ is one-hot input vector, $h$ - hidden layer, y is the one-hot label vector, and ŷ is the predicted probability vector for all classes.The neural network employs sigmoid activation function for the hidden layer, and softmax for the output layer and cross entropy cost ~\ref{eq:equation2_7} is used.
+
+\begin{equation}
+\label{eq:equation2_8}
+\textrm{CE}({\bf y},{\bf\hat{y}}) = -\sum_{i}{y_{i}\log{\hat{y_{i}}}}
+\end{equation}
+
+Now, we will compute the gradient of cross entropy:
+
+\begin{equation}
+\label{eq:equation_CE_2}
+\frac{\partial(\textrm{CE})}{\partial{\hat{y}_{i}}} = -\frac{y_{j}}{\hat{y}_{i}}
+\end{equation}
+That leads, 
+
+\begin{equation}
+\frac{\partial(\textrm{CE})}{\partial{\theta_{k}}} =  \frac{\partial(\textrm{CE})}{\partial{\hat{y}_{i}}}\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}} 
+=-\frac{y_{j}}{\hat{y}_{i}}\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}}
+\end{equation}
+
+Function $softmax$ for i-th output depends not only on its $\theta_{i}$, but also on all other $\theta_{k}$, the sum of which lies in the denominator of the formula for direct passage through the network. Therefore, the formula for back propagation "splits" into two: the partial derivative with respect to $\theta_{i}$ and $\theta_{k}$:
+
+\begin{equation}
+\begin{multlined}
+\label{eq:equation_CE_3}
+\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{i}}} =  \frac{\partial}{\partial{\theta_{i}}}\left( \frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}}\right) =\\
+= \frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}} - \left(\frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}}\right)^{2} = \\
+= \hat{y}_{i}\cdot(1 - \hat{y}_{i})
+\end{multlined}
+\end{equation}
+
+and (where $i\neq k$),
+
+\begin{equation}
+\label{eq:equation_CE_4}
+\begin{multlined}
+\frac{\partial{\hat{y}_{i}}}{\partial{\theta_{k}}} =  \frac{\partial}{\partial{\theta_{k}}}\left( \frac{e^{\theta_{i}}}{\sum_{j=1}{e^{\theta_{j}}}}\right) = \\
+=-\left(\frac{e^{\theta_{i}}e^{\theta_{k}}}{\sum_{j=1}{e^{\theta_{j}}}}\right)
+= - \hat{y}_{i}\hat{y}_{k}
+\end{multlined}
+\end{equation}
+
+After combination of equations~\ref{eq:equation_CE_2},~\ref{eq:equation_CE_3},~\ref{eq:equation_CE_4}, 
+
+\begin{equation}
+\label{eq:CE_gradient}
+\frac{\partial(\textrm{CE})}{\partial{\theta_{k}}} = \begin{cases}
+-y_{j}(1 - \hat{y}_{k})&\text{ for }i=k \\
+y_{j}\hat{y}_{k}&\text{ for }i\neq k
+\end{cases}
+\end{equation}
+
+$y_{j}$ should be non-zero, $k=j$ and $y_{j}=1$, leads to,
+
+\begin{equation}
+\label{eq:equation_CE_5}
+\frac{\partial(\textrm{CE})}{\partial{\theta_{j}}} = \begin{cases}
+(\hat{y}_{j} - 1)&\text{ for }i=j \\
+\hat{y}_{j}&\text{ for }i\neq j
+\end{cases}
+\end{equation}
+
+Which is equivalent to,
+
+\begin{equation}
+\frac{\partial(\textrm{CE})}{\partial{\boldsymbol\theta}} = \bf{\hat{y}} - \bf{y}
+\end{equation}
+
+\noindent Forward propagation is as follows:
+\begin{equation}
+{\bf h} = \textrm{sigmoid}({\bf x\textrm{W}_{1} + b_{1}}) 
+\end{equation}
+
+\begin{equation}
+\label{eq:equation2_7}
+{\bf \hat{y}} = \textrm{softmax}({\bf h\textrm{W}_{2} + b_{2})}
+\end{equation}
+
+\noindent where $\bf{\textrm{W}}_i$ and $\bf{b}_{i}$ ($i\in\{1,2\}$) are
+the weights and biases, respectively of the two layers.
+\indent To optimize weights for each layer of neural network the back propagation algorithm is used. Therefore, it is necessary to calculate the gradients for each layer.
+  
+\noindent In order to simplify the notation used to solve the problem, define the following terms:
+\begin{equation}
+\label{eq:equation2_10}
+\begin{multlined}
+		 {\bf z}_{1}\equiv \quad{\bf x\textrm{W}_{1} + b_{1}} \\
+		{\bf z}_{2}\equiv \quad{\bf h\textrm{W}_{2} + b_{2}}
+\end{multlined}
+\end{equation}
+
+Starting with the results from ~\ref{eq:equation2_8}:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{\bf z}_{2}} = \bf{\hat{y}} - \bf{y}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eq:equation2_11}
+\frac{\partial{\bf z}_{2}}{\partial{{\bf h}}} = {\bf \textrm{W}^{\top}_{2}}
+\end{equation}
+
+Sigmoid ($\sigma$) derivative ~\ref{eq:equation2_6}:
+
+\begin{equation}
+\frac{\partial{{\bf h}}}{\partial{{\bf z}_{1}}}\equiv\sigma^{\prime}(z_{1})
+\end{equation}
+
+Combining these, and using $\cdot$ to denote element-wise product:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{z_{i}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})
+\end{equation}
+
+Finally, using the results from Equation~\ref{eq:equation2_11}:
+
+\begin{equation}
+\frac{\partial{J}}{\partial{{\bf W}^{(1)}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})\cdot{\bf \textrm{X}^{\top}}
+\end{equation}  
+
+\begin{equation}
+\frac{\partial{J}}{\partial{{\bf W}^{(2)}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{h}^{\top}}
+\end{equation}  
+
+We have everything to update our weights: 
+
+
+Now, turn definitely to skip-gram model shown in Figure ~\ref{img:skip_gram_model}\cite{cbow_skip}:
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {skip_gram_model}
+	\caption{The Skip-gram model architecture.} 
+	\label{img:skip_gram_model}  
+\end{figure}
+
+
+
+\noindent Now, let`s transfer knowledge from above to our skip-gram model.    
+We have a word vector ${\boldsymbol v}_{c}$ corresponding to the center word $c$ for
+\texttt{skip-gram}, and word prediction is made with the \texttt{softmax} function: 
+
+\begin{equation}
+{\hat{\boldsymbol y}}_{\boldsymbol o} = p(~{\boldsymbol o} \mid {\boldsymbol c}~) = \frac{\exp{({\boldsymbol u}^{\top}_{o}{\boldsymbol v}_{c})}}{\sum^{\vert{W}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}}
+\end{equation}
+
+where $w$ denotes the $w$-th word and ${\boldsymbol u}_{w}$ ($w=1,...,\vert\textrm{W}\vert$)  are the `output' word vectors for all words in the vocabulary. Cross entropy cost is applied to this prediction and word $o$ is the expected word (the $o$-th element of the one-hot label vector is one). ${\boldsymbol U} = [ {\boldsymbol u}_{1}, {\boldsymbol u}_{2},...,{\boldsymbol u}_{\vert\textrm{W}\vert}]$ is the matrix of all the output vectors. 
+
+Applying cross-entropy cost to the softmax probability defined above:
+
+\begin{equation}
+J =-\log{p} = - {\boldsymbol u}_{o}^{\top}{\boldsymbol v}_{c} + \log\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c})}
+\end{equation}
+
+Let $z_{j}={\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c}$, and $\delta^{i}_{j}$ ~\ref{eq:indicator} be the indicator function, then
+
+\begin{equation}
+\label{eq:indicator}
+\delta^{i}_{j} =  
+	\begin{cases}
+	1, &\text{ for }i=j \\
+	0, &\text{ for }i\neq j
+	\end{cases}
+\end{equation}
+
+
+\begin{equation}
+\frac{\partial J}{\partial{z_{k}}} = - \delta^{i}_{k} + \frac{\exp{({\boldsymbol u}_{i}^{\top}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c})}}
+\end{equation}
+
+Now, using the chain rule, we can calculate,
+
+\begin{equation}
+	\begin{multlined}
+	\frac{\partial J}{\partial{{\boldsymbol v}_{c}}} =  \frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{{\boldsymbol v}_{c}}} =\\
+	= \sum^{\vert{V}\vert}_{j=1}{\boldsymbol u}_{j}^{\top}\left(\frac{e^{z_{j}}}{\sum^{\vert{V}\vert}_{k=1}e^{z_{k}}} -  1\right) =\\
+	= \sum^{\vert{V}\vert}_{k=1}{\boldsymbol P}({\boldsymbol u}_{j} \vert {\boldsymbol v}_{c} ){\boldsymbol u}_{j} - {\boldsymbol u}_{j}
+	\end{multlined}
+\end{equation}
+
+
+\noindent For the `output' word vectors ${\boldsymbol u}_{w}$'s
+
+\begin{equation}
+	\begin{multlined}
+	\frac{\partial J}{\partial{\boldsymbol u}_{j}} = \frac{\partial J}{\partial{{\boldsymbol z}}}\frac{\partial{{\boldsymbol z}}}{\partial{\boldsymbol u}_{j}} =\\
+	= {\boldsymbol v}_{c}\left(\frac{\exp{({\boldsymbol u}^{\top}_{0}{\boldsymbol v}_{c})}}{\sum^{\vert{V}\vert}_{j=1}\exp{({\boldsymbol u}^{\top}_{j}{\boldsymbol v}_{c})}} - \delta^{0}_{j}\right)
+	\end{multlined}
+\end{equation}
+
+\noindent We have calculated gradient for one particular word, now we will generalize this to a number of words. We have a set of context words [$\texttt{word}_{c-\textbf{m}},...,\texttt{word}_{c-\textbf{1}},\texttt{word}_{c},\texttt{word}_{c+\textbf{1}},...,\texttt{word}_{c+\textbf{m}}$ ], where \textbf{m} is the context size. We denote the `input' and `output' word vectors for $\texttt{word}_{k}$ as ${\boldsymbol v}_{k}$ and ${\boldsymbol u}_{k}$ respectively for
+convenience. \\
+
+\noindent Also it is a good idea to use $F({\boldsymbol o}, {\boldsymbol v}_{c})$ (where ${\boldsymbol o}$ is the expected word) as a placeholder for $J({\boldsymbol o}, {\boldsymbol v}_{c}, ...)$ cost functions.
+
+\noindent Then we can rewrite cost function as follows:
+
+\begin{equation}
+J =   \sum_{-m\le j\le m, j\neq0}F({\boldsymbol w}_{c+j}, {\boldsymbol v}_{c})
+\end{equation}
+
+where ${\boldsymbol w}_{c+j}$ refers to the word at the $j$-th index from the center.\\
+
+The derivative of the loss has two terms, ${\boldsymbol w}_{c+j}$ and ${\boldsymbol v}_{c}$, which yields the following ~\cite{assignment1},
+
+\begin{equation}
+	\begin{multlined}
+	\frac{\partial{J}}{\partial{\boldsymbol w}_{k}} = \\ =\frac{\partial}{\partial{\boldsymbol w}_{k}}\sum_{-m\le j\le m, j\neq0}F({\boldsymbol w}_{c+j}, {\boldsymbol v}_{c})= \\
+	= \sum_{-m\le j\le m, j\neq0} \frac{\partial{F}}{\partial{\boldsymbol w}_{i+j}}\delta^{i+j}_{k}
+	\end{multlined}
+\end{equation}
+
+and
+
+\begin{equation}
+\frac{\partial{J}}{\partial{\boldsymbol v}_{c}} = \sum_{-m\le j\le m, j\neq0} \frac{\partial{F}}{\partial{\boldsymbol v}_{c}}
+\end{equation}
+
+Now, we can update our weight using gradient descent algorithm:
+
+\begin{equation}\\
+	\begin{multlined}
+	w^{new}_{k} = w^{old}_{k} - \eta \frac{\partial{J}}{\partial{w}_{k}} \\
+	v^{new}_{c} = v^{old}_{c} - \eta \frac{\partial{J}}{\partial{v}_{c}}
+	\end{multlined}
+\end{equation}
+
+where $\eta$ is a learning rate.
+
+After training the skip-gram model, we take the hidden layer weight matrix that will represent our words in the multidimensional space. If we make projection into two dimensional space, we can have the following Figure ~\ref{img:embed}:
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4] {embed}
+	\caption{Words representation} 
+	\label{img:embed}  
+\end{figure}
+
+
+However, this type of architecture, where for each output we need to compute separate $softmax$ function are very expensive in terms of computational resources and as a result time. Therefore, there are different ways to approximate the expensive $softmax$ function. The most famous of them are:
+
+\begin{itemize}
+	\item Negative Sampling technique
+	\item Hierarchical Softmax
+\end{itemize}
+ 
+~\\ 
+\textbf{Negative Sampling technique} \\
+
+\noindent The only difference from the original model is that we introduce new loss function - negative sampling loss for the predicted vector ${\boldsymbol v}_{c}$, and 
+the expected output word is ${\boldsymbol o}({\boldsymbol u}_{o})$. Assume that $K$ negative samples (words) are drawn, and they are ${\boldsymbol u}_{1},...,{\boldsymbol u}_{k}$, respectively for simplicity of notation ($k\in\{1,...,K\}$ and $o\notin\{1,...,K\}$). Again for a given word, ${\boldsymbol o}$, denote its output vector as ${\boldsymbol u}_{o}$. The negative sampling loss function in this case is,
+
+\begin{equation}
+J({\boldsymbol u}_{o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = -\log(\sigma( {\boldsymbol u}^{\top}_{o}{\boldsymbol v}_{c})) - \sum^{K}_{k=1}\log(\sigma(- {\boldsymbol u}^{\top}_{k}{\boldsymbol v}_{c}))
+\end{equation}
+
+\noindent where $\sigma(\cdot)$ is the sigmoid function.\\
+As it can be clearly seen, now we make calculation not on whole vocabulary $V$, but only on part of it, which randomly generated each time. 
+
+~\\ 
+\textbf{Hierarchical Softmax} \\
+H-Softmax is an approximation which uses binary tree to compute the necessary probability. 
+This gives us a possibility to decompose calculating the probability of one word into a sequence of probability calculations. Balanced thees have a maximum depth of $log_2(|V|)$, that means that in the worst case we need to calculate $log_2(|V|)$ nodes to find the necessary probability of certain word.  
+
+Both methods give us a possibility to significantly decrease amount of time for computation.
+
+2. \textbf{CBOW model}
+This model is very similar to skip-gram, but CBOW predicts target word from the bag of words context. From the practical point of view: skip-gram works well with small amount of the training data and represents well even rare words or phrases. CBOW - several times faster to train than the skip-gram, slightly better accuracy for the frequent words. This model presented in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.6] {CBOW}
+	\caption{The CBOW model architecture.} 
+	\label{img:CBOW}  
+\end{figure}
+
+\section{Deep learning algorithms for text classification}\label{sect2_2}
+Nowadays, there are a great number of NN architectures which are used for text classification. In this section I would like to consider the most powerful and efficient ones.
+
+\subsection{Convolution Neural Networks}  
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {CNN}
+	\caption{Convolution Neural Networks architecture for text classification} 
+	\label{img:CNN}  
+\end{figure}
+
+The model architecture, shown in Figure ~\ref{img:CNN} \cite{CNN}, is a variant of the CNN architecture. Let $x_i \in \mathbb{X}$ be the k-dimensional word vector corresponding to the i-th word in the sentence, a sentence of length n. In general, let $x_{i:i+j}$ refer to the concatenation of words $\{x_{i}, x_{i+1}, . . . , x_{i+j}\}$.\cite{CNN}
+
+~\\ 
+\textbf{Convolution} \\
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {convolution}
+	\caption{Basic variables which are used in the convolution layer} 
+	\label{img:convolution}  
+\end{figure}
+
+In a convolution neural network, a limited matrix of small weights is used in the convolution operation, which is moved along the entire processed layer, forming after each shift the activation signal for the neuron of the next layer with the same position. The same matrix of weights, called kernel, is used for different neurons of the output layer.  
+The schema of this process illustrated in the Figure ~\ref{img:convolution} \cite{CNN_habr}.
+
+The following equation ~\ref{eq:convolution} describes words above into mathematical way:
+
+\begin{equation}
+\label{eq:convolution}
+x^l_{ij}=\sum_{a=-\infty}^{+\infty}\sum_{b=-\infty}^{+\infty}w^l_{ab}\cdot y^{l-1}_{(i\cdot s-a)(j\cdot s-b)}+b^l \qquad \forall i\in (0,...,N) \enspace \forall j\in (0,...,M) 
+\end{equation}
+
+where $i, j, a, b$ - indexes of elements in matrices, $s$ - step's size of convolution
+
+\noindent The superscripts $l$ and $l-1$ are the indices of the network layers.\\
+$x_{l-1}$ - the output of some previous function, or the input of the network \\
+$y_{l-1}$ - $x_{l-1}$ after passing the activation function \\
+$w_{l}$ - the convolution kernel \\
+$b_{l}$ - bias or offset \\
+$x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension $(N, M)$.
+
+The important moment which I should put attention is \textbf{Central Core Element}, because indexing of the elements takes place depending on the location of the central element. In fact, the central element determines the origin of the "coordinate axis" of the convolution kernel. 
+
+~ \\
+\noindent \textbf{Activation functions} \\
+\indent Activation function is transformation which has such general view $y^l=f(x^l)$. I do not cover all activations functions which exist, I chose only these which were used in current model. 
+
+1) \textbf{ReLu} \ref{eq:Relu} - this activation function was used at Convolution layers. It has the following properties:
+
+
+\begin{equation}
+\label{eq:Relu}
+f_{ReLU}=max(0,x)
+\end{equation}
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4] {Relu}
+	\caption{ReLu activation function} 
+	\label{img:Relu}  
+\end{figure}
+
+
+2) \textbf{Softmax }\ref{eq:equation2_4} - I am dealing with multi class classification, therefore this activation was picked.
+
+
+~ \\
+\noindent \textbf{Max pulling layer} \\ 
+\indent This layer allows you to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features we can use for classification.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5]{max_pulling}
+	\caption{Max pulling layer} 
+	\label{img:max_pulling}  
+\end{figure}
+
+
+
+~ \\
+\noindent \textbf{Fully connected layer} \\
+\indent After layers of the convolution and max pooling, we obtain a set of feature cards. We connect them into one vector and this vector will be fed into the fully connected network.
+The Figure \ref{Ts0Sib_} describes this stage.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {CNN_FNN_layer}
+	\caption{Fully connected layer of CNN} 
+	\label{img:CNN_FNN_layer}  
+\end{figure}
+
+\begin{equation}
+x^l_i=\sum_{k=0}^{m}w^l_{ki}y^{l-1}_k+b^l_i \qquad \forall i\in (0,...,n)
+\end{equation}
+
+in matrix representation:
+
+\begin{equation}
+	X^l=Y^{l-1}W^l+B^l_i 
+\end{equation}
+
+\noindent \textbf{Loss function} for the model is Cross Entropy \ref{eq:equation2_8} described above.
+
+Now after all components of CNN are known, we need to optimize weights for each layer. Therefore, it is necessary to derive of the formula for back propagation through the loss function. 
+
+1) Hopefully, the gradient for loss function was already founded \ref{eq:equation_CE_3}, \ref{eq:equation_CE_4}, \ref{eq:CE_gradient}.
+Therefore, we have following equation \ref{eq:CNN_softmax_grad}: 
+
+\begin{equation}
+	\label{eq:CNN_softmax_grad}
+	\begin{multlined}
+	 \frac{\partial J}{\partial x^l_i} = \sum_{k=0}^{n} \frac{\partial J}{\partial y^l_k} \frac {\partial y^l_k} {\partial x^l_i} = \frac{\partial J}{\partial y^l_0} \frac {\partial y^l_0} {\partial x^l_i} + ... \\ + \frac{\partial J}{\partial y^l_1} \frac {\partial y^l_1} {\partial x^l_i} + ...
+	 + \frac{\partial J}{\partial y^l_n} \frac {\partial y^l_n} {\partial x^l_i} \qquad \forall i \in (0,...n)
+	\end{multlined}
+\end{equation}
+
+or 
+\begin{equation}
+\label{eq:CNN_softmax_grad_long}
+	\begin{multlined}
+	\begin{bmatrix} 
+	&\frac{\partial J}{\partial x^{l}_{0}} &\frac{\partial J}{\partial x^{l}_{1}} & ... &\frac{\partial J}{\partial x^{l}_{n}} 
+	\end{bmatrix} 
+	= \\= \scriptsize 
+	\begin{bmatrix} & (\frac{\partial J}{\partial y^{l}_{0}}\frac{\partial y^{l}_{0}}{\partial x^{l}_{0}}+\frac{\partial J}{\partial y^{l}_{1}}\frac{\partial y^{l}_{1}}{\partial x^{l}_{0}}+\ldots+\frac{\partial J}{\partial y^{l}_{n}}\frac{\partial y^{l}_{n}}{\partial x^{l}_{0}}) & (\frac{\partial J}{\partial y^{l}_{0}}\frac{\partial y^{l}_{0}}{\partial x^{l}_{1}}+\frac{\partial J}{\partial y^{l}_{1}}\frac{\partial y^{l}_{1}}{\partial x^{l}_{1}}+\ldots+\frac{\partial J}{\partial y^{l}_{n}}\frac{\partial y^{l}_{n}}{\partial x^{l}_{1}}) & ... & (\frac{\partial J}{\partial y^{l}_{0}}\frac{\partial y^{l}_{0}}{\partial x^{l}_{n}}+\frac{\partial J}{\partial y^{l}_{1}}\frac{\partial y^{l}_{1}}{\partial x^{l}_{n}}+\ldots+\frac{\partial J}{\partial y^{l}_{n}}\frac{\partial y^{l}_{n}}{\partial x^{l}_{n}}) 
+	\end{bmatrix} \\= 
+	\begin{bmatrix} &\frac{\partial J}{\partial y^{l}_{0}} &\frac{\partial J}{\partial y^{l}_{1}} & ... &\frac{\partial J}{\partial y^{l}_{n}} 
+	\end{bmatrix} 
+	\begin{bmatrix} &\frac{\partial y^{l}_{0}}{\partial x^{l}_{0}} &\frac{\partial y^{l}_{0}}{\partial x^{l}_{1}}&...&\frac{\partial y^{l}_{0}}{\partial x^{l}_{n}}\\ &\frac{\partial y^{l}_{1}}{\partial x^{l}_{0}} &\frac{\partial y^{l}_{1}}{\partial x^{l}_{1}}&...&\frac{\partial y^{l}_{1}}{\partial x^{l}_{n}}\\ &...&...&...&...\\ &\frac{\partial y^{l}_{n}}{\partial x^{l}_{0}} &\frac{\partial y^{l}_{n}}{\partial x^{l}_{1}}&...&\frac{\partial y^{l}_{n}}{\partial x^{l}_{n}}\\ 
+	\end{bmatrix}
+	\end{multlined}
+\end{equation}
+
+Next, we should update weight of fully connected layer matrix $w^l$. 
+\begin{equation}
+\frac{\partial J}{\partial w^l} = \dfrac{\partial J}{\partial y^l}\dfrac{\partial y^l}{\partial x^l}\dfrac{\partial x^l}{\partial w^l} = \delta^l \cdot \dfrac{\partial x^l}{\partial w^l} = \left(y^{l-1} \right)^T \cdot \delta^l    
+\end{equation}
+
+and $b^l$
+
+\begin{equation}
+\frac{\partial J}{\partial b^l}=\delta^l
+\end{equation}
+
+Jquation for back propagation through $y^{l-1}$
+
+\begin{equation}
+ \dfrac{\partial J}{\partial y^{l-1}} = \delta^l \cdot \dfrac{\partial x^l}{\partial y^{l-1}}= \delta^l \cdot (w^l)^{T} = \delta^{l-1}
+\end{equation} 
+
+After this we need to go with backprop through the layer of max pulling.
+The error "passes" only through those values of the original matrix, which were chosen by the maximum at the step of the max puling. The remaining error values for the matrix will be zero. 
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5]{backprog_max_pulling}
+	\caption{Back propagation through max pulling layer} 
+	\label{img:backprog_max_pulling}  
+\end{figure}
+
+It is necessary to derive weights update for kernel  \ref{img:conv_grad}. 
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4]{conv_grad}
+	\caption{Back propagation through convolution layer} 
+	\label{img:conv_grad}  
+\end{figure}
+
+\begin{equation}
+\begin{array}{rcl} 
+\dfrac{\partial J}{\partial w^l_{ab}}&=&\sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\dfrac{\partial x^l_{ij}}{\partial w^l_{ab}}\\ &=&^{(1)}\sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\cdot \dfrac{\partial \left( \sum_{a'=-\infty}^{+\infty} \sum_{b'=-\infty}^{+\infty} w^l_{a'b'} \cdot y^{l-1}_{(is-a')(js-b')}+b^l \right)}{\partial w^l_{ab}}\\ &=&^{(2)}\sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}} \cdot y^{l-1}_{(is-a)(js-b)} \\ &&\forall a \in (-\infty,...,+\infty) \enspace \forall b \in (-\infty,...,+\infty) 
+\end{array}\\
+\end{equation}
+
+all partial derivatives in the numerator, except those for which $a^{'}= a, b^{'} = b$, will be zero. 
+
+~\\
+Derivation of gradient for the bias element. 
+\begin{equation}
+ \dfrac{\partial J}{\partial b^l} = \sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\dfrac{\partial x^l_{ij}}{\partial b^l} = \sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}} 
+\end{equation}
+
+\noindent The derivation of the equation for backprop through the convolution layer.
+
+\begin{equation}
+\frac{\partial J}{\partial y^{l-1}_{ij}}= \sum_{i'}\sum_{j'} \frac{\partial J}{\partial y^l_{i'j'}}\frac{\partial y^l_{i'j'}}{\partial x^l_{i'j'}} \cdot w^{l}_{(i-i's)(j-j's)}
+\end{equation}
+
