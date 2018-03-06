@@ -121,7 +121,7 @@ Model evaluation is not just the end point of our machine learning pipeline. Bef
 - Ideally, the estimated performance of a model tells how well it performs on unseen data – making predictions on future data is often the main problem we want to solve.
 
 \textbf{Model selection} - We want to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
-- Typically, machine learning involves a lot of experimentation. Running a learning algorithm over a training dataset with different hyperparameter settings and different features will result in different models. Since we are typically interested in selecting the best-performing model from this set, we need to find a way to estimate their respective performances in order to rank them against each other.
+- Typically, machine learning involves a lot of experimentation. Running a learning algorithm over a training dataset with different hyper parameter settings and different features will result in different models. Since we are typically interested in selecting the best-performing model from this set, we need to find a way to estimate their respective performances in order to rank them against each other.
 
 \textbf{Algorithm selection} - We want to compare different ML algorithms, selecting the best-performing one.
 - We are usually not only experimenting with the one single algorithm that we think would be the “best solution” under the given circumstances. More often than not, we want to compare different algorithms to each other, oftentimes in terms of predictive and computational performance.
@@ -130,7 +130,7 @@ Although these three sub-tasks have all in common that we want to estimate the p
 
 \subsection{Model Evaluation Techniques}
 \textbf{Holdout method} (simple train/test split)
-The holdout method is the simplest model evaluation technique. We take our labeled dataset and split it randomly into two parts: A **training set** and a **test set**
+The holdout method is the simplest model evaluation technique. We take our labeled dataset and split it randomly into two parts: A training set and a test set.
 
 \begin{figure}[ht] 
 	\center
@@ -173,7 +173,7 @@ Accuracy simply measures what percent of your predictions were correct. It's the
 accuracy = {\frac{correct}{predictions}}
 \end{equation}
 
-Accuracy is also the most misused metric. It is really **only suitable** when there are an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important*, which is often not the case.
+Accuracy is also the most misused metric. It is really only suitable when there are an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
 
 \textbf{Confusion Matrix}
 ~\\
@@ -183,23 +183,30 @@ The confusion matrix is a handy presentation of the accuracy of a model with 2 o
 \newcommand\MyBox[2]{
 	\fbox{\lower0.75cm
 		\vbox to 1.7cm{\vfil
-			\hbox to 1.7cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+			\hbox to 2.2cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
 			\vfil}%
 	}%
 }
 
 \noindent
-\renewcommand\arraystretch{1.5}
-\setlength\tabcolsep{0pt}
-\begin{tabular}
-	{c >{\bfseries}r @{\hspace{0.7em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
-	\multirow{10}{*}{\parbox{1.1cm}{\bfseries\raggedleft actual\\ value}} & 
-	& \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
-	& & \bfseries p & \bfseries n & \bfseries total \\
-	& p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
-	& n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
-	& total & P & N &
-\end{tabular}
+\begin{figure}[ht] 
+	\center
+	\label{img:eval3} 
+	\renewcommand\arraystretch{1.5}
+	\setlength\tabcolsep{0pt}
+	\begin{tabular}
+		{c >{\bfseries}r @{\hspace{0.8em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
+		\multirow{10}{*}{\parbox{1.1cm}{\bfseries\raggedleft actual\\ value}} & 
+		& \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
+		& & \bfseries p & \bfseries n & \bfseries total \\
+		& p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
+		& n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
+		& total & P & N &
+	\end{tabular}
+	
+	\caption{Confusion matrix} 
+	 
+\end{figure}
 
 Confusion matrix allows you to compute various classification metrics, and these metrics can guide your model selection.
 
@@ -229,3 +236,11 @@ F_1 = 2 {\frac{precision * recall}{precision + recall}}
 
 
 Unlike the arithmetic mean, the harmonic mean tends toward the smaller of the two elements. Hence the F1 score will be small if either precision or recall is small.
+
+\section{Summary of the section}
+
+In the first section the relevance of the problem and the main concepts associated with it are considered, namely, classification, its formation, intellectual analysis. A review of the main methods and algorithms of classification and criteria for its management.
+
+Since it is important to investigate not only the ways to classify texts, but also attempts to understand main features, which had the highest importance. It is important to study the theory of how to represent textual information before applying algorithms. Then, from the examined algorithms, the deep neural networks will be used. 
+
+With the criterion for further work, the top-5 accuracy and ROC-AUC curve were selected.
