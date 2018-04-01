@@ -21,4 +21,8 @@
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{31}{figure.caption.21}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces The detailed internals of a LSTM\relax }}{40}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The detailed internals of a LSTM\relax }}{45}{figure.caption.32}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{45}{figure.caption.32}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified event structure of data preprocessing\relax }}{46}{figure.caption.34}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Simplified event structure of data preprocessing\relax }}{46}{figure.caption.35}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified event structure of data preprocessing\relax }}{47}{figure.caption.36}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Simplified event structure of data preprocessing\relax }}{47}{figure.caption.37}

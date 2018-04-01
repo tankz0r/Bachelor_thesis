@@ -39,7 +39,7 @@ Tensorflow has a flexible architecture allows easy deployment of computation acr
 	\centering
 	\caption{My caption}
 	\label{my-label}
-	\begin{tabular}{|l|l|l|l|}
+	\begin{tabular}{| p{1cm} | p{1cm} | p{3cm} | p{7cm} |}
 		\hline
 		\textbf{lvl1} & \textbf{lvl2} & \textbf{titles}                  & \textbf{descriptions}                                                                       \\ \hline
 		6             & 29            & Clean Toyota Camry 2008 Silver   & Fairly used Toyota 08 Camry with no problems V4 engine fabric seats and interior            \\ \hline
@@ -139,7 +139,7 @@ The total number of second level categories is 182.
 	\center
 	\includegraphics [scale=0.5] {p3_preprocessing.png}
 	\label{img:p3_preprocessing}  
-	\caption{The detailed internals of a LSTM} 
+	\caption{Simplified event structure of data preprocessing} 
 \end{figure}
 
 
@@ -150,18 +150,49 @@ The total number of second level categories is 182.
 	\centering
 	\caption{Simplified event structure of data preprocessing}
 	\label{my-label}
-	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
+	\begin{tabular}{| p{7cm} | p{10cm} |}
+%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
 		\hline
 		\textbf{Functions}                                    & \textbf{Explanation}                                                                                                                \\ \hline
 		get\_features\_for\_train                             & Unifying function which upload raw data and call nested functions                                                                   \\ \hline
 		extract\_vocabulary                                   & form vocabulary from unique words                                                                                                   \\ \hline
 		get\_tokens                                           & Parallel batch execution of texts preprocessing which save and return preprocessed tokens for both test and train.                  \\ \hline
-		get\_tokens\_lowercase\_spellcheck\_remove\_stopwords & wrap over get\_sentence\_tokens which set necessary flags for it                                                                    \\ \hline
+		get\_tokens\_lowercase\_spellcheck\ & wrap over get\_sentence\_tokens which set necessary flags for it                                                                    \\ \hline
 		get\_sentence\_tokens                                 & recieves single sentence breaks it into tokens, make all of them to lowercase, correct spelling mistakes and replace specific words \\ \hline
 		correct\_spelling                                     & Correct spelling mistakes using dictionary with around 15000 most common mistakes                                                   \\ \hline
 		expand\_negations                                     & replace mobile phones, dates, prices, and common abbreviation with specific words such as \_year\_, price,  \_large\_number\_ etc.  \\ \hline
 		spell\_digits                                         & single digits are replaced with corresponding word 1 $\rightarrow$ one …                                                                          \\ \hline
 		translate                                             & function which makes replacement of words                                                                                           \\ \hline
-	\end{tabulary}
+	\end{tabular}
 \end{table}
 
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4] {p3_sequences_fasttext.png}
+	\label{img:p3_sequences_fasttext}  
+	\caption{Simplified event structure of data preprocessing} 
+\end{figure}
+
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.3] {p3_custom_metrics.png}
+	\label{img:p3_custom_metrics}  
+	\caption{Simplified event structure of data preprocessing} 
+\end{figure}
+
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.3] {p3_custom_callbacks.png}
+	\label{img:p3_custom_callbacks}  
+	\caption{Simplified event structure of data preprocessing} 
+\end{figure}
+
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.5] {p3_train.png}
+	\label{img:p3_train}  
+	\caption{Simplified event structure of data preprocessing} 
+\end{figure}
