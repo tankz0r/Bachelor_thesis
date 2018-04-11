@@ -63,74 +63,35 @@ Supervised learning - the machine learning task of inferring a function from lab
 	\item Neural networks .\cite{manning}
 \end{enumerate}
 
-1.\textbf{ Naive Bayes} - a probabilistic learning method.
- The probability of a document $d$ being in class $c$ is computed as 
- \begin{equation}
- \label{eq:equation5}
- \displaystyle P(c\vert d) \propto P(c) \prod_{1 \leq k \leq n_d} P(t_k \vert c)
- \end{equation}
- 
-where  $P(t_k \vert c)$ is the conditional probability of term  $t_k$ occurring in a document of class $c$. We interpret  $P(t_k \vert c)$ as a measure of how much evidence  $t_k$ contributes that $c$ is the correct class. $P(c)$ is the prior probability of a document occurring in class $c$. If a document's terms do not provide clear evidence for one class versus another, we choose the one that has a higher prior probability.  
-$\langle t_1,t_2,\ldots,t_{n_d}\rangle$ are the tokens in $d$ that are part of the vocabulary we use for classification and $n_d$ is the number of such tokens in $d$.
-\\
 
-In text classification, our goal is to find the best class for the document. The best class in NB classification is the most likely or maximum a posteriori ( MAP ) class $c_{map}$: 
+\section{Model evaluation and validation} \label{sect1_4}
+Machine learning pipeline does not finish with a model evaluation. We want to estimate correctly future data by using special techniques and metrics that are suitable for a particular task.
 
-\begin{equation}
-c_{map} = argmax_{c \in \mathbb{C}} \hat{P}(c \vert d) = argmax_{c \in \mathbb{C}} \hat{P}(c) \prod_{1 \leq k \leq n_d} \hat{P}(t_k \vert c).
-\end{equation}
+Now let us find out what valuation is for?
+\begin{enumerate}
+	\item Validation helps to evaluate model performance, its quality, its ability to generalise.
+	\item Validation can be used to select the best model to perform on unseen data.
+	\item Overfit of the model leads to the inconsistent and poor performance of the model on future data.
+\end{enumerate}
 
-For the priors this estimate is
-
-\begin{equation}
-\label{eq:equation6}
-\displaystyle \hat{P}(c) = \frac{N_c}{N},
-\end{equation}
-
-where $N_c$ is the number of documents in class $c$ and $N$ is the total number of documents.
-\\
-We estimate the conditional probability  $\hat{P}(t\vert c)$ as the relative frequency of term $t$ in documents belonging to class $c$: 
-
-
-\begin{equation}
-\label{eq:equation7}
-\hat{P}(t \vert c) = \frac{T_{ct}+1}{\sum_{t^{'} \in V} (T_{ct^{'}}} + 1),
-\end{equation}
-
-where $T_{ct}$ is the number of occurrences of $t$ in training documents from class $c$, including multiple occurrences of a term in a document
-$T_{ct}$ is a count of occurrences in all positions $k$ in the documents in the training set,
-$V$ - vocabulary
-To eliminate zeros, we use add-one or Laplace smoothing, which simply adds one to each count.\cite[p.258-260]{manning}
-
-\begin{figure}[ht] 
-	\center
-	\includegraphics [scale=0.7] {NB_algorithm}
-	\caption{Naive Bayes algorithm (multinomial model): Training and testing.} 
-	\label{img:NB_algorithm}  
-\end{figure}
-
-2.\textbf{Logistic Regression}.
-For now, we will focus on the binary classification problem in which y can take on only two values, 0 and 1
-
-\section{Model evaluation} \label{sect1_4}
-Model evaluation is not just the end point of our machine learning pipeline. Before we handle any data, we want to plan ahead and use techniques and metrics that are suited for our purposes.
+To better understand each point we need to examine it more deeply.
 
 \subsection{Model Evaluation Applications}
 
-\textbf{Generalization performance} - We want to estimate the predictive performance of our model on future (unseen) data.
-- Ideally, the estimated performance of a model tells how well it performs on unseen data – making predictions on future data is often the main problem we want to solve.
+\textbf{Generalization performance} - we want to estimate the predictive performance of our model on future data.  Therefore it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
 
-\textbf{Model selection} - We want to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
-- Typically, machine learning involves a lot of experimentation. Running a learning algorithm over a training dataset with different hyper parameter settings and different features will result in different models. Since we are typically interested in selecting the best-performing model from this set, we need to find a way to estimate their respective performances in order to rank them against each other.
+\textbf{Model selection} - we want to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
+ 
+- Before machine learning engineers find the best model, they do a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
 
-\textbf{Algorithm selection} - We want to compare different ML algorithms, selecting the best-performing one.
-- We are usually not only experimenting with the one single algorithm that we think would be the “best solution” under the given circumstances. More often than not, we want to compare different algorithms to each other, oftentimes in terms of predictive and computational performance.
+\textbf{Algorithm selection} - in most cases we deal with many algorithms to find best one under the given circumstances. Therefore the natural need is to compare different algorithms to each other, often regarding predictive and computational performance.
+Nevertheless, these three sub-tasks have similarities in terms that we want to estimate the performance of a model, they all require different approaches.
 
 Although these three sub-tasks have all in common that we want to estimate the performance of a model, they all require different approaches. 
 
 \subsection{Model Evaluation Techniques}
 \textbf{Holdout method} (simple train/test split)
-The holdout method is the simplest model evaluation technique. We take our labeled dataset and split it randomly into two parts: A training set and a test set.
+The holdout method is the most straightforward model evaluation technique. We take our labelled dataset and split it randomly into two parts: A training set and a test set.
 
 \begin{figure}[ht] 
 	\center
@@ -148,7 +109,7 @@ Then, we fit a model to the training data and predict the labels of the test set
 	\label{img:eval2}  
 \end{figure}
 
-And the fraction of correct predictions constitutes our estimate of the prediction accuracy.
+And the fraction of correct predictions reflects our estimate of the prediction.
 
 \begin{figure}[ht] 
 	\center
@@ -157,13 +118,12 @@ And the fraction of correct predictions constitutes our estimate of the predicti
 	\label{img:eval3}  
 \end{figure}
 
-We really don’t want to train and evaluate our model on the same training dataset, since it would introduce \textbf{overfitting}. In other words, we can’t tell whether the model simply memorized the training data or not, or whether it generalizes well to new, unseen data. \cite{model_evaluation}
+We don’t want to train and evaluate our model on the same training dataset, because it will lead to \textbf{overfitting} - the model will simply memorise the training data, and it will generalise wrong to unseen data. \cite{model_evaluation}
 
 
 \section{Classification metrics}
 
-Classification problems are probably the most common type of ML problem and as such there are many metrics that can be used to evaluate predictions for these problems. We will review some of them.
-
+Classification problems are probably the most common type of ML problem, and therefore many metrics can be used to evaluate predictions of these problems. The most frequently used for classification problem are:
 
 \textbf{Accuracy}
 ~\\
@@ -173,12 +133,11 @@ Accuracy simply measures what percent of your predictions were correct. It's the
 accuracy = {\frac{correct}{predictions}}
 \end{equation}
 
-Accuracy is also the most misused metric. It is really only suitable when there are an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
+Accuracy measures merely what percent of forecasts were correct.  Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
 
 \textbf{Confusion Matrix}
 ~\\
 The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
-
 
 \newcommand\MyBox[2]{
 	\fbox{\lower0.75cm
@@ -208,12 +167,12 @@ The confusion matrix is a handy presentation of the accuracy of a model with 2 o
 	 
 \end{figure}
 
-Confusion matrix allows you to compute various classification metrics, and these metrics can guide your model selection.
+Confusion matrix allows you to compute various classification metrics.
 
 \textbf{Precision and Recall}
 ~\\
-Precision and recall are actually two metrics. But they are often used together.
 
+Precision and recall are two metrics. But they are often used together.
 \textbf{Precision} answers the question: What percent of positive predictions were correct?
 
 \begin{equation}
