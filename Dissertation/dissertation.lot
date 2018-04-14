@@ -1,14 +1,13 @@
-\select@language {russian}
+\babel@toc {russian}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Feature vector\relax }}{15}{table.caption.9}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Top-10 word lists for the center word on 5 hidden layer neurons.\relax }}{36}{table.caption.21}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Top-10 word lists for the center word on the model output.\relax }}{37}{table.caption.22}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Top-10 word lists for the first word on the model output.\relax }}{37}{table.caption.23}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces My caption\relax }}{42}{table.caption.26}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Training set general information\relax }}{42}{table.caption.27}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Information about first level categories\relax }}{43}{table.caption.28}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Information about second level categories\relax }}{44}{table.caption.29}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Information about categorical features\relax }}{44}{table.caption.30}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Simplified event structure of data preprocessing\relax }}{45}{table.caption.32}
+\contentsline {table}{\numberline {3.1}{\ignorespaces The hierarchy of categories\relax }}{33}{table.caption.21}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Structure of the data files\relax }}{34}{table.caption.22}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Training set general information\relax }}{34}{table.caption.23}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Information about first level categories\relax }}{35}{table.caption.24}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Information about second level categories\relax }}{36}{table.caption.25}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Information about categorical features\relax }}{36}{table.caption.26}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Simplified event structure of data preprocessing\relax }}{38}{table.caption.28}
+\addvspace {10\p@ }

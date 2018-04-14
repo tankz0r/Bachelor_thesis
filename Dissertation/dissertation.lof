@@ -1,4 +1,4 @@
-\select@language {russian}
+\babel@toc {russian}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Classes, training set, and test set in text classification.\relax }}{7}{figure.caption.3}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning work flow.\relax }}{8}{figure.caption.4}
@@ -18,10 +18,10 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Fully connected layer of CNN\relax }}{28}{figure.caption.18}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Back propagation through max pulling layer\relax }}{29}{figure.caption.19}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{30}{figure.caption.20}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces The detailed internals of a LSTM\relax }}{39}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{44}{figure.caption.31}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified event structure of data preprocessing\relax }}{45}{figure.caption.33}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Simplified event structure of data preprocessing\relax }}{45}{figure.caption.34}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified event structure of data preprocessing\relax }}{46}{figure.caption.35}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Simplified event structure of data preprocessing\relax }}{46}{figure.caption.36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{37}{figure.caption.27}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified event structure of data preprocessing\relax }}{37}{figure.caption.29}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Simplified event structure of data preprocessing\relax }}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified event structure of data preprocessing\relax }}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Simplified event structure of data preprocessing\relax }}{39}{figure.caption.32}
+\addvspace {10\p@ }
