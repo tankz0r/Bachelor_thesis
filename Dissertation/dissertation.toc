@@ -1,4 +1,4 @@
-\babel@toc {russian}{}
+\select@language {russian}
 \contentsline {chapter}{Abbreviation}{4}{chapter*.1}
 \contentsline {chapter}{Introduction}{5}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Text classification}{6}{chapter.1}
@@ -17,17 +17,17 @@
 \contentsline {subsection}{\numberline {2.1.3}Embeddings}{16}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Deep learning algorithms for text classification}{24}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Convolution Neural Networks}{24}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Recurrent neural networks}{30}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Advantages and drawbacks of different architectures}{30}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Summary of the section}{31}{subsection.2.2.4}
-\contentsline {chapter}{\numberline {3}Testing and practical application of text classification using software}{32}{chapter.3}
-\contentsline {section}{\numberline {3.1}Software selection}{32}{section.3.1}
-\contentsline {section}{\numberline {3.2}Dataset selection and exploration}{33}{section.3.2}
-\contentsline {section}{\numberline {3.3}Data preparation}{34}{section.3.3}
-\contentsline {chapter}{\numberline {4}Classification results evaluation}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hyper-parameters fine tuning}{40}{section.4.1}
-\contentsline {chapter}{Conclusion}{41}{chapter*.33}
-\contentsline {chapter}{Bibliography}{42}{section*.34}
-\contentsline {chapter}{List of figures}{44}{section*.36}
-\contentsline {chapter}{List of tables}{45}{section*.37}
-\contentsline {chapter}{\numberline {\CYRA }\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrery } \IeC {\cyrv }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyrl }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrv } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }}{46}{appendix.A}
+\contentsline {subsection}{\numberline {2.2.2}Recurrent neural networks and their modifications}{30}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Advantages and drawbacks of different architectures}{33}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Summary of the section}{33}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Testing and practical application of text classification using software}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Software selection}{35}{section.3.1}
+\contentsline {section}{\numberline {3.2}Dataset selection and exploration}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Data preparation}{37}{section.3.3}
+\contentsline {chapter}{\numberline {4}Classification results evaluation}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hyper-parameters fine tuning}{43}{section.4.1}
+\contentsline {chapter}{Conclusion}{44}{chapter*.36}
+\contentsline {chapter}{Bibliography}{45}{section*.37}
+\contentsline {chapter}{List of figures}{47}{section*.39}
+\contentsline {chapter}{List of tables}{48}{section*.40}
+\contentsline {chapter}{\numberline {\CYRA }\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrery } \IeC {\cyrv }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyrl }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrv } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }}{49}{appendix.A}

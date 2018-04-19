@@ -1,21 +1,21 @@
-\babel@toc {russian}{}
+\select@language {russian}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Feature vector\relax }}{15}{table.caption.9}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces The hierarchy of categories\relax }}{33}{table.caption.21}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Structure of the data files\relax }}{34}{table.caption.22}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Training set general information\relax }}{34}{table.caption.23}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Information about first level categories\relax }}{35}{table.caption.24}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Information about second level categories\relax }}{36}{table.caption.25}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Information about categorical features\relax }}{36}{table.caption.26}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Simplified event structure of data preprocessing\relax }}{38}{table.caption.28}
+\contentsline {table}{\numberline {3.1}{\ignorespaces The hierarchy of categories\relax }}{36}{table.caption.24}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Structure of the data files\relax }}{37}{table.caption.25}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Training set general information\relax }}{37}{table.caption.26}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Information about first level categories\relax }}{38}{table.caption.27}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Information about second level categories\relax }}{39}{table.caption.28}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Information about categorical features\relax }}{39}{table.caption.29}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Simplified event structure of data preprocessing\relax }}{41}{table.caption.31}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{46}{table.A.1}
-\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{47}{table.A.1}
-\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{48}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{49}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{50}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{51}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{52}{table.A.1}
+\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{53}{table.A.1}
+\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{54}{table.A.1}
+\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{55}{table.A.1}
