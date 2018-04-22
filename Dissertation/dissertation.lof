@@ -20,9 +20,15 @@
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{30}{figure.caption.20}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{37}{figure.caption.27}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified event structure of data preprocessing\relax }}{37}{figure.caption.29}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Simplified event structure of data preprocessing\relax }}{37}{figure.caption.30}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified event structure of data preprocessing\relax }}{38}{figure.caption.31}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Simplified event structure of data preprocessing\relax }}{39}{figure.caption.32}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 1\relax }}{37}{figure.caption.29}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 3\relax }}{38}{figure.caption.30}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 4\relax }}{39}{figure.caption.31}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectures of Bi-LSTM models with 100 units \relax }}{40}{figure.caption.32}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{41}{figure.caption.33}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{42}{figure.caption.34}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{42}{figure.caption.35}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Models batch time by epochs\relax }}{43}{figure.caption.36}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Bi-LSTM 100 units. Histogram of output from forward recurrent layers (a); histogram of weights from backward recurrent layers (b)\relax }}{43}{figure.caption.37}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bi-LSTM 100 units. Histogram of weights from first FFNN layer.\relax }}{44}{figure.caption.38}
 \addvspace {10\p@ }

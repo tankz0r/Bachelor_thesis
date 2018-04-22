@@ -25,9 +25,10 @@
 \contentsline {section}{\numberline {3.2}Dataset selection and exploration}{33}{section.3.2}
 \contentsline {section}{\numberline {3.3}Data preparation}{34}{section.3.3}
 \contentsline {chapter}{\numberline {4}Classification results evaluation}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hyper-parameters fine tuning}{40}{section.4.1}
-\contentsline {chapter}{Conclusion}{41}{chapter*.33}
-\contentsline {chapter}{Bibliography}{42}{section*.34}
-\contentsline {chapter}{List of figures}{44}{section*.36}
-\contentsline {chapter}{List of tables}{45}{section*.37}
-\contentsline {chapter}{\numberline {\CYRA }\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrery } \IeC {\cyrv }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyrl }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrv } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }}{46}{appendix.A}
+\contentsline {section}{\numberline {4.1}Base line model}{40}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hyper-parameters fine tuning}{41}{section.4.2}
+\contentsline {chapter}{Conclusion}{45}{chapter*.39}
+\contentsline {chapter}{Bibliography}{46}{section*.40}
+\contentsline {chapter}{List of figures}{48}{section*.42}
+\contentsline {chapter}{List of tables}{49}{section*.43}
+\contentsline {chapter}{\numberline {\CYRA }Appendix}{50}{appendix.A}
