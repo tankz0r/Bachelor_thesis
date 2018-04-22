@@ -19,7 +19,10 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \bibstyle{../BibTeX-Styles/utf8gost71u}
-\babel@aux{russian}{}
+\select@language{russian}
+\@writefile{toc}{\select@language{russian}}
+\@writefile{lof}{\select@language{russian}}
+\@writefile{lot}{\select@language{russian}}
 \@writefile{toc}{\contentsline {chapter}{Abbreviation}{4}{chapter*.1}}
 \@writefile{toc}{\contentsline {chapter}{Introduction}{5}{chapter*.2}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Text classification}{6}{chapter.1}}
@@ -129,16 +132,29 @@
 \newlabel{eq:CNN_softmax_grad_long}{{2.40}{28}{Convolution Neural Networks}{equation.2.2.40}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Back propagation through max pulling layer\relax }}{29}{figure.caption.19}}
 \newlabel{img:backprog_max_pulling}{{2.10}{29}{Back propagation through max pulling layer\relax }{figure.caption.19}{}}
+\citation{wiki_def_rnn}
+\citation{colah_lstm}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{30}{figure.caption.20}}
 \newlabel{img:conv_grad}{{2.11}{30}{Back propagation through convolution layer\relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Recurrent neural networks}{30}{subsection.2.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Advantages and drawbacks of different architectures}{30}{subsection.2.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Recurrent neural networks and their modifications}{30}{subsection.2.2.2}}
+\citation{rnn_problems}
+\citation{colah_lstm}
+\citation{colah_lstm}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces The structure of Recurrent neural network\relax }}{31}{figure.caption.21}}
+\newlabel{img:rnn_structure}{{2.12}{31}{The structure of Recurrent neural network\relax }{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces The architecture of Recurrent neural network\relax }}{31}{figure.caption.22}}
+\newlabel{img:SimpleRNN}{{2.13}{31}{The architecture of Recurrent neural network\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces The architecture of Long Short Term Memory neural network\relax }}{31}{figure.caption.23}}
+\newlabel{img:LSTM}{{2.14}{31}{The architecture of Long Short Term Memory neural network\relax }{figure.caption.23}{}}
+\citation{colah_lstm}
 \citation{wildml}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Summary of the section}{31}{subsection.2.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Advantages and drawbacks of different architectures}{33}{subsection.2.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Summary of the section}{33}{subsection.2.2.4}}
 \citation{fasttext}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Testing and practical application of text classification using software}{32}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Testing and practical application of text classification using software}{35}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+<<<<<<< HEAD
 \newlabel{chapt3}{{3}{32}{Testing and practical application of text classification using software}{chapter.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Software selection}{32}{section.3.1}}
 \newlabel{sect3_1}{{3.1}{32}{Software selection}{section.3.1}{}}
@@ -191,6 +207,46 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Bi-LSTM 100 units. Histogram of weights from first FFNN layer.\relax }}{44}{figure.caption.38}}
 \newlabel{img:bilstm_dense}{{4.7}{44}{Bi-LSTM 100 units. Histogram of weights from first FFNN layer.\relax }{figure.caption.38}{}}
 \@writefile{toc}{\contentsline {chapter}{Conclusion}{45}{chapter*.39}}
+=======
+\newlabel{chapt3}{{3}{35}{Testing and practical application of text classification using software}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Software selection}{35}{section.3.1}}
+\newlabel{sect3_1}{{3.1}{35}{Software selection}{section.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Dataset selection and exploration}{36}{section.3.2}}
+\newlabel{sect3_2}{{3.2}{36}{Dataset selection and exploration}{section.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces The hierarchy of categories\relax }}{36}{table.caption.24}}
+\newlabel{my-label}{{3.1}{36}{The hierarchy of categories\relax }{table.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Structure of the data files\relax }}{37}{table.caption.25}}
+\newlabel{data_structure}{{3.2}{37}{Structure of the data files\relax }{table.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Training set general information\relax }}{37}{table.caption.26}}
+\newlabel{general}{{3.3}{37}{Training set general information\relax }{table.caption.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Data preparation}{37}{section.3.3}}
+\newlabel{sect3_3}{{3.3}{37}{Data preparation}{section.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Information about first level categories\relax }}{38}{table.caption.27}}
+\newlabel{lvl1}{{3.4}{38}{Information about first level categories\relax }{table.caption.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Information about second level categories\relax }}{39}{table.caption.28}}
+\newlabel{my-label}{{3.5}{39}{Information about second level categories\relax }{table.caption.28}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Information about categorical features\relax }}{39}{table.caption.29}}
+\newlabel{my-label}{{3.6}{39}{Information about categorical features\relax }{table.caption.29}{}}
+\newlabel{img:p3_preprocessing}{{\caption@xref {img:p3_preprocessing}{ on input line 176}}{40}{Data preparation}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{40}{figure.caption.30}}
+\newlabel{img:p3_sequences_fasttext}{{\caption@xref {img:p3_sequences_fasttext}{ on input line 245}}{40}{Data preparation}{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified event structure of data preprocessing\relax }}{40}{figure.caption.32}}
+\newlabel{img:p3_custom_metrics}{{\caption@xref {img:p3_custom_metrics}{ on input line 253}}{40}{Data preparation}{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Simplified event structure of data preprocessing\relax }}{40}{figure.caption.33}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Simplified event structure of data preprocessing\relax }}{41}{table.caption.31}}
+\newlabel{my-label}{{3.7}{41}{Simplified event structure of data preprocessing\relax }{table.caption.31}{}}
+\newlabel{img:p3_custom_callbacks}{{\caption@xref {img:p3_custom_callbacks}{ on input line 261}}{41}{Data preparation}{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified event structure of data preprocessing\relax }}{41}{figure.caption.34}}
+\newlabel{img:p3_train}{{\caption@xref {img:p3_train}{ on input line 269}}{42}{Data preparation}{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Simplified event structure of data preprocessing\relax }}{42}{figure.caption.35}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Classification results evaluation}{43}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chapt4}{{4}{43}{Classification results evaluation}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Hyper-parameters fine tuning}{43}{section.4.1}}
+\newlabel{sect4_1}{{4.1}{43}{Hyper-parameters fine tuning}{section.4.1}{}}
+\@writefile{toc}{\contentsline {chapter}{Conclusion}{44}{chapter*.36}}
+>>>>>>> 2e9ac67ad70958404ebd12add44a6d7b22f30e19
 \bibdata{../biblio/othercites}
 \bibcite{jurafsky}{1}
 \bibcite{manning}{2}
@@ -202,7 +258,11 @@
 \bibcite{svm}{8}
 \bibcite{info_retrievel}{9}
 \bibcite{assignment1}{10}
+<<<<<<< HEAD
 \@writefile{toc}{\contentsline {chapter}{Bibliography}{46}{section*.40}}
+=======
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{45}{section*.37}}
+>>>>>>> 2e9ac67ad70958404ebd12add44a6d7b22f30e19
 \bibcite{cbow_skip}{11}
 \bibcite{CNN}{12}
 \bibcite{CNN_habr}{13}
@@ -211,12 +271,26 @@
 \bibcite{kim}{16}
 \bibcite{Kalchbrenner}{17}
 \bibcite{wildml}{18}
+<<<<<<< HEAD
 \@writefile{toc}{\contentsline {chapter}{List of figures}{48}{section*.42}}
 \@writefile{toc}{\contentsline {chapter}{List of tables}{49}{section*.43}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {\CYRA }Appendix}{50}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{AppendixA}{{\CYRA }{50}{Appendix}{appendix.A}{}}
+=======
+\bibcite{wiki_def_rnn}{19}
+\bibcite{colah_lstm}{20}
+\bibcite{rnn_problems}{21}
+\@writefile{toc}{\contentsline {chapter}{List of figures}{47}{section*.39}}
+\@writefile{toc}{\contentsline {chapter}{List of tables}{48}{section*.40}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {\CYRA }\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrery } \IeC {\cyrv }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyrl }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrv } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }}{49}{appendix.A}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{AppendixA}{{\CYRA }{49}{Примеры вставки листингов программного кода}{appendix.A}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{49}{table.A.1}}
+\newlabel{tab:amortecimentos}{{\CYRA .1}{49}{Classification report}{table.A.1}{}}
+>>>>>>> 2e9ac67ad70958404ebd12add44a6d7b22f30e19
 \@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{50}{table.A.1}}
 \newlabel{tab:amortecimentos}{{\CYRA .1}{50}{Classification report}{table.A.1}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{51}{table.A.1}}
@@ -225,21 +299,37 @@
 \newlabel{tab:amortecimentos}{{\CYRA .1}{52}{Classification report}{table.A.1}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{53}{table.A.1}}
 \newlabel{tab:amortecimentos}{{\CYRA .1}{53}{Classification report}{table.A.1}{}}
+<<<<<<< HEAD
 \@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{54}{table.A.1}}
 \newlabel{tab:amortecimentos}{{\CYRA .1}{54}{Classification report}{table.A.1}{}}
+=======
+>>>>>>> 2e9ac67ad70958404ebd12add44a6d7b22f30e19
 \gdef \LT@i {\LT@entry 
     {1}{63.4356pt}\LT@entry 
     {1}{65.01059pt}\LT@entry 
     {1}{44.37381pt}\LT@entry 
     {1}{57.77597pt}\LT@entry 
     {1}{58.54515pt}}
+<<<<<<< HEAD
 \@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{55}{table.A.1}}
 \newlabel{tab:amortecimentos}{{\CYRA .1}{55}{Classification report}{table.A.1}{}}
+=======
+\@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{54}{table.A.1}}
+\newlabel{tab:amortecimentos}{{\CYRA .1}{54}{Classification report}{table.A.1}{}}
+>>>>>>> 2e9ac67ad70958404ebd12add44a6d7b22f30e19
 \gdef \FBLTpage@i {\gdef\flrow@LTlastpage{7}}
-\expandafter\ifx\csname c@citenum@totc\endcsname\relax\newcounter{citenum@totc}\fi\setcounter{citenum@totc}{18}
+\expandafter\ifx\csname c@citenum@totc\endcsname\relax\newcounter{citenum@totc}\fi\setcounter{citenum@totc}{21}
 \providecommand\totalcount@set[2]{}
+<<<<<<< HEAD
 \totalcount@set{figure}{28}
 \totalcount@set{table}{9}
 \@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{56}{table.A.1}}
 \newlabel{tab:amortecimentos}{{\CYRA .1}{56}{Classification report}{table.A.1}{}}
 \newlabel{TotPages}{{56}{56}{}{page.56}{}}
+=======
+\totalcount@set{figure}{25}
+\totalcount@set{table}{9}
+\@writefile{lot}{\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{55}{table.A.1}}
+\newlabel{tab:amortecimentos}{{\CYRA .1}{55}{Classification report}{table.A.1}{}}
+\newlabel{TotPages}{{55}{55}{}{page.55}{}}
+>>>>>>> 2e9ac67ad70958404ebd12add44a6d7b22f30e19

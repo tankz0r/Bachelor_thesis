@@ -608,7 +608,73 @@ Derivation of gradient for the bias element.
 \frac{\partial J}{\partial y^{l-1}_{ij}}= \sum_{i'}\sum_{j'} \frac{\partial J}{\partial y^l_{i'j'}}\frac{\partial y^l_{i'j'}}{\partial x^l_{i'j'}} \cdot w^{l}_{(i-i's)(j-j's)}
 \end{equation}
 
-\subsection{Recurrent neural networks} 
+\subsection{Recurrent neural networks and their modifications} 
+A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed graph along a sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to tasks such as natural language processing. \cite{wiki_def_rnn}
+Recurrent neural networks are networks with loops in them, allowing information to persist.
+Figure \ref{img:rnn_structure} \cite{colah_lstm} illustrates RNN where, $A$ looks at some input $x_t$ and outputs a value $h_t$. $A$ loop allows information to be passed from one step of the network to the next.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4]{rnn_structure}
+	\caption{The structure of Recurrent neural network} 
+	\label{img:rnn_structure}  
+\end{figure}
+
+However, this type of NN has problems called "Vanishing Gradient and Gradient Explosion Problems". 
+This problem was detailed explored in \cite{rnn_problems}. Therefore, the most successful for 
+practical issues are modified RNN. I will use the most popular type - Long Short Term Memory networks.
+
+LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior. This features is achieved by more complex structure.
+We can compare both architectures in Figure \ref{img:SimpleRNN}\cite{colah_lstm} and Figure \ref{img:LSTM}\cite{colah_lstm}.
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4]{SimpleRNN}
+	\caption{The architecture of Recurrent neural network} 
+	\label{img:SimpleRNN}  
+\end{figure} 
+
+\begin{figure}[ht] 
+	\center
+	\includegraphics [scale=0.4]{LSTM}
+	\caption{The architecture of Long Short Term Memory neural network} 
+	\label{img:LSTM}  
+\end{figure} 
+
+The first step in LSTM is to decide what information we are going to throw away from the cell state. This decision is 
+made by a sigmoid layer called the forget gate layer. It 
+looks at $h_{t-1}$ and $x_t$, and outputs a number between 0 
+and 1 for each number in the cell state $C_{t-1}$.
+
+\begin{equation}
+f_t = \sigma(W_f[h_{t-1}, x_t] + b_f)
+\end{equation}
+
+The next step is to decide what new information we’re going to store in the cell state. This has two parts. First, a sigmoid layer called the input gate layer decides which values we’ll update. Next, a $tanh$ layer creates a vector of new candidate values, $\tilde{C}_t$, that could be added to the state. In the next step, we combine these two to create an update to the state.
+
+\begin{equation}
+i_t = \sigma(W_i[h_{t-1}, x_t] + b_i)
+\end{equation}
+
+\begin{equation}
+\tilde{C}_t = \tanh(W_C[h_{t-1}, x_t] + b_C)
+\end{equation}
+
+It’s now time to update the old cell state, $C_{t-1}$, into the new cell state $C_t$. We multiply the old state by $f_t$, forgetting the things we decided to forget earlier. Then we add $i_t*\tilde{C}_t$. This is the new candidate values, scaled by how much we decided to update each state value.
+
+\begin{equation}
+\tilde{C}_t = f_t*{C}_{t-1} + i_t*\tilde{C}_t
+\end{equation}
+
+Finally, we need to decide what we’re going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we’re going to output. Then, we put the cell state through $\tanh$ (to push the values to be between -1 and 1) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to \cite{colah_lstm} .
+
+\begin{equation}
+o_t = \sigma(W_o[h_{t-1}, x_t] + b_o)
+\end{equation}
+
+\begin{equation}
+h_t = o_t * \tanh(C_t)
+\end{equation}
 
 \subsection{Advantages and drawbacks of different architectures} 
 
