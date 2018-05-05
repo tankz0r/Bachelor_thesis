@@ -1,4 +1,21 @@
 \chapter{Classification results evaluation} \label{chapt4}
+
+\section{General steps} \label{sect4_1}
+\noindent
+In this section I need to:
+\begin{itemize}
+	\item visualize results of each training step, to understand hyperparameters better
+	\item estimate networks by types 
+	\item chose hyperparameters to gain the best evaluation metrics  
+	\item train each network on different amount of epochs
+	\item save network parameters and weights after each epoch. It will give me a possibility it will be easy to restore the best model if network accuracy will go down.
+\end{itemize}
+
+\noindent
+Training time is very important parameter. Therefore, I would like train NN models which have nearly the same training time.
+
+
+
 \section{Base line model} \label{sect4_2}
 It is a common knowledge that RNN based neural networks shows the best performance for the text based problems. For my goal, I used Bidirectional Long-Short Term Memory (bi-LSTM) model with 100 ... HERE DESCRIBE MORE ABOUT PARAMETERS 
 
@@ -90,7 +107,9 @@ top\_k\_categorical\_accuracy
 
 
 
-\section{Convolution neural network} \label{sect4_2}
+\section{Convolution neural network} \label{sect4_3}
+
+
 
 \begin{figure}[ht] 
 	\center
@@ -210,7 +229,7 @@ top\_k\_categorical\_accuracy
 
 
 
-\section{Convolution neural network with different regularization} \label{sect4_3}
+\section{Convolution neural network with different regularization} \label{sect4_4}
 
 %'drop_1':  0.25,
 %'drop_2': 0.25
@@ -312,11 +331,11 @@ top\_k\_categorical\_accuracy
 	\label{img:category_crossentropy}  
 \end{figure}
 
-\section{Final model} \label{sect4_4}
+\section{Final model} \label{sect4_5}
 
 
 
-\section{Classification results} \label{sect4_4}
+\section{Classification results} \label{sect4_6}
 
 
 
