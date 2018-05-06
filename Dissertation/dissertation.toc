@@ -1,4 +1,4 @@
-\select@language {russian}
+\babel@toc {russian}{}
 \contentsline {chapter}{Abbreviation}{4}{chapter*.1}
 \contentsline {chapter}{Introduction}{5}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Text classification}{6}{chapter.1}
@@ -29,12 +29,12 @@
 \contentsline {chapter}{\numberline {4}Classification results evaluation}{44}{chapter.4}
 \contentsline {section}{\numberline {4.1}General steps}{44}{section.4.1}
 \contentsline {section}{\numberline {4.2}Base line model}{44}{section.4.2}
-\contentsline {section}{\numberline {4.3}Convolution neural network}{44}{section.4.3}
-\contentsline {section}{\numberline {4.4}Convolution neural network with different regularization}{45}{section.4.4}
-\contentsline {section}{\numberline {4.5}Final model}{45}{section.4.5}
-\contentsline {section}{\numberline {4.6}Classification results}{45}{section.4.6}
-\contentsline {chapter}{Conclusion}{60}{chapter*.60}
-\contentsline {chapter}{Bibliography}{61}{section*.61}
-\contentsline {chapter}{List of figures}{63}{section*.63}
-\contentsline {chapter}{List of tables}{65}{section*.64}
-\contentsline {chapter}{\numberline {\CYRA }Appendix}{66}{appendix.A}
+\contentsline {section}{\numberline {4.3}Convolution neural network}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}Convolution neural network with different regularization}{57}{section.4.4}
+\contentsline {section}{\numberline {4.5}Final model}{61}{section.4.5}
+\contentsline {section}{\numberline {4.6}Classification results}{62}{section.4.6}
+\contentsline {chapter}{Conclusion}{63}{chapter*.65}
+\contentsline {chapter}{Bibliography}{64}{section*.66}
+\contentsline {chapter}{List of figures}{66}{section*.68}
+\contentsline {chapter}{List of tables}{68}{section*.69}
+\contentsline {chapter}{\numberline {\CYRA }Appendix}{69}{appendix.A}
