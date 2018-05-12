@@ -31,10 +31,10 @@
 \contentsline {section}{\numberline {4.2}Base line model}{44}{section.4.2}
 \contentsline {section}{\numberline {4.3}Convolution neural network}{50}{section.4.3}
 \contentsline {section}{\numberline {4.4}Convolution neural network with different regularization}{57}{section.4.4}
-\contentsline {section}{\numberline {4.5}Final model}{61}{section.4.5}
-\contentsline {section}{\numberline {4.6}Classification results}{62}{section.4.6}
-\contentsline {chapter}{Conclusion}{63}{chapter*.65}
-\contentsline {chapter}{Bibliography}{64}{section*.66}
-\contentsline {chapter}{List of figures}{66}{section*.68}
-\contentsline {chapter}{List of tables}{68}{section*.69}
-\contentsline {chapter}{\numberline {\CYRA }Appendix}{69}{appendix.A}
+\contentsline {section}{\numberline {4.5}Final model}{63}{section.4.5}
+\contentsline {section}{\numberline {4.6}Summary of the section}{65}{section.4.6}
+\contentsline {chapter}{Conclusion}{66}{chapter*.69}
+\contentsline {chapter}{Bibliography}{67}{section*.70}
+\contentsline {chapter}{List of figures}{69}{section*.72}
+\contentsline {chapter}{List of tables}{71}{section*.73}
+\contentsline {chapter}{\numberline {\CYRA }Appendix}{72}{appendix.A}

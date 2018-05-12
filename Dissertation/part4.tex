@@ -313,28 +313,58 @@ In this section I tried to use different regularization to get rid of overfittin
 %pink-withl2regul_0.001_0.01_epoch15_outdim183_nbfilters512_drop10.25_drop20.25
 %cyan-withl2regul_epoch15_outdim183_nbfilters512_drop10.25_drop20.25
 
+
+Modifications:
 \begin{enumerate}
-	\item I we saw in the previous section the convolution layer did not train enough so I thought it was caused because of big dropout rate. Therefore I decreased it in two times.
-	\item I also added the l2-regularization equals to 0.001 for convolution layers and changed dropout rate to 0.25 both for dense and convolution layers. Moreover, I decided to configure my training algorithm, so I used Adam with learning rate 1e-4. 
-	\item The same configuration as previous but Adam was with learning rate 1e-3.
-	\item The same as 2, but l2-regularization was equal to 0.01
+	\item In the previous section the convolution layer did not train enough,
+	 so I thought it was caused because of big dropout rate. Therefore I decreased it in two times.
+	\item I also added the l2-regularization equals to 0.01 both for convolution layers and dense layer. 
+	Dropout equals to the rate 0.5 both for dense and convolution layers. 
+	Moreover, I decided to configure my training algorithm, so I used Adam with learning rate 1e-4. 
+	\item l2-regularization equals to 0.001 for convolution layers and 0.01 for dense layer. 
+	Adam was with learning rate 1e-3. 
+	Dropout rate equals to 0.25 both for dense and convolution layers. 
+	\item l2-regularization equals to 0.001 for convolution layers and 0.01 for dense layers. 
+	Dropout rate equals to 0.25 for convolution layers and 0.5 for dense layers.
 \end{enumerate}
 
 \begin{table}[h]
 	\centering
-	\caption{Analysis of top k accuracy}
+	\caption{Analysis of categorical accuracy}
 	\label{my-label}
-	\begin{tabular}{| p{7cm} | p{3cm} | p{3cm} |}
+	\begin{tabular}{| p{3cm} | p{3cm} | p{3cm} |}
 		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
 		\hline
-		\textbf{Number of filters}  & \textbf{Train} & \textbf{Test}                                                    
+		\textbf{Modification type}  & \textbf{Train} & \textbf{Test}                                                    
 		\\ \hline
-		128   &  0.9259 & 0.9191
+		1   &  0.8321 & 0.7993
 		\\ \hline
-		256   &  0.9495 & 0.9286 
+		2   &  0.7101 & 0.7146 
 		\\ \hline
-		512   &  0.9696 & 0.9342
+		3   &  0.9026 & 0.7882
 		\\ \hline		
+		4   &  0.8514 & 0.7449
+		\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{Analysis of categorical cross entropy}
+	\label{my-label}
+	\begin{tabular}{| p{3cm} | p{3cm} | p{3cm} |}
+		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
+		\hline
+		\textbf{Modification type}  & \textbf{Train} & \textbf{Test}                                                    
+		\\ \hline
+		1   &  0.7894 & 0.9405
+		\\ \hline
+		2   &   1.504 &  1.7040
+		\\ \hline
+		3   &  0.4928 & 1.4280
+		\\ \hline		
+		4   &  0.7151 & 1.6890
+		\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -342,37 +372,26 @@ In this section I tried to use different regularization to get rid of overfittin
 	\centering
 	\caption{Analysis of top k accuracy}
 	\label{my-label}
-	\begin{tabular}{| p{7cm} | p{3cm} | p{3cm} |}
+	\begin{tabular}{| p{3cm} | p{3cm} | p{3cm} |}
 		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
 		\hline
-		\textbf{Number of filters}  & \textbf{Train} & \textbf{Test}                                                    
+		\textbf{Modification type}  & \textbf{Train} & \textbf{Test}                                                    
 		\\ \hline
-		128   &  0.9259 & 0.9191
+		1   &  0.9681 & 0.9348
 		\\ \hline
-		256   &  0.9495 & 0.9286 
+		2  &   0.8333 & 0.8363
 		\\ \hline
-		512   &  0.9696 & 0.9342
+		3   &  0.9704 & 0.9179
 		\\ \hline		
+		4   &  0.9453 & 0.8921
+		\\ \hline
 	\end{tabular}
 \end{table}
 
-\begin{table}[h]
-	\centering
-	\caption{Analysis of top k accuracy}
-	\label{my-label}
-	\begin{tabular}{| p{7cm} | p{3cm} | p{3cm} |}
-		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
-		\hline
-		\textbf{Number of filters}  & \textbf{Train} & \textbf{Test}                                                    
-		\\ \hline
-		128   &  0.9259 & 0.9191
-		\\ \hline
-		256   &  0.9495 & 0.9286 
-		\\ \hline
-		512   &  0.9696 & 0.9342
-		\\ \hline		
-	\end{tabular}
-\end{table}
+\noindent
+\\
+According to the results, it can be clearly seen that model with modifications number 3 and 4 were overfitted for sure.
+Model number 1 has lower overfit rate. The most stable model was number 2, which demonstrated the same results on test and train dataset. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -418,51 +437,144 @@ In this section I tried to use different regularization to get rid of overfittin
 	\label{img:4CNN_timing}  
 \end{figure}
 
-
-
+ 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
-		\center{\includegraphics[width=0.5\linewidth]{part4/4CNN-conv-1.png} \\ а}
+		\center{\includegraphics[width=1\linewidth]{part4/4CNN-conv-1.png} \\ а, b}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[ht]{1\linewidth}
-		\center{\includegraphics[width=0.5\linewidth]{part4/4CNN-conv-2.png} \\ b}
+		\center{\includegraphics[width=1\linewidth]{part4/4CNN-conv-2.png} \\ c, d}
 	\end{minipage}
-	\caption{Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers}
+	\caption{Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of convolution layers}
+	\label{img:category_crossentropy}  
+\end{figure}
+
+\clearpage
+If we compare results of weights histograms with the ones in Section \ref{sect4_3} we can see a significant difference in distributions.
+Which is mostly caused by different types of regularizations. We can also see that convolution layers from model 1 and 3 change through epochs which
+means that they learn.  
+
+\begin{figure}[ht]
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=1\linewidth]{part4/4CNN-merge3-1.png} \\ а, b}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=1\linewidth]{part4/4CNN-merge3-2.png} \\ c, d}
+	\end{minipage}
+	\caption{Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of merged layers}
+	\label{img:category_crossentropy}  
+\end{figure}
+
+\clearpage
+Similar situation we can see with dense layers. The weights are put into ranges between -0.1 and 0.1 where l2-regularizations was used.
+The changes through epochs we can see only in first two models which are marked with blue and gray colors.   
+
+\begin{figure}[ht]
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-1.png} \\ а, b}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ c, d}
+	\end{minipage}
+	\caption{Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4.  Histogram of dense layers}
 	\label{img:category_crossentropy}  
 \end{figure}
 
 
-\begin{figure}[ht]
-	\begin{minipage}[ht]{1\linewidth}
-		\center{\includegraphics[width=0.5\linewidth]{part4/4CNN-merge3-1.png} \\ а}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[ht]{1\linewidth}
-		\center{\includegraphics[width=0.5\linewidth]{part4/4CNN-merge3-2.png} \\ b}
-	\end{minipage}
-	\caption{Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers}
-	\label{img:category_crossentropy}  
-\end{figure}
-
-
-\begin{figure}[ht]
-	\begin{minipage}[ht]{1\linewidth}
-		\center{\includegraphics[width=0.5\linewidth]{part4/4CNN-dense-1.png} \\ а}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[ht]{1\linewidth}
-		\center{\includegraphics[width=0.5\linewidth]{part4/4CNN-dense-2.png} \\ b}
-	\end{minipage}
-	\caption{Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers}
-	\label{img:category_crossentropy}  
-\end{figure}
+As we can see regularizations play the key role to avoid overfitting of the models. High dropout rate in combination with l2-regularization for dense and convolutions layers showed the best stability. Therefore, I chose model number 2 for the further training. 
 
 \clearpage
 \section{Final model} \label{sect4_5}
 
-\clearpage
-\section{Classification results} \label{sect4_6}
+In this section I trained the best model from the Section \ref{sect4_5} on 25 epochs.
+I has following parameters:
 
+\begin{itemize}
+	\item 300 filters
+	\item size of filter: 3, 4, 5
+	\item l2-regularization equals to 0.01 both for convolution layers and dense layer. 
+	\item dropout equals to the rate 0.5 both for dense and convolution layers. 
+	\item learning algorithm Adam with learning rate 1e-4. 
+\end{itemize}
+
+One more modification which was made: from the previous Section \ref{sect4_5}
+according to many metrics model with these configurations trained slower than others because 
+it has the lowest learning rate 1e-4. To speed up the training process I increased the learning rate in the beginning to be equal 1e-3. Then as the CNN slowly converges to its optimal value
+the learning was decreased to 1e-4 to slow down - otherwise it may overshoot the optimal value.
+Such modifications gave me improvement in speed and the stability of the model at the same time.
+The final results can be seen in Figure \ref{img:final_CNN_categorical_accuracy}, 
+\ref{img:final_CNN_category_crossentropy}, \ref{img:final_CNN_top_k_accuracy}.
+
+
+\begin{table}[h]
+	\centering
+	\caption{Final results}
+	\label{my-label}
+	\begin{tabular}{| p{7cm} | p{3cm} | p{3cm} |}
+		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
+		\hline
+		\textbf{Metric}  & \textbf{Train} & \textbf{Test}                                                    
+		\\ \hline
+		categorical accuracy   &  0.8250 & 0.8307
+		\\ \hline
+		category crossentropy  &   0.5800 & 0.6612
+		\\ \hline
+		top k accuracy   &  0.9545 & 0.9473
+		\\ \hline		
+	\end{tabular}
+\end{table}
+
+
+
+
+\begin{figure}[ht]
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{part4/final_CNN_train_category_accuracy}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{part4/final_CNN_val_category_accuracy}}
+	\end{minipage}
+	\caption{Models train and validation categorical accuracy by epochs}
+	\label{img:final_CNN_categorical_accuracy}  
+\end{figure}
+
+
+\begin{figure}[ht]
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{part4/final_CNN_train_category_crossentropy}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{part4/final_CNN_val_category_crossentropy}}
+	\end{minipage}
+	\caption{Models train and validation category crossentropy by epochs}
+	\label{img:final_CNN_category_crossentropy}  
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{part4/final_CNN_train_top_k_accuracy}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[ht]{1\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{part4/final_CNN_val_top_k_accuracy}}
+	\end{minipage}
+	\caption{Models train and validation top k accuracy by epochs}
+	\label{img:final_CNN_top_k_accuracy}  
+\end{figure}
+
+
+\section{Summary of the section} \label{sect4_6}
+
+In this section I have made a series of
+experiments with recurrent and convolutional neural networks
+built on top of word2vec. I did a little tuning
+of hyperparameters to achieve the highest scores. 
+According to the results of experiments which CNN models achieved, are the same and in some components even better than the ones of Bi-LSTM models.I can make a conclusion that Convolution Neural Networks perform remarkably well for NLP related problems and specially for text classification. 
 
 

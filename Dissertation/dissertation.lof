@@ -44,11 +44,14 @@
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of dense layers\relax }}{55}{figure.caption.53}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces CPU resources which were used while training CNN.\relax }}{56}{figure.caption.54}
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{58}{figure.caption.58}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{58}{figure.caption.59}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{59}{figure.caption.59}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{59}{figure.caption.60}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Models batch time by epochs\relax }}{59}{figure.caption.61}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers\relax }}{59}{figure.caption.62}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers\relax }}{60}{figure.caption.63}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers\relax }}{60}{figure.caption.64}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Models batch time by epochs\relax }}{60}{figure.caption.61}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of convolution layers\relax }}{60}{figure.caption.62}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of merged layers\relax }}{61}{figure.caption.63}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of dense layers\relax }}{62}{figure.caption.64}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{64}{figure.caption.66}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{64}{figure.caption.67}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{65}{figure.caption.68}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\CYRA .1}{\ignorespaces Architectures of CNN model\relax }}{76}{figure.caption.70}
+\contentsline {figure}{\numberline {\CYRA .1}{\ignorespaces Architectures of CNN model\relax }}{79}{figure.caption.74}

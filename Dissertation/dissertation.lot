@@ -15,14 +15,15 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Analysis of categorical accuracy\relax }}{50}{table.caption.44}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Analysis of category crossentropy\relax }}{50}{table.caption.46}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Analysis of top k accuracy\relax }}{50}{table.caption.48}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Analysis of top k accuracy\relax }}{57}{table.caption.55}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Analysis of top k accuracy\relax }}{57}{table.caption.56}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Analysis of top k accuracy\relax }}{57}{table.caption.57}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Analysis of categorical accuracy\relax }}{57}{table.caption.55}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Analysis of categorical cross entropy\relax }}{58}{table.caption.56}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Analysis of top k accuracy\relax }}{58}{table.caption.57}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Final results\relax }}{63}{table.caption.65}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{69}{table.A.1}
-\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{70}{table.A.1}
-\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{71}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{72}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{73}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{74}{table.A.1}
 \contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{75}{table.A.1}
+\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{76}{table.A.1}
+\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{77}{table.A.1}
+\contentsline {table}{\numberline {\CYRA .1}{\ignorespaces Classification report}}{78}{table.A.1}

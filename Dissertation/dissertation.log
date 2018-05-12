@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  6 MAY 2018 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  12 MAY 2018 19:03
 entering extended mode
 **./dissertation.tex
 (dissertation.tex
@@ -1343,13 +1343,25 @@ LaTeX Warning: Label `my-label' multiply defined.
 LaTeX Warning: Label `my-label' multiply defined.
 
 
-LaTeX Warning: Label `img:category_crossentropy' multiply defined.
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
 
 
 LaTeX Warning: Label `img:category_crossentropy' multiply defined.
 
 
 LaTeX Warning: Label `img:category_crossentropy' multiply defined.
+
+
+LaTeX Warning: Label `img:category_crossentropy' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
 
 
 LaTeX Warning: Label `tab:amortecimentos' multiply defined.
@@ -2746,19 +2758,40 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 307.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 307.
+
+Overfull \hbox (2.24419pt too wide) in paragraph at lines 338--338
+[]|\T2A/cmr/bx/n/14.4 Modification
+ []
+
+
+Overfull \hbox (2.24419pt too wide) in paragraph at lines 358--358
+[]|\T2A/cmr/bx/n/14.4 Modification
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.24419pt too wide) in paragraph at lines 378--378
+[]|\T2A/cmr/bx/n/14.4 Modification
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/part4/4CNN_train_category_accuracy.png, id=767, 331.2375pt x 222.8325pt
 >
 File: images/part4/4CNN_train_category_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_train_category_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_train_category_accuracy.png  used on
- input line 379.
+ input line 398.
 (pdftex.def)             Requested size: 248.96162pt x 167.48438pt.
 <images/part4/4CNN_val_category_accuracy.png, id=768, 331.2375pt x 219.82124pt>
 
 File: images/part4/4CNN_val_category_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_val_category_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_val_category_accuracy.png  used on i
-nput line 383.
+nput line 402.
 (pdftex.def)             Requested size: 248.96162pt x 165.22105pt.
 <images/part4/4CNN_train_category_crossentropy.png, id=769, 331.2375pt x 211.79
 124pt>
@@ -2766,133 +2799,210 @@ File: images/part4/4CNN_train_category_crossentropy.png Graphic file (type png)
 
 <use images/part4/4CNN_train_category_crossentropy.png>
 Package pdftex.def Info: images/part4/4CNN_train_category_crossentropy.png  use
-d on input line 392.
+d on input line 411.
 (pdftex.def)             Requested size: 248.96162pt x 159.1856pt.
 <images/part4/4CNN_val_category_crossentropy.png, id=770, 331.2375pt x 218.8175
 pt>
 File: images/part4/4CNN_val_category_crossentropy.png Graphic file (type png)
 <use images/part4/4CNN_val_category_crossentropy.png>
 Package pdftex.def Info: images/part4/4CNN_val_category_crossentropy.png  used 
-on input line 396.
+on input line 415.
 (pdftex.def)             Requested size: 248.96162pt x 164.46663pt.
 <images/part4/4CNN_train_top_k_accuracy.png, id=771, 331.2375pt x 213.79875pt>
 File: images/part4/4CNN_train_top_k_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_train_top_k_accuracy.png  used on in
-put line 404.
+put line 423.
 (pdftex.def)             Requested size: 248.96162pt x 160.69446pt.
 <images/part4/4CNN_val_top_k_accuracy.png, id=772, 331.2375pt x 214.8025pt>
 File: images/part4/4CNN_val_top_k_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_val_top_k_accuracy.png  used on inpu
-t line 408.
+t line 427.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
 <images/part4/4CNN_timing.png, id=773, 1036.87375pt x 224.84pt>
 File: images/part4/4CNN_timing.png Graphic file (type png)
 <use images/part4/4CNN_timing.png>
-Package pdftex.def Info: images/part4/4CNN_timing.png  used on input line 416.
+Package pdftex.def Info: images/part4/4CNN_timing.png  used on input line 435.
 (pdftex.def)             Requested size: 518.43561pt x 112.41972pt.
 
-Overfull \hbox (20.51236pt too wide) in paragraph at lines 416--417
+Overfull \hbox (20.51236pt too wide) in paragraph at lines 435--436
  [] 
  []
 
 <images/part4/4CNN-conv-1.png, id=774, 637.38126pt x 150.5625pt>
 File: images/part4/4CNN-conv-1.png Graphic file (type png)
 <use images/part4/4CNN-conv-1.png>
-Package pdftex.def Info: images/part4/4CNN-conv-1.png  used on input line 425.
-(pdftex.def)             Requested size: 248.96162pt x 58.80873pt.
+Package pdftex.def Info: images/part4/4CNN-conv-1.png  used on input line 443.
+(pdftex.def)             Requested size: 497.92325pt x 117.61975pt.
 <images/part4/4CNN-conv-2.png, id=775, 644.4075pt x 150.5625pt>
 File: images/part4/4CNN-conv-2.png Graphic file (type png)
 <use images/part4/4CNN-conv-2.png>
-Package pdftex.def Info: images/part4/4CNN-conv-2.png  used on input line 429.
-(pdftex.def)             Requested size: 248.96162pt x 58.16776pt.
-<images/part4/4CNN-merge3-1.png, id=776, 636.3775pt x 150.5625pt>
-File: images/part4/4CNN-merge3-1.png Graphic file (type png)
-<use images/part4/4CNN-merge3-1.png>
-Package pdftex.def Info: images/part4/4CNN-merge3-1.png  used on input line 438
-.
-(pdftex.def)             Requested size: 248.96162pt x 58.90062pt.
-<images/part4/4CNN-merge3-2.png, id=777, 632.3625pt x 150.5625pt>
-File: images/part4/4CNN-merge3-2.png Graphic file (type png)
-<use images/part4/4CNN-merge3-2.png>
-Package pdftex.def Info: images/part4/4CNN-merge3-2.png  used on input line 442
-.
-(pdftex.def)             Requested size: 248.96162pt x 59.2751pt.
-<images/part4/4CNN-dense-1.png, id=778, 647.41875pt x 150.5625pt>
-File: images/part4/4CNN-dense-1.png Graphic file (type png)
-<use images/part4/4CNN-dense-1.png>
-Package pdftex.def Info: images/part4/4CNN-dense-1.png  used on input line 451.
-
-(pdftex.def)             Requested size: 248.96162pt x 57.89896pt.
-<images/part4/4CNN-dense-2.png, id=779, 642.4pt x 150.5625pt>
-File: images/part4/4CNN-dense-2.png Graphic file (type png)
-<use images/part4/4CNN-dense-2.png>
-Package pdftex.def Info: images/part4/4CNN-dense-2.png  used on input line 455.
-
-(pdftex.def)             Requested size: 248.96162pt x 58.34924pt.
+Package pdftex.def Info: images/part4/4CNN-conv-2.png  used on input line 447.
+(pdftex.def)             Requested size: 497.92325pt x 116.3424pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 [57.57
 
 ]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
  [58.58 <./images/part4/4CNN_train_category_accuracy.png> <./images/part4/4CNN_
-val_category_accuracy.png> <./images/part4/4CNN_train_category_crossentropy.png
-> <./images/part4/4CNN_val_category_crossentropy.png>]
+val_category_accuracy.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
- [59.59 <./images/part4/4CNN_train_top_k_accuracy.png> <./images/part4/4CNN_val
-_top_k_accuracy.png> <./images/part4/4CNN_timing.png> <./images/part4/4CNN-conv
--1.png> <./images/part4/4CNN-conv-2.png>]
+(babel)             in language  on input line 453.
+ [59.59 <./images/part4/4CNN_train_category_crossentropy.png> <./images/part4/4
+CNN_val_category_crossentropy.png> <./images/part4/4CNN_train_top_k_accuracy.pn
+g> <./images/part4/4CNN_val_top_k_accuracy.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 461.
- [60.60 <./images/part4/4CNN-merge3-1.png> <./images/part4/4CNN-merge3-2.png> <
-./images/part4/4CNN-dense-1.png> <./images/part4/4CNN-dense-2.png>]
+(babel)             in language  on input line 453.
+ [60.60 <./images/part4/4CNN_timing.png> <./images/part4/4CNN-conv-1.png> <./im
+ages/part4/4CNN-conv-2.png>]
+<images/part4/4CNN-merge3-1.png, id=814, 636.3775pt x 150.5625pt>
+File: images/part4/4CNN-merge3-1.png Graphic file (type png)
+<use images/part4/4CNN-merge3-1.png>
+Package pdftex.def Info: images/part4/4CNN-merge3-1.png  used on input line 460
+.
+(pdftex.def)             Requested size: 497.92325pt x 117.80354pt.
+<images/part4/4CNN-merge3-2.png, id=815, 632.3625pt x 150.5625pt>
+File: images/part4/4CNN-merge3-2.png Graphic file (type png)
+<use images/part4/4CNN-merge3-2.png>
+Package pdftex.def Info: images/part4/4CNN-merge3-2.png  used on input line 464
+.
+(pdftex.def)             Requested size: 497.92325pt x 118.5548pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 464.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 464.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 464.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 464.
+(babel)             in language  on input line 470.
  [61.61
+
+ <./images/part4/4CNN-merge3-1.png> <./images/part4/4CNN-merge3-2.png>]
+<images/part4/4CNN-dense-1.png, id=824, 647.41875pt x 150.5625pt>
+File: images/part4/4CNN-dense-1.png Graphic file (type png)
+<use images/part4/4CNN-dense-1.png>
+Package pdftex.def Info: images/part4/4CNN-dense-1.png  used on input line 476.
+
+(pdftex.def)             Requested size: 497.92325pt x 115.79793pt.
+<images/part4/4CNN-dense-2.png, id=825, 642.4pt x 150.5625pt>
+File: images/part4/4CNN-dense-2.png Graphic file (type png)
+<use images/part4/4CNN-dense-2.png>
+Package pdftex.def Info: images/part4/4CNN-dense-2.png  used on input line 480.
+
+(pdftex.def)             Requested size: 497.92325pt x 116.7031pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 489.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 489.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 489.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 489.
+ [62.62
+
+ <./images/part4/4CNN-dense-1.png> <./images/part4/4CNN-dense-2.png>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 490.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 490.
+<images/part4/final_CNN_train_category_accuracy.png, id=838, 342.27875pt x 217.
+81375pt>
+File: images/part4/final_CNN_train_category_accuracy.png Graphic file (type png
+)
+<use images/part4/final_CNN_train_category_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_train_category_accuracy.png  us
+ed on input line 535.
+(pdftex.def)             Requested size: 248.96162pt x 158.43437pt.
+<images/part4/final_CNN_val_category_accuracy.png, id=839, 331.2375pt x 220.825
+pt>
+File: images/part4/final_CNN_val_category_accuracy.png Graphic file (type png)
+<use images/part4/final_CNN_val_category_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_val_category_accuracy.png  used
+ on input line 539.
+(pdftex.def)             Requested size: 248.96162pt x 165.9755pt.
+<images/part4/final_CNN_train_category_crossentropy.png, id=840, 330.23375pt x 
+214.8025pt>
+File: images/part4/final_CNN_train_category_crossentropy.png Graphic file (type
+ png)
+<use images/part4/final_CNN_train_category_crossentropy.png>
+Package pdftex.def Info: images/part4/final_CNN_train_category_crossentropy.png
+  used on input line 548.
+(pdftex.def)             Requested size: 248.96162pt x 161.94382pt.
+<images/part4/final_CNN_val_category_crossentropy.png, id=841, 331.2375pt x 214
+.8025pt>
+File: images/part4/final_CNN_val_category_crossentropy.png Graphic file (type p
+ng)
+<use images/part4/final_CNN_val_category_crossentropy.png>
+Package pdftex.def Info: images/part4/final_CNN_val_category_crossentropy.png  
+used on input line 552.
+(pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 558.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 558.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 558.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 558.
+ [63.63
 
 ]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 558.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 558.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 558.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 558.
+ [64.64 <./images/part4/final_CNN_train_category_accuracy.png> <./images/part4/
+final_CNN_val_category_accuracy.png> <./images/part4/final_CNN_train_category_c
+rossentropy.png> <./images/part4/final_CNN_val_category_crossentropy.png>]
+<images/part4/final_CNN_train_top_k_accuracy.png, id=858, 337.26pt x 223.83624p
+t>
+File: images/part4/final_CNN_train_top_k_accuracy.png Graphic file (type png)
+<use images/part4/final_CNN_train_top_k_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_train_top_k_accuracy.png  used 
+on input line 561.
+(pdftex.def)             Requested size: 248.96162pt x 165.23662pt.
+<images/part4/final_CNN_val_top_k_accuracy.png, id=859, 331.2375pt x 215.80624p
+t>
+File: images/part4/final_CNN_val_top_k_accuracy.png Graphic file (type png)
+<use images/part4/final_CNN_val_top_k_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_val_top_k_accuracy.png  used on
+ input line 565.
+(pdftex.def)             Requested size: 248.96162pt x 162.20332pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 572.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 572.
 ) (part5.tex) (conclusion.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 1.
@@ -2902,9 +3012,10 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
- [62.62
+ [65.65
 
-]
+ <./images/part4/final_CNN_train_top_k_accuracy.png> <./images/part4/final_CNN_
+val_top_k_accuracy.png>]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining russian shorthand "~
@@ -2918,8 +3029,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
-
-[63.63
+ [66.66
 
 ]
 Package babel Info: Redefining russian shorthand "|
@@ -2965,7 +3075,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 41.
-[64.64
+[67.67
 
 
 ]
@@ -2995,7 +3105,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
- [65.65]
+ [68.68]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining russian shorthand "~
@@ -3009,7 +3119,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 36.
- [66.66
+ [69.69
 
 ])
 \tf@lof=\write6
@@ -3023,7 +3133,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 9.
- [67.67]
+ [70.70]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining russian shorthand "~
@@ -3041,7 +3151,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 13.
 
-[68.68
+[71.71
 
 ]) (appendix.tex
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } \
@@ -3050,7 +3160,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 15.
-<images/part4/cnn_architecture.png, id=934, 1073.00874pt x 3182.89125pt>
+<images/part4/cnn_architecture.png, id=969, 1073.00874pt x 3182.89125pt>
 File: images/part4/cnn_architecture.png Graphic file (type png)
 <use images/part4/cnn_architecture.png>
 Package pdftex.def Info: images/part4/cnn_architecture.png  used on input line 
@@ -3064,7 +3174,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 515.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 515.
-[69.69
+[72.72
 
 ]
 Package babel Info: Redefining russian shorthand "|
@@ -3075,35 +3185,35 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 535.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 535.
- [70.70]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 575.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 575.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 575.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 575.
- [71.71]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 615.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 615.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 615.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 615.
- [72.72]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 635.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 635.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 635.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 635.
  [73.73]
 Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 575.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 575.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 575.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 575.
+ [74.74]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 615.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 615.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 615.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 615.
+ [75.75]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 635.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 635.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 635.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 635.
+ [76.76]
+Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 637.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 637.
@@ -3111,7 +3221,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 637.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 637.
- [74.74])
+ [77.77])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 60.
 See the caption package documentation for explanation.
@@ -3124,10 +3234,6 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 259.
 See the caption package documentation for explanation.
 
-
-Package totalcount Warning: Total counter(s) have changed.
-(totalcount)                Rerun to get them right.
-
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining russian shorthand "~
@@ -3136,7 +3242,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 35.
-[75.75]
+[78.78]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining russian shorthand "~
@@ -3145,21 +3251,15 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 35.
- [76.76 <./images/part4/cnn_architecture.png>]
+ [79.79 <./images/part4/cnn_architecture.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
  (dissertation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+Package rerunfilecheck Info: File `dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: D5645D4136FF2A6490C743283B555B6F;7769.
 
-
-Package rerunfilecheck Warning: File `dissertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `dissertation.out':
-(rerunfilecheck)             Before: 21DF34D5E0A5E8F0D402DCA605A9F1F2;7763
-(rerunfilecheck)             After:  480C5BD5EB4ABC5260077F9F2FC9FAAC;7763.
 
 LaTeX Warning: There were undefined references.
 
@@ -3169,65 +3269,44 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 20090 strings out of 495203
- 313599 string characters out of 3181306
- 428065 words of memory out of 3000000
- 22529 multiletter control sequences out of 15000+200000
+ 20123 strings out of 495203
+ 315205 string characters out of 3181306
+ 428310 words of memory out of 3000000
+ 22556 multiletter control sequences out of 15000+200000
  26590 words of font info for 70 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,16n,81p,1484b,539s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.57} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.56} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.55} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.67} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.65} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.63} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.62} has been referenced but does not exist
-, replaced by a fixed one
-
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labi1440.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1000.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1000.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/latt1440.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lati1440.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1728.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1728.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasl1440.pk>
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1440.pk>
-</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></h
-ome/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></ho
-me/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></hom
-e/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/
-denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/de
-nys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/deny
-s/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/denys/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/denys/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/denys/.m
-iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/denys/.mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/denys/.miktex
-/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/denys/.miktex/te
-xmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/denys/.miktex/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/denys/.miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/denys/.miktex/texmfs/i
-nstall/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (76 pages, 3255244 bytes).
+ </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labi1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1000.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1000.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/latt1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lati1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1728.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1728.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasl1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1440.p
+k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></h
+ome/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></hom
+e/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/
+denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/de
+nys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/deny
+s/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/deny
+s/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/denys/
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/denys/.m
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/denys/.mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/denys/.miktex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/denys/.miktex/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/denys/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/denys/.miktex/texmfs
+/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on dissertation.pdf (79 pages, 3311292 bytes).
 PDF statistics:
- 1432 PDF objects out of 1440 (max. 8388607)
+ 1467 PDF objects out of 1728 (max. 8388607)
  280 named destinations out of 1000 (max. 500000)
- 663 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 693 words of extra memory for PDF output out of 10000 (max. 10000000)
 
