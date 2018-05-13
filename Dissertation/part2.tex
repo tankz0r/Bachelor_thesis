@@ -79,7 +79,7 @@ In order to capture dependencies between words \textbf{N-grams} technique can be
 In TF-IDF approach (term frequency - inverse document frequency), in addition to usual BoW-model, the following augmentation is made:
 
 \subsection{TF-IDF  Approach} \label{subsect2_1_2}
-Instead of just counting up the overlapping words, the algorithms apply a weight to each overlapping word. The TF weight measures how many times the word occurs in a particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the TF content words is high.\cite[p.647]{jurafsky} Formally it can be defined as: 
+Instead of just counting up the overlapping words, the algorithms apply a weight to each overlapping word. The TF weight measures how many times the word occurs in a particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the TF of the content words is high.\cite[p.647]{jurafsky} Formally it can be defined as: 
 
 
 
@@ -108,7 +108,7 @@ Core idea: the meaning of a word is	given by the words	that frequently	appear	cl
 
 1. \textbf{Skip-gram model}
 
-\noindent Considerations of embeddings methods I would like to start with the key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
+\noindent I would like to start the consideration of embeddings methods with the key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
 
 \begin{equation}
 \label{eq:equation2_4}
@@ -415,7 +415,7 @@ This model is very similar to skip-gram, but CBOW predicts a target word from th
 \section{Deep learning algorithms for text classification}\label{sect2_2}
 
 When people hear about NLP problems and neural networks in one context they probably think about Recurrent neural networks or their modification. 
-However, recently some papers which apply CNN's to problems in Natural Language Processing were presented and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
+However, recently some papers which apply CNN's to problems in Natural Language Processing were published and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
 
 
 \subsection{Convolution Neural Networks}\label{sect2_2_1}  
@@ -561,13 +561,13 @@ and $b^l$
 \frac{\partial J}{\partial b^l}=\delta^l
 \end{equation}
 
-Jquation for back propagation through $y^{l-1}$
+Equation for back propagation through $y^{l-1}$
 
 \begin{equation}
  \dfrac{\partial J}{\partial y^{l-1}} = \delta^l \cdot \dfrac{\partial x^l}{\partial y^{l-1}}= \delta^l \cdot (w^l)^{T} = \delta^{l-1}
 \end{equation} 
 
-After this we need to go with backprop through the layer of max pulling.
+After this, we need to go with backprop through the layer of max pulling.
 The error "passes" only through those values of the original matrix, which were chosen by the maximum at the step of the max puling. The remaining error values for the matrix will be zero. 
 
 \begin{figure}[ht] 
@@ -595,7 +595,7 @@ It is necessary to derive weights update for kernel  \ref{img:conv_grad}.
 all partial derivatives in the numerator, except those for which $a^{'}= a, b^{'} = b$, will be zero. 
 
 ~\\
-Derivation of gradient for the bias element. 
+Derivation of the gradient for the bias element. 
 \begin{equation}
  \dfrac{\partial J}{\partial b^l} = \sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}}\dfrac{\partial x^l_{ij}}{\partial b^l} = \sum_{i}\sum_{j} \dfrac{\partial J}{\partial y^l_{ij}}\dfrac{\partial y^l_{ij}}{\partial x^l_{ij}} 
 \end{equation}
@@ -640,7 +640,7 @@ We can compare both architectures in Figure \ref{img:SimpleRNN}\cite{colah_lstm}
 \end{figure} 
 
 The first step in LSTM is to decide what information we are going to throw away from the cell state. This decision is 
-made by a sigmoid layer called the forget gate layer. It 
+made by a sigmoid layer called the forget gate layer which 
 looks at $h_{t-1}$ and $x_t$, and outputs a number between 0 
 and 1 for each number in the cell state $C_{t-1}$.
 
@@ -676,7 +676,7 @@ h_t = o_t * \tanh(C_t)
 
 \subsection{Advantages and drawbacks of different architectures} 
 
-Recurrent Neural Networks have intuitive sense in NLP tasks. They resemble how we process language : reading sequentially from left to right. 
+Recurrent Neural Networks have intuitive sense in NLP tasks. They reflect the way we process language : reading sequentially from left to right. 
 In contrary, CNNs which widely are used in Computer Vision have such features as Location Invariance and local Compositionality made intuitive sense for images, but not so much for NLP because it is important where a word appears in the sentence. Pixels close to each other are likely to be semantically related , but the same isn’t always true for words.  In many languages, parts of phrases could be separated by several other words. The compositional aspect isn’t obvious either. Clearly, words compose in some ways, like an adjective modifying a noun, but how exactly this works, what higher level representations actually “mean” isn’t as obvious as in the Computer Vision case. Fortunately, this doesn’t mean that CNNs don’t work.  All models are wrong, but some are useful. It turns out that CNNs applied to NLP problems perform quite well. The simple Bag of Words model is an obvious oversimplification with incorrect assumptions, but has nonetheless been the standard approach for years and lead to pretty good results.
 
 A big argument for CNNs is that they are very fast. Very fast. Convolutions are a central part of computer graphics and are implemented on a hardware level on GPUs. Compared to something like n-grams, CNNs are also efficient in terms of representation. With a large vocabulary, computing anything more than 3-grams can quickly become expensive. Even Google does not provide anything beyond 5-grams. Convolutional Filters learn good representations automatically, without representing the whole vocabulary. It’s completely reasonable to have filters of the size larger than 5.\cite{wildml}
