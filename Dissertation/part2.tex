@@ -10,7 +10,7 @@ In supervised learning domain, to perform classification tasks, our goal is usua
 A(X, \hat{w}): A(X, \hat{w}) \simeq f(X) \Leftrightarrow A(X, \hat{w}) = \operatorname*{arg\,min}_w \left\|A(X, w) - f(X)\right\|
 \end{equation}
 
-Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into specific numerical format, in another words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways. I will cover the most frequently used in the modern practices.
+Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into the specific numerical format, other words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways. I will cover the most frequently used in the modern practices.
 
 \subsection{Bag-of-Words Approach} \label{subsect2_1_1}
 
@@ -20,7 +20,7 @@ Bag-of-words is an unordered set of words, with their exact position ignored.\ci
 \noindent In bag-of-words approach we work under the following assumptions:
 \begin{itemize}
 	\item The text can be analyzed without taking into account the word/token order.
-	\item It is only necessary to know which words/tokens the text consists of and how many times.
+	\item It is only necessary to know which words/tokens of the text consists of and how many times.
 \end{itemize}
 
 Formally, there is a collection of texts $T_1, T_2, ... , T_n$. Unique tokens $w_1, w_2, ..., w_m$ are extracted to form a dictionary. Thus, each text $T_i$ is represented by feature vector $F_j = \{x_{ij},\ j \in [1,m]\}$, where $x_{ij}$ corresponds to number of occurrences of word $w_j$ in text $T_i$.
@@ -60,7 +60,7 @@ $T_1=(1,1,1,1,0,0)$, $T_2=(1,0,1,0,1,1)$
 \begin{itemize}
 	\item Huge corpus usually leads to huge vocabulary size.
 	\item Not memory-efficient: if we have corpus with 20 thousand texts then this textual corpus might spawn a dictionary with around 100 thousand elements. Thus, storing feature vectors as an array of type int32 would require 20000 x 100000 x 4 bytes $~$ 8GB in RAM.
-	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us distinguish between sentences, built from the same words while having opposite meanings:"This paintings don't feel like ugly - buy them!" (positive) and "This paintings feel like ugly - don't buy them!" (negative) 
+	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us distinguish between sentences, built from the same words, while having opposite meanings:"These paintings don't feel like ugly - buy them!" (positive) and "These paintings feel like ugly - don't buy them!" (negative) 
 \end{itemize}
 
 In order to capture dependencies between words \textbf{N-grams} technique can be used. N-gram is a sequence of $N$ basic tokens, which can be defined in different ways. 
@@ -79,7 +79,7 @@ In order to capture dependencies between words \textbf{N-grams} technique can be
 In TF-IDF approach (term frequency - inverse document frequency), in addition to usual BoW-model, the following augmentation is made:
 
 \subsection{TF-IDF  Approach} \label{subsect2_1_2}
-Instead of just counting up the overlapping words, the algorithms apply a weight to each overlapping word. The TF weight measures how many times the word occurs in a particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the TF content words is high.\cite[p.647]{jurafsky} Formally it can be defined: 
+Instead of just counting up the overlapping words, the algorithms apply a weight to each overlapping word. The TF weight measures how many times the word occurs in a particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the TF content words is high.\cite[p.647]{jurafsky} Formally it can be defined as: 
 
 
 
@@ -326,7 +326,7 @@ Now, using the chain rule, we can calculate,
 	\end{multlined}
 \end{equation}
 
-\noindent We have calculated gradient for one particular word, now we will generalize this to a number of words. We have a set of context words [$\texttt{word}_{c-\textbf{m}},...,\texttt{word}_{c-\textbf{1}},\texttt{word}_{c},\texttt{word}_{c+\textbf{1}},...,\texttt{word}_{c+\textbf{m}}$ ], where \textbf{m} is the context size. We denote the `input' and `output' word vectors for $\texttt{word}_{k}$ as ${\boldsymbol v}_{k}$ and ${\boldsymbol u}_{k}$ respectively for
+\noindent We have calculated the gradient for one particular word, now we will generalize this to a number of words. We have a set of context words [$\texttt{word}_{c-\textbf{m}},...,\texttt{word}_{c-\textbf{1}},\texttt{word}_{c},\texttt{word}_{c+\textbf{1}},...,\texttt{word}_{c+\textbf{m}}$ ], where \textbf{m} is the context size. We denote the `input' and `output' word vectors for $\texttt{word}_{k}$ as ${\boldsymbol v}_{k}$ and ${\boldsymbol u}_{k}$ respectively for
 convenience. \\
 
 \noindent Also it is a good idea to use $F({\boldsymbol o}, {\boldsymbol v}_{c})$ (where ${\boldsymbol o}$ is the expected word) as a placeholder for $J({\boldsymbol o}, {\boldsymbol v}_{c}, ...)$ cost functions.
@@ -365,7 +365,7 @@ Now, we can update our weight using gradient descent algorithm:
 
 where $\eta$ is a learning rate.
 
-After training the skip-gram model, we take the hidden layer weight matrix that will represent our words in the multidimensional space. If we make projection into two dimensional space, we can have the following Figure ~\ref{img:embed}:
+After training the skip-gram model, we take the hidden layer weight matrix that will represent our words in the multidimensional space. If we make projection into two- dimensional space, we can have the following Figure ~\ref{img:embed}:
 
 \begin{figure}[ht] 
 	\center
@@ -393,14 +393,14 @@ J({\boldsymbol u}_{o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = -\log(\sigma( {\b
 \end{equation}
 
 \noindent where $\sigma(\cdot)$ is the sigmoid function.\\
-As it can be clearly seen, now we make calculations not on the whole vocabulary $V$, but only on part of it, which is randomly generated each time. 
+As it can be clearly seen, now we make calculations not on the whole vocabulary $V$, but only on the part of it, which is randomly generated each time. 
 
 ~\\ 
 \textbf{Hierarchical Softmax} \\
-H-Softmax is an approximation which uses binary tree to compute the necessary probability. 
+H-Softmax is an approximation which uses a binary tree to compute the necessary probability. 
 This gives us a possibility to decompose calculating the probability of one word into a sequence of probability calculations. Balanced threes have a maximum depth of $log_2(|V|)$, which means that in the worst case we need to calculate $log_2(|V|)$ nodes to find the necessary probability of a certain word.  
 
-Both methods enable us a possibility to significantly decrease amount of time for computation.
+Both methods enable us a possibility to significantly decrease the amount of time for computation.
 
 2. \textbf{CBOW model}
 This model is very similar to skip-gram, but CBOW predicts a target word from the bag of words context. From the practical point of view, skip-gram works well with a small amount of training data and represents well even rare words or phrases. CBOW is several times faster to train than the skip-gram and has slightly better accuracy for the frequent words. This model is shown in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
@@ -415,7 +415,7 @@ This model is very similar to skip-gram, but CBOW predicts a target word from th
 \section{Deep learning algorithms for text classification}\label{sect2_2}
 
 When people hear about NLP problems and neural networks in one context they probably think about Recurrent neural networks or their modification. 
-However, recently some papers which apply CNNs to problems in Natural Language Processing were presented and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
+However, recently some papers which apply CNN's to problems in Natural Language Processing were presented and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
 
 
 \subsection{Convolution Neural Networks}\label{sect2_2_1}  
@@ -480,7 +480,7 @@ f_{ReLU}=max(0,x)
 \end{figure}
 
 
-2) \textbf{Softmax }\ref{eq:equation2_4} - I deal with multi class classification, therefore this activation was picked.
+2) \textbf{Softmax }\ref{eq:equation2_4} - I deal with multi-class classification, therefore this activation was picked.
 
 
 ~ \\

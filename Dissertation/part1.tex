@@ -1,12 +1,12 @@
 \chapter{Text classification} \label{chapt1}
 
-\section{Relevance of the problem} \label{sect1_1}
+\section{The relevance of the problem} \label{sect1_1}
 
 Nowadays, retail e-commerce sales are quickly increasing. A large online e-commerce
-websites serve millions of users’ requests per day. Therefore it is necessary to make the processes of registrations and purchases as much convenient and fast as possible. For many classifieds platform such as Amazon or Avito users who would like to create a new advertisement must to fill in the required fields: title, description, price and category. Choosing a category can be a tricky moment, because in most cases users have to make a choice from more than hundred categories. Therefore, the problem  of advertisement automatic category prediction is very important in terms of saving moderators' time and as a result decreasing the number of necessary moderators to process them. The effective algorithms which would work with text data, have a high accuracy and an appropriate speed are in high demand.
+websites serve millions of users’ requests per day. Therefore it is necessary to make the processes of registrations and purchases as much convenient and fast as possible. For many classified platforms such as Amazon or Avito users who would like to create a new advertisement must to fill in the required fields: title, description, price and category. Choosing a category can be a tricky moment because in most cases users have to make a choice from more than hundred categories. Therefore, the problem  of advertisement automatic category prediction is very important in terms of saving moderators' time and as a result, decreasing the number of necessary moderators to process them. The effective algorithms which would work with text data, have high accuracy and an appropriate speed are in high demand.
 %In this paper I want to consider models that are used for texts classification and pay the special attention for Deep Learning approaches.  
 
-\section{Statement of classification problem} \label{sect1_2}
+\section{Statement of the classification problem} \label{sect1_2}
 
 
 Classification problem is a problem of identifying to which category a new observation belongs to. An example can be a situation when you receive a new email and the algorithm automatically decides whether it belongs to social network, promotions or business letters.
@@ -21,7 +21,7 @@ In text classification, we are given a description  $d \in \mathbb{X}$ of a docu
 \langle\mbox{d, c}\rangle=\langle\mbox{Beijing joins the World Trade Organization}, \emph{China}\rangle
 \end{equation}
 
-for the one-sentence document Beijing joins the World Trade Organization and the class (or label) China.
+for the one-sentence document, Beijing joins the World Trade Organization and the class (or label) China.
 Using a learning method or learning algorithm , we then wish to learn a classifier or classification function  $\gamma $ that maps documents to classes:
 
 \begin{equation}
@@ -31,7 +31,7 @@ Using a learning method or learning algorithm , we then wish to learn a classifi
 
 This type of learning is called supervised learning because a supervisor (the human who defines the classes and labels training documents) serves as a teacher directing the learning process. We denote the supervised learning method by $\Gamma$ and write  $\Gamma(\docsetlabeled) = \gamma$. The learning method $\Gamma$ takes the training set  $\docsetlabeled$ as input and returns the learned classification function $\gamma $.
 
-The classes in text classification often have some interesting structure such as the hierarchy in Figure ~\ref{img:hierarchy} . There are two instances in each of region categories, industry categories, and subject area categories. A hierarchy can be an important aid in solving a classification problem. Our goal in text classification is high accuracy of test data or new data - for example, the newswire articles that we will encounter tomorrow morning in the multicore chip example. It is easy to achieve high accuracy on the training set (e.g., we can simply memorize the labels). But high accuracy on the training set in general does not mean that the classifier will work well on new data in the application. When we use the training set to learn a classifier for test data, we make an assumption that training data and test data are similar or from the same distribution.\cite[p.256-257]{manning}
+The classes in text classification often have some interesting structure such as the hierarchy in Figure ~\ref{img:hierarchy}. There are two instances in each of region categories, industry categories, and subject area categories. A hierarchy can be an important aid in solving a classification problem. Our goal in text classification is high accuracy of test data or new data - for example, the newswire articles that we will encounter tomorrow morning in the multicore chip example. It is easy to achieve high accuracy on the training set (e.g., we can simply memorize the labels). But high accuracy on the training set in general does not mean that the classifier will work well on new data in the application. When we use the training set to learn a classifier for test data, we make an assumption that training data and test data are similar or from the same distribution.\cite[p.256-257]{manning}
 
 \begin{figure}[ht] 
 	\center
@@ -41,16 +41,16 @@ The classes in text classification often have some interesting structure such as
 \end{figure}
 
 
-\section{Short review of existing mathematical models, which can be used to solve the classification problem} \label{sect1_3}
+\section{A short review of existing mathematical models, which can be used to solve the classification problem} \label{sect1_3}
 
 \begin{figure}[ht] 
 	\center
 	\includegraphics [scale=0.6] {work_flow}
-	\caption{Supervised learning work flow.} 
+	\caption{Supervised learning workflow.} 
 	\label{img:supervised_learning_work_flow}  
 \end{figure}
 
-Supervised learning is the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. Between inputs and reference outputs there may be some dependence, but it is unknown. On the basis of these data, it is necessary to restore the dependence. In order to measure the accuracy a quality function can be introduced.\cite[p.7]{foundationsml} The diagram of the supervised learning process is presented in Figure ~\ref{img:supervised_learning_work_flow} 
+Supervised learning is the machine learning task of inferring a function from labelled training data. The training data consist of a set of training examples. Between inputs and reference outputs there may be some dependence, but it is unknown. On the basis of these data, it is necessary to restore the dependence. In order to measure the accuracy, a quality function can be introduced.\cite[p.7]{foundationsml} The diagram of the supervised learning process is presented in Figure ~\ref{img:supervised_learning_work_flow} 
 \\
 
 \noindent \textbf{Here are some of the most important supervised learning algorithms}:

@@ -58,10 +58,10 @@ As it can be clearly seen from Table \ref{general} we have 2 categorical
 and 2 numerical variables and our data does not have any missing fields. 
 It is good to start examining our data by each variable separately. 
 From Table \ref{lvl1} we can see that data is not distributed equally between 
-categories. First level categories with number \textbf{6,5,1} consist almost of half 
+categories. First-level categories with number \textbf{6,5,1} consist almost of half 
 of all advertisements. That means that our data is imbalanced and we can not 
 use accuracy as only one metric for evaluation. 
-Then if we take a look at second level categories Table \ref{lvl2} we will see even the worst picture: one third of the date is concentrated in the categories which are marked \textbf{29,14} and \textbf{55} respectively. 
+Then if we take a look at second-level categories Table \ref{lvl2} we will see even the worst picture: one third of the date is concentrated in the categories which are marked \textbf{29,14} and \textbf{55} respectively. 
 That means that it is necessary to use techniques to regularize distributions: under/over sampling or weight balanced.
 
 For evaluation such metrics as categorical\_accuracy
@@ -110,7 +110,7 @@ For evaluation such metrics as categorical\_accuracy
 
 \begin{table}[h]
 	\centering
-	\caption{Information about first level categories}
+	\caption{Information about first-level categories}
 	\label{lvl1}
 	\begin{tabular}{|l|l|l|l|}
 		\hline
@@ -132,7 +132,7 @@ For evaluation such metrics as categorical\_accuracy
 
 \begin{table}[h]
 	\centering
-	\caption{Information about second level categories}
+	\caption{Information about second-level categories}
 	\label{my-label}
 	\begin{tabular}{|l|l|l|}
 		\hline
@@ -185,7 +185,7 @@ The given text was split by spaces and then lemmatized.
 \noindent \textbf{2. Remove infrequent words}
 
 Words appearing less than 3 times in the whole corpus were removed. It’s a good idea to remove these infrequent words because a huge vocabulary will make our model slow to train and not all these words are presented in pretrained embeddings. 
-Special attention should be paid to numbers which can be represented as price, year, mobile number. The telephone numbers occur really frequently in advertisements, but in most cases, they are unique because different people have their own telephone numbers - the information about whether a telephone number presented in the text or not is meaningful. I used regular expressions to replace all numbers with the words \_large\_number\_, \_small\_num\_,  \_price\_, \_year\_. which gave me a possibility not to lose precious information. 
+Special attention should be paid to numbers which can be represented as price, year, mobile number. The telephone numbers occur really frequently in advertisements, but in most cases, they are unique because different people have their telephone numbers - the information about whether a telephone number presented in the text or not is meaningful. I used regular expressions to replace all numbers with the words \_large\_number\_, \_small\_num\_,  \_price\_, \_year\_. which gave me a possibility not to lose precious information. 
 \\
 
 \noindent
@@ -258,7 +258,7 @@ The input to Neural Networks are vectors, not strings. The mapping between words
 		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
 		\hline
 		\textbf{Functions}                                    & \textbf{Explanation}                                                                                                                \\ \hline
-		sequence\_for\_train                             & load preprocessed tokens from previous model and use functions listed below to create sequence of indices which corresponds to particular word.                                                                    
+		sequence\_for\_train                             & load preprocessed tokens from the previous model and use functions listed below to create sequences of indices which corresponds to particular word.                                                                    
 		\\ \hline
 		to\_sequence                                   & encode each word with the corresponding index        and organize them into sequences of indices with the particular length                                                      \\ \hline
 		tokenize                                           & build and save tokenizer which maps words and their indices 
@@ -297,7 +297,7 @@ one type of networks, which makes text classification. After the design of NN wa
 \end{itemize}
 
 These metrics will be used to judge the performance of our model. 
-Such statistics give more information about changes in neural network on each step of training. 
+Such statistics give more information about changes in the neural network on each step of training. 
 As tested network types on this step, I choose bidirectional recurrent network 
 and convolutional network with different window sizes. 
 
