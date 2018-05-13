@@ -2,14 +2,14 @@
 
 \section{Relevance of the problem} \label{sect1_1}
 
-Nowadays, retail e-commerce sales are quickly expanding. A large online e-commerce
-websites serve millions of users’ requests per day. Therefore it necessary to make the process of registrations and purchases as much convenient and fast as possible. For many classifieds platform such as Amazon or Avito users who would like to create a new advertisement must to fulfill compulsory fields: title, description, price and category. Choosing category can be a tricky moment, because in most cases users have a choice more then from three hundreds categories. Therefore, the problem  of advertisement automatic category prediction is very important in terms to save moderators' time and as a result decrease number of necessary moderators to process them. The effective algorithm which would work with text data, have a high accuracy and an appropriate speed are in high demand.
+Nowadays, retail e-commerce sales are quickly increasing. A large online e-commerce
+websites serve millions of users’ requests per day. Therefore it is necessary to make the processes of registrations and purchases as much convenient and fast as possible. For many classifieds platform such as Amazon or Avito users who would like to create a new advertisement must to fill in the required fields: title, description, price and category. Choosing a category can be a tricky moment, because in most cases users have to make a choice from more than hundred categories. Therefore, the problem  of advertisement automatic category prediction is very important in terms of saving moderators' time and as a result decreasing the number of necessary moderators to process them. The effective algorithms which would work with text data, have a high accuracy and an appropriate speed are in high demand.
 %In this paper I want to consider models that are used for texts classification and pay the special attention for Deep Learning approaches.  
 
 \section{Statement of classification problem} \label{sect1_2}
 
 
-Classification problem - the problem of identifying to which category a new observation belongs. The basic example can be situation when you receive a new email and algorithm automatically decides whether it belongs to social network, promotions or business letters.
+Classification problem is a problem of identifying to which category a new observation belongs to. An example can be a situation when you receive a new email and the algorithm automatically decides whether it belongs to social network, promotions or business letters.
 
 
 \newcommand{\docsetlabeled}{\mathbb{D}}
@@ -31,7 +31,7 @@ Using a learning method or learning algorithm , we then wish to learn a classifi
 
 This type of learning is called supervised learning because a supervisor (the human who defines the classes and labels training documents) serves as a teacher directing the learning process. We denote the supervised learning method by $\Gamma$ and write  $\Gamma(\docsetlabeled) = \gamma$. The learning method $\Gamma$ takes the training set  $\docsetlabeled$ as input and returns the learned classification function $\gamma $.
 
-The classes in text classification often have some interesting structure such as the hierarchy in Figure ~\ref{img:hierarchy} . There are two instances each of region categories, industry categories, and subject area categories. A hierarchy can be an important aid in solving a classification problem. Our goal in text classification is high accuracy on test data or new data - for example, the newswire articles that we will encounter tomorrow morning in the multicore chip example. It is easy to achieve high accuracy on the training set (e.g., we can simply memorize the labels). But high accuracy on the training set in general does not mean that the classifier will work well on new data in an application. When we use the training set to learn a classifier for test data, we make the assumption that training data and test data are similar or from the same distribution.\cite[p.256-257]{manning}
+The classes in text classification often have some interesting structure such as the hierarchy in Figure ~\ref{img:hierarchy} . There are two instances in each of region categories, industry categories, and subject area categories. A hierarchy can be an important aid in solving a classification problem. Our goal in text classification is high accuracy of test data or new data - for example, the newswire articles that we will encounter tomorrow morning in the multicore chip example. It is easy to achieve high accuracy on the training set (e.g., we can simply memorize the labels). But high accuracy on the training set in general does not mean that the classifier will work well on new data in the application. When we use the training set to learn a classifier for test data, we make an assumption that training data and test data are similar or from the same distribution.\cite[p.256-257]{manning}
 
 \begin{figure}[ht] 
 	\center
@@ -50,7 +50,7 @@ The classes in text classification often have some interesting structure such as
 	\label{img:supervised_learning_work_flow}  
 \end{figure}
 
-Supervised learning - the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. Between inputs and reference outputs there may be some dependence, but it is unknown. On the basis of this data, it is necessary to restore the dependence. In order to measure the accuracy a quality function can be introduced.\cite[p.7]{foundationsml} The diagram of the supervised learning process in presented in Figure ~\ref{img:supervised_learning_work_flow} 
+Supervised learning is the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. Between inputs and reference outputs there may be some dependence, but it is unknown. On the basis of these data, it is necessary to restore the dependence. In order to measure the accuracy a quality function can be introduced.\cite[p.7]{foundationsml} The diagram of the supervised learning process is presented in Figure ~\ref{img:supervised_learning_work_flow} 
 \\
 
 \noindent \textbf{Here are some of the most important supervised learning algorithms}:
@@ -65,33 +65,32 @@ Supervised learning - the machine learning task of inferring a function from lab
 
 
 \section{Model evaluation and validation} \label{sect1_4}
-Machine learning pipeline does not finish with a model evaluation. We want to estimate correctly future data by using special techniques and metrics that are suitable for a particular task.
+Machine learning pipeline is not finished with a model evaluation. We want to estimate correctly future data by using special techniques and metrics that are suitable for a particular task.
 
-Now let us find out what valuation is for?
+Now let us find out what validation is for?
 \begin{enumerate}
 	\item Validation helps to evaluate model performance, its quality, its ability to generalise.
 	\item Validation can be used to select the best model to perform on unseen data.
-	\item Overfit of the model leads to the inconsistent and poor performance of the model on future data.
+	\item Overfitting of the model leads to the inconsistent and poor performance of the model on future data.
 \end{enumerate}
 
 To better understand each point we need to examine it more deeply.
 
 \subsection{Model Evaluation Applications}
 
-\textbf{Generalization performance} - we want to estimate the predictive performance of our model on future data.  Therefore it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
+Very important property of learning models is \textbf{Generalization performance}. In general we want to estimate the predictive performance of our model on future data.  Therefore, it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
 
-\textbf{Model selection} - we want to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
+When we have a set of candidate models \textbf{model selection} helps us to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
  
-- Before machine learning engineers find the best model, they do a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
+- Before machine learning engineers find the best model, they make a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
 
-\textbf{Algorithm selection} - in most cases we deal with many algorithms to find best one under the given circumstances. Therefore the natural need is to compare different algorithms to each other, often regarding predictive and computational performance.
+\textbf{Algorithm selection} - in most cases we deal with many algorithms to find the best one under the given circumstances. Therefore, we naturally need to compare different algorithms to each other, often regarding predictive and computational performance.
 Nevertheless, these three sub-tasks have similarities in terms that we want to estimate the performance of a model, they all require different approaches.
 
-Although these three sub-tasks have all in common that we want to estimate the performance of a model, they all require different approaches. 
 
 \subsection{Model Evaluation Techniques}
 \textbf{Holdout method} (simple train/test split)
-The holdout method is the most straightforward model evaluation technique. We take our labelled dataset and split it randomly into two parts: A training set and a test set.
+The holdout method is the most straightforward model evaluation technique. We take our labelled dataset and split it randomly into two parts: a training set and a test set.
 
 \begin{figure}[ht] 
 	\center
@@ -123,11 +122,11 @@ We don’t want to train and evaluate our model on the same training dataset, be
 
 \section{Classification metrics}
 
-Classification problems are probably the most common type of ML problem, and therefore many metrics can be used to evaluate predictions of these problems. The most frequently used for classification problem are:
+Classification problems are probably the most common type of ML problem, and therefore many metrics can be used to evaluate predictions of these problems. The most frequently used metrics for classification problems are:
 
 \textbf{Accuracy}
 ~\\
-Accuracy simply measures what percent of your predictions were correct. It's the ratio between the number of correct predictions and the total number of predictions.
+Accuracy simply measures what percent of your predictions was correct. It's the ratio between the number of correct predictions and the total number of predictions.
 
 \begin{equation}
 accuracy = {\frac{correct}{predictions}}
@@ -167,13 +166,13 @@ The confusion matrix is a handy presentation of the accuracy of a model with 2 o
 	 
 \end{figure}
 
-Confusion matrix allows you to compute various classification metrics.
+Confusion matrix allows one to compute various classification metrics.
 
 \textbf{Precision and Recall}
 ~\\
 
 Precision and recall are two metrics. But they are often used together.
-\textbf{Precision} answers the question: What percent of positive predictions were correct?
+\textbf{Precision} answers the question: What percent of positive predictions was correct?
 
 \begin{equation}
 precision = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ positive}}
@@ -198,7 +197,7 @@ Unlike the arithmetic mean, the harmonic mean tends toward the smaller of the tw
 
 \section{Summary of the section}
 
-In the first section the relevance of the problem and the main concepts associated with it are considered, namely, classification, its formation, intellectual analysis. A review of the main methods and algorithms of classification and criteria for its management.
+In the first section the relevance of the problem and the main concepts associated with it are considered, namely, classification, its formation, intellectual analysis. It is a review of the main methods and algorithms of classification and criteria for its management.
 
 Since it is important to investigate not only the ways to classify texts, but also attempts to understand main features, which had the highest importance. It is important to study the theory of how to represent textual information before applying algorithms. Then, from the examined algorithms, the deep neural networks will be used. 
 

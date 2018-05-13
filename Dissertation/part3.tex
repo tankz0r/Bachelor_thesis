@@ -14,13 +14,13 @@ Python3 language was chosen as more convenient for machine learning and beyond v
 	\item psycopg2
 \end{itemize}
 
-The prototyping of models were made in the separate Jupyter notebooks and then re-factored into 
+The prototyping of models was made in separate Jupyter notebooks and then re-factored into 
 project using the Python IDE for developers be JetBrains company - PyCharm. 
 The server with  Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz, 15 $\times$ 2 GB DDR3-1333 was used. 
 
 As a word vectors representation I used pre-trained word vectors which were trained on Wikipedia using fastText technique by Facebook research team and shared to the community \cite{fasttext}. These vectors in dimension 300 were obtained using the skip-gram model with default parameters.
 
-My main requirement for the framework for building deep neural network models were:
+To build deep neural network models my main requirements for the framework were:
 \begin{itemize}
 	\item well described documentation
 	\item simplicity of usage
@@ -28,13 +28,13 @@ My main requirement for the framework for building deep neural network models we
 	\item reliability
 \end{itemize}
 
-Among a wide range of frameworks which are available in open source: 
+Among a wide range of frameworks available in open source: 
 CNTK, Theano, MAXNET, Lasagne - Tensorflow framework was chosen. 
 Tensorflow has a flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs). To speed up the experiments with architecture of NN, I switched to a high-level neural networks API, written in Python and capable of running on top of TensorFlow. 
 
 \section{Dataset selection and exploration} \label{sect3_2}
 
-The target attribute to be predicted is the category of the advertisements. The category is represented by the two-level hierarchy. The parent category consists 16 categories which then branches into 183 subcategories. These categories can be mapped together in the following way:
+The target attribute to be predicted is the category of the advertisements. The category is represented by the two-level hierarchy. The parent category consists of 16 categories which then branches into 183 subcategories. These categories can be mapped together in the following way:
 
 \begin{table}[h]
 	\centering
@@ -52,16 +52,16 @@ The target attribute to be predicted is the category of the advertisements. The 
 \end{table}
 
 The dataset contains 455,000 ads classified into 183 categories. 
-The sample of dataset can be seen from the Table \ref{data_structure}.
+The sample of dataset can be seen from Table \ref{data_structure}.
 First, let us get familiar with data and how it distributes between categories.
-As it can be clearly seen from the Table \ref{general} we have 2 categorical 
+As it can be clearly seen from Table \ref{general} we have 2 categorical 
 and 2 numerical variables and our data does not have any missing fields. 
-That is good to start examine our data by each variable separately. 
+It is good to start examining our data by each variable separately. 
 From Table \ref{lvl1} we can see that data is not distributed equally between 
-categories. First level categories with number \textbf{6,5,1} consist almost a half 
+categories. First level categories with number \textbf{6,5,1} consist almost of half 
 of all advertisements. That means that our data is imbalanced and we can not 
 use accuracy as only one metric for evaluation. 
-Then if we take a look at second level categories Table \ref{lvl2} we will see even worst picture: one third of the date is concentrated in the categories which are marked \textbf{29,14} and \textbf{55} respectively. 
+Then if we take a look at second level categories Table \ref{lvl2} we will see even the worst picture: one third of the date is concentrated in the categories which are marked \textbf{29,14} and \textbf{55} respectively. 
 That means that it is necessary to use techniques to regularize distributions: under/over sampling or weight balanced.
 
 For evaluation such metrics as categorical\_accuracy
@@ -184,8 +184,8 @@ The given text was split by spaces and then lemmatized.
 
 \noindent \textbf{2. Remove infrequent words}
 
-Words which appears less than 3 times in the whole corpus were removed. It’s a good idea to remove these infrequent words because a huge vocabulary will make our model slow to train and not all these words are presented in pretrained embeddings. 
-Special attention should be paid numbers which can be represented as price, year, mobile number. The telephone numbers occur really frequently in advertisements, but in most cases, they are unique because different people have their own telephone numbers - the information about whether a telephone number presents in text or not is meaningful. I used regular expressions to replace all numbers with the words \_large\_number\_, \_small\_num\_,  \_price\_, \_year\_. which gave me a possibility not to lose precious information. 
+Words appearing less than 3 times in the whole corpus were removed. It’s a good idea to remove these infrequent words because a huge vocabulary will make our model slow to train and not all these words are presented in pretrained embeddings. 
+Special attention should be paid to numbers which can be represented as price, year, mobile number. The telephone numbers occur really frequently in advertisements, but in most cases, they are unique because different people have their own telephone numbers - the information about whether a telephone number presented in the text or not is meaningful. I used regular expressions to replace all numbers with the words \_large\_number\_, \_small\_num\_,  \_price\_, \_year\_. which gave me a possibility not to lose precious information. 
 \\
 
 \noindent
@@ -221,11 +221,12 @@ I analyzed properly the most frequent cases where users do mistakes. Then I crea
 %	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
 		\hline
 		\textbf{Functions}                                    & \textbf{Explanation}                                                                                                                \\ \hline
-		get\_features\_for\_train                             & unifying function which upload raw data and call nested functions                                                                   \\ \hline
+		get\_features\_for\_train                             & function which unify uploads of raw data and call nested functions                                                                   \\ \hline
 		extract\_vocabulary                                   & form vocabulary from unique words                                                                                                   \\ \hline
-		get\_tokens                                           & parallel batch execution of texts preprocessing which save and return preprocessed tokens for both test and train.                  \\ \hline
+		get\_tokens                                           & parallel batch execution of texts preprocessing 
+		\\ \hline
 		get\_tokens\_lowercase\_spellcheck\ & wrap over get\_sentence\_tokens which set necessary flags for it                                                                    \\ \hline
-		get\_sentence\_tokens                                 & recieves single sentence breaks it into tokens, make all of them to lowercase, correct spelling mistakes and replace specific words \\ \hline
+		get\_sentence\_tokens                                 & receive single sentence, break it into tokens, make all of them to lowercase, correct spelling mistakes and replace specific words \\ \hline
 		correct\_spelling                                     & correct spelling mistakes using dictionary with around 15000 most common mistakes                                                   \\ \hline
 		expand\_negations                                     & replace mobile phones, dates, prices, and common abbreviation with specific words such as \_year\_, price,  \_large\_number\_ etc.  \\ \hline
 		spell\_digits                                         & single digits are replaced with corresponding word 1 $\rightarrow$ one …                                                                          \\ \hline
@@ -257,14 +258,14 @@ The input to Neural Networks are vectors, not strings. The mapping between words
 		%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
 		\hline
 		\textbf{Functions}                                    & \textbf{Explanation}                                                                                                                \\ \hline
-		sequence\_for\_train                             & loads preprocessed tokens from previous model and use functions listed below to create sequence of indices which corresponds to particular word.                                                                    
+		sequence\_for\_train                             & load preprocessed tokens from previous model and use functions listed below to create sequence of indices which corresponds to particular word.                                                                    
 		\\ \hline
 		to\_sequence                                   & encode each word with the corresponding index        and organize them into sequences of indices with the particular length                                                      \\ \hline
 		tokenize                                           & build and save tokenizer which maps words and their indices 
 		\\ \hline
 		join\_pairs &  helpful function for transformation                                                      
 		\\ \hline
-		create\_embedding\_matrix                                 & build the embedding matrix for unique words from our dataset. It will have the structure word represented by it index in our vocabulary and the corresponding vector from the pre-trained embedding model. \\ \hline
+		create\_embedding\_matrix                                 & build the embedding matrix for unique words from our dataset. It will have the structure word represented by its index in our vocabulary and the corresponding vector from the pre-trained embedding model. \\ \hline
 
 	\end{tabular}
 \end{table}
@@ -285,8 +286,8 @@ The input to Neural Networks are vectors, not strings. The mapping between words
 \end{figure}
 
 
-In this module I implemented different types of neural networks. Each network design module describe only
-one type of networks, that makes text classification. After the design of NN was implemented it should be trained. Apart from the training part this module saves training statistics \ref{img:p3_custom_callbacks} such as: 
+In this module I implemented different types of neural networks. Each network design module describes only
+one type of networks, which makes text classification. After the design of NN was implemented it should be trained. Apart from the training part this module saves training statistics \ref{img:p3_custom_callbacks} such as: 
 \begin{itemize}
 	\item categorical accuracy
 	\item top k categorical accuracy
@@ -310,6 +311,6 @@ and convolutional network with different window sizes.
 
 \clearpage
 \section{Summary of the section}\label{sect3_5}
-This section argue the usage of the selected software. The detailed analysis of the data was provided. 
-Also, we went through the implementation process as well: from the raw data to the trained model.
-The explanation of the most significant functions was made. 
+This section argues the usage of the selected software. A detailed analysis of the data was provided. 
+Also, we went through the implementation process: from the raw data to the trained model.
+An explanation of the most significant functions was made. 

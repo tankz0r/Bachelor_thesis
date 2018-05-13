@@ -3,18 +3,18 @@
 \section{Words representations} \label{sect2_1}
 
 
-In supervised learning domain, to perform classification tasks, usually our goal is to find a parametrized model, best in its class: 
+In supervised learning domain, to perform classification tasks, our goal is usually to find a parametrized model, best in its class: 
 
 \begin{equation}
 \label{eq:equation1}
 A(X, \hat{w}): A(X, \hat{w}) \simeq f(X) \Leftrightarrow A(X, \hat{w}) = \operatorname*{arg\,min}_w \left\|A(X, w) - f(X)\right\|
 \end{equation}
 
-Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into specific numerical format, in another words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways.[тут вставить список литературы]
+Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into specific numerical format, in another words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways. I will cover the most frequently used in the modern practices.
 
 \subsection{Bag-of-Words Approach} \label{subsect2_1_1}
 
-Bag-of-words - an unordered set of words, with their exact position ignored.\cite[p.641]{jurafsky}, 
+Bag-of-words is an unordered set of words, with their exact position ignored.\cite[p.641]{jurafsky}, 
 
 
 \noindent In bag-of-words approach we work under the following assumptions:
@@ -26,7 +26,7 @@ Bag-of-words - an unordered set of words, with their exact position ignored.\cit
 Formally, there is a collection of texts $T_1, T_2, ... , T_n$. Unique tokens $w_1, w_2, ..., w_m$ are extracted to form a dictionary. Thus, each text $T_i$ is represented by feature vector $F_j = \{x_{ij},\ j \in [1,m]\}$, where $x_{ij}$ corresponds to number of occurrences of word $w_j$ in text $T_i$.
 
 Example:
-Our corpus represented by 2 texts:
+Our corpus is represented by 2 texts:
 ["The sun is yellow", "The sky is blue"]
 
 Our tokens are simple unigrams, therefore there are 6 unique words: {the, sun, is, yellow, sky, blue}. Then, given corpus is mapped to feature vectors:
@@ -51,7 +51,7 @@ $T_1=(1,1,1,1,0,0)$, $T_2=(1,0,1,0,1,1)$
 
 \noindent Benefits:
 \begin{itemize}
-	\item Despite its simplicity, demonstrate good results.
+	\item Despite its simplicity, it demonstrates good results.
 	\item Fast preprocessing.
 	\item Built-in in many scientific/NLP libraries
 \end{itemize}
@@ -60,13 +60,13 @@ $T_1=(1,1,1,1,0,0)$, $T_2=(1,0,1,0,1,1)$
 \begin{itemize}
 	\item Huge corpus usually leads to huge vocabulary size.
 	\item Not memory-efficient: if we have corpus with 20 thousand texts then this textual corpus might spawn a dictionary with around 100 thousand elements. Thus, storing feature vectors as an array of type int32 would require 20000 x 100000 x 4 bytes $~$ 8GB in RAM.
-	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us to distinguish between sentences, built from the same words while having opposite meanings:"This paintings don't feel like ugly - buy them!" (positive) and "This paintings feel like ugly - don't buy them!" (negative) 
+	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us distinguish between sentences, built from the same words while having opposite meanings:"This paintings don't feel like ugly - buy them!" (positive) and "This paintings feel like ugly - don't buy them!" (negative) 
 \end{itemize}
 
 In order to capture dependencies between words \textbf{N-grams} technique can be used. N-gram is a sequence of $N$ basic tokens, which can be defined in different ways. 
 
 \begin{enumerate}
-	\item \textbf{Word n-grams - catches more semantics} :
+	\item \textbf{Word n-grams - catch more semantics} :
 	\begin{itemize}
 		\item unigrams: "The sun is yellow." $\rightarrow$ ['The', 'sun', 'is' ...]
 		\item bigrams: "The sun is yellow." $\rightarrow$
@@ -79,7 +79,7 @@ In order to capture dependencies between words \textbf{N-grams} technique can be
 In TF-IDF approach (term frequency - inverse document frequency), in addition to usual BoW-model, the following augmentation is made:
 
 \subsection{TF-IDF  Approach} \label{subsect2_1_2}
-Instead of just counting up the overlapping words, the algorithms applies a weight to each overlapping word. The TF weight measures how many times the word occurs in particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the IDF content words is high.\cite[p.647]{jurafsky} Formaly it can be defined: 
+Instead of just counting up the overlapping words, the algorithms apply a weight to each overlapping word. The TF weight measures how many times the word occurs in a particular document while the IDF weight measures how many different documents a word occurs in and is thus a way of discounting function words. Since function words like the, of, etc., occur in many documents, their IDF is very low, while the TF content words is high.\cite[p.647]{jurafsky} Formally it can be defined: 
 
 
 
@@ -102,15 +102,13 @@ $N$ - total number of documents in a corpus.
 
 \subsection{Embeddings} \label{subsect2_1_3}
 
-Core idea:	A	word’s	meaning	is	given	by	the	words	that frequently	appear	close-by. 
+Core idea: the meaning of a word is	given by the words	that frequently	appear	close-by. The fundamental ideas are stated in the following publications \cite{embeddings_1}, \cite{embeddings_2}. 
 
-тут вставить информацию про работі проведенные в данной области. 
-https://arxiv.org/pdf/1301.3781.pdf
-https://arxiv.org/pdf/1310.4546.pdf
+
 
 1. \textbf{Skip-gram model}
 
-\noindent To begin with key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
+\noindent Considerations of embeddings methods I would like to start with the key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
 
 \begin{equation}
 \label{eq:equation2_4}
@@ -217,7 +215,7 @@ Which is equivalent to,
 
 \noindent where $\bf{\textrm{W}}_i$ and $\bf{b}_{i}$ ($i\in\{1,2\}$) are
 the weights and biases, respectively of the two layers.
-\indent To optimize weights for each layer of neural network the back propagation algorithm is used. Therefore, it is necessary to calculate the gradients for each layer.
+\indent To optimize weights for each layer of neural network a back propagation algorithm is used. Therefore, it is necessary to calculate the gradients for each layer.
   
 \noindent In order to simplify the notation used to solve the problem, define the following terms:
 \begin{equation}
@@ -377,7 +375,7 @@ After training the skip-gram model, we take the hidden layer weight matrix that 
 \end{figure}
 
 
-However, this type of architecture, where for each output we need to compute separate $softmax$ function are very expensive in terms of computational resources and as a result time. Therefore, there are different ways to approximate the expensive $softmax$ function. The most famous of them are:
+However, this type of architecture, where for each output we need to compute separate $softmax$ function is very expensive in terms of computational resources and as a result time. Therefore, there are different ways to approximate the expensive $softmax$ function. The most famous of them are:
 
 \begin{itemize}
 	\item Negative Sampling technique
@@ -395,17 +393,17 @@ J({\boldsymbol u}_{o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = -\log(\sigma( {\b
 \end{equation}
 
 \noindent where $\sigma(\cdot)$ is the sigmoid function.\\
-As it can be clearly seen, now we make calculation not on whole vocabulary $V$, but only on part of it, which randomly generated each time. 
+As it can be clearly seen, now we make calculations not on the whole vocabulary $V$, but only on part of it, which is randomly generated each time. 
 
 ~\\ 
 \textbf{Hierarchical Softmax} \\
 H-Softmax is an approximation which uses binary tree to compute the necessary probability. 
-This gives us a possibility to decompose calculating the probability of one word into a sequence of probability calculations. Balanced thees have a maximum depth of $log_2(|V|)$, that means that in the worst case we need to calculate $log_2(|V|)$ nodes to find the necessary probability of certain word.  
+This gives us a possibility to decompose calculating the probability of one word into a sequence of probability calculations. Balanced threes have a maximum depth of $log_2(|V|)$, which means that in the worst case we need to calculate $log_2(|V|)$ nodes to find the necessary probability of a certain word.  
 
-Both methods give us a possibility to significantly decrease amount of time for computation.
+Both methods enable us a possibility to significantly decrease amount of time for computation.
 
 2. \textbf{CBOW model}
-This model is very similar to skip-gram, but CBOW predicts target word from the bag of words context. From the practical point of view: skip-gram works well with small amount of the training data and represents well even rare words or phrases. CBOW - several times faster to train than the skip-gram, slightly better accuracy for the frequent words. This model presented in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
+This model is very similar to skip-gram, but CBOW predicts a target word from the bag of words context. From the practical point of view, skip-gram works well with a small amount of training data and represents well even rare words or phrases. CBOW is several times faster to train than the skip-gram and has slightly better accuracy for the frequent words. This model is shown in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
 
 \begin{figure}[ht] 
 	\center
@@ -416,8 +414,8 @@ This model is very similar to skip-gram, but CBOW predicts target word from the 
 
 \section{Deep learning algorithms for text classification}\label{sect2_2}
 
-When people hear about NLP problems and neural networks in the one context they probably think about Recurrent neural networks or their modification. 
-However, recently some papers which apply CNNs to problems in Natural Language Processing were introduced and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
+When people hear about NLP problems and neural networks in one context they probably think about Recurrent neural networks or their modification. 
+However, recently some papers which apply CNNs to problems in Natural Language Processing were presented and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
 
 
 \subsection{Convolution Neural Networks}\label{sect2_2_1}  
@@ -429,7 +427,7 @@ However, recently some papers which apply CNNs to problems in Natural Language P
 	\label{img:CNN}  
 \end{figure}
 
-The model architecture, shown in Figure ~\ref{img:CNN} \cite{CNN}, is a variant of the CNN architecture. Let $x_i \in \mathbb{X}$ be the k-dimensional word vector corresponding to the i-th word in the sentence, a sentence of length n. In general, let $x_{i:i+j}$ refer to the concatenation of words $\{x_{i}, x_{i+1}, . . . , x_{i+j}\}$.\cite{CNN}
+The model architecture, shown in Figure ~\ref{img:CNN} \cite{CNN}, is a variant of the CNN architecture. Let $x_i \in \mathbb{X}$ be the k-dimensional word vector corresponding to the i-th word in the sentence, a sentence of length n. In general, let $x_{i:i+j}$ refers to the concatenation of words $\{x_{i}, x_{i+1}, . . . , x_{i+j}\}$.\cite{CNN}
 
 ~\\ 
 \textbf{Convolution} \\
@@ -437,14 +435,14 @@ The model architecture, shown in Figure ~\ref{img:CNN} \cite{CNN}, is a variant 
 \begin{figure}[ht] 
 	\center
 	\includegraphics [scale=0.5] {convolution}
-	\caption{Basic variables which are used in the convolution layer} 
+	\caption{Basic variables used in the convolution layer} 
 	\label{img:convolution}  
 \end{figure}
 
-In a convolution neural network, a limited matrix of small weights is used in the convolution operation, which is moved along the entire processed layer, forming after each shift the activation signal for the neuron of the next layer with the same position. The same matrix of weights, called kernel, is used for different neurons of the output layer.  
-The schema of this process illustrated in the Figure ~\ref{img:convolution} \cite{CNN_habr}.
+In the convolution neural network, a limited matrix of small weights is used in the convolution operation, which is moved along the entire processed layer, forming after each shift the activation signal for the neuron of the next layer with the same position. The same matrix of weights, called kernel, is used for different neurons of the output layer.  
+The schema of this process is illustrated in the Figure ~\ref{img:convolution} \cite{CNN_habr}.
 
-The following equation ~\ref{eq:convolution} describes words above into mathematical way:
+The following equation ~\ref{eq:convolution} describes the words above into mathematical way:
 
 \begin{equation}
 \label{eq:convolution}
@@ -458,13 +456,13 @@ $x_{l-1}$ - the output of some previous function, or the input of the network \\
 $y_{l-1}$ - $x_{l-1}$ after passing the activation function \\
 $w_{l}$ - the convolution kernel \\
 $b_{l}$ - bias or offset \\
-$x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension $(N, M)$.
+$x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension is $(N, M)$.
 
-The important moment which I should put attention is \textbf{Central Core Element}, because indexing of the elements takes place depending on the location of the central element. In fact, the central element determines the origin of the "coordinate axis" of the convolution kernel. 
+The important moment which I should pay attention to is \textbf{Central Core Element}, because indexing of the elements takes place depending on the location of the central element. In fact, the central element determines the origin of the "coordinate axis" of the convolution kernel. 
 
 ~ \\
 \noindent \textbf{Activation functions} \\
-\indent Activation function is transformation which has such general view $y^l=f(x^l)$. I do not cover all activations functions which exist, I chose only these which were used in current model. 
+\indent Activation function is a transformation which has a general view $y^l=f(x^l)$. I did not cover all existing activations functions, I chose only those which were used in the current model. 
 
 1) \textbf{ReLu} \ref{eq:Relu} - this activation function was used at Convolution layers. It has the following properties:
 
@@ -482,12 +480,12 @@ f_{ReLU}=max(0,x)
 \end{figure}
 
 
-2) \textbf{Softmax }\ref{eq:equation2_4} - I am dealing with multi class classification, therefore this activation was picked.
+2) \textbf{Softmax }\ref{eq:equation2_4} - I deal with multi class classification, therefore this activation was picked.
 
 
 ~ \\
 \noindent \textbf{Max pulling layer} \\ 
-\indent This layer allows you to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features we can use for classification.
+\indent This layer allows one to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features can be used for classification.
 
 \begin{figure}[ht] 
 	\center
@@ -522,10 +520,10 @@ in matrix representation:
 
 \noindent \textbf{Loss function} for the model is Cross Entropy \ref{eq:equation2_8} described above.
 
-Now after all components of CNN are known, we need to optimize weights for each layer. Therefore, it is necessary to derive of the formula for back propagation through the loss function. 
+Now after all components of CNN are known, we need to optimize weights for each layer. Therefore, it is necessary to derive the formula for back propagation through the loss function. 
 
 1) Hopefully, the gradient for loss function was already founded \ref{eq:equation_CE_3}, \ref{eq:equation_CE_4}, \ref{eq:CE_gradient}.
-Therefore, we have following equation \ref{eq:CNN_softmax_grad}: 
+Therefore, we have the following equation \ref{eq:CNN_softmax_grad}: 
 
 \begin{equation}
 	\label{eq:CNN_softmax_grad}
@@ -552,7 +550,7 @@ or
 	\end{multlined}
 \end{equation}
 
-Next, we should update weight of fully connected layer matrix $w^l$. 
+Next, we should update the weights of fully connected layer matrix $w^l$. 
 \begin{equation}
 \frac{\partial J}{\partial w^l} = \dfrac{\partial J}{\partial y^l}\dfrac{\partial y^l}{\partial x^l}\dfrac{\partial x^l}{\partial w^l} = \delta^l \cdot \dfrac{\partial x^l}{\partial w^l} = \left(y^{l-1} \right)^T \cdot \delta^l    
 \end{equation}
@@ -609,9 +607,9 @@ Derivation of gradient for the bias element.
 \end{equation}
 
 \subsection{Recurrent neural networks and their modifications} 
-A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed graph along a sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to tasks such as natural language processing. \cite{wiki_def_rnn}
+A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed graph along a sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to such tasks as natural language processing. \cite{wiki_def_rnn}
 Recurrent neural networks are networks with loops in them, allowing information to persist.
-Figure \ref{img:rnn_structure} \cite{colah_lstm} illustrates RNN where, $A$ looks at some input $x_t$ and outputs a value $h_t$. $A$ loop allows information to be passed from one step of the network to the next.
+Figure \ref{img:rnn_structure} \cite{colah_lstm} illustrates RNN where, $A$ looks at some input $x_t$ and outputs a value $h_t$. $A$ loop allows information to pass from one step of the network to the next.
 
 \begin{figure}[ht] 
 	\center
@@ -621,7 +619,7 @@ Figure \ref{img:rnn_structure} \cite{colah_lstm} illustrates RNN where, $A$ look
 \end{figure}
 
 However, this type of NN has problems called "Vanishing Gradient and Gradient Explosion Problems". 
-This problem was detailed explored in \cite{rnn_problems}. Therefore, the most successful for 
+This problem was studied in detail in \cite{rnn_problems}. Therefore, the most successful for 
 practical issues are modified RNN. I will use the most popular type - Long Short Term Memory networks.
 
 LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior. This features is achieved by more complex structure.
@@ -660,13 +658,13 @@ i_t = \sigma(W_i[h_{t-1}, x_t] + b_i)
 \tilde{C}_t = \tanh(W_C[h_{t-1}, x_t] + b_C)
 \end{equation}
 
-It’s now time to update the old cell state, $C_{t-1}$, into the new cell state $C_t$. We multiply the old state by $f_t$, forgetting the things we decided to forget earlier. Then we add $i_t*\tilde{C}_t$. This is the new candidate values, scaled by how much we decided to update each state value.
+To update the old cell state, $C_{t-1}$, into the new cell state $C_t$ we multiply the old state by $f_t$, forgetting the things we decided to forget earlier. Then we add $i_t*\tilde{C}_t$. This is new candidate values, scaled by how much we decided to update each state value.
 
 \begin{equation}
 \tilde{C}_t = f_t*{C}_{t-1} + i_t*\tilde{C}_t
 \end{equation}
 
-Finally, we need to decide what we’re going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we’re going to output. Then, we put the cell state through $\tanh$ (to push the values to be between -1 and 1) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to \cite{colah_lstm} .
+Finally, it is necessary to decide what will go to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we’re going to output. Then, we put the cell state through $\tanh$ (to push the values to be between -1 and 1) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to \cite{colah_lstm} .
 
 \begin{equation}
 o_t = \sigma(W_o[h_{t-1}, x_t] + b_o)
@@ -678,15 +676,15 @@ h_t = o_t * \tanh(C_t)
 
 \subsection{Advantages and drawbacks of different architectures} 
 
-Recurrent Neural Networks have intuitive sense in NLP taks. They resemble how we process language : reading sequentially from left to right. 
-In contrary, CNNs which widely used in Computer Vision have such features as Location Invariance and local Compositionality made intuitive sense for images, but not so much for NLP because it has important where in the sentence a word appears. Pixels close to each other are likely to be semantically related , but the same isn’t always true for words.  In many languages, parts of phrases could be separated by several other words. The compositional aspect isn’t obvious either. Clearly, words compose in some ways, like an adjective modifying a noun, but how exactly this works what higher level representations actually “mean” isn’t as obvious as in the Computer Vision case. Fortunately, this doesn’t mean that CNNs don’t work.  All models are wrong, but some are useful. It turns out that CNNs applied to NLP problems perform quite well. The simple Bag of Words model is an obvious oversimplification with incorrect assumptions, but has nonetheless been the standard approach for years and lead to pretty good results.
+Recurrent Neural Networks have intuitive sense in NLP tasks. They resemble how we process language : reading sequentially from left to right. 
+In contrary, CNNs which widely are used in Computer Vision have such features as Location Invariance and local Compositionality made intuitive sense for images, but not so much for NLP because it is important where a word appears in the sentence. Pixels close to each other are likely to be semantically related , but the same isn’t always true for words.  In many languages, parts of phrases could be separated by several other words. The compositional aspect isn’t obvious either. Clearly, words compose in some ways, like an adjective modifying a noun, but how exactly this works, what higher level representations actually “mean” isn’t as obvious as in the Computer Vision case. Fortunately, this doesn’t mean that CNNs don’t work.  All models are wrong, but some are useful. It turns out that CNNs applied to NLP problems perform quite well. The simple Bag of Words model is an obvious oversimplification with incorrect assumptions, but has nonetheless been the standard approach for years and lead to pretty good results.
 
-A big argument for CNNs is that they are fast. Very fast. Convolutions are a central part of computer graphics and implemented on a hardware level on GPUs. Compared to something like n-grams, CNNs are also efficient in terms of representation. With a large vocabulary, computing anything more than 3-grams can quickly become expensive. Even Google does not provide anything beyond 5-grams. Convolutional Filters learn good representations automatically, without needing to represent the whole vocabulary. It’s completely reasonable to have filters of size larger than 5.\cite{wildml}
+A big argument for CNNs is that they are very fast. Very fast. Convolutions are a central part of computer graphics and are implemented on a hardware level on GPUs. Compared to something like n-grams, CNNs are also efficient in terms of representation. With a large vocabulary, computing anything more than 3-grams can quickly become expensive. Even Google does not provide anything beyond 5-grams. Convolutional Filters learn good representations automatically, without representing the whole vocabulary. It’s completely reasonable to have filters of the size larger than 5.\cite{wildml}
 In the next chapter, I will implement both architectures and evaluate them.
 
 \subsection{Summary of the section}
 
-The second section provides theoretical overview of different methods for textual information 
+The second section provides a theoretical overview of different methods for textual information 
 encoding such as Bag-of-words and embeddings. 
-We also went through the deep analysis of different architectures of neural networks which 
+We also deeply analyzed different architectures of neural networks which 
 are useful for text classification problem. 

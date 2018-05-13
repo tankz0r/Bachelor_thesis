@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  12 MAY 2018 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  13 MAY 2018 17:17
 entering extended mode
 **./dissertation.tex
 (dissertation.tex
@@ -1643,58 +1643,69 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 79.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
  [9.9]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 91.
 <images/eval1.png, id=286, 522.15076pt x 120.6909pt>
 File: images/eval1.png Graphic file (type png)
 <use images/eval1.png>
-Package pdftex.def Info: images/eval1.png  used on input line 98.
+Package pdftex.def Info: images/eval1.png  used on input line 97.
 (pdftex.def)             Requested size: 522.14949pt x 120.6906pt.
 
-Overfull \hbox (24.22624pt too wide) in paragraph at lines 98--99
+Overfull \hbox (24.22624pt too wide) in paragraph at lines 97--98
  [] 
  []
 
 <images/eval2.png, id=287, 461.8053pt x 100.4553pt>
 File: images/eval2.png Graphic file (type png)
 <use images/eval2.png>
-Package pdftex.def Info: images/eval2.png  used on input line 107.
+Package pdftex.def Info: images/eval2.png  used on input line 106.
 (pdftex.def)             Requested size: 461.80415pt x 100.45505pt.
 <images/eval3.png, id=288, 351.59355pt x 100.4553pt>
 File: images/eval3.png Graphic file (type png)
 <use images/eval3.png>
-Package pdftex.def Info: images/eval3.png  used on input line 116.
+Package pdftex.def Info: images/eval3.png  used on input line 115.
 (pdftex.def)             Requested size: 351.59268pt x 100.45505pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 123.
+[10.10 <./images/eval1.png> <./images/eval2.png> <./images/eval3.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 128.
-[10.10 <./images/eval1.png> <./images/eval2.png>]
-Overfull \hbox (10.93172pt too wide) in paragraph at lines 158--158
+(babel)             in language  on input line 123.
+
+Overfull \hbox (10.93172pt too wide) in paragraph at lines 157--157
  []\T2A/cmr/bx/n/14.4 actual
  []
 
 
-Overfull \hbox (4.49548pt too wide) in paragraph at lines 158--158
+Overfull \hbox (4.49548pt too wide) in paragraph at lines 157--157
  []\T2A/cmr/bx/n/14.4 value
+ []
+
+
+Overfull \hbox (7.256pt too wide) in paragraph at lines 160--160
+\T2A/cmr/m/n/14.4 Positive 
+ []
+
+
+Overfull \hbox (12.32368pt too wide) in paragraph at lines 160--160
+\T2A/cmr/m/n/14.4 Negative 
  []
 
 
@@ -1708,33 +1719,23 @@ Overfull \hbox (12.32368pt too wide) in paragraph at lines 161--161
  []
 
 
-Overfull \hbox (7.256pt too wide) in paragraph at lines 162--162
-\T2A/cmr/m/n/14.4 Positive 
- []
-
-
-Overfull \hbox (12.32368pt too wide) in paragraph at lines 162--162
-\T2A/cmr/m/n/14.4 Negative 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 180.
-[11.11 <./images/eval3.png>]
+(babel)             in language  on input line 183.
+[11.11]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 203.
 Package babel Info: Redefining russian shorthand "~
@@ -3304,7 +3305,7 @@ texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/denys/.miktex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/denys/.miktex/texm
 fs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/denys/.miktex/texmfs
 /install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (79 pages, 3311292 bytes).
+Output written on dissertation.pdf (79 pages, 3311329 bytes).
 PDF statistics:
  1467 PDF objects out of 1728 (max. 8388607)
  280 named destinations out of 1000 (max. 500000)
