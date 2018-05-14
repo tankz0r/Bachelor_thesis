@@ -14,7 +14,7 @@ Classification problem is a problem of identifying to which category a new obser
 
 \newcommand{\docsetlabeled}{\mathbb{D}}
 
-In text classification, we are given a description  $d \in \mathbb{X}$ of a document, where $\mathbb{X}$ is the document space ; and a fixed set of classes  $\mathbb{C} = \{ c_1,c_2,\ldots,c_J \}$. Classes are also called categories or labels . Typically, the document space  $\mathbb{X}$ is some type of high-dimensional space, and the classes are human defined for the needs of an application, as in the examples China and documents that talk about multicore computer chips above. We are given a training set  $\docsetlabeled$ of labeled documents  $d $, where  $d \in \mathbb{X} \times \mathbb{C}$. For example: 
+In text classification, we are given a description  $d \in \mathbb{X}$ of a document, where $\mathbb{X}$ is the document space ; and a fixed set of classes  $\mathbb{C} = \{ c_1,c_2,\ldots,c_J \}$. Classes are also called categories or labels . Typically, the document space  $\mathbb{X}$ is some type of high-dimensional space, and the classes are defined by people for the needs of an application, as in the examples China and documents that talk about multicore computer chips above. We are given a training set  $\docsetlabeled$ of labeled documents  $d $, where  $d \in \mathbb{X} \times \mathbb{C}$. For example: 
 
 \begin{equation}
 \label{eq:equation3}
@@ -85,7 +85,7 @@ When we have a set of candidate models \textbf{model selection} helps us to incr
 - Before machine learning engineers find the best model, they make a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
 
 \textbf{Algorithm selection} - in most cases we deal with many algorithms to find the best one under the given circumstances. Therefore, we naturally need to compare different algorithms to each other, often regarding predictive and computational performance.
-Nevertheless, these three sub-tasks have similarities in terms that we want to estimate the performance of a model, they all require different approaches.
+Nevertheless, these three sub-tasks have some similarities. When we want to estimate the performance of a model, they all require different approaches.
 
 
 \subsection{Model Evaluation Techniques}
@@ -132,7 +132,7 @@ Accuracy simply measures what percent of your predictions was correct. It's the 
 accuracy = {\frac{correct}{predictions}}
 \end{equation}
 
-Accuracy measures merely what percent of forecasts were correct.  Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
+Accuracy measures merely what percent of forecasts were correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
 
 \textbf{Confusion Matrix}
 ~\\
