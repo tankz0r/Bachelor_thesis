@@ -1,7 +1,7 @@
-\babel@toc {russian}{}
+\babel@toc {english}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Classes, training set, and test set in text classification.\relax }}{7}{figure.caption.3}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning work flow.\relax }}{8}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning workflow.\relax }}{8}{figure.caption.4}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces .\relax }}{10}{figure.caption.5}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces .\relax }}{10}{figure.caption.6}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces .\relax }}{10}{figure.caption.7}
@@ -12,7 +12,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Words representation\relax }}{22}{figure.caption.12}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The CBOW model architecture.\relax }}{24}{figure.caption.13}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Convolution Neural Networks architecture for text classification\relax }}{25}{figure.caption.14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Basic variables which are used in the convolution layer\relax }}{25}{figure.caption.15}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Basic variables used in the convolution layer\relax }}{25}{figure.caption.15}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces ReLu activation function\relax }}{26}{figure.caption.16}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Max pulling layer\relax }}{27}{figure.caption.17}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Fully connected layer of CNN\relax }}{28}{figure.caption.18}
@@ -54,4 +54,4 @@
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{64}{figure.caption.67}
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{65}{figure.caption.68}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\CYRA .1}{\ignorespaces Architectures of CNN model\relax }}{79}{figure.caption.74}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Architectures of CNN model\relax }}{79}{figure.caption.74}
