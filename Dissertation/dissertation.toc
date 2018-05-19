@@ -1,5 +1,5 @@
 ~\hfill {p.}\par 
-\babel@toc {english}{}
+\select@language {english}
 \contentsline {chapter}{Abbreviation}{4}{chapter*.1}
 \contentsline {chapter}{INTRODUCTION}{5}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Text classification}{6}{chapter.1}
@@ -40,6 +40,6 @@
 \contentsline {section}{\numberline {4.6}Summary of the section}{65}{section.4.6}
 \contentsline {chapter}{Conclusion}{66}{chapter*.69}
 \contentsline {chapter}{BIBLIOGRAPHY}{67}{section*.70}
-\contentsline {chapter}{LIST OF FIGURES}{69}{section*.72}
-\contentsline {chapter}{LIST OF TABLES}{71}{section*.73}
-\contentsline {chapter}{\numberline {A}Appendix}{72}{appendix.A}
+\contentsline {chapter}{LIST OF FIGURES}{70}{section*.73}
+\contentsline {chapter}{LIST OF TABLES}{72}{section*.74}
+\contentsline {chapter}{\numberline {A}Appendix}{73}{appendix.A}

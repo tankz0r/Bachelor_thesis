@@ -1,3 +1,4 @@
+\setcounter{chapstyle}{0}   
 \renewcommand{\appendixname}{APPENDIX}
 \appendix
 %%% Правка оформления ссылок на приложения:
@@ -8,10 +9,10 @@
 %\setlength{\cftchapnumwidth}{\widthof{\cftchapfont\appendixname\cftchapaftersnum}}%
 %}
 %% Оформление заголовков приложений ближе к ГОСТ:
-\sectionformat{\chapter}[display]{% Параметры заголовков разделов в тексте
-    label=\appendixname\ \thechapter,% (ГОСТ Р 2.105, 4.3.6)
-    labelsep=20pt,
-}
+%\sectionformat{\chapter}[display]{% Параметры заголовков разделов в тексте
+%    label=\appendixname\ \thechapter,% (ГОСТ Р 2.105, 4.3.6)
+%    labelsep=20pt,
+%}
 %\renewcommand\thechapter{\Asbuk{chapter}} % Чтобы приложения русскими буквами нумеровались
 
 \chapter{Appendix} \label{AppendixA}

@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Feature vector\relax }}{15}{table.caption.9}
@@ -20,7 +20,6 @@
 \contentsline {table}{\numberline {4.6}{\ignorespaces Analysis of top k accuracy\relax }}{58}{table.caption.57}
 \contentsline {table}{\numberline {4.7}{\ignorespaces Final results\relax }}{63}{table.caption.65}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Classification report}}{72}{table.A.1}
 \contentsline {table}{\numberline {A.1}{\ignorespaces Classification report}}{73}{table.A.1}
 \contentsline {table}{\numberline {A.1}{\ignorespaces Classification report}}{74}{table.A.1}
 \contentsline {table}{\numberline {A.1}{\ignorespaces Classification report}}{75}{table.A.1}

@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {english}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Classes, training set, and test set in text classification.\relax }}{7}{figure.caption.3}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning workflow.\relax }}{8}{figure.caption.4}
@@ -54,4 +54,4 @@
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{64}{figure.caption.67}
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{65}{figure.caption.68}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Architectures of CNN model\relax }}{79}{figure.caption.74}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Architectures of CNN model\relax }}{79}{figure.caption.75}
