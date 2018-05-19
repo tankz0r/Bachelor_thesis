@@ -106,7 +106,7 @@ Core idea: the meaning of a word is	given by the words	that frequently	appear	cl
 
 
 
-1. \textbf{Skip-gram model}
+1. Skip-gram model
 
 \noindent I would like to start the consideration of embeddings methods with the key definitions of softmax~\ref{eq:equation2_4}  and sigmoid~\ref{eq:equation2_5} functions,
 
@@ -382,27 +382,24 @@ However, this type of architecture, where for each output we need to compute sep
 	\item Hierarchical Softmax
 \end{itemize}
  
-~\\ 
-\textbf{Negative Sampling technique} \\
 
-\noindent The only difference from the original model is that we introduce new loss function - negative sampling loss for the predicted vector ${\boldsymbol v}_{c}$, and 
+\noindent The only difference between Negative Sampling technique and the original model is that we introduce new loss function - negative sampling loss for the predicted vector ${\boldsymbol v}_{c}$, and 
 the expected output word is ${\boldsymbol o}({\boldsymbol u}_{o})$. Assume that $K$ negative samples (words) are drawn, and they are ${\boldsymbol u}_{1},...,{\boldsymbol u}_{k}$, respectively for simplicity of notation ($k\in\{1,...,K\}$ and $o\notin\{1,...,K\}$). Again for a given word, ${\boldsymbol o}$, denote its output vector as ${\boldsymbol u}_{o}$. The negative sampling loss function in this case is,
 
 \begin{equation}
 J({\boldsymbol u}_{o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = -\log(\sigma( {\boldsymbol u}^{\top}_{o}{\boldsymbol v}_{c})) - \sum^{K}_{k=1}\log(\sigma(- {\boldsymbol u}^{\top}_{k}{\boldsymbol v}_{c}))
 \end{equation}
 
-\noindent where $\sigma(\cdot)$ is the sigmoid function.\\
+where $\sigma(\cdot)$ is the sigmoid function.\\
 As it can be clearly seen, now we make calculations not on the whole vocabulary $V$, but only on the part of it, which is randomly generated each time. 
 
 ~\\ 
-\textbf{Hierarchical Softmax} \\
-H-Softmax is an approximation which uses a binary tree to compute the necessary probability. 
+Hierarchical Softmax is an approximation which uses a binary tree to compute the necessary probability. 
 This gives us a possibility to decompose calculating the probability of one word into a sequence of probability calculations. Balanced threes have a maximum depth of $log_2(|V|)$, which means that in the worst case we need to calculate $log_2(|V|)$ nodes to find the necessary probability of a certain word.  
 
 Both methods enable us a possibility to significantly decrease the amount of time for computation.
 
-2. \textbf{CBOW model}
+2.CBOW model
 This model is very similar to skip-gram, but CBOW predicts a target word from the bag of words context. From the practical point of view, skip-gram works well with a small amount of training data and represents well even rare words or phrases. CBOW is several times faster to train than the skip-gram and has slightly better accuracy for the frequent words. This model is shown in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
 
 \begin{figure}[ht] 
@@ -429,8 +426,8 @@ However, recently some papers which apply CNN's to problems in Natural Language 
 
 The model architecture, shown in Figure ~\ref{img:CNN} \cite{CNN}, is a variant of the CNN architecture. Let $x_i \in \mathbb{X}$ be the k-dimensional word vector corresponding to the i-th word in the sentence, a sentence of length n. In general, let $x_{i:i+j}$ refers to the concatenation of words $\{x_{i}, x_{i+1}, . . . , x_{i+j}\}$.\cite{CNN}
 
-~\\ 
-\textbf{Convolution} \\
+
+\subsubsection{Convolution}\label{sect2_2_1_1} 
 
 \begin{figure}[ht] 
 	\center
@@ -458,13 +455,12 @@ $w_{l}$ - the convolution kernel \\
 $b_{l}$ - bias or offset \\
 $x_{l}$ - the result of the operation of convolution. That is, the operations which goe separately for each element $i,j$ of the matrix $x_{l}$, whose dimension is $(N, M)$.
 
-The important moment which I should pay attention to is \textbf{Central Core Element}, because indexing of the elements takes place depending on the location of the central element. In fact, the central element determines the origin of the "coordinate axis" of the convolution kernel. 
+The important moment which I should pay attention to is Central Core Element, because indexing of the elements takes place depending on the location of the central element. In fact, the central element determines the origin of the "coordinate axis" of the convolution kernel. 
 
-~ \\
-\noindent \textbf{Activation functions} \\
+\subsubsection{Activation functions}
 \indent Activation function is a transformation which has a general view $y^l=f(x^l)$. I did not cover all existing activations functions, I chose only those which were used in the current model. 
 
-1) \textbf{ReLu} \ref{eq:Relu} - this activation function was used at Convolution layers. It has the following properties:
+1) ReLu \ref{eq:Relu} - this activation function was used at Convolution layers. It has the following properties:
 
 
 \begin{equation}
@@ -480,11 +476,10 @@ f_{ReLU}=max(0,x)
 \end{figure}
 
 
-2) \textbf{Softmax }\ref{eq:equation2_4} - I deal with multi-class classification, therefore this activation was picked.
+2) Softmax \ref{eq:equation2_4} - I deal with multi-class classification, therefore this activation was picked.
 
 
-~ \\
-\noindent \textbf{Max pulling layer} \\ 
+\subsubsection{Max pulling layer} 
 \indent This layer allows one to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features can be used for classification.
 
 \begin{figure}[ht] 
@@ -495,9 +490,7 @@ f_{ReLU}=max(0,x)
 \end{figure}
 
 
-
-~ \\
-\noindent \textbf{Fully connected layer} \\
+\subsubsection{Fully connected layer}
 \indent After layers of the convolution and max pooling, we obtain a set of feature cards. We connect them into one vector and this vector will be fed into the fully connected network.
 The Figure \ref{Ts0Sib_} describes this stage.
 
@@ -518,7 +511,7 @@ in matrix representation:
 	X^l=Y^{l-1}W^l+B^l_i 
 \end{equation}
 
-\noindent \textbf{Loss function} for the model is Cross Entropy \ref{eq:equation2_8} described above.
+\noindent Loss function for the model is Cross Entropy \ref{eq:equation2_8} described above.
 
 Now after all components of CNN are known, we need to optimize weights for each layer. Therefore, it is necessary to derive the formula for back propagation through the loss function. 
 

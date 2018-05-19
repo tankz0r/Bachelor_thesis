@@ -13,14 +13,14 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The CBOW model architecture.\relax }}{24}{figure.caption.13}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Convolution Neural Networks architecture for text classification\relax }}{25}{figure.caption.14}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Basic variables used in the convolution layer\relax }}{25}{figure.caption.15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces ReLu activation function\relax }}{26}{figure.caption.16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces ReLu activation function\relax }}{27}{figure.caption.16}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Max pulling layer\relax }}{27}{figure.caption.17}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Fully connected layer of CNN\relax }}{28}{figure.caption.18}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Back propagation through max pulling layer\relax }}{29}{figure.caption.19}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{30}{figure.caption.20}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces The structure of Recurrent neural network\relax }}{31}{figure.caption.21}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The architecture of Recurrent neural network\relax }}{31}{figure.caption.22}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces The architecture of Long Short Term Memory neural network\relax }}{31}{figure.caption.23}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The architecture of Recurrent neural network\relax }}{32}{figure.caption.22}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The architecture of Long Short Term Memory neural network\relax }}{32}{figure.caption.23}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{39}{figure.caption.30}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Build embeddings structure\relax }}{41}{figure.caption.32}

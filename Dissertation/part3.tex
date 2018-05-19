@@ -42,11 +42,12 @@ The target attribute to be predicted is the category of the advertisements. The 
 	\label{my-label}
 	\begin{tabular}{|c|c|}
 		\hline
-		\textbf{lvl2}      & category ID     \\
+		
+		lvl2     & category ID     \\
 		\hline
-		\textbf{lvl1}	 		  & identifier of the parent category		 \\
+		lvl1 		  & identifier of the parent category		 \\
 		\hline
-		\textbf{name}	 		  & category name		 \\
+		name	 		  & category name		 \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -58,10 +59,10 @@ As it can be clearly seen from Table \ref{general} we have 2 categorical
 and 2 numerical variables and our data does not have any missing fields. 
 It is good to start examining our data by each variable separately. 
 From Table \ref{lvl1} we can see that data is not distributed equally between 
-categories. First-level categories with number \textbf{6,5,1} consist almost of half 
+categories. First-level categories with number 6,5,1 consist almost of half 
 of all advertisements. That means that our data is imbalanced and we can not 
 use accuracy as only one metric for evaluation. 
-Then if we take a look at second-level categories Table \ref{lvl2} we will see even the worst picture: one third of the date is concentrated in the categories which are marked \textbf{29,14} and \textbf{55} respectively. 
+Then if we take a look at second-level categories Table \ref{lvl2} we will see even the worst picture: one third of the date is concentrated in the categories which are marked 29,14 and 55 respectively. 
 That means that it is necessary to use techniques to regularize distributions: under/over sampling or weight balanced.
 
 For evaluation such metrics as categorical\_accuracy
@@ -178,11 +179,11 @@ I decided to divide the whole dataset into train.csv / test.csv files which have
 \end{figure}
 
 
-\noindent \textbf{1.Tokenize Text}
+\noindent 1.Tokenize Text
 
 The given text was split by spaces and then lemmatized.
 
-\noindent \textbf{2. Remove infrequent words}
+\noindent 2. Remove infrequent words
 
 Words appearing less than 3 times in the whole corpus were removed. It’s a good idea to remove these infrequent words because a huge vocabulary will make our model slow to train and not all these words are presented in pretrained embeddings. 
 Special attention should be paid to numbers which can be represented as price, year, mobile number. The telephone numbers occur really frequently in advertisements, but in most cases, they are unique because different people have their telephone numbers - the information about whether a telephone number presented in the text or not is meaningful. I used regular expressions to replace all numbers with the words \_large\_number\_, \_small\_num\_,  \_price\_, \_year\_. which gave me a possibility not to lose precious information. 
@@ -206,7 +207,7 @@ r'201[0-8]': '\_year\_',
 r'[0-9]+': '\_small\_num\_',}}
 \\
 
-\noindent \textbf{3. Correct misspellings}
+\noindent 3. Correct misspellings
 
 I analyzed properly the most frequent cases where users do mistakes. Then I created a dictionary which consists wrong and right written words, so each time when the wrong written word appears it is replaced with the right written equivalent. 
 
@@ -236,7 +237,7 @@ I analyzed properly the most frequent cases where users do mistakes. Then I crea
 
 
 
-\noindent \textbf{4. Build embeddings }
+\noindent 4. Build embeddings 
 
 \begin{figure}[ht] 
 	\center

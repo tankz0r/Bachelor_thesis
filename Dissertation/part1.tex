@@ -53,7 +53,7 @@ The classes in text classification often have some interesting structure such as
 Supervised learning is the machine learning task of inferring a function from labelled training data. The training data consist of a set of training examples. Between inputs and reference outputs there may be some dependence, but it is unknown. On the basis of these data, it is necessary to restore the dependence. In order to measure the accuracy, a quality function can be introduced.\cite[p.7]{foundationsml} The diagram of the supervised learning process is presented in Figure ~\ref{img:supervised_learning_work_flow} 
 \\
 
-\noindent \textbf{Here are some of the most important supervised learning algorithms}:
+\noindent Here are some of the most important supervised learning algorithms:
 \begin{enumerate}
 	\item Naive Bayes .\cite{NB1}.\cite{NB2}
 	%\item k-Nearest Neighbors
@@ -77,19 +77,18 @@ Now let us find out what validation is for?
 To better understand each point we need to examine it more deeply.
 
 \subsection{Model Evaluation Applications}
+Very important property of learning models is Generalization performance. In general we want to estimate the predictive performance of our model on future data.  Therefore, it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
 
-Very important property of learning models is \textbf{Generalization performance}. In general we want to estimate the predictive performance of our model on future data.  Therefore, it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
-
-When we have a set of candidate models \textbf{model selection} helps us to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
+When we have a set of candidate models model selection helps us to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
  
 - Before machine learning engineers find the best model, they make a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
 
-\textbf{Algorithm selection} - in most cases we deal with many algorithms to find the best one under the given circumstances. Therefore, we naturally need to compare different algorithms to each other, often regarding predictive and computational performance.
+Algorithm selection - in most cases we deal with many algorithms to find the best one under the given circumstances. Therefore, we naturally need to compare different algorithms to each other, often regarding predictive and computational performance.
 Nevertheless, these three sub-tasks have some similarities. When we want to estimate the performance of a model, they all require different approaches.
 
 
 \subsection{Model Evaluation Techniques}
-\textbf{Holdout method} (simple train/test split)
+Holdout method (simple train/test split)
 The holdout method is the most straightforward model evaluation technique. We take our labelled dataset and split it randomly into two parts: a training set and a test set.
 
 \begin{figure}[ht] 
@@ -117,14 +116,14 @@ And the fraction of correct predictions reflects our estimate of the prediction.
 	\label{img:eval3}  
 \end{figure}
 
-We don’t want to train and evaluate our model on the same training dataset, because it will lead to \textbf{overfitting} - the model will simply memorise the training data, and it will generalise wrong to unseen data. \cite{model_evaluation}
+We don’t want to train and evaluate our model on the same training dataset, because it will lead to overfitting - the model will simply memorise the training data, and it will generalise wrong to unseen data. \cite{model_evaluation}
 
 
 \section{Classification metrics}
 
 Classification problems are probably the most common type of ML problem, and therefore many metrics can be used to evaluate predictions of these problems. The most frequently used metrics for classification problems are:
 
-\textbf{Accuracy}
+Accuracy
 ~\\
 Accuracy simply measures what percent of your predictions was correct. It's the ratio between the number of correct predictions and the total number of predictions.
 
@@ -134,7 +133,7 @@ accuracy = {\frac{correct}{predictions}}
 
 Accuracy measures merely what percent of forecasts were correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
 
-\textbf{Confusion Matrix}
+Confusion Matrix
 ~\\
 The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
 
@@ -168,23 +167,23 @@ The confusion matrix is a handy presentation of the accuracy of a model with 2 o
 
 Confusion matrix allows one to compute various classification metrics.
 
-\textbf{Precision and Recall}
+Precision and Recall
 ~\\
 
 Precision and recall are two metrics. But they are often used together.
-\textbf{Precision} answers the question: What percent of positive predictions was correct?
+Precision answers the question: What percent of positive predictions was correct?
 
 \begin{equation}
 precision = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ positive}}
 \end{equation}
 
-\textbf{Recall} answers the question: What percent of the positive cases did you catch?
+Recall answers the question: What percent of the positive cases did you catch?
 
 \begin{equation}
 recall = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ negative}}
 \end{equation}
 
-\textbf{F1-score}
+F1-score
 ~\\
 The F1-score (sometimes known as the balanced F-beta score) is a single metric that combines both precision and recall via their harmonic mean:
 
