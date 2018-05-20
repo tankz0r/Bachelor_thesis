@@ -63,10 +63,10 @@ $T_1=(1,1,1,1,0,0)$, $T_2=(1,0,1,0,1,1)$
 	\item A bag of words is an orderless representation: throwing out spatial relationships between features leads to the fact that simplified model cannot let us distinguish between sentences, built from the same words, while having opposite meanings:"These paintings don't feel like ugly - buy them!" (positive) and "These paintings feel like ugly - don't buy them!" (negative) 
 \end{itemize}
 
-In order to capture dependencies between words \textbf{N-grams} technique can be used. N-gram is a sequence of $N$ basic tokens, which can be defined in different ways. 
+In order to capture dependencies between words N-grams technique can be used. N-gram is a sequence of $N$ basic tokens, which can be defined in different ways. 
 
-\begin{enumerate}
-	\item \textbf{Word n-grams - catch more semantics} :
+
+Word n-grams - catch more semantics:
 	\begin{itemize}
 		\item unigrams: "The sun is yellow." $\rightarrow$ ['The', 'sun', 'is' ...]
 		\item bigrams: "The sun is yellow." $\rightarrow$
@@ -74,7 +74,7 @@ In order to capture dependencies between words \textbf{N-grams} technique can be
 		\item 3-grams: "The sun is yellow." $\rightarrow$
 		['The sun is ', 'sun is yellow']
 	\end{itemize}
-\end{enumerate}
+
 
 In TF-IDF approach (term frequency - inverse document frequency), in addition to usual BoW-model, the following augmentation is made:
 
@@ -135,7 +135,7 @@ Core idea: the meaning of a word is	given by the words	that frequently	appear	cl
 	\label{img:FCNN}  
 \end{figure}
 
-\noindent where $x$ is one-hot input vector, $h$ - hidden layer, y is the one-hot label vector, and ŷ is the predicted probability vector for all classes.The neural network employs sigmoid activation function for the hidden layer, and softmax for the output layer and cross entropy cost ~\ref{eq:equation2_7} is used.
+\noindent where $x$ is one-hot input vector, $h$ - hidden layer, y is the one-hot label vector, and ŷ is the predicted probability vector for all classes.The neural network Figure \ref{img:FCNN} employs sigmoid activation function for the hidden layer, and softmax for the output layer and cross entropy cost ~\ref{eq:equation2_7} is used.
 
 \begin{equation}
 \label{eq:equation2_8}
@@ -263,9 +263,9 @@ Finally, using the results from Equation~\ref{eq:equation2_11}:
 
 We have everything to update our weights: 
 
-
+%\clearpage
 Now, turn definitely to skip-gram model shown in Figure ~\ref{img:skip_gram_model}\cite{cbow_skip}:
-\begin{figure}[ht] 
+\begin{figure}[H] 
 	\center
 	\includegraphics [scale=0.5] {skip_gram_model}
 	\caption{The Skip-gram model architecture.} 
@@ -460,7 +460,7 @@ The important moment which I should pay attention to is Central Core Element, be
 \subsubsection{Activation functions}
 \indent Activation function is a transformation which has a general view $y^l=f(x^l)$. I did not cover all existing activations functions, I chose only those which were used in the current model. 
 
-1) ReLu \ref{eq:Relu} - this activation function was used at Convolution layers. It has the following properties:
+1) ReLu \ref{eq:Relu}, \ref{img:Relu} - this activation function was used at Convolution layers. It has the following properties:
 
 
 \begin{equation}
@@ -468,7 +468,7 @@ The important moment which I should pay attention to is Central Core Element, be
 f_{ReLU}=max(0,x)
 \end{equation}
 
-\begin{figure}[ht] 
+\begin{figure}[H] 
 	\center
 	\includegraphics [scale=0.4] {Relu}
 	\caption{ReLu activation function} 
@@ -480,7 +480,7 @@ f_{ReLU}=max(0,x)
 
 
 \subsubsection{Max pulling layer} 
-\indent This layer allows one to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features can be used for classification.
+\indent This layer allows one to highlight important features on the maps of features obtained from convolution layer, gives an invariance to find the object on the cards, and also reduces the dimensionality of the maps, speeding up the network time. It works in the following way Figure \ref{img:max_pulling}: we divide our features from convolution layer into disjoint $m \times n$ regions, and take the maximum feature activation over these regions. These new features can be used for classification.
 
 \begin{figure}[ht] 
 	\center
@@ -492,7 +492,7 @@ f_{ReLU}=max(0,x)
 
 \subsubsection{Fully connected layer}
 \indent After layers of the convolution and max pooling, we obtain a set of feature cards. We connect them into one vector and this vector will be fed into the fully connected network.
-The Figure \ref{Ts0Sib_} describes this stage.
+The Figure \ref{img:CNN_FNN_layer} describes this stage.
 
 \begin{figure}[ht] 
 	\center
@@ -560,7 +560,7 @@ Equation for back propagation through $y^{l-1}$
  \dfrac{\partial J}{\partial y^{l-1}} = \delta^l \cdot \dfrac{\partial x^l}{\partial y^{l-1}}= \delta^l \cdot (w^l)^{T} = \delta^{l-1}
 \end{equation} 
 
-After this, we need to go with backprop through the layer of max pulling.
+After this, we need to go with backprop through the layer of max pulling Figure \ref{img:backprog_max_pulling}.
 The error "passes" only through those values of the original matrix, which were chosen by the maximum at the step of the max puling. The remaining error values for the matrix will be zero. 
 
 \begin{figure}[ht] 
@@ -570,7 +570,7 @@ The error "passes" only through those values of the original matrix, which were 
 	\label{img:backprog_max_pulling}  
 \end{figure}
 
-It is necessary to derive weights update for kernel  \ref{img:conv_grad}. 
+It is necessary to derive weights update for kernel Figure \ref{img:conv_grad}. 
 
 \begin{figure}[ht] 
 	\center

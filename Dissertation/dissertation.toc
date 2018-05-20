@@ -17,10 +17,10 @@
 \contentsline {subsection}{\numberline {2.1.3}Embeddings}{16}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Deep learning algorithms for text classification}{24}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Convolution Neural Networks}{24}{subsection.2.2.1}
-\contentsline {subsubsection}{Convolution}{25}{figure.caption.14}
+\contentsline {subsubsection}{Convolution}{25}{figure.caption.12}
 \contentsline {subsubsection}{Activation functions}{26}{equation.2.2.35}
-\contentsline {subsubsection}{Max pulling layer}{27}{figure.caption.16}
-\contentsline {subsubsection}{Fully connected layer}{27}{figure.caption.17}
+\contentsline {subsubsection}{Max pulling layer}{27}{figure.caption.14}
+\contentsline {subsubsection}{Fully connected layer}{28}{figure.caption.15}
 \contentsline {subsection}{\numberline {2.2.2}Recurrent neural networks and their modifications}{31}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Advantages and drawbacks of different architectures}{33}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Summary of the section}{34}{subsection.2.2.4}
@@ -37,8 +37,8 @@
 \contentsline {section}{\numberline {4.4}Convolution neural network with different regularization}{57}{section.4.4}
 \contentsline {section}{\numberline {4.5}Final model}{63}{section.4.5}
 \contentsline {section}{\numberline {4.6}Summary of the section}{65}{section.4.6}
-\contentsline {chapter}{CONCLUSION}{66}{chapter*.69}
-\contentsline {chapter}{BIBLIOGRAPHY}{67}{section*.70}
-\contentsline {chapter}{LIST OF FIGURES}{70}{section*.73}
-\contentsline {chapter}{LIST OF TABLES}{72}{section*.74}
-\contentsline {chapter}{APPENDIX A}{73}{appendix*.75}
+\contentsline {chapter}{CONCLUSION}{66}{chapter*.67}
+\contentsline {chapter}{BIBLIOGRAPHY}{67}{section*.68}
+\contentsline {chapter}{LIST OF FIGURES}{70}{section*.71}
+\contentsline {chapter}{LIST OF TABLES}{72}{section*.72}
+\contentsline {chapter}{APPENDIX A}{73}{appendix*.73}

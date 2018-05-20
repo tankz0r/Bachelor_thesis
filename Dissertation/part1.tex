@@ -84,30 +84,14 @@ Nevertheless, these three sub-tasks have some similarities. When we want to esti
 
 \subsection{Model Evaluation Techniques}
 Holdout method (simple train/test split)
-The holdout method is the most straightforward model evaluation technique. We take our labelled dataset and split it randomly into two parts: a training set and a test set.
+The holdout method is the most straightforward model evaluation technique. We take our labelled dataset and split it randomly into two parts: a training set and a test set.Then, we fit a model to the training data and predict the labels of the test set. And the fraction of correct predictions reflects our estimate of the prediction.
 
-\begin{figure}[ht] 
+\begin{figure}[h!] 
 	\center
 	\includegraphics [scale=1] {eval1}
-	\caption{.} 
-	\label{img:eval1}  
-\end{figure}
-
-Then, we fit a model to the training data and predict the labels of the test set.
-
-\begin{figure}[ht] 
-	\center
 	\includegraphics [scale=1] {eval2}
-	\caption{.} 
-	\label{img:eval2}  
-\end{figure}
-
-And the fraction of correct predictions reflects our estimate of the prediction.
-
-\begin{figure}[ht] 
-	\center
 	\includegraphics [scale=1] {eval3}
-	\caption{.} 
+	\caption{Holdout method} 
 	\label{img:eval3}  
 \end{figure}
 
@@ -118,76 +102,75 @@ We don’t want to train and evaluate our model on the same training dataset, be
 
 Classification problems are probably the most common type of ML problem, and therefore many metrics can be used to evaluate predictions of these problems. The most frequently used metrics for classification problems are:
 
-Accuracy
-~\\
-Accuracy simply measures what percent of your predictions was correct. It's the ratio between the number of correct predictions and the total number of predictions.
-
-\begin{equation}
-accuracy = {\frac{correct}{predictions}}
-\end{equation}
-
-Accuracy measures merely what percent of forecasts were correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
-
-Confusion Matrix
-~\\
-The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
-
-\newcommand\MyBox[2]{
-	\fbox{\lower0.75cm
-		\vbox to 1.7cm{\vfil
-			\hbox to 2.2cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
-			\vfil}%
-	}%
-}
-
-\noindent
-\begin{figure}[ht] 
-	\center
-	\label{img:eval3} 
-	\renewcommand\arraystretch{1.5}
-	\setlength\tabcolsep{0pt}
-	\begin{tabular}
-		{c >{\bfseries}r @{\hspace{0.8em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
-		\multirow{10}{*}{\parbox{1.1cm}{\bfseries\raggedleft actual\\ value}} & 
-		& \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
-		& & \bfseries p & \bfseries n & \bfseries total \\
-		& p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
-		& n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
-		& total & P & N &
-	\end{tabular}
+\begin{enumerate}
+	\item Accuracy \ref{accuracy} \\
+	Accuracy simply measures what percent of your predictions was correct. It's the ratio between the number of correct predictions and the total number of predictions.
 	
-	\caption{Confusion matrix} 
-	 
-\end{figure}
-
-Confusion matrix allows one to compute various classification metrics.
-
-Precision and Recall
-~\\
-
-Precision and recall are two metrics. But they are often used together.
-Precision answers the question: What percent of positive predictions was correct?
-
-\begin{equation}
-precision = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ positive}}
-\end{equation}
-
-Recall answers the question: What percent of the positive cases did you catch?
-
-\begin{equation}
-recall = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ negative}}
-\end{equation}
-
-F1-score
-~\\
-The F1-score (sometimes known as the balanced F-beta score) is a single metric that combines both precision and recall via their harmonic mean:
-
-\begin{equation}
-F_1 = 2 {\frac{precision * recall}{precision + recall}}
-\end{equation}
-
-
-Unlike the arithmetic mean, the harmonic mean tends toward the smaller of the two elements. Hence the F1 score will be small if either precision or recall is small.
+	\begin{equation}
+	\label{accuracy}
+	accuracy = {\frac{correct}{predictions}}
+	\end{equation}
+	
+	Accuracy measures merely what percent of forecasts were correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
+	
+	\item Confusion Matrix \ref{CM} \\
+	The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
+	
+	\newcommand\MyBox[2]{
+		\fbox{\lower0.75cm
+			\vbox to 1.7cm{\vfil
+				\hbox to 2.2cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+				\vfil}%
+		}%
+	}
+	
+	\noindent
+	\begin{figure}[ht] 
+		\center
+		\label{CM} 
+		\renewcommand\arraystretch{1.5}
+		\setlength\tabcolsep{0pt}
+		\begin{tabular}
+			{c >{\bfseries}r @{\hspace{0.8em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
+			\multirow{10}{*}{\parbox{1.1cm}{\bfseries\raggedleft actual\\ value}} & 
+			& \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
+			& & \bfseries p & \bfseries n & \bfseries total \\
+			& p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
+			& n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
+			& total & P & N &
+		\end{tabular}	
+		\caption{Confusion matrix} 
+		 
+	\end{figure}
+	
+	Confusion matrix allows one to compute various classification metrics.
+	
+	\item Precision \ref{precision} and Recall \ref{recall}\\
+	Precision and recall are two metrics. But they are often used together.
+	Precision answers the question: What percent of positive predictions was correct?
+	
+	\begin{equation}
+	\label{precision}
+	precision = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ positive}}
+	\end{equation}
+	
+	Recall answers the question: What percent of the positive cases did you catch?
+	
+	\begin{equation}
+	\label{recall}
+	recall = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ negative}}
+	\end{equation}
+	
+	\item F1-score \ref{f1}\\
+	The F1-score (sometimes known as the balanced F-beta score) is a single metric that combines both precision and recall via their harmonic mean:
+	
+	\begin{equation}
+	\label{f1}
+	F_1 = 2 {\frac{precision * recall}{precision + recall}}
+	\end{equation}
+	
+	Unlike the arithmetic mean, the harmonic mean tends toward the smaller of the two elements. Hence the F1 score will be small if either precision or recall is small.
+\end{enumerate}
 
 \section{Summary of the section}
 

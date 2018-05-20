@@ -131,7 +131,7 @@ For evaluation such metrics as categorical\_accuracy
 \end{table}
 
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{Information about second-level categories}
 	\label{my-label}
@@ -153,7 +153,7 @@ For evaluation such metrics as categorical\_accuracy
 \end{table}
 
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{Information about categorical features}
 	\label{my-label}
@@ -170,8 +170,9 @@ I decided to divide the whole dataset into train.csv / test.csv files which have
 
 \clearpage
 \section{Data preparation} \label{sect3_3}
+The following diagram describes steps which where made to process texts Figure \ref{img:p3_preprocessing}.
 
-\begin{figure}[ht] 
+\begin{figure}[H] 
 	\center
 	\includegraphics [scale=0.5] {p3_preprocessing.png}
 	\label{img:p3_preprocessing}  
@@ -238,6 +239,7 @@ I analyzed properly the most frequent cases where users do mistakes. Then I crea
 
 
 \noindent 4. Build embeddings 
+The following diagram describes steps which where made to build embeddings for each word Figure \ref{img:p3_sequences_fasttext}.
 
 \begin{figure}[ht] 
 	\center
@@ -277,9 +279,9 @@ The input to Neural Networks are vectors, not strings. The mapping between words
 
 \clearpage
 \section{Network design and training} \label{sect3_4}
+The following diagram shows structure of the final module, which main responsibility is to train model. \ref{img:p3_train}.
 
-
-\begin{figure}[ht] 
+\begin{figure}[H] 
 	\center
 	\includegraphics [scale=0.5] {p3_train.png}
 	\label{img:p3_train}  
@@ -303,14 +305,13 @@ As tested network types on this step, I choose bidirectional recurrent network
 and convolutional network with different window sizes. 
 
 
-\begin{figure}[ht] 
+\begin{figure}[H] 
 	\center
 	\includegraphics [scale=0.25] {p3_custom_callbacks.png}
 	\label{img:p3_custom_callbacks}  
 	\caption{Metrics which were logged} 
 \end{figure}
 
-\clearpage
 \section{Summary of the section}\label{sect3_5}
 This section argues the usage of the selected software. A detailed analysis of the data was provided. 
 Also, we went through the implementation process: from the raw data to the trained model.

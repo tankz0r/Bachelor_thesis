@@ -17,7 +17,7 @@ Training time is a very important parameter. Therefore, I would like to train NN
 
 \section{Base line model} \label{sect4_2}
 
-Firstly, I built the baseline model which CNN models should achieve in the future. I started this step with LSTM networks, as most often mentioned in the articles on NLP problems. At this step I was trying different configurations of LSTM parameters. The architecture which gave me the best score is shown in the Figire \ref{img:part4-bilstm}. According to my experiments bidirectional recurrent networks perform better than the same type and same size by parameters one directional networks, therefore it was chosen as the main layer. As input to the NN I gave two embedded sequences of words: one for the description of advert , another for title. This model has the bi-LSTM layer with 100 units. Each sequence goes through the bi-LSTM layer and then merged together. To solve overfitting in this model I used BatchNormalization and dropout. LSTM dropout rate was chosen manually and was equal to 0.332. Besides the bi-LSTM layer, there are two fully connected layers: one at the end because we want to estimate probabilities for each class, so it has 183 neurons in it and one in the middle with 130 neurons. As a training algorithm I chose Adam with default parameters: (lr=0.001, beta\_1=0.9, beta\_2=0.999, epsilon=1e-08, decay=0.0). As I have mentioned earlier, to better understand the network I visualize the histograms and percentile weights in each layer. The model was trained on 15 epochs.
+Firstly, I built the baseline model which CNN models should achieve in the future. I started this step with LSTM networks, as most often mentioned in the articles on NLP problems. At this step I was trying different configurations of LSTM parameters. The architecture which gave me the best score is shown in the Figure \ref{img:part4-bilstm}. According to my experiments bidirectional recurrent networks perform better than the same type and same size by parameters one directional networks, therefore it was chosen as the main layer. As input to the NN I gave two embedded sequences of words: one for the description of advert , another for title. This model has the bi-LSTM layer with 100 units. Each sequence goes through the bi-LSTM layer and then merged together. To solve overfitting in this model I used BatchNormalization and dropout. LSTM dropout rate was chosen manually and was equal to 0.332. Besides the bi-LSTM layer, there are two fully connected layers: one at the end because we want to estimate probabilities for each class, so it has 183 neurons in it and one in the middle with 130 neurons. As a training algorithm I chose Adam with default parameters: (lr=0.001, beta\_1=0.9, beta\_2=0.999, epsilon=1e-08, decay=0.0). As I have mentioned earlier, to better understand the network I visualize the histograms and percentile weights in each layer. The model was trained on 15 epochs.
 
 
 \begin{figure}[ht] 
@@ -91,12 +91,12 @@ Histograms give much information about what is happening with the network. I dec
 		\center{\includegraphics[width=0.5\linewidth]{part4/bilstm_backward_lstm_1_recurrent_kernel_0} \\ b}
 	\end{minipage}
 	\caption{Bi-LSTM 100 units. Histogram of output from forward recurrent layers (a); histogram of weights from backward recurrent layers (b)}
-	\label{img:category_crossentropy}  
+	\label{img:Bi-LSTM 100 units. Histogram of output from forward recurrent}  
 \end{figure}
 
 
-According to Figures \ref{img:/bilstm_val_category_accuracy}, \ref{img:bilstm_val_category_crossentropy}, \ref{img:bilstm_val_top_k_accuracy} model was not overfitted. Histograms of outputs from feed forward and backward recurrent layers do not change significantly during training process. 
-This can be explained by the fact that this layer does not train enough and I think that this network continues to learn thanks to FFNN part. I think, that the best shape for the histogram of weights from first FFNN layer will be a normal distribution with higher variance, than after initialization. As we can see the FFNN layer has exactly such behavior which means that it learns some meaningful information. It is possible that more epochs will have a positive effect on the recurrent layer. 
+According to Figures \ref{img:/bilstm_val_category_accuracy}, \ref{img:bilstm_val_category_crossentropy}, \ref{img:bilstm_val_top_k_accuracy} model was not overfitted. Histograms of outputs from feed forward and backward recurrent layers Figure \ref{img:Bi-LSTM 100 units. Histogram of output from forward recurrent} do not change significantly during training process. 
+This can be explained by the fact that this layer does not train enough and I think that this network continues to learn thanks to FFNN part Figure \ref{img:bilstm_dense}. I think, that the best shape for the histogram of weights from first FFNN layer will be a normal distribution with higher variance, than after initialization. As we can see the FFNN layer has exactly such behavior which means that it learns some meaningful information. It is possible that more epochs will have a positive effect on the recurrent layer. 
 
 \begin{figure}[ht] 
 	\center
@@ -206,7 +206,7 @@ Let us compare results which different models give.
 \end{table}
 
 
-According to the results, I can assume that models having more filters show better accuracy. However, it is noticeable that model with 256 and 512 filters have quite different results on train and test sets (~3-5\% difference). It can be interpreted as overfitting of these models. 
+According to the results \ref{img:3CNN_categorical_accuracy}, \ref{img:3CNN_category_crossentropy}, \ref{img:3CNN_top_k_accuracy}, \ref{img:3CNN_timing}, I can assume that models having more filters show better accuracy. However, it is noticeable that model with 256 and 512 filters have quite different results on train and test sets (~3-5\% difference). It can be interpreted as overfitting of these models. 
 
 
 \begin{figure}[ht]
@@ -231,7 +231,7 @@ According to the results, I can assume that models having more filters show bett
 
 \clearpage
 
-Histograms of convolution layers look almost the same. They do not change significantly from the initial distribution. It can mean these layers do not learn much. 
+Histograms of convolution layers Figure \ref{img:3CNN_conv_layers} look almost the same. They do not change significantly from the initial distribution. It can mean these layers do not learn much. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -254,7 +254,7 @@ Histograms of convolution layers look almost the same. They do not change signif
 \\
 \\
 \\
-Merged layers are also very similar, because of convolution layers.
+Merged layers Figure \ref{img:3CNN_merged_layers} are also very similar, because of convolution layers.
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -272,7 +272,7 @@ Merged layers are also very similar, because of convolution layers.
 \end{figure}
 
 \clearpage
-We can easily notice the difference in the shape of the distribution on the initial epoch and the final. The model with 512 filters has a normal distribution with lower variance comparing to the one with 128 filters. It is noticeable, that this the final distribution changed comparing to initial one, that means that layer learned some information. 
+We can easily notice the difference in the shape of the distribution Figure \ref{img:3CNN_dense_layers} on the initial epoch and the final. The model with 512 filters has a normal distribution with lower variance comparing to the one with 128 filters. It is noticeable, that this the final distribution changed comparing to initial one, that means that layer learned some information. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -390,7 +390,7 @@ Modifications:
 
 \noindent
 \\
-According to the results, it can be clearly seen that model with modifications number 3 and 4 were overfitted for sure.
+According to the results Figures \ref{img:4CNN_categorical_accuracy}, \ref{img:4CNN_category_crossentropy}, \ref{img:4CNN_top_k_accuracy}, \ref{img:4CNN_timing}, it can be clearly seen that model with modifications number 3 and 4 were overfitted for sure.
 Model number 1 has lower overfit rate. The most stable model was number 2, which demonstrated the same results on test and train dataset. 
 
 \begin{figure}[ht]
@@ -447,11 +447,11 @@ Model number 1 has lower overfit rate. The most stable model was number 2, which
 		\center{\includegraphics[width=1\linewidth]{part4/4CNN-conv-2.png} \\ c, d}
 	\end{minipage}
 	\caption{Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of convolution layers}
-	\label{img:category_crossentropy}  
+	\label{img:Convolutional models with modification convolution layers}  
 \end{figure}
 
 \clearpage
-If we compare results of weights histograms with the ones in Section \ref{sect4_3} we can see a significant difference in distributions.
+If we compare results of weights histograms Figures \ref{img:Convolutional models with modification convolution layers}, \ref{img:Convolutional models with modification merged layers} with the ones in Section \ref{sect4_3} we can see a significant difference in distributions.
 Which is mostly caused by different types of regularizations. We can also see that convolution layers from model 1 and 3 change through epochs which
 means that they learn.  
 
@@ -464,11 +464,11 @@ means that they learn.
 		\center{\includegraphics[width=1\linewidth]{part4/4CNN-merge3-2.png} \\ c, d}
 	\end{minipage}
 	\caption{Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of merged layers}
-	\label{img:category_crossentropy}  
+	\label{img:Convolutional models with modification merged layers}  
 \end{figure}
 
 \clearpage
-Similar situation we can see with dense layers. The weights are put into ranges between -0.1 and 0.1 where l2-regularizations was used.
+Similar situation we can see with dense layers Figure \ref{img:Convolutional models with modification Histogram of dense layers}. The weights are put into ranges between -0.1 and 0.1 where l2-regularizations was used.
 The changes through epochs we can see only in first two models which are marked with blue and gray colors.   
 
 \begin{figure}[ht]
@@ -480,7 +480,7 @@ The changes through epochs we can see only in first two models which are marked 
 		\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ c, d}
 	\end{minipage}
 	\caption{Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4.  Histogram of dense layers}
-	\label{img:category_crossentropy}  
+	\label{img:Convolutional models with modification Histogram of dense layers}  
 \end{figure}
 
 
@@ -505,7 +505,7 @@ according to many metrics model with these configurations trained slower than ot
 it has the lowest learning rate 1e-4. To speed up the training process I increased the learning rate in the beginning to be equal 1e-3. Then as the CNN slowly converges to its optimal value
 the learning was decreased to 1e-4 to slow down - otherwise it may overshoot the optimal value.
 Such modifications gave me improvement in speed and the stability of the model at the same time.
-The final results can be seen in Figure \ref{img:final_CNN_categorical_accuracy}, 
+The final results can be seen in Figures \ref{img:final_CNN_categorical_accuracy}, 
 \ref{img:final_CNN_category_crossentropy}, \ref{img:final_CNN_top_k_accuracy}.
 
 
