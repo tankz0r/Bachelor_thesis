@@ -1,11 +1,15 @@
 \documentclass[14pt]{beamer}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath,mathtext}
 \usepackage{cite,enumerate,float,indentfirst}
 
 \graphicspath{{images/}}
+
+\beamertemplatenavigationsymbolsempty
+
+\input{../common/data.tex}      % Основные сведения
 
 \usetheme{Pittsburgh}
 \usecolortheme{whale}
@@ -15,89 +19,70 @@
 	\leavevmode%
 	\hbox{%
 		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-			Д. В. Лазаренко, Jiji.ng
+			    \thesisAuthorShort, \thesisOrganizationShort
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-			Киев, 2018
+			     \thesisCity, \thesisYear
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
-			Стр. \insertframenumber{} из \inserttotalframenumber \hspace*{2ex}
+			p. \insertframenumber{} из \inserttotalframenumber \hspace*{2ex}
 		\end{beamercolorbox}}%
 		\vskip0pt%
 	}
 	
 	\newcommand{\itemi}{\item[\checkmark]}
 	
-	\title{\small{Рекомендательные системы и не только ...}}
+	\title{\small{\thesisTitle}}
 	\author{
-		Jiji.ng%
-		\vspace{20pt}%
+		\thesisOrganizationLong\\
+		\emph{Speaker:}~\thesisAuthorShort\\%
+		\emph{Supervisor:}~\supervisorRegaliaShort~\supervisorFioShort\\%
+		%\emph{Supervisor:}~\thesisOrganization\\%
+%		\vspace{20pt}%
+%		\vspace{20pt}%
 	}
-	\date{\small{Киев, 2018}}
+	\date{\small{\thesisCity, \thesisYear}}
+
 	
 	\begin{document}
 		
 		\maketitle
-		\begin{frame}
-			\frametitle{Содержание}
-			\begin{enumerate}
-				\item \textbf{Постановка проблемы}
-				\item \textbf{Виды рекомендательных систем}
-				\begin{itemize}
-					\item Content-based
-					\item Collaborative Filtering
-					\item Mixed models
-				\end{itemize}
-				\item \textbf{Photon-ml}
-				\begin{itemize}
-					\item Generalized Linear Model
-					\item Generalized Additive Model
-				\end{itemize}
-				\item \textbf{Проблемы}
-			\end{enumerate}
-		\end{frame}
+
 				
 		\begin{frame}
-			\frametitle{Постановка проблемы}
-				
-				$$ u \in \mathbb{U} \text{ - множество пользователей}$$ 
-				$$ i \in \mathbb{I} \text{ - множество товаров}$$ 
-				$$ r_{ui} \in \mathbb{Re} \text{- множество событий}$$ 	
-			\begin{itemize}
-				\item Offline models
+			\frametitle{Introduction}
+			{\textbf{Aim}} of this thesis is building an effective model which have high accuracy and an appropriate speed for classification of advertisements at the e-commerce platform Jiji.ng. \\ 
+			\textbf{Object of study} is advertisements at e-commerce platform 
+			\\
+			\textbf{Subject of study} is classification model for advertisements: 	
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Relevance of the problem}
 				\begin{itemize}
-					\item Предсказать предпочтение 
-					$$ r'_{ui} = predict(u,i) \simeq r_{ui}$$
-					\item Персональные рекомендации
-					$$ u \longmapsto (i_1 \dots i_k) = recommend_k(u)$$
-					\item Похожие объекты
-					$$ u \longmapsto (i_1 \dots i_M) = similar_M(i)$$
-				\end{itemize}
-				\item Online models
-			\end{itemize}	
+					\item e-commerce sales are quickly increasing
+					\item large online e-commerce websites serve millions of users’ requests per day
+					\item processes of registrations and purchases as much convenient and fast as possible
+					\item users have to make a choice from more than hundred categories
+					\item  automatic category prediction is very important in terms of saving moderators' time and as a result, decreasing the number of necessary moderators to process them
+				\end{itemize}	
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Постановка проблемы}
-			Постановка задачи звучит следующим образом: для каждого активного пользователя показать top-N объявлений с наибольшей вероятностью запроса контакта.
-				\begin{figure}[h]
-					\begin{minipage}[h]{0.65\linewidth}
-						\center{\includegraphics[width=1\linewidth]{items1}}
-					\end{minipage}
-					\hfill
-					\begin{minipage}[h]{0.65\linewidth}
-						\center{\includegraphics[width=1\linewidth]{items2}}
-					\end{minipage}
-				\end{figure}
+			\frametitle{Structure of the data files}
+				\begin{table}[]
+					\centering
+					\begin{tabular}{|p{1cm} | p{3cm} | p{5cm} |}
+						\hline
+						\textbf{lvl2} & \textbf{titles}                  & \textbf{descriptions}                                                                   \\ \hline
+					    29   & Clean Toyota Camry 2008 Silver   & Fairly used Toyota 08 Camry with no problems V4 engine fabric seats and interior            \\ \hline
+						25   & Look Unique                      & Nice, quality, adorable,unique dress available now, whatsapp me                             \\ \hline
+					\end{tabular}
+				\end{table}
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Offline-модели}
-			Offline-модели рекомендаций глобально делятся на коллаборативные и контентные. Очевидно, что каждая из этих моделей имеет свои плюсы и минусы и наилучшие результаты показывают гибридные модели, которые учитывают как историю действий пользователей, так и контент объявлений. 
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Content-based}
+			\frametitle{Existing approaches }
 			\begin{itemize}
 				\item title
 				\item description

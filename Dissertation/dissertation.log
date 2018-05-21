@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  20 MAY 2018 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  21 MAY 2018 20:20
 entering extended mode
 **./dissertation.tex
 (dissertation.tex
@@ -2435,10 +2435,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 16927 strings out of 495203
- 274378 string characters out of 3181306
- 409209 words of memory out of 3000000
- 19358 multiletter control sequences out of 15000+200000
+ 16928 strings out of 495203
+ 274400 string characters out of 3181306
+ 409189 words of memory out of 3000000
+ 19359 multiletter control sequences out of 15000+200000
  25726 words of font info for 69 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,16n,83p,1481b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2469,7 +2469,7 @@ texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/denys/.miktex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/denys/.miktex/texm
 fs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/denys/.miktex/texmfs
 /install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (79 pages, 3289228 bytes).
+Output written on dissertation.pdf (79 pages, 3289268 bytes).
 PDF statistics:
  1433 PDF objects out of 1440 (max. 8388607)
  286 named destinations out of 1000 (max. 500000)
