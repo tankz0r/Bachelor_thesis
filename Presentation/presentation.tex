@@ -5,7 +5,7 @@
 \usepackage{amssymb,amsfonts,amsmath,mathtext}
 \usepackage{cite,enumerate,float,indentfirst}
 
-\graphicspath{{images/}}
+\graphicspath{{../Dissertation/images/}}
 
 \beamertemplatenavigationsymbolsempty
 
@@ -82,65 +82,162 @@
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Existing approaches }
+			\frametitle{Existing approaches}
+			Let`s assume we have the following sentences: \\
+			
+			\textbf{["The sun is yellow", "The sky is blue"]}\\
+			
+			Encode words with the Bag-of-words method
+			\begin{table} [htbp]
+				\centering
+				%  \begin{center}
+				\begin{tabular}{| p{1cm} || p{1cm} | p{1cm} | p{1cm} | p{2cm} | p{1cm} | p{1cm}l |}
+					\hline
+					\hline
+					Text & \centering the  & \centering sun  & \centering is  &\centering yellow &\centering sky  & \centering  blue & \\
+					\hline
+					$T_{1}$ &\centering  1   &\centering  1  &\centering  1   &\centering  1 &\centering  0 &\centering 0 &   \\
+					$T_{2}$ &\centering  1   &\centering  0  &\centering  1   &\centering  0 &\centering  1 &\centering 1 &   \\
+					\hline
+					\hline
+				\end{tabular}
+				%  \end{center}
+			\end{table}
+			\begin{enumerate}
+				\item Naive Bayes 
+				%\item k-Nearest Neighbors
+				\item Logistic Regression 
+				\item Support Vector Machines (SVMs)
+				\item Decision Trees and Random Forests
+			\end{enumerate}  
+		\end{frame}
+		
+		
+		\begin{frame}  
+			\frametitle{Embeddings}
+			\begin{tabular}{cl}  
+				\begin{tabular}{l}
+					\includegraphics[height=3.5cm, width=5cm]{embed_vectors}
+				\end{tabular}
+				& \begin{tabular}{l}
+					\parbox{0.5\linewidth}{%  change the parbox width as appropiate
+						An \textbf{embedding} is a mapping from discrete objects, such as words, to vectors of real numbers. For example, a 300-dimensional embedding for English words could include: \\
+						\textbf{blue}: $(0.059, 0.7597, ...)$
+					}
+				\end{tabular}  \\
+			\end{tabular}
+		\end{frame}
+		
+		
+		\begin{frame}
+			\frametitle{Bi-LSTM Neural Network}
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{| p{4cm} | p{3cm} | p{3cm} |}
+					%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
+					\hline
+					\textbf{Metric}  & \textbf{Train} & \textbf{Test}                                                    
+					\\ \hline
+					categorical accuracy   &  0.7975 & 0.8203
+					\\ \hline
+					category crossentropy  &  0.8532 & 0.7478
+					\\ \hline
+					top k accuracy   &  0.9189 & 0.9219.
+					\\ \hline		
+				\end{tabular}
+			\end{table}	
+		\end{frame}
+		
+		
+		\begin{frame}
+			\frametitle{Convolution Neural Network }
+			\begin{figure}[ht] 
+				\center
+				\includegraphics [scale=0.3] {CNN}
+			\end{figure}
 			\begin{itemize}
-				\item title
-				\item description
-				\item images
-				\item ...
-			\end{itemize}
-			Algorithms: Latent Dirichlet allocation(LDA), relevance feedback(RF), TF-IDF  
+				\item 300 filters
+				\item size of filter: 3, 4, 5
+				\item l2-regularization equals to 0.01 
+				\item dropout equals to the rate 0.5
+			\end{itemize}	
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Collaborative Filtering}
-				Оставим в векторах только те элементы, для которых нам известны значения в обоих векторах, т.е. оставим только те продукты, которые оценили оба пользователя, или только тех пользователей, которые оба оценили данный продукт. В результате нам просто нужно определить, насколько похожи два вектора вещественных чисел.
+			\frametitle{Results}
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{| p{4cm} | p{3cm} | p{3cm} |}
+					%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
+					\hline
+					\textbf{Metric}  & \textbf{Train} & \textbf{Test}                                                    
+					\\ \hline
+					categorical accuracy   &  0.8250 & 0.8307
+					\\ \hline
+					category crossentropy  &   0.5800 & 0.6612
+					\\ \hline
+					top k accuracy   &  0.9545 & 0.9473
+					\\ \hline		
+				\end{tabular}
+			\end{table}
+		\end{frame}
+		
+		
+		\begin{frame}
+			\frametitle{Results}
+			\begin{tabular}{cl}  
+				\begin{tabular}{l}
+					\includegraphics[height=3.5cm, width=5cm]{part4/final_CNN_train_category_accuracy}
+					\includegraphics[height=3.5cm, width=5cm]{part4/final_CNN_val_category_accuracy}
+				\end{tabular}
+				& \begin{tabular}{l}
+					\includegraphics[height=3.5cm, width=5cm]{part4/final_CNN_val_category_crossentropy}
+				\end{tabular}  \\
+			\end{tabular}
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Collaborative Filtering}
-				Подсчитаем коэффициент корреляции:
-					$ w_{ij} = \frac{\sum_a{(r_{ai}- \overline{r_i})(r_{aj}- \overline{r_i})}}{\sqrt{ \sum_a{(r_{ai}- \overline{r_i})}}{\sqrt{ \sum_a{(r_{aj}- \overline{r_j})}}}} $ \\
-				где, $\overline{r_i} \text{ - средний рейтинг, выставленный пользователем i}$
+		\frametitle{Results}
+			\hfil\hfil\includegraphics[width=5cm]{part4/final_CNN_train_category_accuracy}
+			\hfil\hfil\includegraphics[width=5cm]{part4/final_CNN_val_category_accuracy}\newline
+			\vfil
+			\hfil\hfil\includegraphics[width=5cm]{part4/final_CNN_train_top_k_accuracy}
+			\hfil\hfil\includegraphics[width=5cm]{part4/final_CNN_val_top_k_accuracy}\newline
+		\end{frame}
+		
+		
+		\begin{frame}
+			\frametitle{Results}
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{| p{4cm} | p{3cm} | p{3cm} |}
+					%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
+					\hline
+					\textbf{Metric}  & \textbf{Train} & \textbf{Test}                                                    
+					\\ \hline
+					categorical accuracy   &  0.8250 & 0.8307
+					\\ \hline
+					category crossentropy  &   0.5800 & 0.6612
+					\\ \hline
+					top k accuracy   &  0.9545 & 0.9473
+					\\ \hline		
+				\end{tabular}
+			\end{table}
 		\end{frame}
 		
 		\begin{frame}
 			\frametitle{Matrix-factorization}
-			On September 21, 2009, the grand prize of US 1,000,000 was given to the BellKor's Pragmatic Chaos team which bested Netflix's own algorithm for predicting ratings by 10.06% 
-			\begin{figure}[h]
-				\begin{minipage}[h]{1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{kaggle}}
-				\end{minipage}
-			\end{figure}
-		\end{frame}
 
-		\begin{frame}
-			\frametitle{Matrix-factorization}
-			Latent Factor Models 
-				\begin{figure}[h]
-					\begin{minipage}[h]{0.75\linewidth}
-						\center{\includegraphics[width=1\linewidth]{matrix-factorization}}
-					\end{minipage}
-				\end{figure}
-			Algorithms: Alternating least squares(ALS), Stochastic gradient descent(SGD) 
 		\end{frame}
 		
 		\begin{frame}
 			\frametitle{Matrix-factorization}
-			\begin{figure}[h]
-				\begin{minipage}[h]{0.75\linewidth}
-					\center{\includegraphics[width=1\linewidth]{features_space}}
-				\end{minipage}
-			\end{figure}
+
 		\end{frame}
 		
 		\begin{frame}
 			\frametitle{Photon-ml}
-			\begin{figure}[h]
-				\begin{minipage}[h]{1.1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{linkedin}}
-				\end{minipage}
-			\end{figure}
+
 		\end{frame}
 		
 		\begin{frame}
@@ -156,22 +253,13 @@
 		
 		\begin{frame}
 			\frametitle{Photon-ml}
-			\begin{figure}[h]
-				\begin{minipage}[h]{1.1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{pipline_photon}}
-				\end{minipage}
-			\end{figure}
-			The experiments were conducted on a cluster consisting of 135 nodes managed by Apache YARN 3. Each node has 24 Intel Xeon(R) CPU E5-2640 processors with 6 cores at
-			2.50GHz each, and every node has 250GB memory.
+
+		
 		\end{frame}
 		
 		\begin{frame}
 			\frametitle{Evaluation}
-			\begin{figure}[h]
-				\begin{minipage}[h]{1.1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{evaluation}}
-				\end{minipage}
-			\end{figure}
+
 		\end{frame}
 				
 		\begin{frame}
@@ -185,20 +273,7 @@
 
 		\begin{frame}
 		\frametitle{Проблемы}
-				\begin{figure}[h]
-					\begin{minipage}[h]{0.2\linewidth}
-						\center{\includegraphics[width=1\linewidth]{spark}}
-					\end{minipage}
-					\begin{minipage}[h]{0.3\linewidth}
-						\center{\includegraphics[width=1\linewidth]{hadoop}}
-					\end{minipage} \\
-					\begin{minipage}[h]{0.2\linewidth}
-						\center{\includegraphics[width=1\linewidth]{hive}}
-					\end{minipage}
-					\begin{minipage}[h]{0.2\linewidth}
-						\center{\includegraphics[width=1\linewidth]{elastic}}
-					\end{minipage}
-				\end{figure}
+
 		\end{frame}
 
 		\begin{frame}

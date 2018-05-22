@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  21 MAY 2018 20:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  22 MAY 2018 20:40
 entering extended mode
 **./presentation.tex
 (presentation.tex
@@ -1495,110 +1495,159 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 
 [4
 
-] [5
+]
+Overfull \hbox (18.33209pt too wide) in paragraph at lines 113--113
+ [] 
+ []
 
-] [6
+[5
 
 ]
-Overfull \hbox (8.78333pt too wide) in paragraph at lines 105--105
-[][]$  
+<../Dissertation/images/embed_vectors.png, id=48, 604.2575pt x 297.11pt>
+File: ../Dissertation/images/embed_vectors.png Graphic file (type png)
+<use ../Dissertation/images/embed_vectors.png>
+Package pdftex.def Info: ../Dissertation/images/embed_vectors.png  used on inpu
+t line 129.
+(pdftex.def)             Requested size: 142.2587pt x 99.58347pt.
+
+Overfull \hbox (36.6138pt too wide) in paragraph at lines 129--129
+[][]  
+ []
+
+[6
+
+ <../Dissertation/images/embed_vectors.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\T2A/cmss/m/n/14.4 category crossen-
+ []
+
+
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 149--149
+ [] 
  []
 
 [7
 
 ]
-<images/kaggle.png, id=62, 950.55125pt x 196.735pt>
-File: images/kaggle.png Graphic file (type png)
-<use images/kaggle.png>
-Package pdftex.def Info: images/kaggle.png  used on input line 115.
-(pdftex.def)             Requested size: 307.28987pt x 63.59889pt.
+<../Dissertation/images/CNN.png, id=62, 961.5925pt x 392.46625pt>
+File: ../Dissertation/images/CNN.png Graphic file (type png)
+<use ../Dissertation/images/CNN.png>
+Package pdftex.def Info: ../Dissertation/images/CNN.png  used on input line 164
+.
+(pdftex.def)             Requested size: 288.47997pt x 117.74077pt.
  [8
 
- <./images/kaggle.png>]
-<images/matrix-factorization.png, id=68, 250.26833pt x 132.495pt>
-File: images/matrix-factorization.png Graphic file (type png)
-<use images/matrix-factorization.png>
-Package pdftex.def Info: images/matrix-factorization.png  used on input line 12
-6.
-(pdftex.def)             Requested size: 230.46739pt x 122.0121pt.
- [9
+ <../Dissertation/images/CNN.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]\T2A/cmss/m/n/14.4 category crossen-
+ []
 
- <./images/matrix-factorization.png>]
-<images/features_space.png, id=76, 611.28375pt x 455.7025pt>
-File: images/features_space.png Graphic file (type png)
-<use images/features_space.png>
-Package pdftex.def Info: images/features_space.png  used on input line 135.
-(pdftex.def)             Requested size: 230.46739pt x 171.80586pt.
- [10
 
- <./images/features_space.png>]
-<images/linkedin.png, id=82, 407.5225pt x 137.51375pt>
-File: images/linkedin.png Graphic file (type png)
-<use images/linkedin.png>
-Package pdftex.def Info: images/linkedin.png  used on input line 144.
-(pdftex.def)             Requested size: 338.02072pt x 114.06714pt.
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 183--183
+ [] 
+ []
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 144--144
- []$ 
+[9
+
+]
+<../Dissertation/images/part4/final_CNN_train_category_accuracy.png, id=73, 342
+.27875pt x 217.81375pt>
+File: ../Dissertation/images/part4/final_CNN_train_category_accuracy.png Graphi
+c file (type png)
+<use ../Dissertation/images/part4/final_CNN_train_category_accuracy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_category_
+accuracy.png  used on input line 197.
+(pdftex.def)             Requested size: 142.2676pt x 99.58398pt.
+<../Dissertation/images/part4/final_CNN_val_category_accuracy.png, id=75, 331.2
+375pt x 220.825pt>
+File: ../Dissertation/images/part4/final_CNN_val_category_accuracy.png Graphic 
+file (type png)
+<use ../Dissertation/images/part4/final_CNN_val_category_accuracy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_category_ac
+curacy.png  used on input line 197.
+(pdftex.def)             Requested size: 142.26254pt x 99.58597pt.
+<../Dissertation/images/part4/final_CNN_val_category_crossentropy.png, id=76, 3
+31.2375pt x 214.8025pt>
+File: ../Dissertation/images/part4/final_CNN_val_category_crossentropy.png Grap
+hic file (type png)
+<use ../Dissertation/images/part4/final_CNN_val_category_crossentropy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_category_cr
+ossentropy.png  used on input line 197.
+(pdftex.def)             Requested size: 142.26254pt x 99.58386pt.
+
+Overfull \hbox (172.07645pt too wide) in paragraph at lines 197--197
+[][]  
+ []
+
+[10
+
+ <../Dissertation/images/part4/final_CNN_train_category_accuracy.png> <../Disse
+rtation/images/part4/final_CNN_val_category_accuracy.png> <../Dissertation/imag
+es/part4/final_CNN_val_category_crossentropy.png>]
+File: ../Dissertation/images/part4/final_CNN_train_category_accuracy.png Graphi
+c file (type png)
+<use ../Dissertation/images/part4/final_CNN_train_category_accuracy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_category_
+accuracy.png  used on input line 206.
+(pdftex.def)             Requested size: 142.26378pt x 90.53392pt.
+File: ../Dissertation/images/part4/final_CNN_val_category_accuracy.png Graphic 
+file (type png)
+<use ../Dissertation/images/part4/final_CNN_val_category_accuracy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_category_ac
+curacy.png  used on input line 206.
+(pdftex.def)             Requested size: 142.26378pt x 94.84169pt.
+<../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png, id=85, 337.26
+pt x 223.83624pt>
+File: ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png Graphic f
+ile (type png)
+<use ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_top_k_acc
+uracy.png  used on input line 206.
+(pdftex.def)             Requested size: 142.26378pt x 94.42043pt.
+<../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png, id=86, 331.2375
+pt x 215.80624pt>
+File: ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png Graphic fil
+e (type png)
+<use ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png>
+Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_top_k_accur
+acy.png  used on input line 206.
+(pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
+
+Overfull \vbox (0.11317pt too high) detected at line 206
  []
 
 [11
 
- <./images/linkedin.png>] [12
-
-]
-<images/pipline_photon.png, id=93, 1247.66125pt x 375.4025pt>
-File: images/pipline_photon.png Graphic file (type png)
-<use images/pipline_photon.png>
-Package pdftex.def Info: images/pipline_photon.png  used on input line 166.
-(pdftex.def)             Requested size: 338.02072pt x 101.70372pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 166--166
- []$ 
+ <../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png> <../Disserta
+tion/images/part4/final_CNN_val_top_k_accuracy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]\T2A/cmss/m/n/14.4 category crossen-
  []
 
-[13
 
- <./images/pipline_photon.png>]
-<images/evaluation.png, id=100, 1135.24126pt x 425.59pt>
-File: images/evaluation.png Graphic file (type png)
-<use images/evaluation.png>
-Package pdftex.def Info: images/evaluation.png  used on input line 175.
-(pdftex.def)             Requested size: 338.02072pt x 126.71687pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 175--175
- []$ 
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 226--226
+ [] 
  []
 
-[14
+[12
 
- <./images/evaluation.png>] [15
+] [13
 
-]
-<images/spark.png, id=111, 151.56625pt x 78.2925pt>
-File: images/spark.png Graphic file (type png)
-<use images/spark.png>
-Package pdftex.def Info: images/spark.png  used on input line 202.
-(pdftex.def)             Requested size: 61.45703pt x 31.7465pt.
-<images/hadoop.jpg, id=112, 579.66562pt x 453.19313pt>
-File: images/hadoop.jpg Graphic file (type jpg)
-<use images/hadoop.jpg>
-Package pdftex.def Info: images/hadoop.jpg  used on input line 202.
-(pdftex.def)             Requested size: 92.1879pt x 72.06981pt.
-<images/hive.png, id=113, 1204.5pt x 1084.05pt>
-File: images/hive.png Graphic file (type png)
-<use images/hive.png>
-Package pdftex.def Info: images/hive.png  used on input line 202.
-(pdftex.def)             Requested size: 61.45703pt x 55.2974pt.
-<images/elastic.png, id=114, 48.18pt x 48.18pt>
-File: images/elastic.png Graphic file (type png)
-<use images/elastic.png>
-Package pdftex.def Info: images/elastic.png  used on input line 202.
-(pdftex.def)             Requested size: 61.45703pt x 61.45695pt.
- [16
+] [14
 
- <./images/spark.png> <./images/hadoop.jpg> <./images/hive.png> <./images/elast
-ic.png>] [17
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
 
 ]
 \tf@nav=\write6
@@ -1610,38 +1659,37 @@ ic.png>] [17
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 285.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
  (presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 285.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 285.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18556 strings out of 495203
- 342819 string characters out of 3181306
- 417098 words of memory out of 3000000
- 21358 multiletter control sequences out of 15000+200000
+ 18584 strings out of 495203
+ 344621 string characters out of 3181306
+ 422114 words of memory out of 3000000
+ 21380 multiletter control sequences out of 15000+200000
  16623 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,14n,55p,806b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx1440.p
+ 56i,17n,55p,806b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass0800.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1000.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx1440.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass2074.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass0600.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasi1440.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1440.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1200.p
-k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb><
-/home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
-/home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb><
-/home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi8.pfb></
-home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (17 pages, 606586 bytes).
+k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
+</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on presentation.pdf (21 pages, 291064 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
