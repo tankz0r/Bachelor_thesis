@@ -164,36 +164,42 @@
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Results}
-			\begin{table}[h]
-				\centering
-				\begin{tabular}{| p{4cm} | p{3cm} | p{3cm} |}
-					%	\begin{tabulary}{1.0\textwidth}{|L|L|L|L|L|L}
-					\hline
-					\textbf{Metric}  & \textbf{Train} & \textbf{Test}                                                    
-					\\ \hline
-					categorical accuracy   &  0.8250 & 0.8307
-					\\ \hline
-					category crossentropy  &   0.5800 & 0.6612
-					\\ \hline
-					top k accuracy   &  0.9545 & 0.9473
-					\\ \hline		
-				\end{tabular}
-			\end{table}
+			\frametitle{Overfitting}
+			\hfil\hfil\includegraphics[width=5cm]{part4//3CNN_train_category_accuracy}
+			\hfil\hfil\includegraphics[width=5cm]{part4//3CNN_val_category_accuracy}\newline
+			\vfil
+			\hfil\hfil\includegraphics[width=5cm]{part4/3CNN_train_top_k_accuracy}
+			\hfil\hfil\includegraphics[width=5cm]{part4/3CNN_val_top_k_accuracy}\newline
 		\end{frame}
 		
 		
+	\begin{frame}
+		\frametitle{Regularizations}
+		Modifications:
+		\begin{enumerate}
+			\item Dropout rate decreased it in two times.
+			\item l2-regularization equals to 0.01 both for convolution layers and dense layer. 
+			Dropout = 0.5 both for dense and convolution layers. 
+		    training algorithm - Adam with learning rate 1e-4. 
+			\item l2-regularization equals to = rate 1e-3. 
+			Dropout = 0.25 both for dense and convolution layers. 
+			\item l2-regularization =  0.001 for convolution layers and 0.01 for dense layers. 
+			Dropout rate = 0.25 for convolution layers and 0.5 for dense layers.
+		\end{enumerate}
+	\end{frame}
+			
+		
 		\begin{frame}
-			\frametitle{Results}
-			\begin{tabular}{cl}  
-				\begin{tabular}{l}
-					\includegraphics[height=3.5cm, width=5cm]{part4/final_CNN_train_category_accuracy}
-					\includegraphics[height=3.5cm, width=5cm]{part4/final_CNN_val_category_accuracy}
-				\end{tabular}
-				& \begin{tabular}{l}
-					\includegraphics[height=3.5cm, width=5cm]{part4/final_CNN_val_category_crossentropy}
-				\end{tabular}  \\
-			\end{tabular}
+			\frametitle{Regularizations}
+			\begin{figure}[ht]
+				\begin{minipage}[ht]{1\linewidth}
+					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-1.png} \\ а, b}
+				\end{minipage}
+				\hfill
+				\begin{minipage}[ht]{1\linewidth}
+					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ c, d}
+				\end{minipage}
+			\end{figure}
 		\end{frame}
 		
 		\begin{frame}
@@ -226,59 +232,17 @@
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Matrix-factorization}
-
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Matrix-factorization}
-
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Photon-ml}
-
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Photon-ml}
+			\frametitle{Future work}
 			\begin{itemize}
-				\item Generalized Linear Model (GLM)
-				\item Generalized Additive Model (GAM)
-				\item Generalized Additive Mixed-Effect Model(GAME)
-				\item GLMix(Generalized Linear Mixed) = GLM + per-user model + per-item model
+				\item train embeddings on the given dataset
+				\item use pictures and attributes as additional source of information for better classification
 			\end{itemize}
 		\end{frame}
 		
-		
-		\begin{frame}
-			\frametitle{Photon-ml}
-
-		
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Evaluation}
-
-		\end{frame}
-				
-		\begin{frame}
-			\frametitle{Проблемы}
-			\begin{itemize}
-				\item Товары быстро продаются, не успев даже набрать хорошую историю по просмотрам и запросам контактов. Классические алгоритмы коллаборативной фильтрации устроены так, что объявления с короткой историей не попадают в рекомендации. Чаще рекомендуются долго живущие объявления, которые, как правило, представляют меньший интерес для покупателей.
-				\item Проблемы холодного старта
-				\item Как заставить это все быстро работать
-			\end{itemize}
-		\end{frame}
-
-		\begin{frame}
-		\frametitle{Проблемы}
-
-		\end{frame}
 
 		\begin{frame}
 			\begin{center}
-				Спасибо за внимание!
+					Thank you for your attention!
 			\end{center}
 		\end{frame}
 		
