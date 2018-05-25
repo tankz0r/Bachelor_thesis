@@ -1,4 +1,4 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \def\selectlanguageifdefined#1{
 \expandafter\ifx\csname date#1\endcsname\relax
 \else\language\csname l@#1\endcsname\fi}
@@ -6,5 +6,39 @@
 \ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{manning}
+\selectlanguageifdefined{english}
+\BibEmph{{Manning C.}, {Raghavan P.}, {Schütze H.}} An Introduction to
+  Information Retrieval. ---
+\newblock Cambridge: Cambridge University Press, 2009. ---
+\newblock 544~pp.
+
+\bibitem{foundationsml}
+\selectlanguageifdefined{english}
+\BibEmph{{Mohri M.}, {Rostamizadeh A.}, {Talwalkar A.}} Foundations of Machine
+  Learning. ---
+\newblock Massachusetts: The MIT Press, 2012. ---
+\newblock 412~pp.
+
+\bibitem{LR}
+\selectlanguageifdefined{english}
+\BibEmph{{Yiming Y.}, {Liu X.}} A re-examination of text categorization
+  methods. ---
+\newblock ACM Press, 1999. ---
+\newblock Vol.~2. ---
+\newblock P.~42–49.
+
+\bibitem{jurafsky}
+\selectlanguageifdefined{english}
+\BibEmph{{Jurafsky D.}, {James H.}} Speech and Language Processing. ---
+\newblock New Jersey: Pearson, 2008. ---
+\newblock 1031~pp.
+
+\bibitem{cbow_skip}
+\selectlanguageifdefined{english}
+Efficient Estimation of Word Representations in Vector Space~/ ~{Mikolov T.},
+  ~{Chen K.}, ~{Corrado G.}, ~{Dean J.} ---
+\newblock ArXiv e-prints, 2013.
 
 \end{thebibliography}
