@@ -1,38 +1,39 @@
-\BOOKMARK [0][-]{chapter*.1}{ABBREVIATION}{}% 1
-\BOOKMARK [0][-]{chapter*.2}{INTRODUCTION}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Text classification}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Statement of the classification problem}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{A short review of existing mathematical models, which can be used to solve the classification problem}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Model evaluation and validation}{chapter.1}% 6
-\BOOKMARK [2][-]{subsection.1.3.1}{Model Evaluation Applications}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.2}{Model Evaluation Techniques}{section.1.3}% 8
-\BOOKMARK [1][-]{section.1.4}{Classification metrics}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.5}{Summary of the section}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter.2}{Mathematical models and algorithms for text classification}{}% 11
-\BOOKMARK [1][-]{section.2.1}{Words representations}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.1.1}{Bag-of-Words Approach}{section.2.1}% 13
-\BOOKMARK [2][-]{subsection.2.1.2}{TF-IDF Approach}{section.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.1.3}{Embeddings}{section.2.1}% 15
-\BOOKMARK [1][-]{section.2.2}{Deep learning algorithms for text classification}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.1}{Convolution Neural Networks}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.2}{Recurrent neural networks and their modifications}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.3}{Advantages and drawbacks of different architectures}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.4}{Summary of the section}{section.2.2}% 20
-\BOOKMARK [0][-]{chapter.3}{Testing and practical application of text classification using software}{}% 21
-\BOOKMARK [1][-]{section.3.1}{Software selection}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.2}{Dataset selection and exploration}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.3}{Data preparation}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.4}{Network design and training}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.5}{Summary of the section}{chapter.3}% 26
-\BOOKMARK [0][-]{chapter.4}{Classification results evaluation}{}% 27
-\BOOKMARK [1][-]{section.4.1}{General steps}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.2}{Base line model}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.3}{Convolution neural network}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.4}{Convolution neural network with different regularization}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.5}{Final model}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.6}{Summary of the section}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter*.67}{CONCLUSION}{}% 34
-\BOOKMARK [0][-]{section*.68}{BIBLIOGRAPHY}{}% 35
-\BOOKMARK [0][-]{section*.70}{LIST OF FIGURES}{}% 36
-\BOOKMARK [0][-]{section*.71}{LIST OF TABLES}{}% 37
-\BOOKMARK [0][-]{appendix*.72}{APPENDIX A}{}% 38
+\BOOKMARK [0][-]{chapter*.2}{ABSTRACT}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{ABBREVIATION}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{INTRODUCTION}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Text classification}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Statement of the classification problem}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{A short review of existing mathematical models, which can be used to solve the classification problem}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Model evaluation and validation}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.3.1}{Model Evaluation Applications}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{Model Evaluation Techniques}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{Classification metrics}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Summary of the section}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Mathematical models and algorithms for text classification}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Words representations}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Bag-of-Words Approach}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{TF-IDF Approach}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.3}{Embeddings}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Deep learning algorithms for text classification}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Convolution Neural Networks}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.2}{Recurrent neural networks and their modifications}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.3}{Advantages and drawbacks of different architectures}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.4}{Summary of the section}{section.2.2}% 21
+\BOOKMARK [0][-]{chapter.3}{Testing and practical application of text classification using software}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Software selection}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Dataset selection and exploration}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Data preparation}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{Network design and training}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.5}{Summary of the section}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Classification results evaluation}{}% 28
+\BOOKMARK [1][-]{section.4.1}{General steps}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Base line model}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Convolution neural network}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Convolution neural network with different regularization}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.5}{Final model}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.6}{Summary of the section}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter*.69}{CONCLUSION}{}% 35
+\BOOKMARK [0][-]{section*.70}{BIBLIOGRAPHY}{}% 36
+\BOOKMARK [0][-]{section*.72}{LIST OF FIGURES}{}% 37
+\BOOKMARK [0][-]{section*.73}{LIST OF TABLES}{}% 38
+\BOOKMARK [0][-]{appendix*.74}{APPENDIX A}{}% 39

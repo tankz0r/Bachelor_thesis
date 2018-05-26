@@ -1,65 +1,16 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: dissertation.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertation.aux
 The style file: ../BibTeX-Styles/utf8gost71u.bst
 Database file #1: ../biblio/othercites.bib
-Warning--I didn't find a database entry for "NB1"
-Warning--I didn't find a database entry for "NB2"
-Warning--I didn't find a database entry for "svm"
-Warning--I didn't find a database entry for "model_evaluation"
-Warning--I didn't find a database entry for "embeddings_1"
-Warning--I didn't find a database entry for "embeddings_2"
-Warning--I didn't find a database entry for "assignment1"
-Warning--I didn't find a database entry for "kim"
-Warning--I didn't find a database entry for "Kalchbrenner"
-Warning--I didn't find a database entry for "CNN"
-Warning--I didn't find a database entry for "CNN_habr"
-Warning--I didn't find a database entry for "wiki_def_rnn"
-Warning--I didn't find a database entry for "colah_lstm"
-Warning--I didn't find a database entry for "rnn_problems"
-Warning--I didn't find a database entry for "wildml"
-Warning--I didn't find a database entry for "fasttext"
-Name 2 in "{Mikolov T.} and {Chen K.}, and {Corrado G.} and {Dean J.}" has a comma at the end for entry cbow_skip
-while executing---line 1455 of file ../BibTeX-Styles/utf8gost71u.bst
-You've used 5 entries,
-            2802 wiz_defined-function locations,
-            702 strings with 5839 characters,
-and the built_in function-call counts, 1574 in all, are:
-= -- 193
-> -- 61
-< -- 5
-+ -- 19
-- -- 14
-* -- 61
-:= -- 175
-add.period$ -- 19
-call.type$ -- 5
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 80
-empty$ -- 169
-format.name$ -- 14
-if$ -- 426
-int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 0
-newline$ -- 40
-num.names$ -- 15
-pop$ -- 45
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 53
-stack$ -- 0
-substring$ -- 14
-swap$ -- 51
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 6
-width$ -- 6
-write$ -- 92
-(There was 1 error message)
+Warning--entry type for "assignment1" isn't style-file defined
+--line 130 of file ../biblio/othercites.bib
+Warning--entry type for "CNN_habr" isn't style-file defined
+--line 137 of file ../biblio/othercites.bib
+Warning--entry type for "model_evaluation" isn't style-file defined
+--line 145 of file ../biblio/othercites.bib
+Warning--entry type for "wildml" isn't style-file defined
+--line 164 of file ../biblio/othercites.bib
+Warning--entry type for "wiki_def_rnn" isn't style-file defined
+--line 172 of file ../biblio/othercites.bib
+Warning--entry type for "colah_lstm" isn't style-file defined
+--line 179 of file ../biblio/othercites.bib
+(There were 6 warnings)

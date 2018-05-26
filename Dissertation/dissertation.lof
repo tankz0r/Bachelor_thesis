@@ -1,54 +1,54 @@
-\select@language {english}
+\babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Classes, training set, and test set in text classification.\relax }}{8}{figure.caption.3}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning workflow.\relax }}{9}{figure.caption.4}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Holdout method\relax }}{11}{figure.caption.5}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Confusion matrix\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Classes, training set, and test set in text classification.\relax }}{10}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Supervised learning workflow.\relax }}{11}{figure.caption.6}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Holdout method\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Confusion matrix\relax }}{14}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Neural Network\relax }}{17}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The Skip-gram model architecture.\relax }}{20}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Words representation\relax }}{22}{figure.caption.10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The CBOW model architecture.\relax }}{24}{figure.caption.11}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Convolution Neural Networks architecture for text classification\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Basic variables used in the convolution layer\relax }}{25}{figure.caption.13}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces ReLu activation function\relax }}{27}{figure.caption.14}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Max pulling layer\relax }}{27}{figure.caption.15}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Fully connected layer of CNN\relax }}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Back propagation through max pulling layer\relax }}{29}{figure.caption.17}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{30}{figure.caption.18}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces The structure of Recurrent neural network\relax }}{31}{figure.caption.19}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The architecture of Recurrent neural network\relax }}{32}{figure.caption.20}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces The architecture of Long Short Term Memory neural network\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Neural Network\relax }}{19}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The Skip-gram model architecture.\relax }}{22}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Words representation\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The CBOW model architecture.\relax }}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Convolution Neural Networks architecture for text classification\relax }}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Basic variables used in the convolution layer\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces ReLu activation function\relax }}{29}{figure.caption.16}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Max pulling layer\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Fully connected layer of CNN\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Back propagation through max pulling layer\relax }}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Back propagation through convolution layer\relax }}{32}{figure.caption.20}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces The structure of Recurrent neural network\relax }}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The architecture of Recurrent neural network\relax }}{34}{figure.caption.22}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The architecture of Long Short Term Memory neural network\relax }}{34}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{39}{figure.caption.28}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Build embeddings structure\relax }}{41}{figure.caption.30}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 4\relax }}{42}{figure.caption.32}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Metrics which were logged\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified event structure of data preprocessing\relax }}{41}{figure.caption.30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Build embeddings structure\relax }}{43}{figure.caption.32}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 4\relax }}{44}{figure.caption.34}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Metrics which were logged\relax }}{45}{figure.caption.35}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectures of Bi-LSTM models with 100 units \relax }}{45}{figure.caption.34}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{46}{figure.caption.35}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{47}{figure.caption.36}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{47}{figure.caption.37}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Models batch time by epochs\relax }}{48}{figure.caption.38}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Bi-LSTM 100 units. Histogram of output from forward recurrent layers (a); histogram of weights from backward recurrent layers (b)\relax }}{48}{figure.caption.39}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Bi-LSTM 100 units. Histogram of weights from first FFNN layer.\relax }}{49}{figure.caption.40}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces CPU resources which were used while training Bi-LSTM NN.\relax }}{49}{figure.caption.41}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{51}{figure.caption.43}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{51}{figure.caption.45}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{52}{figure.caption.47}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Models batch time by epochs\relax }}{52}{figure.caption.48}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers\relax }}{53}{figure.caption.49}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of merged layers\relax }}{54}{figure.caption.50}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of dense layers\relax }}{55}{figure.caption.51}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces CPU resources which were used while training CNN.\relax }}{56}{figure.caption.52}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{58}{figure.caption.56}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{59}{figure.caption.57}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{59}{figure.caption.58}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Models batch time by epochs\relax }}{60}{figure.caption.59}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of convolution layers\relax }}{60}{figure.caption.60}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of merged layers\relax }}{61}{figure.caption.61}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of dense layers\relax }}{62}{figure.caption.62}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{64}{figure.caption.64}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{64}{figure.caption.65}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{65}{figure.caption.66}
-\contentsline {figure}{\numberline {27}{\ignorespaces Architectures of CNN model\relax }}{77}{figure.caption.73}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectures of Bi-LSTM models with 100 units \relax }}{47}{figure.caption.36}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{48}{figure.caption.37}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{49}{figure.caption.38}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{49}{figure.caption.39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Models batch time by epochs\relax }}{50}{figure.caption.40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Bi-LSTM 100 units. Histogram of output from forward recurrent layers (a); histogram of weights from backward recurrent layers (b)\relax }}{50}{figure.caption.41}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bi-LSTM 100 units. Histogram of weights from first FFNN layer.\relax }}{51}{figure.caption.42}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CPU resources which were used while training Bi-LSTM NN.\relax }}{51}{figure.caption.43}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{53}{figure.caption.45}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{53}{figure.caption.47}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{54}{figure.caption.49}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Models batch time by epochs\relax }}{54}{figure.caption.50}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of convolution layers\relax }}{55}{figure.caption.51}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of merged layers\relax }}{56}{figure.caption.52}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Convolutional model (a) 128;(b) 256; (c) 512 filters for each sizes [3, 4, 5]. Histogram of dense layers\relax }}{57}{figure.caption.53}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces CPU resources which were used while training CNN.\relax }}{58}{figure.caption.54}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{60}{figure.caption.58}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{61}{figure.caption.59}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{61}{figure.caption.60}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Models batch time by epochs\relax }}{62}{figure.caption.61}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of convolution layers\relax }}{62}{figure.caption.62}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of merged layers\relax }}{63}{figure.caption.63}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Convolutional models with modification (a) 1;(b) 2; (c) 3; (d) 4. Histogram of dense layers\relax }}{64}{figure.caption.64}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{66}{figure.caption.66}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{66}{figure.caption.67}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{67}{figure.caption.68}
+\contentsline {figure}{\numberline {27}{\ignorespaces Architectures of CNN model\relax }}{80}{figure.caption.75}

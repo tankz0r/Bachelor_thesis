@@ -264,7 +264,7 @@ Finally, using the results from Equation~\ref{eq:equation2_11}:
 We have everything to update our weights: 
 
 %\clearpage
-Now, turn definitely to skip-gram model shown in Figure ~\ref{img:skip_gram_model}\cite{cbow_skip}:
+Now, turn definitely to skip-gram model shown in Figure ~\ref{img:skip_gram_model}\cite{embeddings_2}:
 \begin{figure}[H] 
 	\center
 	\includegraphics [scale=0.5] {skip_gram_model}
@@ -400,7 +400,7 @@ This gives us a possibility to decompose calculating the probability of one word
 Both methods enable us a possibility to significantly decrease the amount of time for computation.
 
 2.CBOW model
-This model is very similar to skip-gram, but CBOW predicts a target word from the bag of words context. From the practical point of view, skip-gram works well with a small amount of training data and represents well even rare words or phrases. CBOW is several times faster to train than the skip-gram and has slightly better accuracy for the frequent words. This model is shown in Figure ~\ref{img:CBOW}\cite{cbow_skip}:
+This model is very similar to skip-gram, but CBOW predicts a target word from the bag of words context. From the practical point of view, skip-gram works well with a small amount of training data and represents well even rare words or phrases. CBOW is several times faster to train than the skip-gram and has slightly better accuracy for the frequent words. This model is shown in Figure ~\ref{img:CBOW}\cite{embeddings_2}:
 
 \begin{figure}[ht] 
 	\center
@@ -412,7 +412,7 @@ This model is very similar to skip-gram, but CBOW predicts a target word from th
 \section{Deep learning algorithms for text classification}\label{sect2_2}
 
 When people hear about NLP problems and neural networks in one context they probably think about Recurrent neural networks or their modification. 
-However, recently some papers which apply CNN's to problems in Natural Language Processing were published and they got some interesting results \cite{kim} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
+However, recently some papers which apply CNN's to problems in Natural Language Processing were published and they got some interesting results \cite{CNN} \cite{Kalchbrenner}. In this section I will consider both CNN and RNN models and their modifications.
 
 
 \subsection{Convolution Neural Networks}\label{sect2_2_1}  
