@@ -9,36 +9,14 @@
 %Основные результаты работы заключаются в следующем.
 %\input{../common/concl}
 %И какая-нибудь заключающая фраза.
-Ієрархічна кластеризація допомогла отримати кластера, які відрізняються
-більше поведінковими характеристиками (глибина / ширина перегляду,
-інтервали між подіями, кількість сесій, тощо), в той час як класичний Kmeans
-більше відзначав характеристики, які стосуються пошуку людини (конкретні
-хвороби та країни), та мав більший набір характеристик, що його відрізняють.
-Насправді обидва методи можуть дозволити отримати типаж людини, тому що
-лікарі говорять про пряму залежність між хворобами та поведінкою людини, але
-для цього потрібна додаткова експертиза.
-Примітно те, що отримані кластери дуже схожі один на інший. Також при
-обидва методи виділили в особливий кластер групу користувачів, яка цікавиться
-штучним запліднення в бюджетних країнах, набори яких перетинаються.
-Оскільки результати кожної моделі або перетинаються, або входять один в
-одного, то можна зробити висновок про те, що дані хороші та залежності в них
-є, а то яка модель більш зручна і таргетованою більше залежить від бізнесу. В
-даному випадку критерієм було власне визначення корисності кластеризації.
-За всіма метриками кращою моделлю виявилась кластеризація Kmeans з
-дванадцятьма кластерами. Вона може допомогти з визначенням рівня
-усвідомлення та інформованості користувача, що дозволить раціонально
-використовувати час координаторів: більш усвідомлені та поінформовані будуть
-рекомендуватися старшим координаторам, а ті клієнти, інформацію про яких ще
-потрібно уточнити, - молодшим.
-Надалі
-можна
-спробувати
-виділити
-більше
-характеристик
-та
-відслідковувати більше подій для більше детального опису користувача. Ще
-одним варіантом розвитку є автоматизація даного процесу і розробка
-програмного забезпечення, яка дозволяла кінцевому користувачеві отримувати
-кілька запропонованих варіантів сегментації та вибирати в залежності від своїх
-потреб, як в даному прикладі.
+%This new approach works much better than simple Bag-of-Words words encoding and usage of basic classification algorithm.  
+
+Representing words as vectors in the vector space in combination with Deep learning Neural Networks demonstrate high quality classification of textual data. The layers of NN learns meaningful information of each class and can well distinguish one from another. In this thesis I proved that Convolution NNs can perform the same and in some components even better than Recurrent NNs and they are a right choice to work with textual data. Convolution NNs demonstrated high accuracy on unknown data with appropriate speed. However it is necessary to spend some time to pick the right regularization for layers to avoid overfitting problems.
+
+Future work:
+\begin{itemize}
+	\item train networks with other training algorithms. For example it is possible to try SGD or RMSprop with appropriate parameters. 
+	\item make an assemble of neural networks to best use each ones strong qualities.
+	\item try to use different words sequences length for titles and descriptions
+	\item as the results on categories were not really impressive it is possible to add them into one big called 'other'  
+\end{itemize}

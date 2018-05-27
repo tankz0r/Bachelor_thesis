@@ -22,9 +22,9 @@ Firstly, I built the baseline model which CNN models should achieve in the futur
 
 \begin{figure}[ht] 
 	\center
-	\includegraphics [scale=0.4] {part4/bilstm_architecture.png}
-	\label{img:part4-bilstm}  
+	\includegraphics [scale=0.4] {part4/bilstm_architecture.png} 
 	\caption{Architectures of Bi-LSTM models with 100 units } 
+	\label{img:part4-bilstm} 
 \end{figure}
 
 As can be seen from the results of model training in Figure \ref{img:/bilstm_val_category_accuracy}, categorical accuracy on the training set and validation set performs equally well: 0.7975 and 0.8203 respectively. Surprisingly, the results on train are slightly better than on training data.   
@@ -568,6 +568,28 @@ The final results can be seen in Figures \ref{img:final_CNN_categorical_accuracy
 	\label{img:final_CNN_top_k_accuracy}  
 \end{figure}
 
+
+\begin{longtable}[c]{|l|c|c|l|l|}
+	\caption[Classification report]{Classification report}
+	\label{tab:amortecimentos_1}\\
+	\hline  category & precision & recall &  f1-score & support\\ \hline
+	\endhead
+	\hline
+	\endlastfoot
+	
+	1        & 0         & 0      & 0        & 7       \\
+	3        & 0         & 0      & 0        & 4       \\
+	4        & 0         & 0      & 0        & 2       \\
+	11       & 0.78      & 0.58   & 0.66     & 623     \\
+	14       & 0.93      & 0.99   & 0.96     & 8070    \\
+	15       & 0.82      & 0.68   & 0.74     & 362     \\
+	16       & 0.93      & 0.95   & 0.94     & 1656    \\
+	20       & 0.82      & 0.91   & 0.86     & 1151    \\
+	25       & 0.75      & 0.9    & 0.82     & 1910    \\
+	29       & 0.97      & 0.99   & 0.98     & 12346   \\
+\end{longtable}
+
+Here is the concise version of final classification report for each class. Full version can be found in APPENDIX B. As we can see in the Table \ref{amortecimentos_1} model showed the best results on the categories with big number of advertisements: 14, 29. It makes mistakes on categories with less samples: 11 and 15 respectively and can hardly ever make a right predictions on the categories where the number of observations are less then 10. 
 
 \section{Summary of the section} \label{sect4_6}
 
