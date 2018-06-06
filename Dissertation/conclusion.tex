@@ -9,3 +9,14 @@
 %Основные результаты работы заключаются в следующем.
 %\input{../common/concl}
 %И какая-нибудь заключающая фраза.
+%This new approach works much better than simple Bag-of-Words words encoding and usage of basic classification algorithm.  
+
+Representing words as vectors in the vector space in combination with Deep learning Neural Networks demonstrate high quality classification of textual data. The layers of NN learns meaningful information of each class and can well distinguish one from another. In this thesis I proved that Convolution NNs can perform the same and in some components even better than Recurrent NNs and they are a right choice to work with textual data. Convolution NNs demonstrated high accuracy on unknown data with appropriate speed. However it is necessary to spend some time to pick the right regularization for layers to avoid overfitting problems.
+
+Future work:
+\begin{itemize}
+	\item train networks with other training algorithms. For example it is possible to try SGD or RMSprop with appropriate parameters. 
+	\item make an assemble of neural networks to best use each ones strong qualities.
+	\item try to use different words sequences length for titles and descriptions
+	\item as the results on categories were not really impressive it is possible to add them into one big called 'other'  
+\end{itemize}

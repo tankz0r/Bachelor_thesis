@@ -13,14 +13,18 @@ In text classification, we are given a description  $d \in \mathbb{X}$ of a docu
 \label{eq:equation3}
 \langle\mbox{d, c}\rangle=\langle\mbox{Beijing joins the World Trade Organization}, \emph{China}\rangle
 \end{equation}
+\begin{doublespacing}
+\end{doublespacing}
 
 for the one-sentence document, Beijing joins the World Trade Organization and the class (or label) China.
 Using a learning method or learning algorithm , we then wish to learn a classifier or classification function  $\gamma $ that maps documents to classes:
 
 \begin{equation}
-\label{eq:equation4}
-\gamma: \mathbb{X} \rightarrow \mathbb{C}
+	\label{eq:equation4}
+	\gamma: \mathbb{X} \rightarrow \mathbb{C}
 \end{equation}
+\begin{doublespacing}
+\end{doublespacing}
 
 This type of learning is called supervised learning because a supervisor (the human who defines the classes and labels training documents) serves as a teacher directing the learning process. We denote the supervised learning method by $\Gamma$ and write  $\Gamma(\docsetlabeled) = \gamma$. The learning method $\Gamma$ takes the training set  $\docsetlabeled$ as input and returns the learned classification function $\gamma $.
 
@@ -74,7 +78,7 @@ Very important property of learning models is Generalization performance. In gen
 
 When we have a set of candidate models model selection helps us to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
  
-- Before machine learning engineers find the best model, they make a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
+Before machine learning engineers find the best model, they make a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
 
 Algorithm selection - in most cases we deal with many algorithms to find the best one under the given circumstances. Therefore, we naturally need to compare different algorithms to each other, often regarding predictive and computational performance.
 Nevertheless, these three sub-tasks have some similarities. When we want to estimate the performance of a model, they all require different approaches.
@@ -108,10 +112,12 @@ Classification problems are probably the most common type of ML problem, and the
 	\label{accuracy}
 	accuracy = {\frac{correct}{predictions}}
 	\end{equation}
+\begin{doublespacing}
+\end{doublespacing}
 	
 	Accuracy measures merely what percent of forecasts were correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
 	
-	\item Confusion Matrix \ref{CM} \\
+	\item Confusion Matrix 1.4 \\
 	The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
 	
 	\newcommand\MyBox[2]{
@@ -125,7 +131,7 @@ Classification problems are probably the most common type of ML problem, and the
 	\noindent
 	\begin{figure}[ht] 
 		\center
-		\label{CM} 
+		\label{img:CM} 
 		\renewcommand\arraystretch{1.5}
 		\setlength\tabcolsep{0pt}
 		\begin{tabular}
@@ -151,6 +157,8 @@ Classification problems are probably the most common type of ML problem, and the
 	\label{precision}
 	precision = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ positive}}
 	\end{equation}
+\begin{doublespacing}
+\end{doublespacing}
 	
 	Recall answers the question: What percent of the positive cases did you catch?
 	
@@ -158,6 +166,8 @@ Classification problems are probably the most common type of ML problem, and the
 	\label{recall}
 	recall = {\frac{\#\ true\ positive}{\#\ true\ positive + \#\ false\ negative}}
 	\end{equation}
+\begin{doublespacing}
+\end{doublespacing}
 	
 	\item F1-score \ref{f1}\\
 	The F1-score (sometimes known as the balanced F-beta score) is a single metric that combines both precision and recall via their harmonic mean:
@@ -166,6 +176,8 @@ Classification problems are probably the most common type of ML problem, and the
 	\label{f1}
 	F_1 = 2 {\frac{precision * recall}{precision + recall}}
 	\end{equation}
+\begin{doublespacing}
+\end{doublespacing}
 	
 	Unlike the arithmetic mean, the harmonic mean tends toward the smaller of the two elements. Hence the F1 score will be small if either precision or recall is small.
 \end{enumerate}
