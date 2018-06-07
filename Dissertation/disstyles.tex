@@ -101,7 +101,7 @@
         labelsep=0em,
     }
     %% Следующие две строки: будет вписано слово Глава перед каждым номером раздела в оглавлении   
-    \renewcommand{\cftchappresnum}{\chaptername\ }
+    \renewcommand{\cftchappresnum}{\MakeUppercase{\chaptername}\ }
     \setlength{\cftchapnumwidth}{\widthof{\cftchapfont\cftchappresnum\thechapter\cftchapaftersnum}}
 }%
 

@@ -1,4 +1,4 @@
-\chapter{Mathematical models and algorithms for text classification} \label{chapt2}
+\chapter{\uppercase{Mathematical models and algorithms for text classification}} \label{chapt2}
 
 \section{Words representations} \label{sect2_1}
 
@@ -12,7 +12,7 @@ A(X, \hat{w}): A(X, \hat{w}) \simeq f(X) \Leftrightarrow A(X, \hat{w}) = \operat
 \begin{doublespacing}
 \end{doublespacing}
 
-Where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into the specific numerical format, other words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways. I will cover the most frequently used in the modern practices.
+\noindent where $X \in R^{ n\times m}$ - feature matrix ($n$ observations with $m$ features), $w \in R^{m}$ - vector of model parameters, $\hat{w}$ - "best" model parameters. However, as a candidate for X - all that we have is raw text input, algorithms can not use it as it is. In order to apply machine learning on textual data, firstly content should be transformed into the specific numerical format, other words it is necessary to form feature vectors. In Natural Language Processing automated feature extraction may be achieved in many ways. I will cover the most frequently used in the modern practices.
 
 \subsection{Bag-of-Words Approach} \label{subsect2_1_1}
 
@@ -259,32 +259,27 @@ the weights and biases, respectively of the two layers.
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 Starting with the results from ~\ref{eq:equation2_8}:
 
 \begin{equation}
 \frac{\partial{J}}{\partial{\bf z}_{2}} = \bf{\hat{y}} - \bf{y}
 \end{equation}
-
 and
 
 \begin{equation}
 \label{eq:equation2_11}
 \frac{\partial{\bf z}_{2}}{\partial{{\bf h}}} = {\bf \textrm{W}^{\top}_{2}}
 \end{equation}
-
 Sigmoid ($\sigma$) derivative ~\ref{eq:equation2_6}:
 
 \begin{equation}
 \frac{\partial{{\bf h}}}{\partial{{\bf z}_{1}}}\equiv\sigma^{\prime}(z_{1})
 \end{equation}
-
 Combining these, and using $\cdot$ to denote element-wise product:
 
 \begin{equation}
 \frac{\partial{J}}{\partial{z_{i}}} = (\bf{\hat{y}} - \bf{y}){\bf \textrm{W}^{\top}_{2}}\cdot\sigma^{\prime}(z_{1})
 \end{equation}
-
 Finally, using the results from Equation~\ref{eq:equation2_11}:
 
 \begin{equation}
@@ -296,10 +291,7 @@ Finally, using the results from Equation~\ref{eq:equation2_11}:
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}  
-
 We have everything to update our weights: 
-
-%\clearpage
 Now, turn definitely to skip-gram model shown in Figure ~\ref{img:skip_gram_model}\cite{embeddings_2}:
 \begin{figure}[H] 
 	\center
@@ -319,9 +311,7 @@ We have a word vector ${\boldsymbol v}_{c}$ corresponding to the center word $c$
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 where $w$ denotes the $w$-th word and ${\boldsymbol u}_{w}$ ($w=1,...,\vert\textrm{W}\vert$)  are the `output' word vectors for all words in the vocabulary. Cross entropy cost is applied to this prediction and word $o$ is the expected word (the $o$-th element of the one-hot label vector is one). ${\boldsymbol U} = [ {\boldsymbol u}_{1}, {\boldsymbol u}_{2},...,{\boldsymbol u}_{\vert\textrm{W}\vert}]$ is the matrix of all the output vectors. 
-
 Applying cross-entropy cost to the softmax probability defined above:
 
 \begin{equation}
@@ -329,7 +319,6 @@ J =-\log{p} = - {\boldsymbol u}_{o}^{\top}{\boldsymbol v}_{c} + \log\sum^{\vert{
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 Let $z_{j}={\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c}$, and $\delta^{i}_{j}$ ~\ref{eq:indicator} be the indicator function, then
 
 \begin{equation}
@@ -349,7 +338,6 @@ Let $z_{j}={\boldsymbol u}_{j}^{\top}{\boldsymbol v}_{c}$, and $\delta^{i}_{j}$ 
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 Now, using the chain rule, we can calculate,
 
 \begin{equation}
@@ -361,7 +349,6 @@ Now, using the chain rule, we can calculate,
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 
 \noindent For the `output' word vectors ${\boldsymbol u}_{w}$'s
 
@@ -386,7 +373,6 @@ J =   \sum_{-m\le j\le m, j\neq0}F({\boldsymbol w}_{c+j}, {\boldsymbol v}_{c})
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 where ${\boldsymbol w}_{c+j}$ refers to the word at the $j$-th index from the center.\\
 
 The derivative of the loss has two terms, ${\boldsymbol w}_{c+j}$ and ${\boldsymbol v}_{c}$, which yields the following ~\cite{assignment1},
@@ -399,7 +385,6 @@ The derivative of the loss has two terms, ${\boldsymbol w}_{c+j}$ and ${\boldsym
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 and
 
 \begin{equation}
@@ -407,7 +392,6 @@ and
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 Now, we can update our weight using gradient descent algorithm:
 
 \begin{equation}\\
@@ -418,7 +402,6 @@ Now, we can update our weight using gradient descent algorithm:
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 where $\eta$ is a learning rate.
 
 After training the skip-gram model, we take the hidden layer weight matrix that will represent our words in the multidimensional space. If we make projection into two- dimensional space, we can have the following Figure ~\ref{img:embed}:
@@ -447,7 +430,6 @@ J({\boldsymbol u}_{o}, {\boldsymbol v}_{c}, {\boldsymbol U}) = -\log(\sigma( {\b
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 where $\sigma(\cdot)$ is the sigmoid function.\\
 As it can be clearly seen, now we make calculations not on the whole vocabulary $V$, but only on the part of it, which is randomly generated each time. 
 
@@ -505,7 +487,6 @@ x^l_{ij}=\sum_{a=-\infty}^{+\infty}\sum_{b=-\infty}^{+\infty}w^l_{ab}\cdot y^{l-
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 where $i, j, a, b$ - indexes of elements in matrices, $s$ - step's size of convolution
 
 \noindent The superscripts $l$ and $l-1$ are the indices of the network layers.\\
@@ -568,7 +549,6 @@ x^l_i=\sum_{k=0}^{m}w^l_{ki}y^{l-1}_k+b^l_i \qquad \forall i\in (0,...,n)
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 in matrix representation:
 
 \begin{equation}
@@ -576,7 +556,6 @@ in matrix representation:
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 \noindent Loss function for the model is Cross Entropy \ref{eq:equation2_8} described above.
 
 Now after all components of CNN are known, we need to optimize weights for each layer. Therefore, it is necessary to derive the formula for back propagation through the loss function. 
@@ -593,7 +572,6 @@ Therefore, we have the following equation \ref{eq:CNN_softmax_grad}:
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 or 
 \begin{equation}
 \label{eq:CNN_softmax_grad_long}
@@ -612,14 +590,12 @@ or
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 Next, we should update the weights of fully connected layer matrix $w^l$. 
 \begin{equation}
 \frac{\partial J}{\partial w^l} = \dfrac{\partial J}{\partial y^l}\dfrac{\partial y^l}{\partial x^l}\dfrac{\partial x^l}{\partial w^l} = \delta^l \cdot \dfrac{\partial x^l}{\partial w^l} = \left(y^{l-1} \right)^T \cdot \delta^l    
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 and $b^l$
 
 \begin{equation}
@@ -627,7 +603,6 @@ and $b^l$
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 Equation for back propagation through $y^{l-1}$
 
 \begin{equation}
@@ -645,7 +620,6 @@ The error "passes" only through those values of the original matrix, which were 
 	\caption{Back propagation through max pulling layer} 
 	\label{img:backprog_max_pulling}  
 \end{figure}
-
 It is necessary to derive weights update for kernel Figure \ref{img:conv_grad}. 
 
 \begin{figure}[ht] 
@@ -662,7 +636,6 @@ It is necessary to derive weights update for kernel Figure \ref{img:conv_grad}.
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 all partial derivatives in the numerator, except those for which $a^{'}= a, b^{'} = b$, will be zero. 
 
 ~\\
@@ -672,7 +645,6 @@ Derivation of the gradient for the bias element.
 	\end{equation}
 \begin{doublespacing}
 \end{doublespacing}
-
 \noindent The derivation of the equation for backprop through the convolution layer.
 
 \begin{equation}

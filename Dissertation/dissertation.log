@@ -1,17 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.20)  6 JUN 2018 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  7 JUN 2018 19:04
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**dissertation.tex
-(./dissertation.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/extsizes/extreport.cls
+**./dissertation.tex
+(dissertation.tex
+LaTeX2e <2017-04-15>
+Babel <3.17> and hyphenation patterns for 1 language(s) loaded.
+(/home/denys/.miktex/texmfs/install/tex/latex/extsizes/extreport.cls
 Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
+(/home/denys/.miktex/texmfs/install/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/base/exscale.sty
 Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
@@ -32,8 +30,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
-) (./setup.tex
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+) (setup.tex
+(/home/denys/.miktex/texmfs/install/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@intvl=\count88
@@ -53,60 +51,52 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \c@usefootcite=\count102
 )
 (../common/packages.tex
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/iftex/iftex.sty
 Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
 and LuaTeX
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count103
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/geometry-de/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count104
-\Gm@cntv=\count105
-\c@Gm@tempcnt=\count106
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
 \Gm@bindingoffset=\dimen104
 \Gm@wd@mp=\dimen105
 \Gm@odd@mp=\dimen106
@@ -116,9 +106,10 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layouthoffset=\dimen110
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks15
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+
+(/home/denys/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/denys/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks16
 \thm@bodyfont=\toks17
 \thm@headfont=\toks18
@@ -129,7 +120,7 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip45
 \dth@everypar=\toks21
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks22
 \symAMSa=\mathgroup4
@@ -137,33 +128,33 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
 \ex@=\dimen112
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen113
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count107
+\inf@bad=\count106
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count108
-\leftroot@=\count109
+\uproot@=\count107
+\leftroot@=\count108
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count110
-\DOTSCASE@=\count111
+\classnum@=\count109
+\DOTSCASE@=\count110
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -172,15 +163,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count112
-\c@MaxMatrixCols=\count113
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
 \dotsspace@=\muskip10
-\c@parentequation=\count114
-\dspbrk@lvl=\count115
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
 \tag@help=\toks24
-\row@=\count116
-\column@=\count117
-\maxfields@=\count118
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
 \andhelp@=\toks25
 \eqnshift@=\dimen115
 \alignsep@=\dimen116
@@ -195,40 +186,40 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
-Package: amscd 1999/11/29 v2.0 AMS Commutatitive Diagrams
+(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amscd.sty
+Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 \athelp@=\toks28
 \minaw@=\dimen121
 \bigaw@=\dimen122
 \minCDarrowwidth=\dimen123
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+(/home/denys/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count119
-\calc@Bcount=\count120
+\calc@Acount=\count118
+\calc@Bcount=\count119
 \calc@Adimen=\dimen124
 \calc@Bdimen=\dimen125
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count121
+\calc@Ccount=\count120
 \calc@Cskip=\skip51
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+(/home/denys/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count122
+\g_MT_multlinerow_int=\count121
 \l_MT_multwidth_dim=\dimen126
 \origjot=\skip52
 \l_MT_shortvdotswithinadjustabove_dim=\dimen127
@@ -241,34 +232,34 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \curtextsize=\skip53
 \bigtextsize=\skip54
 
-(/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/02/22 v2.0g Standard LaTeX package
+(/home/denys/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
+(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 )
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks29
 \inpenc@posthook=\toks30
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+(/home/denys/.miktex/texmfs/install/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+(/home/denys/.miktex/texmfs/install/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -509,7 +500,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+(/home/denys/.miktex/texmfs/install/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -550,7 +541,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+(/home/denys/.miktex/texmfs/install/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -566,7 +557,7 @@ Now handling font encoding U ...
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
+(/home/denys/.miktex/texmfs/install/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -766,39 +757,59 @@ File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/04/23 3.9r The Babel package
+(/home/denys/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2018/01/24 3.17 The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count123
-\U@D=\dimen133
+(/home/denys/.miktex/texmfs/install/tex/generic/babel/switch.def
+File: switch.def 2018/01/24 3.17 Babel switching mechanism
 )
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/denys/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/home/denys/.miktex/texmfs/install/tex/generic/babel/babel.def
+File: babel.def 2018/01/24 3.17 Babel common definitions
+
+(/home/denys/.miktex/texmfs/install/tex/generic/babel/switch.def
+File: switch.def 2018/01/24 3.17 Babel switching mechanism
+)
+\babel@savecnt=\count122
+\U@D=\dimen133
+
+(/home/denys/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count123
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@american = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen134
 \extrarowheight=\dimen135
@@ -809,7 +820,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \everycr=\toks32
 \minrowclearance=\skip57
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip58
 \LTright=\skip59
@@ -827,21 +838,21 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count128
 \LT@p@ftn=\toks33
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip62
 \multirow@cntb=\count129
 \multirow@dima=\skip63
 \bigstrutjot=\dimen137
 )
-(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen138
 \c@nlinenum=\count130
 \TeXr@lab=\toks34
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2016/04/27 v1.618033 publication quality tables
+(/home/denys/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen139
 \lightrulewidth=\dimen140
 \cmidrulewidth=\dimen141
@@ -860,10 +871,10 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count134
 \@thisrulewidth=\dimen151
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/soulutf8.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/soulutf8.sty
 Package: soulutf8 2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks35
 \SOUL@lasttoken=\toks36
@@ -875,10 +886,13 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen153
 \SOUL@ulht=\dimen154
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -887,21 +901,21 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
@@ -909,7 +923,7 @@ Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -931,78 +945,77 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen155
 \Hy@linkcounter=\count135
 \Hy@pagecounter=\count136
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count137
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/home/denys/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4486.
-Package hyperref Info: Link nesting OFF on input line 4491.
-Package hyperref Info: Hyper index ON on input line 4494.
-Package hyperref Info: Plain pages OFF on input line 4501.
-Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4735.
+Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count138
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5088.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen156
 \Fld@menulength=\count139
 \Field@Width=\dimen157
 \Fld@charsize=\dimen158
-Package hyperref Info: Hyper figures OFF on input line 6342.
-Package hyperref Info: Link nesting OFF on input line 6347.
-Package hyperref Info: Hyper index ON on input line 6350.
-Package hyperref Info: backreferencing OFF on input line 6357.
-Package hyperref Info: Link coloring OFF on input line 6362.
-Package hyperref Info: Link coloring with OCG OFF on input line 6367.
-Package hyperref Info: PDF/A mode OFF on input line 6372.
-LaTeX Info: Redefining \ref on input line 6412.
-LaTeX Info: Redefining \pageref on input line 6416.
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
 \Hy@abspage=\count140
 \c@Item=\count141
 \c@Hfootnote=\count142
 )
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-Package hyperref Message: Driver (autodetected): hpdftex.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count143
 \c@bookmark@seq@number=\count144
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip65
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/home/denys/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip66
 \enit@outerparindent=\dimen161
@@ -1010,10 +1023,10 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box32
 \enitdp@description=\count145
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen162
@@ -1028,106 +1041,113 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count147
 \c@subtable=\count148
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/totalcount.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/caption/totalcount.sty
 Package: totalcount 2013/05/12 v1.0-92 Total values of counters (AR)
 \c@totalcount@figure=\count149
 \c@totalcount@table=\count150
 )
-(/usr/share/texlive/texmf-dist/tex/latex/totcount/totcount.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/totcount/totcount.sty
 Package: totcount 2011/01/25 v1.2 package for gettingthe total value of LaTeX c
 ounters
 )
-(/usr/share/texlive/texmf-dist/tex/latex/totpages/totpages.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/totpages/totpages.sty
 Package: totpages 2005/09/19 v2.00 Totpages Package (muewi)
 
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))) (./dispackages.tex
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip67
-\f@ncyO@elh=\skip68
-\f@ncyO@erh=\skip69
-\f@ncyO@olh=\skip70
-\f@ncyO@orh=\skip71
-\f@ncyO@elf=\skip72
-\f@ncyO@erf=\skip73
-\f@ncyO@olf=\skip74
-\f@ncyO@orf=\skip75
+)))
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks41
+\AP@partial=\box33
+\AP@footins=\box34
 )
-(/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-base.sty
+(dispackages.tex
+(/home/denys/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip67
+\f@nch@O@elh=\skip68
+\f@nch@O@erh=\skip69
+\f@nch@O@olh=\skip70
+\f@nch@O@orh=\skip71
+\f@nch@O@elf=\skip72
+\f@nch@O@erf=\skip73
+\f@nch@O@olf=\skip74
+\f@nch@O@orf=\skip75
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-base.sty
 Package: interfaces-base 2011/02/19 v3.1 Interfaces core system layer (FC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/etex-pkg/etex.sty
 Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
 \et@xins=\count151
 )
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+(/home/denys/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/06 v2.5c e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count152
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks41
-\pgfkeys@temptoks=\toks42
+(/home/denys/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks42
+\pgfkeys@temptoks=\toks43
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
-\pgfkeys@tmptoks=\toks43
-))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2016/06/14 v3.21 KOMA-Script package (loading files)
-
-Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
-                  Copyright (C) Markus Kohm
-
+(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks44
+)))
+(/home/denys/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
 )
 \itf@sk=\skip76
 \itf@musk=\muskip12
-\itf@tk=\toks44
+\itf@tk=\toks45
 \itf@cnt=\count153
 \itf@calc@Askip=\skip77
 \itf@calc@Bskip=\skip78
-) (/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-etoolbox.sty
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-etoolbox.st
+y
 Package: interfaces-etoolbox 2011/02/19 v3.1 more etoolbox-like commands (FC)
-) (/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-scrlfile.sty
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-scrlfile.st
+y
 Package: interfaces-scrlfile 2011/02/19 v3.1 scrlfile hooks improved (FC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-pgfkeys.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-pgfkeys.sty
 Package: interfaces-pgfkeys 2011/02/19 v3.1 pgfkeys handlers definitions (FC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-tikz.sty
+) (/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-tikz.sty
 Package: interfaces-tikz 2011/02/19 v3.1 load tikz libraries easily (FC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-umrand.sty
+) (/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-umrand.st
+y
 Package: interfaces-umrand 2011/02/19 v3.1 patch for umrand.sty ifnotempty (FC)
 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (/home/denys/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box33
+\ttl@box=\box35
 \beforetitleunit=\skip79
 \aftertitleunit=\skip80
 \ttl@plus=\dimen169
 \ttl@minus=\dimen170
-\ttl@toksa=\toks45
+\ttl@toksa=\toks46
 \titlewidth=\dimen171
 \titlewidthlast=\dimen172
 \titlewidthfirst=\dimen173
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 44.
+(/home/denys/.miktex/texmfs/install/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip81
 \cftbeforetoctitleskip=\skip82
 \cftaftertoctitleskip=\skip83
@@ -1165,10 +1185,11 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cfttabindent=\skip113
 \cfttabnumwidth=\skip114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 ))
-(./userpackages.tex (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(userpackages.tex
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen174
 \TX@old@table=\dimen175
@@ -1176,8 +1197,9 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@target=\dimen177
 \TX@delta=\dimen178
 \TX@cols=\count156
-\TX@ftn=\toks46
-) (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
+\TX@ftn=\toks47
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 \TY@count=\count157
 \TY@linewidth=\dimen179
@@ -1185,22 +1207,22 @@ Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 \tymax=\dimen181
 \TY@tablewidth=\dimen182
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
 \FV@CodeLineNo=\count158
 \FV@InFile=\read1
-\FV@TabBox=\box34
+\FV@TabBox=\box36
 \c@FancyVerbLine=\count159
 \FV@StepNumber=\count160
 \FV@OutFile=\write3
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/listings/listings.sty
 \lst@mode=\count161
-\lst@gtempboxa=\box35
-\lst@token=\toks47
+\lst@gtempboxa=\box37
+\lst@token=\toks48
 \lst@length=\count162
 \lst@currlwidth=\dimen183
 \lst@column=\count163
@@ -1211,27 +1233,27 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \lst@lineno=\count166
 \lst@maxwidth=\dimen186
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count167
 \lst@skipnumbers=\count168
-\lst@framebox=\box36
+\lst@framebox=\box38
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+(/home/denys/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 \c@float@type=\count169
-\float@exts=\toks48
-\float@box=\box37
-\@floatcapt=\box38
+\float@exts=\toks49
+\float@box=\box39
+\@floatcapt=\box40
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks49
+\FR@everyfloat=\toks50
 \flrow@foot=\insert199
 \FB@wd=\dimen187
 \FBo@wd=\dimen188
@@ -1250,7 +1272,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \sXhsize=\skip122
 \Zhsize=\skip123
 \sZhsize=\skip124
-\flrow@rowbox=\box39
+\flrow@rowbox=\box41
 \FR@Zunitlength=\dimen190
 \c@FBcnt=\count174
 \FPOScnt=\count175
@@ -1258,37 +1280,37 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip126
 \LTleft=\skip127
 \LTright=\skip128
-\flrow@types=\toks50
+\flrow@types=\toks51
 )
-(./preamblenames.tex) (../common/styles.tex
+(preamblenames.tex) (../common/styles.tex
 Package hyperref Info: Option `linktocpage' set `true' on input line 84.
 Package hyperref Info: Option `plainpages' set `false' on input line 84.
 Package hyperref Info: Option `colorlinks' set `true' on input line 84.
-) (./disstyles.tex
-(/usr/share/texlive/texmf-dist/tex/latex/interfaces/interfaces-titlesec.sty
+) (disstyles.tex
+(/home/denys/.miktex/texmfs/install/tex/latex/interfaces/interfaces-titlesec.st
+y
 Package: interfaces-titlesec 2011/02/19 v3.1 pgfkeys macros for titlesec (FC)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+ (/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 ))
 \otstuplen=\skip129
-
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/block.tss
+(/home/denys/.miktex/texmfs/install/tex/latex/titlesec/block.tss
 File: block.tss 2016/03/15
-)) (./userstyles.tex
+))
+(userstyles.tex
 \twless=\skip130
 \lmarg=\skip131
 \c@ListingEnv=\count176
 ) (../biblio/bibliopreamble.tex (../biblio/predefined.tex
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
 \c@citenum=\count177
 \c@citenum@totc=\count178
-)) (../common/data.tex)
-(./dissertation.aux
+))
+(../common/data.tex) (dissertation.aux
 
 LaTeX Warning: Label `my-label' multiply defined.
 
@@ -1359,36 +1381,32 @@ LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/home/denys/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count182
 \scratchdimen=\dimen191
-\scratchbox=\box40
+\scratchbox=\box42
 \nofMPsegments=\count183
 \nofMParguments=\count184
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks52
 \MPscratchCnt=\count185
 \MPscratchDim=\dimen192
 \MPnumerator=\count186
 \makeMPintoPDFobject=\count187
-\everyMPtoPDFconversion=\toks52
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+\everyMPtoPDFconversion=\toks53
+) (/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1423,9 +1441,9 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box41
+\AtBeginShipoutBox=\box43
 Package hyperref Info: Link coloring ON on input line 16.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 \c@section@level=\count188
 )
@@ -1433,7 +1451,7 @@ LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
 
-(./dissertation.out) (./dissertation.out)
+(dissertation.out) (dissertation.out)
 \@outlinefile=\write4
 \openout4 = `dissertation.out'.
 
@@ -1443,20 +1461,19 @@ Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 \c@lstlisting=\count189
 
-(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+(/home/denys/.miktex/texmfs/install/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 
-\flrow@LT@lasthead=\box42
-\flrow@LT@prelastfoot=\box43
+\flrow@LT@lasthead=\box44
+\flrow@LT@prelastfoot=\box45
 \c@FBLTpage=\count190
 )
-(./names.tex) (./title.tex [1.1
+(names.tex) (title.tex [1.1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./abstract.tex
+{/home/denys/.miktex/texmfs/data/pdftex/config/pdftex.map}]) (abstract.tex
 \@c=\count191
 \@last=\count192
 \@pnul=\count193
@@ -1531,15 +1548,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--55
 
 [3.3
 
-]) (./contents.tex (./dissertation.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx
-.cmap>>
+]) (contents.tex (dissertation.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cma
+p>>
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [4.4
 
@@ -1548,12 +1565,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `dissertation.toc'.
 
 )
-(./shortcuts.tex [5.5]
+(shortcuts.tex [5.5]
 Underfull \hbox (badness 10000) in paragraph at lines 5--11
 
  []
 
-) (./introduction.tex [6.6
+) (introduction.tex [6.6
 
 ] (../common/characteristic.tex)
 \@c=\count293
@@ -1570,22 +1587,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--11
 \@pnul=\count304
  [7.7
 
-]) (./part1.tex
+]) (part1.tex
 [8.8]
 Chapter 1.
 [9.9
 
-] <images/hierarchy.png, id=272, 553.06625pt x 268.00125pt>
+]
+<images/hierarchy.png, id=270, 553.06625pt x 268.00125pt>
 File: images/hierarchy.png Graphic file (type png)
-
 <use images/hierarchy.png>
-Package pdftex.def Info: images/hierarchy.png used on input line 35.
+Package pdftex.def Info: images/hierarchy.png  used on input line 35.
 (pdftex.def)             Requested size: 331.8423pt x 160.80197pt.
- <images/work_flow.png, id=273, 650.43pt x 433.62pt>
+<images/work_flow.png, id=271, 650.43pt x 433.62pt>
 File: images/work_flow.png Graphic file (type png)
-
 <use images/work_flow.png>
-Package pdftex.def Info: images/work_flow.png used on input line 45.
+Package pdftex.def Info: images/work_flow.png  used on input line 45.
 (pdftex.def)             Requested size: 390.261pt x 260.17401pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--52
@@ -1593,22 +1609,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
  []
 
 [10.10 <./images/hierarchy.png>] [11.11 <./images/work_flow.png>]
-<images/eval1.png, id=308, 522.15076pt x 120.6909pt>
+<images/eval1.png, id=306, 522.15076pt x 120.6909pt>
 File: images/eval1.png Graphic file (type png)
- <use images/eval1.png>
-Package pdftex.def Info: images/eval1.png used on input line 93.
+<use images/eval1.png>
+Package pdftex.def Info: images/eval1.png  used on input line 93.
 (pdftex.def)             Requested size: 522.14949pt x 120.6906pt.
-
-<images/eval2.png, id=309, 461.8053pt x 100.4553pt>
+<images/eval2.png, id=307, 461.8053pt x 100.4553pt>
 File: images/eval2.png Graphic file (type png)
- <use images/eval2.png>
-Package pdftex.def Info: images/eval2.png used on input line 94.
+<use images/eval2.png>
+Package pdftex.def Info: images/eval2.png  used on input line 94.
 (pdftex.def)             Requested size: 461.80415pt x 100.45505pt.
-
-<images/eval3.png, id=310, 351.59355pt x 100.4553pt>
+<images/eval3.png, id=308, 351.59355pt x 100.4553pt>
 File: images/eval3.png Graphic file (type png)
- <use images/eval3.png>
-Package pdftex.def Info: images/eval3.png used on input line 95.
+<use images/eval3.png>
+Package pdftex.def Info: images/eval3.png  used on input line 95.
 (pdftex.def)             Requested size: 351.59268pt x 100.45505pt.
 
 Overfull \hbox (24.22624pt too wide) in paragraph at lines 93--96
@@ -1648,8 +1662,12 @@ Overfull \hbox (12.32368pt too wide) in paragraph at lines 143--143
 \T2A/cmr/m/n/14.4 Negative 
  []
 
-[14.14]) (./part2.tex [15.15]
+[14.14]) (part2.tex [15.15]
 Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
 
 Underfull \hbox (badness 1565) in paragraph at lines 28--29
 []\T2A/cmr/m/n/14.4 Formally, there is a col-lec-tion of texts $\OML/cmm/m/it/1
@@ -1658,146 +1676,137 @@ Underfull \hbox (badness 1565) in paragraph at lines 28--29
 
 [16.16
 
-] [17.17] [18.18] <images/FCNN.png, id=377, 530.98375pt x 279.0425pt>
+] [17.17] [18.18]
+<images/FCNN.png, id=374, 530.98375pt x 279.0425pt>
 File: images/FCNN.png Graphic file (type png)
-
 <use images/FCNN.png>
-Package pdftex.def Info: images/FCNN.png used on input line 145.
+Package pdftex.def Info: images/FCNN.png  used on input line 145.
 (pdftex.def)             Requested size: 265.49121pt x 139.5209pt.
- [19.19 <./images/FCNN.png>] [20.20] [21.21]
-<images/skip_gram_model.png, id=422, 562.1pt x 559.08875pt>
+ [19.19 <./images/FCNN.png>] [20.20]
+<images/skip_gram_model.png, id=407, 562.1pt x 559.08875pt>
 File: images/skip_gram_model.png Graphic file (type png)
-
 <use images/skip_gram_model.png>
-Package pdftex.def Info: images/skip_gram_model.png used on input line 306.
+Package pdftex.def Info: images/skip_gram_model.png  used on input line 298.
 (pdftex.def)             Requested size: 281.04932pt x 279.54369pt.
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 315
+ [21.21]
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 307
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [22.22 <./images/skip_gram_model.png>]
-Underfull \hbox (badness 3439) in paragraph at lines 377--379
+Underfull \hbox (badness 3439) in paragraph at lines 364--366
 \T2A/cmr/m/n/14.4 We have cal-cu-lated the gra-di-ent for one par-tic-u-lar wor
 d, now we will
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 377--379
+Underfull \hbox (badness 1394) in paragraph at lines 364--366
 \T2A/cmr/m/n/14.4 gen-er-al-ize this to a num-ber of words. We have a set of co
 n-text words
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--377
 
  []
 
 [23.23]
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
-
- []
-
-<images/embed.png, id=446, 758.835pt x 696.6025pt>
+<images/embed.png, id=443, 758.835pt x 696.6025pt>
 File: images/embed.png Graphic file (type png)
- <use images/embed.png>
-Package pdftex.def Info: images/embed.png used on input line 428.
+<use images/embed.png>
+Package pdftex.def Info: images/embed.png  used on input line 411.
 (pdftex.def)             Requested size: 303.52863pt x 278.63606pt.
-
-[24.24] [25.25 <./images/embed.png>]
-<images/CBOW.png, id=465, 366.36874pt x 410.53375pt>
+ [24.24] [25.25 <./images/embed.png>]
+<images/CBOW.png, id=461, 366.36874pt x 410.53375pt>
 File: images/CBOW.png Graphic file (type png)
- <use images/CBOW.png>
-Package pdftex.def Info: images/CBOW.png used on input line 465.
+<use images/CBOW.png>
+Package pdftex.def Info: images/CBOW.png  used on input line 447.
 (pdftex.def)             Requested size: 219.82294pt x 246.32214pt.
-
-[26.26 <./images/CBOW.png>] <images/CNN.png, id=473, 961.5925pt x 392.46625pt>
+<images/CNN.png, id=464, 961.5925pt x 392.46625pt>
 File: images/CNN.png Graphic file (type png)
-
 <use images/CNN.png>
-Package pdftex.def Info: images/CNN.png used on input line 480.
+Package pdftex.def Info: images/CNN.png  used on input line 462.
 (pdftex.def)             Requested size: 480.79507pt x 196.23264pt.
-
-<images/convolution.jpeg, id=477, 411.5375pt x 430.60875pt>
+ [26.26 <./images/CBOW.png>]
+<images/convolution.jpeg, id=476, 411.5375pt x 430.60875pt>
 File: images/convolution.jpeg Graphic file (type jpg)
-
 <use images/convolution.jpeg>
-Package pdftex.def Info: images/convolution.jpeg used on input line 492.
+Package pdftex.def Info: images/convolution.jpeg  used on input line 474.
 (pdftex.def)             Requested size: 205.76825pt x 215.30383pt.
- [27.27 <./images/CNN.png>] [28.28 <./images/convolution.jpeg>] <images/Relu.pn
-g, id=497, 356.33125pt x 290.08376pt>
+
+[27.27 <./images/CNN.png> <./images/convolution.jpeg>]
+<images/Relu.png, id=487, 356.33125pt x 290.08376pt>
 File: images/Relu.png Graphic file (type png)
-
 <use images/Relu.png>
-Package pdftex.def Info: images/Relu.png used on input line 535.
+Package pdftex.def Info: images/Relu.png  used on input line 516.
 (pdftex.def)             Requested size: 142.52997pt x 116.03143pt.
-
-<images/max_pulling.png, id=500, 572.1375pt x 331.2375pt>
+ [28.28]
+<images/max_pulling.png, id=498, 572.1375pt x 331.2375pt>
 File: images/max_pulling.png Graphic file (type png)
-
 <use images/max_pulling.png>
-Package pdftex.def Info: images/max_pulling.png used on input line 549.
+Package pdftex.def Info: images/max_pulling.png  used on input line 530.
 (pdftex.def)             Requested size: 286.06804pt x 165.61833pt.
-
-<images/CNN_FNN_layer.jpeg, id=502, 574.145pt x 404.51125pt>
+<images/CNN_FNN_layer.jpeg, id=500, 574.145pt x 404.51125pt>
 File: images/CNN_FNN_layer.jpeg Graphic file (type jpg)
-
 <use images/CNN_FNN_layer.jpeg>
-Package pdftex.def Info: images/CNN_FNN_layer.jpeg used on input line 561.
+Package pdftex.def Info: images/CNN_FNN_layer.jpeg  used on input line 542.
 (pdftex.def)             Requested size: 287.0718pt x 202.25513pt.
- [29.29 <./images/Relu.png>] [30.30 <./images/max_pulling.png> <./images/CNN_FN
-N_layer.jpeg>]
+ [29.29 <./images/Relu.png> <./images/max_pulling.png>]
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 611.
-
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 589.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 611.
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 589.
 
 
-[31.31] <images/backprog_max_pulling.png, id=538, 658.46pt x 322.20375pt>
+[30.30 <./images/CNN_FNN_layer.jpeg>]
+<images/backprog_max_pulling.png, id=520, 658.46pt x 322.20375pt>
 File: images/backprog_max_pulling.png Graphic file (type png)
-
 <use images/backprog_max_pulling.png>
-Package pdftex.def Info: images/backprog_max_pulling.png used on input line 644
-.
+Package pdftex.def Info: images/backprog_max_pulling.png  used on input line 61
+9.
 (pdftex.def)             Requested size: 329.2292pt x 161.10147pt.
-
-<images/conv_grad.png, id=540, 662.475pt x 590.205pt>
+<images/conv_grad.png, id=522, 662.475pt x 590.205pt>
 File: images/conv_grad.png Graphic file (type png)
-
 <use images/conv_grad.png>
-Package pdftex.def Info: images/conv_grad.png used on input line 653.
+Package pdftex.def Info: images/conv_grad.png  used on input line 627.
 (pdftex.def)             Requested size: 264.9853pt x 236.0778pt.
- [32.32 <./images/backprog_max_pulling.png> <./images/conv_grad.png>] [33.33]
-<images/rnn_structure.png, id=561, 977.8131pt x 256.91985pt>
+ [31.31 <./images/backprog_max_pulling.png>] [32.32 <./images/conv_grad.png>]
+<images/rnn_structure.png, id=552, 977.8131pt x 256.91985pt>
 File: images/rnn_structure.png Graphic file (type png)
-
 <use images/rnn_structure.png>
-Package pdftex.def Info: images/rnn_structure.png used on input line 691.
+Package pdftex.def Info: images/rnn_structure.png  used on input line 663.
 (pdftex.def)             Requested size: 391.1183pt x 102.76611pt.
-
-<images/SimpleRNN.png, id=567, 810.1467pt x 303.17265pt>
+<images/SimpleRNN.png, id=558, 810.1467pt x 303.17265pt>
 File: images/SimpleRNN.png Graphic file (type png)
-
 <use images/SimpleRNN.png>
-Package pdftex.def Info: images/SimpleRNN.png used on input line 705.
+Package pdftex.def Info: images/SimpleRNN.png  used on input line 677.
 (pdftex.def)             Requested size: 324.05293pt x 121.2669pt.
-
-<images/LSTM.png, id=568, 806.89455pt x 303.17265pt>
+<images/LSTM.png, id=559, 806.89455pt x 303.17265pt>
 File: images/LSTM.png Graphic file (type png)
- <use images/LSTM.png>
-Package pdftex.def Info: images/LSTM.png used on input line 712.
+<use images/LSTM.png>
+Package pdftex.def Info: images/LSTM.png  used on input line 684.
 (pdftex.def)             Requested size: 322.7521pt x 121.2669pt.
-
-[34.34 <./images/rnn_structure.png> <./images/SimpleRNN.png> <./images/LSTM.png
->] [35.35]) (./part3.tex [36.36] [37.37]
+ [33.33 <./images/rnn_structure.png>]
+[34.34 <./images/SimpleRNN.png> <./images/LSTM.png>] [35.35]) (part3.tex
+[36.36]
 Chapter 3.
-[38.38
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
+[37.37
 
 ]
 
-LaTeX Warning: Reference `lvl2' on page 39 undefined on input line 65.
+LaTeX Warning: Reference `lvl2' on page 38 undefined on input line 65.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--70
@@ -1870,19 +1879,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39.39] [40.40] [41.41]
-<images/p3_preprocessing.png, id=632, 717.68124pt x 583.17876pt>
+[38.38] [39.39] [40.40]
+<images/p3_preprocessing.png, id=623, 717.68124pt x 583.17876pt>
 File: images/p3_preprocessing.png Graphic file (type png)
-
 <use images/p3_preprocessing.png>
-Package pdftex.def Info: images/p3_preprocessing.png used on input line 177.
+Package pdftex.def Info: images/p3_preprocessing.png  used on input line 177.
 (pdftex.def)             Requested size: 358.83974pt x 291.58867pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[42.42
+[41.41
 
  <./images/p3_preprocessing.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 193--210
@@ -1899,12 +1907,11 @@ Overfull \hbox (10.97357pt too wide) in paragraph at lines 222--237
  [][] 
  []
 
-<images/p3_sequences_fasttext.png, id=640, 1032.85875pt x 294.09875pt>
+<images/p3_sequences_fasttext.png, id=631, 1032.85875pt x 294.09875pt>
 File: images/p3_sequences_fasttext.png Graphic file (type png)
-
 <use images/p3_sequences_fasttext.png>
-Package pdftex.def Info: images/p3_sequences_fasttext.png used on input line 24
-6.
+Package pdftex.def Info: images/p3_sequences_fasttext.png  used on input line 2
+46.
 (pdftex.def)             Requested size: 464.78215pt x 132.3432pt.
 
 Underfull \hbox (badness 1137) in paragraph at lines 264--265
@@ -1916,239 +1923,211 @@ Overfull \hbox (10.97357pt too wide) in paragraph at lines 260--274
  [][] 
  []
 
-[43.43] [44.44 <./images/p3_sequences_fasttext.png>]
-<images/p3_train.png, id=655, 711.65875pt x 197.73875pt>
+[42.42] [43.43 <./images/p3_sequences_fasttext.png>]
+<images/p3_train.png, id=646, 711.65875pt x 197.73875pt>
 File: images/p3_train.png Graphic file (type png)
-
 <use images/p3_train.png>
-Package pdftex.def Info: images/p3_train.png used on input line 286.
+Package pdftex.def Info: images/p3_train.png  used on input line 286.
 (pdftex.def)             Requested size: 355.8285pt x 98.86913pt.
-
-<images/p3_custom_callbacks.png, id=657, 1273.75874pt x 781.92125pt>
+<images/p3_custom_callbacks.png, id=648, 1273.75874pt x 781.92125pt>
 File: images/p3_custom_callbacks.png Graphic file (type png)
-
 <use images/p3_custom_callbacks.png>
-Package pdftex.def Info: images/p3_custom_callbacks.png used on input line 310.
-
+Package pdftex.def Info: images/p3_custom_callbacks.png  used on input line 310
+.
 (pdftex.def)             Requested size: 318.4389pt x 195.47983pt.
- [45.45
+ [44.44
 
- <./images/p3_train.png>])
-(./part4.tex [46.46 <./images/p3_custom_callbacks.png>]
+ <./images/p3_train.png>]) (part4.tex [45.45 <./images/p3_custom_callbacks.png>
+]
 Chapter 4.
-[47.47
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
+[46.46
 
 ]
-<images/part4/bilstm_architecture.png, id=675, 891.33pt x 1073.00874pt>
+<images/part4/bilstm_architecture.png, id=666, 891.33pt x 1073.00874pt>
 File: images/part4/bilstm_architecture.png Graphic file (type png)
-
 <use images/part4/bilstm_architecture.png>
-Package pdftex.def Info: images/part4/bilstm_architecture.png used on input lin
-e 25.
+Package pdftex.def Info: images/part4/bilstm_architecture.png  used on input li
+ne 25.
 (pdftex.def)             Requested size: 356.52568pt x 429.19589pt.
-
-<images/part4/bilstm_train_category_accuracy.png, id=677, 331.2375pt x 221.8287
+<images/part4/bilstm_train_category_accuracy.png, id=668, 331.2375pt x 221.8287
 5pt>
 File: images/part4/bilstm_train_category_accuracy.png Graphic file (type png)
- <use images/part4/bilstm_train_category_accuracy.png>
-Package pdftex.def Info: images/part4/bilstm_train_category_accuracy.png used o
-n input line 34.
+<use images/part4/bilstm_train_category_accuracy.png>
+Package pdftex.def Info: images/part4/bilstm_train_category_accuracy.png  used 
+on input line 34.
 (pdftex.def)             Requested size: 248.96162pt x 166.72992pt.
-
-<images/part4/bilstm_val_category_accuracy.png, id=678, 331.2375pt x 221.82875p
+<images/part4/bilstm_val_category_accuracy.png, id=669, 331.2375pt x 221.82875p
 t>
 File: images/part4/bilstm_val_category_accuracy.png Graphic file (type png)
- <use images/part4/bilstm_val_category_accuracy.png>
-Package pdftex.def Info: images/part4/bilstm_val_category_accuracy.png used on 
-input line 38.
+<use images/part4/bilstm_val_category_accuracy.png>
+Package pdftex.def Info: images/part4/bilstm_val_category_accuracy.png  used on
+ input line 38.
 (pdftex.def)             Requested size: 248.96162pt x 166.72992pt.
-
-<images/part4/bilstm_train_category_crossentropy.png, id=680, 331.2375pt x 224.
+<images/part4/bilstm_train_category_crossentropy.png, id=671, 331.2375pt x 224.
 84pt>
 File: images/part4/bilstm_train_category_crossentropy.png Graphic file (type pn
 g)
- <use images/part4/bilstm_train_category_crossentropy.png>
-Package pdftex.def Info: images/part4/bilstm_train_category_crossentropy.png us
-ed on input line 48.
+<use images/part4/bilstm_train_category_crossentropy.png>
+Package pdftex.def Info: images/part4/bilstm_train_category_crossentropy.png  u
+sed on input line 48.
 (pdftex.def)             Requested size: 248.96162pt x 168.99324pt.
-
-<images/part4/bilstm_val_category_crossentropy.png, id=681, 331.2375pt x 218.81
+<images/part4/bilstm_val_category_crossentropy.png, id=672, 331.2375pt x 218.81
 75pt>
 File: images/part4/bilstm_val_category_crossentropy.png Graphic file (type png)
 
- <use images/part4/bilstm_val_category_crossentropy.png>
-Package pdftex.def Info: images/part4/bilstm_val_category_crossentropy.png used
- on input line 52.
+<use images/part4/bilstm_val_category_crossentropy.png>
+Package pdftex.def Info: images/part4/bilstm_val_category_crossentropy.png  use
+d on input line 52.
 (pdftex.def)             Requested size: 248.96162pt x 164.46663pt.
-
-<images/part4/bilstm_train_top_k_accuracy.png, id=683, 331.2375pt x 220.825pt>
+<images/part4/bilstm_train_top_k_accuracy.png, id=674, 331.2375pt x 220.825pt>
 File: images/part4/bilstm_train_top_k_accuracy.png Graphic file (type png)
-
 <use images/part4/bilstm_train_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/bilstm_train_top_k_accuracy.png used on i
-nput line 62.
+Package pdftex.def Info: images/part4/bilstm_train_top_k_accuracy.png  used on 
+input line 62.
 (pdftex.def)             Requested size: 248.96162pt x 165.9755pt.
-
-<images/part4/bilstm_val_top_k_accuracy.png, id=684, 331.2375pt x 218.8175pt>
+<images/part4/bilstm_val_top_k_accuracy.png, id=675, 331.2375pt x 218.8175pt>
 File: images/part4/bilstm_val_top_k_accuracy.png Graphic file (type png)
-
 <use images/part4/bilstm_val_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/bilstm_val_top_k_accuracy.png used on inp
-ut line 66.
+Package pdftex.def Info: images/part4/bilstm_val_top_k_accuracy.png  used on in
+put line 66.
 (pdftex.def)             Requested size: 248.96162pt x 164.46663pt.
- [48.48 <./images/part4/bilstm_architecture.png>] [49.49 <./images/part4/bilstm
+ [47.47 <./images/part4/bilstm_architecture.png>] [48.48 <./images/part4/bilstm
 _train_category_accuracy.png> <./images/part4/bilstm_val_category_accuracy.png>
-] [50.50 <./images/part4/bilstm_train_category_crossentropy.png> <./images/part
+] [49.49 <./images/part4/bilstm_train_category_crossentropy.png> <./images/part
 4/bilstm_val_category_crossentropy.png> <./images/part4/bilstm_train_top_k_accu
 racy.png> <./images/part4/bilstm_val_top_k_accuracy.png>]
-<images/part4/bilstm_timing.png, id=709, 1038.88126pt x 233.87375pt>
+<images/part4/bilstm_timing.png, id=700, 1038.88126pt x 233.87375pt>
 File: images/part4/bilstm_timing.png Graphic file (type png)
-
 <use images/part4/bilstm_timing.png>
-Package pdftex.def Info: images/part4/bilstm_timing.png used on input line 77.
+Package pdftex.def Info: images/part4/bilstm_timing.png  used on input line 77.
+
 (pdftex.def)             Requested size: 519.43936pt x 116.93657pt.
 
 Overfull \hbox (21.51611pt too wide) in paragraph at lines 77--78
  [] 
  []
 
-
-<images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png, id=710, 702.625pt x
+<images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png, id=701, 702.625pt x
  421.575pt>
 File: images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png Graphic file (t
 ype png)
- <use images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png>
+<use images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png>
 Package pdftex.def Info: images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.
-png used on input line 87.
+png  used on input line 87.
 (pdftex.def)             Requested size: 248.96162pt x 149.3739pt.
-
-<images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png, id=711, 702.625pt 
+<images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png, id=702, 702.625pt 
 x 422.57875pt>
 File: images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png Graphic file (
 type png)
-
 <use images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png>
 Package pdftex.def Info: images/part4/bilstm_backward_lstm_1_recurrent_kernel_0
-.png used on input line 91.
+.png  used on input line 91.
 (pdftex.def)             Requested size: 248.96162pt x 149.72957pt.
- [51.51
+[50.50
 
  <./images/part4/bilstm_timing.png> <./images/part4/bilstm_forward_lstm_1_recur
 rent_kernel_0.png> <./images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.pn
 g>]
-<images/part4/bilstm_dense.png, id=726, 702.625pt x 422.57875pt>
+<images/part4/bilstm_dense.png, id=716, 702.625pt x 422.57875pt>
 File: images/part4/bilstm_dense.png Graphic file (type png)
-
 <use images/part4/bilstm_dense.png>
-Package pdftex.def Info: images/part4/bilstm_dense.png used on input line 103.
+Package pdftex.def Info: images/part4/bilstm_dense.png  used on input line 103.
+
 (pdftex.def)             Requested size: 351.31163pt x 211.28885pt.
-
-<images/part4/resources_BILSTM.png, id=728, 1923.185pt x 965.6075pt>
+<images/part4/resources_BILSTM.png, id=718, 1923.185pt x 965.6075pt>
 File: images/part4/resources_BILSTM.png Graphic file (type png)
-
 <use images/part4/resources_BILSTM.png>
-Package pdftex.def Info: images/part4/resources_BILSTM.png used on input line 1
-14.
+Package pdftex.def Info: images/part4/resources_BILSTM.png  used on input line 
+114.
 (pdftex.def)             Requested size: 384.63019pt x 193.11807pt.
- [52.52 <./images/part4/bilstm_dense.png> <./images/part4/resources_BILSTM.png>
+ [51.51 <./images/part4/bilstm_dense.png> <./images/part4/resources_BILSTM.png>
 ]
 
-Package caption Warning: \label without proper reference on input line 31.
+Package caption Warning: \label without proper reference on input line 38.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `img:cnn_architecture' on page 53 undefined on input l
+LaTeX Warning: Reference `img:cnn_architecture' on page 52 undefined on input l
 ine 123.
 
-
-<images/part4/3CNN_train_category_accuracy.png, id=738, 331.2375pt x 216.81pt>
+<images/part4/3CNN_train_category_accuracy.png, id=728, 331.2375pt x 216.81pt>
 File: images/part4/3CNN_train_category_accuracy.png Graphic file (type png)
-
 <use images/part4/3CNN_train_category_accuracy.png>
-Package pdftex.def Info: images/part4/3CNN_train_category_accuracy.png used on 
-input line 148.
+Package pdftex.def Info: images/part4/3CNN_train_category_accuracy.png  used on
+ input line 148.
 (pdftex.def)             Requested size: 248.96162pt x 162.95776pt.
+<images/part4/3CNN_val_category_accuracy.png, id=729, 331.2375pt x 217.81375pt>
 
-<images/part4/3CNN_val_category_accuracy.png, id=739, 331.2375pt x 217.81375pt>
 File: images/part4/3CNN_val_category_accuracy.png Graphic file (type png)
 <use images/part4/3CNN_val_category_accuracy.png>
-Package pdftex.def Info: images/part4/3CNN_val_category_accuracy.png used on in
-put line 152.
+Package pdftex.def Info: images/part4/3CNN_val_category_accuracy.png  used on i
+nput line 152.
 (pdftex.def)             Requested size: 248.96162pt x 163.71219pt.
-
-<images/part4/3CNN_train_category_crossentropy.png, id=740, 331.2375pt x 214.80
+<images/part4/3CNN_train_category_crossentropy.png, id=730, 331.2375pt x 214.80
 25pt>
 File: images/part4/3CNN_train_category_crossentropy.png Graphic file (type png)
 
- <use images/part4/3CNN_train_category_crossentropy.png>
-Package pdftex.def Info: images/part4/3CNN_train_category_crossentropy.png used
- on input line 179.
+<use images/part4/3CNN_train_category_crossentropy.png>
+Package pdftex.def Info: images/part4/3CNN_train_category_crossentropy.png  use
+d on input line 179.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
-
-<images/part4/3CNN_val_category_crossentropy.png, id=741, 331.2375pt x 217.8137
+<images/part4/3CNN_val_category_crossentropy.png, id=731, 331.2375pt x 217.8137
 5pt>
 File: images/part4/3CNN_val_category_crossentropy.png Graphic file (type png)
- <use images/part4/3CNN_val_category_crossentropy.png>
-Package pdftex.def Info: images/part4/3CNN_val_category_crossentropy.png used o
-n input line 183.
+<use images/part4/3CNN_val_category_crossentropy.png>
+Package pdftex.def Info: images/part4/3CNN_val_category_crossentropy.png  used 
+on input line 183.
 (pdftex.def)             Requested size: 248.96162pt x 163.71219pt.
-
-<images/part4/3CNN_train_top_k_accuracy.png, id=746, 331.2375pt x 214.8025pt>
+<images/part4/3CNN_train_top_k_accuracy.png, id=736, 331.2375pt x 214.8025pt>
 File: images/part4/3CNN_train_top_k_accuracy.png Graphic file (type png)
-
 <use images/part4/3CNN_train_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/3CNN_train_top_k_accuracy.png used on inp
-ut line 214.
+Package pdftex.def Info: images/part4/3CNN_train_top_k_accuracy.png  used on in
+put line 214.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
-
-<images/part4/3CNN_val_top_k_accuracy.png, id=747, 331.2375pt x 215.80624pt>
+<images/part4/3CNN_val_top_k_accuracy.png, id=737, 331.2375pt x 215.80624pt>
 File: images/part4/3CNN_val_top_k_accuracy.png Graphic file (type png)
-
 <use images/part4/3CNN_val_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/3CNN_val_top_k_accuracy.png used on input
- line 218.
+Package pdftex.def Info: images/part4/3CNN_val_top_k_accuracy.png  used on inpu
+t line 218.
 (pdftex.def)             Requested size: 248.96162pt x 162.20332pt.
-
-<images/part4/3CNN_timing.png, id=748, 1047.915pt x 220.825pt>
+<images/part4/3CNN_timing.png, id=738, 1047.915pt x 220.825pt>
 File: images/part4/3CNN_timing.png Graphic file (type png)
-
 <use images/part4/3CNN_timing.png>
-Package pdftex.def Info: images/part4/3CNN_timing.png used on input line 227.
+Package pdftex.def Info: images/part4/3CNN_timing.png  used on input line 227.
 (pdftex.def)             Requested size: 523.9562pt x 110.41222pt.
 
 Overfull \hbox (26.03296pt too wide) in paragraph at lines 227--228
  [] 
  []
 
-[53.53
+[52.52
 
-] [54.54 <./images/part4/3CNN_train_category_accuracy.png> <./images/part4/3CNN
+] [53.53 <./images/part4/3CNN_train_category_accuracy.png> <./images/part4/3CNN
 _val_category_accuracy.png> <./images/part4/3CNN_train_category_crossentropy.pn
-g> <./images/part4/3CNN_val_category_crossentropy.png>] [55.55 <./images/part4/
+g> <./images/part4/3CNN_val_category_crossentropy.png>] [54.54 <./images/part4/
 3CNN_train_top_k_accuracy.png> <./images/part4/3CNN_val_top_k_accuracy.png> <./
 images/part4/3CNN_timing.png>]
-<images/part4/3CNN-conv-128.png, id=778, 702.625pt x 442.65375pt>
+<images/part4/3CNN-conv-128.png, id=767, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-conv-128.png Graphic file (type png)
-
 <use images/part4/3CNN-conv-128.png>
-Package pdftex.def Info: images/part4/3CNN-conv-128.png used on input line 238.
-
+Package pdftex.def Info: images/part4/3CNN-conv-128.png  used on input line 238
+.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-
-<images/part4/3CNN-conv-256.png, id=779, 702.625pt x 442.65375pt>
+<images/part4/3CNN-conv-256.png, id=768, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-conv-256.png Graphic file (type png)
-
 <use images/part4/3CNN-conv-256.png>
-Package pdftex.def Info: images/part4/3CNN-conv-256.png used on input line 242.
-
+Package pdftex.def Info: images/part4/3CNN-conv-256.png  used on input line 242
+.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-
-<images/part4/3CNN-conv-512.png, id=780, 702.625pt x 442.65375pt>
+<images/part4/3CNN-conv-512.png, id=769, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-conv-512.png Graphic file (type png)
-
 <use images/part4/3CNN-conv-512.png>
-Package pdftex.def Info: images/part4/3CNN-conv-512.png used on input line 245.
-
+Package pdftex.def Info: images/part4/3CNN-conv-512.png  used on input line 245
+.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 251--258
@@ -2170,70 +2149,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--258
 
  []
 
-[56.56
+[55.55
 
  <./images/part4/3CNN-conv-128.png> <./images/part4/3CNN-conv-256.png> <./image
 s/part4/3CNN-conv-512.png>]
-<images/part4/3CNN-merge3-128.png, id=790, 702.625pt x 442.65375pt>
+<images/part4/3CNN-merge3-128.png, id=780, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-merge3-128.png Graphic file (type png)
-
 <use images/part4/3CNN-merge3-128.png>
-Package pdftex.def Info: images/part4/3CNN-merge3-128.png used on input line 26
-1.
+Package pdftex.def Info: images/part4/3CNN-merge3-128.png  used on input line 2
+61.
 (pdftex.def)             Requested size: 224.06393pt x 141.15901pt.
-
-<images/part4/3CNN-merge3-256.png, id=791, 702.625pt x 442.65375pt>
+<images/part4/3CNN-merge3-256.png, id=781, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-merge3-256.png Graphic file (type png)
-
 <use images/part4/3CNN-merge3-256.png>
-Package pdftex.def Info: images/part4/3CNN-merge3-256.png used on input line 26
-5.
+Package pdftex.def Info: images/part4/3CNN-merge3-256.png  used on input line 2
+65.
 (pdftex.def)             Requested size: 224.06393pt x 141.15901pt.
-
-<images/part4/3CNN-merge3-512.png, id=792, 702.625pt x 442.65375pt>
+<images/part4/3CNN-merge3-512.png, id=782, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-merge3-512.png Graphic file (type png)
-
 <use images/part4/3CNN-merge3-512.png>
-Package pdftex.def Info: images/part4/3CNN-merge3-512.png used on input line 26
-8.
+Package pdftex.def Info: images/part4/3CNN-merge3-512.png  used on input line 2
+68.
 (pdftex.def)             Requested size: 224.06393pt x 141.15901pt.
- [57.57 <./images/part4/3CNN-merge3-128.png> <./images/part4/3CNN-merge3-256.pn
+ [56.56 <./images/part4/3CNN-merge3-128.png> <./images/part4/3CNN-merge3-256.pn
 g> <./images/part4/3CNN-merge3-512.png>]
-<images/part4/3CNN-dense-128.png, id=802, 702.625pt x 442.65375pt>
+<images/part4/3CNN-dense-128.png, id=792, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-dense-128.png Graphic file (type png)
-
 <use images/part4/3CNN-dense-128.png>
-Package pdftex.def Info: images/part4/3CNN-dense-128.png used on input line 279
-.
+Package pdftex.def Info: images/part4/3CNN-dense-128.png  used on input line 27
+9.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-
-<images/part4/3CNN-dense-256.png, id=803, 702.625pt x 442.65375pt>
+<images/part4/3CNN-dense-256.png, id=793, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-dense-256.png Graphic file (type png)
-
 <use images/part4/3CNN-dense-256.png>
-Package pdftex.def Info: images/part4/3CNN-dense-256.png used on input line 283
-.
+Package pdftex.def Info: images/part4/3CNN-dense-256.png  used on input line 28
+3.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-
-<images/part4/3CNN-dense-512.png, id=804, 702.625pt x 442.65375pt>
+<images/part4/3CNN-dense-512.png, id=794, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-dense-512.png Graphic file (type png)
-
 <use images/part4/3CNN-dense-512.png>
-Package pdftex.def Info: images/part4/3CNN-dense-512.png used on input line 286
-.
+Package pdftex.def Info: images/part4/3CNN-dense-512.png  used on input line 28
+6.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
- [58.58
+
+[57.57
 
  <./images/part4/3CNN-dense-128.png> <./images/part4/3CNN-dense-256.png> <./ima
 ges/part4/3CNN-dense-512.png>]
-<images/part4/resources_CNN.png, id=814, 1912.14375pt x 845.1575pt>
+<images/part4/resources_CNN.png, id=804, 1912.14375pt x 845.1575pt>
 File: images/part4/resources_CNN.png Graphic file (type png)
-
 <use images/part4/resources_CNN.png>
-Package pdftex.def Info: images/part4/resources_CNN.png used on input line 298.
-
+Package pdftex.def Info: images/part4/resources_CNN.png  used on input line 298
+.
 (pdftex.def)             Requested size: 382.42198pt x 169.0285pt.
- [59.59
+ [58.58
 
  <./images/part4/resources_CNN.png>]
 Overfull \hbox (2.24419pt too wide) in paragraph at lines 338--338
@@ -2253,218 +2222,196 @@ Overfull \hbox (2.24419pt too wide) in paragraph at lines 378--378
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[60.60
+[59.59
 
 ]
-<images/part4/4CNN_train_category_accuracy.png, id=834, 331.2375pt x 222.8325pt
+<images/part4/4CNN_train_category_accuracy.png, id=824, 331.2375pt x 222.8325pt
 >
 File: images/part4/4CNN_train_category_accuracy.png Graphic file (type png)
- <use images/part4/4CNN_train_category_accuracy.png>
-Package pdftex.def Info: images/part4/4CNN_train_category_accuracy.png used on 
-input line 398.
+<use images/part4/4CNN_train_category_accuracy.png>
+Package pdftex.def Info: images/part4/4CNN_train_category_accuracy.png  used on
+ input line 398.
 (pdftex.def)             Requested size: 248.96162pt x 167.48438pt.
+<images/part4/4CNN_val_category_accuracy.png, id=825, 331.2375pt x 219.82124pt>
 
-<images/part4/4CNN_val_category_accuracy.png, id=835, 331.2375pt x 219.82124pt>
 File: images/part4/4CNN_val_category_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_val_category_accuracy.png>
-Package pdftex.def Info: images/part4/4CNN_val_category_accuracy.png used on in
-put line 402.
+Package pdftex.def Info: images/part4/4CNN_val_category_accuracy.png  used on i
+nput line 402.
 (pdftex.def)             Requested size: 248.96162pt x 165.22105pt.
-
-<images/part4/4CNN_train_category_crossentropy.png, id=836, 331.2375pt x 211.79
+<images/part4/4CNN_train_category_crossentropy.png, id=826, 331.2375pt x 211.79
 124pt>
 File: images/part4/4CNN_train_category_crossentropy.png Graphic file (type png)
 
- <use images/part4/4CNN_train_category_crossentropy.png>
-Package pdftex.def Info: images/part4/4CNN_train_category_crossentropy.png used
- on input line 411.
+<use images/part4/4CNN_train_category_crossentropy.png>
+Package pdftex.def Info: images/part4/4CNN_train_category_crossentropy.png  use
+d on input line 411.
 (pdftex.def)             Requested size: 248.96162pt x 159.1856pt.
-
-<images/part4/4CNN_val_category_crossentropy.png, id=837, 331.2375pt x 218.8175
+<images/part4/4CNN_val_category_crossentropy.png, id=827, 331.2375pt x 218.8175
 pt>
 File: images/part4/4CNN_val_category_crossentropy.png Graphic file (type png)
- <use images/part4/4CNN_val_category_crossentropy.png>
-Package pdftex.def Info: images/part4/4CNN_val_category_crossentropy.png used o
-n input line 415.
+<use images/part4/4CNN_val_category_crossentropy.png>
+Package pdftex.def Info: images/part4/4CNN_val_category_crossentropy.png  used 
+on input line 415.
 (pdftex.def)             Requested size: 248.96162pt x 164.46663pt.
-
-<images/part4/4CNN_train_top_k_accuracy.png, id=838, 331.2375pt x 213.79875pt>
+<images/part4/4CNN_train_top_k_accuracy.png, id=828, 331.2375pt x 213.79875pt>
 File: images/part4/4CNN_train_top_k_accuracy.png Graphic file (type png)
-
 <use images/part4/4CNN_train_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/4CNN_train_top_k_accuracy.png used on inp
-ut line 423.
+Package pdftex.def Info: images/part4/4CNN_train_top_k_accuracy.png  used on in
+put line 423.
 (pdftex.def)             Requested size: 248.96162pt x 160.69446pt.
-
-<images/part4/4CNN_val_top_k_accuracy.png, id=839, 331.2375pt x 214.8025pt>
+<images/part4/4CNN_val_top_k_accuracy.png, id=829, 331.2375pt x 214.8025pt>
 File: images/part4/4CNN_val_top_k_accuracy.png Graphic file (type png)
-
 <use images/part4/4CNN_val_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/4CNN_val_top_k_accuracy.png used on input
- line 427.
+Package pdftex.def Info: images/part4/4CNN_val_top_k_accuracy.png  used on inpu
+t line 427.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
-
-<images/part4/4CNN_timing.png, id=840, 1036.87375pt x 224.84pt>
+<images/part4/4CNN_timing.png, id=830, 1036.87375pt x 224.84pt>
 File: images/part4/4CNN_timing.png Graphic file (type png)
-
 <use images/part4/4CNN_timing.png>
-Package pdftex.def Info: images/part4/4CNN_timing.png used on input line 435.
+Package pdftex.def Info: images/part4/4CNN_timing.png  used on input line 435.
 (pdftex.def)             Requested size: 518.43561pt x 112.41972pt.
 
 Overfull \hbox (20.51236pt too wide) in paragraph at lines 435--436
  [] 
  []
 
-<images/part4/4CNN-conv-1.png, id=841, 637.38126pt x 150.5625pt>
+<images/part4/4CNN-conv-1.png, id=831, 637.38126pt x 150.5625pt>
 File: images/part4/4CNN-conv-1.png Graphic file (type png)
-
 <use images/part4/4CNN-conv-1.png>
-Package pdftex.def Info: images/part4/4CNN-conv-1.png used on input line 443.
+Package pdftex.def Info: images/part4/4CNN-conv-1.png  used on input line 443.
 (pdftex.def)             Requested size: 497.92325pt x 117.61975pt.
-
-<images/part4/4CNN-conv-2.png, id=842, 644.4075pt x 150.5625pt>
+<images/part4/4CNN-conv-2.png, id=832, 644.4075pt x 150.5625pt>
 File: images/part4/4CNN-conv-2.png Graphic file (type png)
-
 <use images/part4/4CNN-conv-2.png>
-Package pdftex.def Info: images/part4/4CNN-conv-2.png used on input line 447.
+Package pdftex.def Info: images/part4/4CNN-conv-2.png  used on input line 447.
 (pdftex.def)             Requested size: 497.92325pt x 116.3424pt.
- [61.61 <./images/part4/4CNN_train_category_accuracy.png> <./images/part4/4CNN_
-val_category_accuracy.png>] [62.62 <./images/part4/4CNN_train_category_crossent
-ropy.png> <./images/part4/4CNN_val_category_crossentropy.png> <./images/part4/4
-CNN_train_top_k_accuracy.png> <./images/part4/4CNN_val_top_k_accuracy.png>] [63
-.63 <./images/part4/4CNN_timing.png> <./images/part4/4CNN-conv-1.png> <./images
-/part4/4CNN-conv-2.png>]
-<images/part4/4CNN-merge3-1.png, id=874, 636.3775pt x 150.5625pt>
+[60.60 <./images/part4/4CNN_train_category_accuracy.png> <./images/part4/4CNN_v
+al_category_accuracy.png>] [61.61 <./images/part4/4CNN_train_category_crossentr
+opy.png> <./images/part4/4CNN_val_category_crossentropy.png> <./images/part4/4C
+NN_train_top_k_accuracy.png> <./images/part4/4CNN_val_top_k_accuracy.png>]
+[62.62 <./images/part4/4CNN_timing.png> <./images/part4/4CNN-conv-1.png> <./ima
+ges/part4/4CNN-conv-2.png>]
+<images/part4/4CNN-merge3-1.png, id=864, 636.3775pt x 150.5625pt>
 File: images/part4/4CNN-merge3-1.png Graphic file (type png)
-
 <use images/part4/4CNN-merge3-1.png>
-Package pdftex.def Info: images/part4/4CNN-merge3-1.png used on input line 460.
-
+Package pdftex.def Info: images/part4/4CNN-merge3-1.png  used on input line 460
+.
 (pdftex.def)             Requested size: 497.92325pt x 117.80354pt.
-
-<images/part4/4CNN-merge3-2.png, id=875, 632.3625pt x 150.5625pt>
+<images/part4/4CNN-merge3-2.png, id=865, 632.3625pt x 150.5625pt>
 File: images/part4/4CNN-merge3-2.png Graphic file (type png)
-
 <use images/part4/4CNN-merge3-2.png>
-Package pdftex.def Info: images/part4/4CNN-merge3-2.png used on input line 464.
-
+Package pdftex.def Info: images/part4/4CNN-merge3-2.png  used on input line 464
+.
 (pdftex.def)             Requested size: 497.92325pt x 118.5548pt.
- [64.64
+ [63.63
 
  <./images/part4/4CNN-merge3-1.png> <./images/part4/4CNN-merge3-2.png>]
-<images/part4/4CNN-dense-1.png, id=884, 647.41875pt x 150.5625pt>
+<images/part4/4CNN-dense-1.png, id=874, 647.41875pt x 150.5625pt>
 File: images/part4/4CNN-dense-1.png Graphic file (type png)
-
 <use images/part4/4CNN-dense-1.png>
-Package pdftex.def Info: images/part4/4CNN-dense-1.png used on input line 476.
+Package pdftex.def Info: images/part4/4CNN-dense-1.png  used on input line 476.
+
 (pdftex.def)             Requested size: 497.92325pt x 115.79793pt.
-
-<images/part4/4CNN-dense-2.png, id=885, 642.4pt x 150.5625pt>
+<images/part4/4CNN-dense-2.png, id=875, 642.4pt x 150.5625pt>
 File: images/part4/4CNN-dense-2.png Graphic file (type png)
-
 <use images/part4/4CNN-dense-2.png>
-Package pdftex.def Info: images/part4/4CNN-dense-2.png used on input line 480.
+Package pdftex.def Info: images/part4/4CNN-dense-2.png  used on input line 480.
+
 (pdftex.def)             Requested size: 497.92325pt x 116.7031pt.
- [65.65
+ [64.64
 
  <./images/part4/4CNN-dense-1.png> <./images/part4/4CNN-dense-2.png>]
-<images/part4/final_CNN_train_category_accuracy.png, id=898, 342.27875pt x 217.
+<images/part4/final_CNN_train_category_accuracy.png, id=888, 342.27875pt x 217.
 81375pt>
 File: images/part4/final_CNN_train_category_accuracy.png Graphic file (type png
 )
- <use images/part4/final_CNN_train_category_accuracy.png>
-Package pdftex.def Info: images/part4/final_CNN_train_category_accuracy.png use
-d on input line 535.
+<use images/part4/final_CNN_train_category_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_train_category_accuracy.png  us
+ed on input line 535.
 (pdftex.def)             Requested size: 248.96162pt x 158.43437pt.
-
-<images/part4/final_CNN_val_category_accuracy.png, id=899, 331.2375pt x 220.825
+<images/part4/final_CNN_val_category_accuracy.png, id=889, 331.2375pt x 220.825
 pt>
 File: images/part4/final_CNN_val_category_accuracy.png Graphic file (type png)
- <use images/part4/final_CNN_val_category_accuracy.png>
-Package pdftex.def Info: images/part4/final_CNN_val_category_accuracy.png used 
-on input line 539.
+<use images/part4/final_CNN_val_category_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_val_category_accuracy.png  used
+ on input line 539.
 (pdftex.def)             Requested size: 248.96162pt x 165.9755pt.
-
-<images/part4/final_CNN_train_category_crossentropy.png, id=900, 330.23375pt x 
+<images/part4/final_CNN_train_category_crossentropy.png, id=890, 330.23375pt x 
 214.8025pt>
 File: images/part4/final_CNN_train_category_crossentropy.png Graphic file (type
  png)
- <use images/part4/final_CNN_train_category_crossentropy.png>
+<use images/part4/final_CNN_train_category_crossentropy.png>
 Package pdftex.def Info: images/part4/final_CNN_train_category_crossentropy.png
- used on input line 548.
+  used on input line 548.
 (pdftex.def)             Requested size: 248.96162pt x 161.94382pt.
-
-<images/part4/final_CNN_val_category_crossentropy.png, id=901, 331.2375pt x 214
+<images/part4/final_CNN_val_category_crossentropy.png, id=891, 331.2375pt x 214
 .8025pt>
 File: images/part4/final_CNN_val_category_crossentropy.png Graphic file (type p
 ng)
- <use images/part4/final_CNN_val_category_crossentropy.png>
-Package pdftex.def Info: images/part4/final_CNN_val_category_crossentropy.png u
-sed on input line 552.
+<use images/part4/final_CNN_val_category_crossentropy.png>
+Package pdftex.def Info: images/part4/final_CNN_val_category_crossentropy.png  
+used on input line 552.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
- [66.66
+ [65.65
 
-]
-[67.67 <./images/part4/final_CNN_train_category_accuracy.png> <./images/part4/f
-inal_CNN_val_category_accuracy.png> <./images/part4/final_CNN_train_category_cr
-ossentropy.png> <./images/part4/final_CNN_val_category_crossentropy.png>]
-<images/part4/final_CNN_train_top_k_accuracy.png, id=920, 337.26pt x 223.83624p
+] [66.66 <./images/part4/final_CNN_train_category_accuracy.png> <./images/part4
+/final_CNN_val_category_accuracy.png> <./images/part4/final_CNN_train_category_
+crossentropy.png> <./images/part4/final_CNN_val_category_crossentropy.png>]
+<images/part4/final_CNN_train_top_k_accuracy.png, id=908, 337.26pt x 223.83624p
 t>
 File: images/part4/final_CNN_train_top_k_accuracy.png Graphic file (type png)
- <use images/part4/final_CNN_train_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/final_CNN_train_top_k_accuracy.png used o
-n input line 561.
+<use images/part4/final_CNN_train_top_k_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_train_top_k_accuracy.png  used 
+on input line 561.
 (pdftex.def)             Requested size: 248.96162pt x 165.23662pt.
-
-<images/part4/final_CNN_val_top_k_accuracy.png, id=921, 331.2375pt x 215.80624p
+<images/part4/final_CNN_val_top_k_accuracy.png, id=909, 331.2375pt x 215.80624p
 t>
 File: images/part4/final_CNN_val_top_k_accuracy.png Graphic file (type png)
- <use images/part4/final_CNN_val_top_k_accuracy.png>
-Package pdftex.def Info: images/part4/final_CNN_val_top_k_accuracy.png used on 
-input line 565.
+<use images/part4/final_CNN_val_top_k_accuracy.png>
+Package pdftex.def Info: images/part4/final_CNN_val_top_k_accuracy.png  used on
+ input line 565.
 (pdftex.def)             Requested size: 248.96162pt x 162.20332pt.
 
 
-LaTeX Warning: Reference `amortecimentos_1' on page 68 undefined on input line 
+LaTeX Warning: Reference `amortecimentos_1' on page 67 undefined on input line 
 592.
 
-[68.68
+[67.67
 
  <./images/part4/final_CNN_train_top_k_accuracy.png> <./images/part4/final_CNN_
-val_top_k_accuracy.png>]) (./conclusion.tex [69.69]) (./references.tex
-[70.70
+val_top_k_accuracy.png>]) (conclusion.tex [68.68]) (references.tex
+[69.69
 
-] (./dissertation.bbl [71.71
+] (dissertation.bbl [70.70
 
 
-])) (./lists.tex [72.72] (./dissertation.lof
-[73.73
+])) (lists.tex [71.71] (dissertation.lof
+[72.72
 
 ])
 \tf@lof=\write6
 \openout6 = `dissertation.lof'.
 
- [74.74] (./dissertation.lot)
+ [73.73] (dissertation.lot)
 \tf@lot=\write7
 \openout7 = `dissertation.lot'.
 
- [75.75
+ [74.74
 
-]) (./appendix.tex [76.76
+]) (appendix.tex [87.75
 
 ]
-<images/part4/cnn_architecture.png, id=1048, 1073.00874pt x 3182.89125pt>
+<images/part4/cnn_architecture.png, id=1036, 1073.00874pt x 3182.89125pt>
 File: images/part4/cnn_architecture.png Graphic file (type png)
-
 <use images/part4/cnn_architecture.png>
-Package pdftex.def Info: images/part4/cnn_architecture.png used on input line 3
-0.
+Package pdftex.def Info: images/part4/cnn_architecture.png  used on input line 
+30.
 (pdftex.def)             Requested size: 214.59795pt x 636.56699pt.
- [77.77
+ [88.76
 
-
-] [78.78] [79.79] [80.80]
-[81.81])
+]
+[89.77] [90.78] [91.79] [92.80])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 66.
 See the caption package documentation for explanation.
@@ -2477,14 +2424,14 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 259.
 See the caption package documentation for explanation.
 
-[82.82] [83.83 <./images/part4/cnn_architecture.png>]
+[93.81] [94.82 <./images/part4/cnn_architecture.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
- (./dissertation.aux)
+ (dissertation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 110D791A6B1F93CCC3BDE708C8C492F6;2841.
+(rerunfilecheck)             Checksum: 9A221AFF7FFE609F486A66685FB526CB;2876.
 
 
 LaTeX Warning: There were undefined references.
@@ -2495,42 +2442,43 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 16880 strings out of 493013
- 270020 string characters out of 6135681
- 414307 words of memory out of 5000000
- 19547 multiletter control sequences out of 15000+600000
- 25726 words of font info for 69 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 49i,16n,83p,1479b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi144
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfti1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1440.
-pfb>
-Output written on dissertation.pdf (83 pages, 3273454 bytes).
+ 16960 strings out of 495203
+ 274851 string characters out of 3181306
+ 409435 words of memory out of 3000000
+ 19379 multiletter control sequences out of 15000+200000
+ 25726 words of font info for 69 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 49i,16n,83p,1481b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labi1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1000.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1000.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/latt1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lati1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1728.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1728.p
+k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1440.p
+k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></h
+ome/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></hom
+e/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/
+denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/de
+nys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/deny
+s/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/deny
+s/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/denys/
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/denys/.m
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/denys/.mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/denys/.miktex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/denys/.miktex/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/denys/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/denys/.miktex/texmfs
+/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on dissertation.pdf (82 pages, 3338363 bytes).
 PDF statistics:
- 1233 PDF objects out of 1440 (max. 8388607)
- 977 compressed objects within 10 object streams
- 297 named destinations out of 1000 (max. 500000)
+ 1568 PDF objects out of 1728 (max. 8388607)
+ 296 named destinations out of 1000 (max. 500000)
  693 words of extra memory for PDF output out of 10000 (max. 10000000)
 
