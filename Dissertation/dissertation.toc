@@ -1,5 +1,5 @@
 ~\hfill {p.}\par 
-\babel@toc {english}{}
+\select@language {english}
 \contentsline {chapter}{ABBREVIATION}{6}{chapter*.3}
 \contentsline {chapter}{INTRODUCTION}{7}{chapter*.4}
 \contentsline {chapter}{\numberline {1}TEXT CLASSIFICATION}{9}{chapter.1}
