@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  23 MAY 2018 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  10 JUN 2018 17:25
 entering extended mode
 **./presentation.tex
 (presentation.tex
@@ -1232,6 +1232,30 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/home/denys/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks47
+\verbatim@line=\toks48
+\verbatim@in@stream=\read2
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip57
+\LTright=\skip58
+\LTpre=\skip59
+\LTpost=\skip60
+\LTchunksize=\count157
+\LTcapwidth=\dimen191
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@cols=\count158
+\LT@rows=\count159
+\c@LT@tables=\count160
+\c@LT@chunks=\count161
+\LT@p@ftn=\toks49
+)
 (../common/data.tex)
 (/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerthemePittsburgh.sty
 (/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemecircles.st
@@ -1239,45 +1263,45 @@ y))
 (/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemewhale.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 43.
+(hyperref)                removing `\\' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 2.28728pt
-(hyperref)                removed on input line 43.
+(hyperref)                removed on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 43.
+(hyperref)                removing `\\' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 43.
+(hyperref)                removing `\\' on input line 44.
 
 (presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 48.
 
 (/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 48.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1315,17 +1339,17 @@ LaTeX Font Info:    ... okay on input line 47.
 
 (/home/denys/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
-\scratchdimen=\dimen191
-\scratchbox=\box55
-\nofMPsegments=\count158
-\nofMParguments=\count159
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count160
-\MPscratchDim=\dimen192
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count162
+\scratchdimen=\dimen192
+\scratchbox=\box59
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen193
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks51
 ) (/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1340,8 +1364,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring OFF on input line 47.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 48.
 
 (/home/denys/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1349,73 +1373,73 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count163
+\c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (presentation.out) (presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 47.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 47.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 48.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T2A/cmr/m/n on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 47.
+(Font)                  OT1/cmss/m/n --> T2A/cmr/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T2A/cmss/bx/n on input line 47.
+(Font)                  OT1/cmr/bx/n --> T2A/cmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T2A/cmss/bx/n on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 47.
+(Font)                  OT1/cmr/bx/n --> T2A/cmss/bx/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T2A/cmss/m/n on input line 47.
+(Font)                  OT1/cmss/m/n --> T2A/cmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T2A/cmss/m/n on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 47.
+(Font)                  OT1/cmss/bx/n --> T2A/cmss/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T2A/cmss/m/it on input line 47.
+(Font)                  OT1/cmr/m/it --> T2A/cmss/m/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T2A/cmss/m/it on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 47.
+(Font)                  OT1/cmr/bx/it --> T2A/cmss/m/it on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 47.
+(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 47.
+(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T2A/cmss/m/n --> T2A/cmss/bx/n on input line 47.
+(Font)                  T2A/cmss/m/n --> T2A/cmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T2A/cmss/m/it --> T2A/cmss/bx/it on input line 47.
+(Font)                  T2A/cmss/m/it --> T2A/cmss/bx/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T2A/cmr/bx/n on input line 47.
+(Font)                  OT1/cmss/bx/n --> T2A/cmr/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T2A/cmss/bx/n --> T2A/cmss/bx/n on input line 47.
+(Font)                  T2A/cmss/bx/n --> T2A/cmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T2A/cmss/m/n --> T2A/cmss/bx/n on input line 47.
+(Font)                  T2A/cmss/m/n --> T2A/cmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T2A/cmss/m/it --> T2A/cmss/bx/it on input line 47.
+(Font)                  T2A/cmss/m/it --> T2A/cmss/bx/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T2A/cmtt/m/n --> T2A/cmtt/bx/n on input line 47.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 47.
+(Font)                  T2A/cmtt/m/n --> T2A/cmtt/bx/n on input line 48.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 48.
 LaTeX Font Info:    Encoding `T2A' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 47
+(Font)              `pureletters' in the math version `normal' on input line 48
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  T2A/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
-7.
+8.
 LaTeX Font Info:    Encoding `T2A' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 47.
+(Font)              `pureletters' in the math version `bold' on input line 48.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T2A/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-47.
+48.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 47.
+ut line 48.
 
 (/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1445,18 +1469,18 @@ Dictionary: translator-theorem-dictionary, Language: English
 {/home/denys/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
 (/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 69.
+line 70.
 
 (/home/denys/.miktex/texmfs/install/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1464,39 +1488,39 @@ thkerncmss.
 ) [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
 []\T2A/cmss/m/n/14.4 Clean Toy-ota
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
 \T2A/cmss/m/n/14.4 Camry 2008
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 82--82
+Underfull \hbox (badness 2035) in paragraph at lines 83--83
 []\T2A/cmss/m/n/14.4 Fairly used Toy-ota 08
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 82--82
+Underfull \hbox (badness 1348) in paragraph at lines 83--83
 \T2A/cmss/m/n/14.4 V4 en-gine fab-ric seats
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
 []\T2A/cmss/m/n/14.4 Nice, qual-ity,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
 \T2A/cmss/m/n/14.4 adorable,unique dress
  []
 
 [4
 
 ]
-Overfull \hbox (18.33209pt too wide) in paragraph at lines 113--113
+Overfull \hbox (18.33209pt too wide) in paragraph at lines 114--114
  [] 
  []
 
@@ -1507,22 +1531,22 @@ Overfull \hbox (18.33209pt too wide) in paragraph at lines 113--113
 File: ../Dissertation/images/embed_vectors.png Graphic file (type png)
 <use ../Dissertation/images/embed_vectors.png>
 Package pdftex.def Info: ../Dissertation/images/embed_vectors.png  used on inpu
-t line 129.
+t line 130.
 (pdftex.def)             Requested size: 142.2587pt x 99.58347pt.
 
-Overfull \hbox (36.6138pt too wide) in paragraph at lines 129--129
+Overfull \hbox (36.6138pt too wide) in paragraph at lines 130--130
 [][]  
  []
 
 [6
 
  <../Dissertation/images/embed_vectors.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 []\T2A/cmss/m/n/14.4 category crossen-
  []
 
 
-Overfull \hbox (13.23767pt too wide) in paragraph at lines 149--149
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 150--150
  [] 
  []
 
@@ -1532,7 +1556,7 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 149--149
 <../Dissertation/images/CNN.png, id=62, 961.5925pt x 392.46625pt>
 File: ../Dissertation/images/CNN.png Graphic file (type png)
 <use ../Dissertation/images/CNN.png>
-Package pdftex.def Info: ../Dissertation/images/CNN.png  used on input line 164
+Package pdftex.def Info: ../Dissertation/images/CNN.png  used on input line 165
 .
 (pdftex.def)             Requested size: 288.47997pt x 117.74077pt.
  [8
@@ -1544,7 +1568,7 @@ File: ../Dissertation/images/part4//3CNN_train_category_accuracy.png Graphic fi
 le (type png)
 <use ../Dissertation/images/part4//3CNN_train_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4//3CNN_train_category_accu
-racy.png  used on input line 173.
+racy.png  used on input line 174.
 (pdftex.def)             Requested size: 142.26378pt x 93.1173pt.
 <../Dissertation/images/part4//3CNN_val_category_accuracy.png, id=70, 331.2375p
 t x 217.81375pt>
@@ -1552,7 +1576,7 @@ File: ../Dissertation/images/part4//3CNN_val_category_accuracy.png Graphic file
  (type png)
 <use ../Dissertation/images/part4//3CNN_val_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4//3CNN_val_category_accura
-cy.png  used on input line 173.
+cy.png  used on input line 174.
 (pdftex.def)             Requested size: 142.26378pt x 93.5484pt.
 <../Dissertation/images/part4/3CNN_train_top_k_accuracy.png, id=71, 331.2375pt 
 x 214.8025pt>
@@ -1560,7 +1584,7 @@ File: ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png Graphic file (
 type png)
 <use ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/3CNN_train_top_k_accuracy
-.png  used on input line 173.
+.png  used on input line 174.
 (pdftex.def)             Requested size: 142.26378pt x 92.25511pt.
 <../Dissertation/images/part4/3CNN_val_top_k_accuracy.png, id=72, 331.2375pt x 
 215.80624pt>
@@ -1568,7 +1592,7 @@ File: ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png Graphic file (ty
 pe png)
 <use ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/3CNN_val_top_k_accuracy.p
-ng  used on input line 173.
+ng  used on input line 174.
 (pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
  [9
 
@@ -1583,13 +1607,13 @@ curacy.png>] [10
 File: ../Dissertation/images/part4/4CNN-dense-1.png Graphic file (type png)
 <use ../Dissertation/images/part4/4CNN-dense-1.png>
 Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-1.png  used on
- input line 203.
+ input line 204.
 (pdftex.def)             Requested size: 307.28987pt x 71.46278pt.
 <../Dissertation/images/part4/4CNN-dense-2.png, id=88, 642.4pt x 150.5625pt>
 File: ../Dissertation/images/part4/4CNN-dense-2.png Graphic file (type png)
 <use ../Dissertation/images/part4/4CNN-dense-2.png>
 Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-2.png  used on
- input line 203.
+ input line 204.
 (pdftex.def)             Requested size: 307.28987pt x 72.02335pt.
  [11
 
@@ -1601,7 +1625,7 @@ File: ../Dissertation/images/part4/final_CNN_train_category_accuracy.png Graphi
 c file (type png)
 <use ../Dissertation/images/part4/final_CNN_train_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_category_
-accuracy.png  used on input line 212.
+accuracy.png  used on input line 213.
 (pdftex.def)             Requested size: 142.26378pt x 90.53392pt.
 <../Dissertation/images/part4/final_CNN_val_category_accuracy.png, id=97, 331.2
 375pt x 220.825pt>
@@ -1609,7 +1633,7 @@ File: ../Dissertation/images/part4/final_CNN_val_category_accuracy.png Graphic
 file (type png)
 <use ../Dissertation/images/part4/final_CNN_val_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_category_ac
-curacy.png  used on input line 212.
+curacy.png  used on input line 213.
 (pdftex.def)             Requested size: 142.26378pt x 94.84169pt.
 <../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png, id=98, 337.26
 pt x 223.83624pt>
@@ -1617,7 +1641,7 @@ File: ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png Graphic f
 ile (type png)
 <use ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_top_k_acc
-uracy.png  used on input line 212.
+uracy.png  used on input line 213.
 (pdftex.def)             Requested size: 142.26378pt x 94.42043pt.
 <../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png, id=99, 331.2375
 pt x 215.80624pt>
@@ -1625,10 +1649,10 @@ File: ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png Graphic fil
 e (type png)
 <use ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_top_k_accur
-acy.png  used on input line 212.
+acy.png  used on input line 213.
 (pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
 
-Overfull \vbox (0.11317pt too high) detected at line 212
+Overfull \vbox (0.11317pt too high) detected at line 213
  []
 
 [12
@@ -1637,12 +1661,12 @@ Overfull \vbox (0.11317pt too high) detected at line 212
 rtation/images/part4/final_CNN_val_category_accuracy.png> <../Dissertation/imag
 es/part4/final_CNN_train_top_k_accuracy.png> <../Dissertation/images/part4/fina
 l_CNN_val_top_k_accuracy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 []\T2A/cmss/m/n/14.4 category crossen-
  []
 
 
-Overfull \hbox (13.23767pt too wide) in paragraph at lines 232--232
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 233--233
  [] 
  []
 
@@ -1651,6 +1675,8 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 232--232
 ] [14
 
 ] [15
+
+] [16
 
 ]
 \tf@nav=\write6
@@ -1662,19 +1688,19 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 232--232
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18589 strings out of 495203
- 345720 string characters out of 3181306
- 422114 words of memory out of 3000000
- 21390 multiletter control sequences out of 15000+200000
+ 18709 strings out of 495203
+ 347254 string characters out of 3181306
+ 424626 words of memory out of 3000000
+ 21503 multiletter control sequences out of 15000+200000
  16623 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,17n,55p,806b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1690,9 +1716,9 @@ k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
 </home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (15 pages, 358474 bytes).
+Output written on presentation.pdf (16 pages, 360991 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
