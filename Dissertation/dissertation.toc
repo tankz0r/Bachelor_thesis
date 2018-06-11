@@ -42,4 +42,4 @@
 \contentsline {chapter}{LIST OF FIGURES}{72}{section*.72}
 \contentsline {chapter}{LIST OF TABLES}{74}{section*.73}
 \contentsline {chapter}{APPENDIX A ILLUSTRATIVE MATERIAL}{75}{appendix*.74}
-\contentsline {chapter}{APPENDIX B DATA SAMPLES}{88}{appendix*.75}
+\contentsline {chapter}{APPENDIX B DATA SAMPLES}{83}{appendix*.90}
