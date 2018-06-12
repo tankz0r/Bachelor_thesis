@@ -51,4 +51,5 @@
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Models train and validation categorical accuracy by epochs\relax }}{66}{figure.caption.66}
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Models train and validation category crossentropy by epochs\relax }}{66}{figure.caption.67}
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Models train and validation top k accuracy by epochs\relax }}{67}{figure.caption.68}
-\contentsline {figure}{\numberline {27}{\ignorespaces Architectures of CNN model\relax }}{89}{figure.caption.91}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Architectures of CNN model\relax }}{109}{figure.caption.91}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  11 JUN 2018 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  12 JUN 2018 15:10
 entering extended mode
 **./dissertation.tex
 (dissertation.tex
@@ -770,8 +770,8 @@ File: switch.def 2018/01/24 3.17 Babel switching mechanism
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/home/denys/.miktex/texmfs/install/tex/latex/babel-ukrainian/ukraineb.ldf
+Language: ukraineb 2018/04/11 1.4c Ukrainian support for the Babel system
 
 (/home/denys/.miktex/texmfs/install/tex/generic/babel/babel.def
 File: babel.def 2018/01/24 3.17 Babel common definitions
@@ -785,6 +785,21 @@ File: switch.def 2018/01/24 3.17 Babel switching mechanism
 (/home/denys/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count123
 )
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `Ukrainian' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 31.
+
+\l@ukrainian = a dialect from \language0
+Package babel Info: Making " an active character on input line 118.
+Package babel Info: Default for \cyrdash is provided on input line 161.
+) (/home/denys/.miktex/texmfs/install/tex/latex/babel-russian/russianb.ldf
+LaTeX Info: Redefining \textcyrillic on input line 25.
+)
+(/home/denys/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
 \l@american = a dialect from \language\l@english 
@@ -961,7 +976,13 @@ Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count137
+Package hyperref Info: Option `unicode' set `true' on input line 3456.
 
+(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
 (/home/denys/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -1381,6 +1402,8 @@ LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  (/home/denys/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count182
@@ -1488,12 +1511,6 @@ Normal \count register pool exhausted, switching to extended pool.
 \@last=\count279
 \@pnul=\count280
 
-Underfull \hbox (badness 1024) in paragraph at lines 3--13
-[]\T2A/cmr/m/n/14.4 ƒËÔÎÓÏÌ‡ Ó·ÓÚ‡: 89 c.,  49 ËÒ.,  18 Ú‡·Î., 2 ‰Ó‰., 19 ‰ÊÂ
-ÂÎ.
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 3--13
 \T2A/cmr/m/n/14.4 IÕ“≈À≈ “”¿À‹Õ»… ¿Õ¿ÀI« ƒ¿Õ»’,  À¿—»‘I ¿÷Iﬂ,  ≈–¿—,
  []
@@ -1593,12 +1610,12 @@ Chapter 1.
 [9.9
 
 ]
-<images/hierarchy.png, id=270, 553.06625pt x 268.00125pt>
+<images/hierarchy.png, id=330, 553.06625pt x 268.00125pt>
 File: images/hierarchy.png Graphic file (type png)
 <use images/hierarchy.png>
 Package pdftex.def Info: images/hierarchy.png  used on input line 35.
 (pdftex.def)             Requested size: 331.8423pt x 160.80197pt.
-<images/work_flow.png, id=271, 650.43pt x 433.62pt>
+<images/work_flow.png, id=331, 650.43pt x 433.62pt>
 File: images/work_flow.png Graphic file (type png)
 <use images/work_flow.png>
 Package pdftex.def Info: images/work_flow.png  used on input line 45.
@@ -1609,17 +1626,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
  []
 
 [10.10 <./images/hierarchy.png>] [11.11 <./images/work_flow.png>]
-<images/eval1.png, id=306, 522.15076pt x 120.6909pt>
+<images/eval1.png, id=366, 522.15076pt x 120.6909pt>
 File: images/eval1.png Graphic file (type png)
 <use images/eval1.png>
 Package pdftex.def Info: images/eval1.png  used on input line 93.
 (pdftex.def)             Requested size: 522.14949pt x 120.6906pt.
-<images/eval2.png, id=307, 461.8053pt x 100.4553pt>
+<images/eval2.png, id=367, 461.8053pt x 100.4553pt>
 File: images/eval2.png Graphic file (type png)
 <use images/eval2.png>
 Package pdftex.def Info: images/eval2.png  used on input line 94.
 (pdftex.def)             Requested size: 461.80415pt x 100.45505pt.
-<images/eval3.png, id=308, 351.59355pt x 100.4553pt>
+<images/eval3.png, id=368, 351.59355pt x 100.4553pt>
 File: images/eval3.png Graphic file (type png)
 <use images/eval3.png>
 Package pdftex.def Info: images/eval3.png  used on input line 95.
@@ -1665,7 +1682,7 @@ Overfull \hbox (12.32368pt too wide) in paragraph at lines 143--143
 [14.14]) (part2.tex [15.15]
 Chapter 2.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
 
@@ -1677,13 +1694,13 @@ Underfull \hbox (badness 1565) in paragraph at lines 28--29
 [16.16
 
 ] [17.17] [18.18]
-<images/FCNN.png, id=374, 530.98375pt x 279.0425pt>
+<images/FCNN.png, id=434, 530.98375pt x 279.0425pt>
 File: images/FCNN.png Graphic file (type png)
 <use images/FCNN.png>
 Package pdftex.def Info: images/FCNN.png  used on input line 145.
 (pdftex.def)             Requested size: 265.49121pt x 139.5209pt.
  [19.19 <./images/FCNN.png>] [20.20]
-<images/skip_gram_model.png, id=407, 562.1pt x 559.08875pt>
+<images/skip_gram_model.png, id=467, 562.1pt x 559.08875pt>
 File: images/skip_gram_model.png Graphic file (type png)
 <use images/skip_gram_model.png>
 Package pdftex.def Info: images/skip_gram_model.png  used on input line 298.
@@ -1717,42 +1734,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--377
  []
 
 [23.23]
-<images/embed.png, id=443, 758.835pt x 696.6025pt>
+<images/embed.png, id=503, 758.835pt x 696.6025pt>
 File: images/embed.png Graphic file (type png)
 <use images/embed.png>
 Package pdftex.def Info: images/embed.png  used on input line 411.
 (pdftex.def)             Requested size: 303.52863pt x 278.63606pt.
  [24.24] [25.25 <./images/embed.png>]
-<images/CBOW.png, id=461, 366.36874pt x 410.53375pt>
+<images/CBOW.png, id=521, 366.36874pt x 410.53375pt>
 File: images/CBOW.png Graphic file (type png)
 <use images/CBOW.png>
 Package pdftex.def Info: images/CBOW.png  used on input line 447.
 (pdftex.def)             Requested size: 219.82294pt x 246.32214pt.
-<images/CNN.png, id=464, 961.5925pt x 392.46625pt>
+<images/CNN.png, id=524, 961.5925pt x 392.46625pt>
 File: images/CNN.png Graphic file (type png)
 <use images/CNN.png>
 Package pdftex.def Info: images/CNN.png  used on input line 462.
 (pdftex.def)             Requested size: 480.79507pt x 196.23264pt.
  [26.26 <./images/CBOW.png>]
-<images/convolution.jpeg, id=476, 411.5375pt x 430.60875pt>
+<images/convolution.jpeg, id=536, 411.5375pt x 430.60875pt>
 File: images/convolution.jpeg Graphic file (type jpg)
 <use images/convolution.jpeg>
 Package pdftex.def Info: images/convolution.jpeg  used on input line 474.
 (pdftex.def)             Requested size: 205.76825pt x 215.30383pt.
 
 [27.27 <./images/CNN.png> <./images/convolution.jpeg>]
-<images/Relu.png, id=487, 356.33125pt x 290.08376pt>
+<images/Relu.png, id=547, 356.33125pt x 290.08376pt>
 File: images/Relu.png Graphic file (type png)
 <use images/Relu.png>
 Package pdftex.def Info: images/Relu.png  used on input line 516.
 (pdftex.def)             Requested size: 142.52997pt x 116.03143pt.
  [28.28]
-<images/max_pulling.png, id=498, 572.1375pt x 331.2375pt>
+<images/max_pulling.png, id=558, 572.1375pt x 331.2375pt>
 File: images/max_pulling.png Graphic file (type png)
 <use images/max_pulling.png>
 Package pdftex.def Info: images/max_pulling.png  used on input line 530.
 (pdftex.def)             Requested size: 286.06804pt x 165.61833pt.
-<images/CNN_FNN_layer.jpeg, id=500, 574.145pt x 404.51125pt>
+<images/CNN_FNN_layer.jpeg, id=560, 574.145pt x 404.51125pt>
 File: images/CNN_FNN_layer.jpeg Graphic file (type jpg)
 <use images/CNN_FNN_layer.jpeg>
 Package pdftex.def Info: images/CNN_FNN_layer.jpeg  used on input line 542.
@@ -1767,29 +1784,29 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 589.
 
 
 [30.30 <./images/CNN_FNN_layer.jpeg>]
-<images/backprog_max_pulling.png, id=520, 658.46pt x 322.20375pt>
+<images/backprog_max_pulling.png, id=580, 658.46pt x 322.20375pt>
 File: images/backprog_max_pulling.png Graphic file (type png)
 <use images/backprog_max_pulling.png>
 Package pdftex.def Info: images/backprog_max_pulling.png  used on input line 61
 9.
 (pdftex.def)             Requested size: 329.2292pt x 161.10147pt.
-<images/conv_grad.png, id=522, 662.475pt x 590.205pt>
+<images/conv_grad.png, id=582, 662.475pt x 590.205pt>
 File: images/conv_grad.png Graphic file (type png)
 <use images/conv_grad.png>
 Package pdftex.def Info: images/conv_grad.png  used on input line 627.
 (pdftex.def)             Requested size: 264.9853pt x 236.0778pt.
  [31.31 <./images/backprog_max_pulling.png>] [32.32 <./images/conv_grad.png>]
-<images/rnn_structure.png, id=552, 977.8131pt x 256.91985pt>
+<images/rnn_structure.png, id=612, 977.8131pt x 256.91985pt>
 File: images/rnn_structure.png Graphic file (type png)
 <use images/rnn_structure.png>
 Package pdftex.def Info: images/rnn_structure.png  used on input line 663.
 (pdftex.def)             Requested size: 391.1183pt x 102.76611pt.
-<images/SimpleRNN.png, id=558, 810.1467pt x 303.17265pt>
+<images/SimpleRNN.png, id=618, 810.1467pt x 303.17265pt>
 File: images/SimpleRNN.png Graphic file (type png)
 <use images/SimpleRNN.png>
 Package pdftex.def Info: images/SimpleRNN.png  used on input line 677.
 (pdftex.def)             Requested size: 324.05293pt x 121.2669pt.
-<images/LSTM.png, id=559, 806.89455pt x 303.17265pt>
+<images/LSTM.png, id=619, 806.89455pt x 303.17265pt>
 File: images/LSTM.png Graphic file (type png)
 <use images/LSTM.png>
 Package pdftex.def Info: images/LSTM.png  used on input line 684.
@@ -1799,7 +1816,7 @@ Package pdftex.def Info: images/LSTM.png  used on input line 684.
 [36.36]
 Chapter 3.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
 [37.37
@@ -1880,7 +1897,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38.38] [39.39] [40.40]
-<images/p3_preprocessing.png, id=623, 717.68124pt x 583.17876pt>
+<images/p3_preprocessing.png, id=683, 717.68124pt x 583.17876pt>
 File: images/p3_preprocessing.png Graphic file (type png)
 <use images/p3_preprocessing.png>
 Package pdftex.def Info: images/p3_preprocessing.png  used on input line 177.
@@ -1907,7 +1924,7 @@ Overfull \hbox (10.97357pt too wide) in paragraph at lines 222--237
  [][] 
  []
 
-<images/p3_sequences_fasttext.png, id=631, 1032.85875pt x 294.09875pt>
+<images/p3_sequences_fasttext.png, id=691, 1032.85875pt x 294.09875pt>
 File: images/p3_sequences_fasttext.png Graphic file (type png)
 <use images/p3_sequences_fasttext.png>
 Package pdftex.def Info: images/p3_sequences_fasttext.png  used on input line 2
@@ -1924,12 +1941,12 @@ Overfull \hbox (10.97357pt too wide) in paragraph at lines 260--274
  []
 
 [43.43 <./images/p3_sequences_fasttext.png>]
-<images/p3_train.png, id=646, 711.65875pt x 197.73875pt>
+<images/p3_train.png, id=706, 711.65875pt x 197.73875pt>
 File: images/p3_train.png Graphic file (type png)
 <use images/p3_train.png>
 Package pdftex.def Info: images/p3_train.png  used on input line 286.
 (pdftex.def)             Requested size: 355.8285pt x 98.86913pt.
-<images/p3_custom_callbacks.png, id=648, 1273.75874pt x 781.92125pt>
+<images/p3_custom_callbacks.png, id=708, 1273.75874pt x 781.92125pt>
 File: images/p3_custom_callbacks.png Graphic file (type png)
 <use images/p3_custom_callbacks.png>
 Package pdftex.def Info: images/p3_custom_callbacks.png  used on input line 310
@@ -1941,33 +1958,33 @@ Package pdftex.def Info: images/p3_custom_callbacks.png  used on input line 310
 (part4.tex [45.45 <./images/p3_custom_callbacks.png>]
 Chapter 4.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
 [46.46
 
 ]
-<images/part4/bilstm_architecture.png, id=666, 891.33pt x 1073.00874pt>
+<images/part4/bilstm_architecture.png, id=726, 891.33pt x 1073.00874pt>
 File: images/part4/bilstm_architecture.png Graphic file (type png)
 <use images/part4/bilstm_architecture.png>
 Package pdftex.def Info: images/part4/bilstm_architecture.png  used on input li
 ne 25.
 (pdftex.def)             Requested size: 356.52568pt x 429.19589pt.
-<images/part4/bilstm_train_category_accuracy.png, id=668, 331.2375pt x 221.8287
+<images/part4/bilstm_train_category_accuracy.png, id=728, 331.2375pt x 221.8287
 5pt>
 File: images/part4/bilstm_train_category_accuracy.png Graphic file (type png)
 <use images/part4/bilstm_train_category_accuracy.png>
 Package pdftex.def Info: images/part4/bilstm_train_category_accuracy.png  used 
 on input line 34.
 (pdftex.def)             Requested size: 248.96162pt x 166.72992pt.
-<images/part4/bilstm_val_category_accuracy.png, id=669, 331.2375pt x 221.82875p
+<images/part4/bilstm_val_category_accuracy.png, id=729, 331.2375pt x 221.82875p
 t>
 File: images/part4/bilstm_val_category_accuracy.png Graphic file (type png)
 <use images/part4/bilstm_val_category_accuracy.png>
 Package pdftex.def Info: images/part4/bilstm_val_category_accuracy.png  used on
  input line 38.
 (pdftex.def)             Requested size: 248.96162pt x 166.72992pt.
-<images/part4/bilstm_train_category_crossentropy.png, id=671, 331.2375pt x 224.
+<images/part4/bilstm_train_category_crossentropy.png, id=731, 331.2375pt x 224.
 84pt>
 File: images/part4/bilstm_train_category_crossentropy.png Graphic file (type pn
 g)
@@ -1975,7 +1992,7 @@ g)
 Package pdftex.def Info: images/part4/bilstm_train_category_crossentropy.png  u
 sed on input line 48.
 (pdftex.def)             Requested size: 248.96162pt x 168.99324pt.
-<images/part4/bilstm_val_category_crossentropy.png, id=672, 331.2375pt x 218.81
+<images/part4/bilstm_val_category_crossentropy.png, id=732, 331.2375pt x 218.81
 75pt>
 File: images/part4/bilstm_val_category_crossentropy.png Graphic file (type png)
 
@@ -1983,13 +2000,13 @@ File: images/part4/bilstm_val_category_crossentropy.png Graphic file (type png)
 Package pdftex.def Info: images/part4/bilstm_val_category_crossentropy.png  use
 d on input line 52.
 (pdftex.def)             Requested size: 248.96162pt x 164.46663pt.
-<images/part4/bilstm_train_top_k_accuracy.png, id=674, 331.2375pt x 220.825pt>
+<images/part4/bilstm_train_top_k_accuracy.png, id=734, 331.2375pt x 220.825pt>
 File: images/part4/bilstm_train_top_k_accuracy.png Graphic file (type png)
 <use images/part4/bilstm_train_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/bilstm_train_top_k_accuracy.png  used on 
 input line 62.
 (pdftex.def)             Requested size: 248.96162pt x 165.9755pt.
-<images/part4/bilstm_val_top_k_accuracy.png, id=675, 331.2375pt x 218.8175pt>
+<images/part4/bilstm_val_top_k_accuracy.png, id=735, 331.2375pt x 218.8175pt>
 File: images/part4/bilstm_val_top_k_accuracy.png Graphic file (type png)
 <use images/part4/bilstm_val_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/bilstm_val_top_k_accuracy.png  used on in
@@ -2000,7 +2017,7 @@ _train_category_accuracy.png> <./images/part4/bilstm_val_category_accuracy.png>
 ] [49.49 <./images/part4/bilstm_train_category_crossentropy.png> <./images/part
 4/bilstm_val_category_crossentropy.png> <./images/part4/bilstm_train_top_k_accu
 racy.png> <./images/part4/bilstm_val_top_k_accuracy.png>]
-<images/part4/bilstm_timing.png, id=700, 1038.88126pt x 233.87375pt>
+<images/part4/bilstm_timing.png, id=760, 1038.88126pt x 233.87375pt>
 File: images/part4/bilstm_timing.png Graphic file (type png)
 <use images/part4/bilstm_timing.png>
 Package pdftex.def Info: images/part4/bilstm_timing.png  used on input line 77.
@@ -2011,7 +2028,7 @@ Overfull \hbox (21.51611pt too wide) in paragraph at lines 77--78
  [] 
  []
 
-<images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png, id=701, 702.625pt x
+<images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png, id=761, 702.625pt x
  421.575pt>
 File: images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.png Graphic file (t
 ype png)
@@ -2019,7 +2036,7 @@ ype png)
 Package pdftex.def Info: images/part4/bilstm_forward_lstm_1_recurrent_kernel_0.
 png  used on input line 87.
 (pdftex.def)             Requested size: 248.96162pt x 149.3739pt.
-<images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png, id=702, 702.625pt 
+<images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png, id=762, 702.625pt 
 x 422.57875pt>
 File: images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.png Graphic file (
 type png)
@@ -2032,13 +2049,13 @@ Package pdftex.def Info: images/part4/bilstm_backward_lstm_1_recurrent_kernel_0
  <./images/part4/bilstm_timing.png> <./images/part4/bilstm_forward_lstm_1_recur
 rent_kernel_0.png> <./images/part4/bilstm_backward_lstm_1_recurrent_kernel_0.pn
 g>]
-<images/part4/bilstm_dense.png, id=716, 702.625pt x 422.57875pt>
+<images/part4/bilstm_dense.png, id=776, 702.625pt x 422.57875pt>
 File: images/part4/bilstm_dense.png Graphic file (type png)
 <use images/part4/bilstm_dense.png>
 Package pdftex.def Info: images/part4/bilstm_dense.png  used on input line 103.
 
 (pdftex.def)             Requested size: 351.31163pt x 211.28885pt.
-<images/part4/resources_BILSTM.png, id=718, 1923.185pt x 965.6075pt>
+<images/part4/resources_BILSTM.png, id=778, 1923.185pt x 965.6075pt>
 File: images/part4/resources_BILSTM.png Graphic file (type png)
 <use images/part4/resources_BILSTM.png>
 Package pdftex.def Info: images/part4/resources_BILSTM.png  used on input line 
@@ -2047,27 +2064,27 @@ Package pdftex.def Info: images/part4/resources_BILSTM.png  used on input line
  [51.51 <./images/part4/bilstm_dense.png> <./images/part4/resources_BILSTM.png>
 ]
 
-Package caption Warning: \label without proper reference on input line 104.
+Package caption Warning: \label without proper reference on input line 103.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:cnn_architecture' on page 52 undefined on input l
 ine 123.
 
-<images/part4/3CNN_train_category_accuracy.png, id=728, 331.2375pt x 216.81pt>
+<images/part4/3CNN_train_category_accuracy.png, id=788, 331.2375pt x 216.81pt>
 File: images/part4/3CNN_train_category_accuracy.png Graphic file (type png)
 <use images/part4/3CNN_train_category_accuracy.png>
 Package pdftex.def Info: images/part4/3CNN_train_category_accuracy.png  used on
  input line 148.
 (pdftex.def)             Requested size: 248.96162pt x 162.95776pt.
-<images/part4/3CNN_val_category_accuracy.png, id=729, 331.2375pt x 217.81375pt>
+<images/part4/3CNN_val_category_accuracy.png, id=789, 331.2375pt x 217.81375pt>
 
 File: images/part4/3CNN_val_category_accuracy.png Graphic file (type png)
 <use images/part4/3CNN_val_category_accuracy.png>
 Package pdftex.def Info: images/part4/3CNN_val_category_accuracy.png  used on i
 nput line 152.
 (pdftex.def)             Requested size: 248.96162pt x 163.71219pt.
-<images/part4/3CNN_train_category_crossentropy.png, id=730, 331.2375pt x 214.80
+<images/part4/3CNN_train_category_crossentropy.png, id=790, 331.2375pt x 214.80
 25pt>
 File: images/part4/3CNN_train_category_crossentropy.png Graphic file (type png)
 
@@ -2075,26 +2092,26 @@ File: images/part4/3CNN_train_category_crossentropy.png Graphic file (type png)
 Package pdftex.def Info: images/part4/3CNN_train_category_crossentropy.png  use
 d on input line 179.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
-<images/part4/3CNN_val_category_crossentropy.png, id=731, 331.2375pt x 217.8137
+<images/part4/3CNN_val_category_crossentropy.png, id=791, 331.2375pt x 217.8137
 5pt>
 File: images/part4/3CNN_val_category_crossentropy.png Graphic file (type png)
 <use images/part4/3CNN_val_category_crossentropy.png>
 Package pdftex.def Info: images/part4/3CNN_val_category_crossentropy.png  used 
 on input line 183.
 (pdftex.def)             Requested size: 248.96162pt x 163.71219pt.
-<images/part4/3CNN_train_top_k_accuracy.png, id=736, 331.2375pt x 214.8025pt>
+<images/part4/3CNN_train_top_k_accuracy.png, id=796, 331.2375pt x 214.8025pt>
 File: images/part4/3CNN_train_top_k_accuracy.png Graphic file (type png)
 <use images/part4/3CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/3CNN_train_top_k_accuracy.png  used on in
 put line 214.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
-<images/part4/3CNN_val_top_k_accuracy.png, id=737, 331.2375pt x 215.80624pt>
+<images/part4/3CNN_val_top_k_accuracy.png, id=797, 331.2375pt x 215.80624pt>
 File: images/part4/3CNN_val_top_k_accuracy.png Graphic file (type png)
 <use images/part4/3CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/3CNN_val_top_k_accuracy.png  used on inpu
 t line 218.
 (pdftex.def)             Requested size: 248.96162pt x 162.20332pt.
-<images/part4/3CNN_timing.png, id=738, 1047.915pt x 220.825pt>
+<images/part4/3CNN_timing.png, id=798, 1047.915pt x 220.825pt>
 File: images/part4/3CNN_timing.png Graphic file (type png)
 <use images/part4/3CNN_timing.png>
 Package pdftex.def Info: images/part4/3CNN_timing.png  used on input line 227.
@@ -2111,19 +2128,19 @@ _val_category_accuracy.png> <./images/part4/3CNN_train_category_crossentropy.pn
 g> <./images/part4/3CNN_val_category_crossentropy.png>] [54.54 <./images/part4/
 3CNN_train_top_k_accuracy.png> <./images/part4/3CNN_val_top_k_accuracy.png> <./
 images/part4/3CNN_timing.png>]
-<images/part4/3CNN-conv-128.png, id=767, 702.625pt x 442.65375pt>
+<images/part4/3CNN-conv-128.png, id=827, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-conv-128.png Graphic file (type png)
 <use images/part4/3CNN-conv-128.png>
 Package pdftex.def Info: images/part4/3CNN-conv-128.png  used on input line 238
 .
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-<images/part4/3CNN-conv-256.png, id=768, 702.625pt x 442.65375pt>
+<images/part4/3CNN-conv-256.png, id=828, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-conv-256.png Graphic file (type png)
 <use images/part4/3CNN-conv-256.png>
 Package pdftex.def Info: images/part4/3CNN-conv-256.png  used on input line 242
 .
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-<images/part4/3CNN-conv-512.png, id=769, 702.625pt x 442.65375pt>
+<images/part4/3CNN-conv-512.png, id=829, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-conv-512.png Graphic file (type png)
 <use images/part4/3CNN-conv-512.png>
 Package pdftex.def Info: images/part4/3CNN-conv-512.png  used on input line 245
@@ -2153,19 +2170,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--258
 
  <./images/part4/3CNN-conv-128.png> <./images/part4/3CNN-conv-256.png> <./image
 s/part4/3CNN-conv-512.png>]
-<images/part4/3CNN-merge3-128.png, id=780, 702.625pt x 442.65375pt>
+<images/part4/3CNN-merge3-128.png, id=840, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-merge3-128.png Graphic file (type png)
 <use images/part4/3CNN-merge3-128.png>
 Package pdftex.def Info: images/part4/3CNN-merge3-128.png  used on input line 2
 61.
 (pdftex.def)             Requested size: 224.06393pt x 141.15901pt.
-<images/part4/3CNN-merge3-256.png, id=781, 702.625pt x 442.65375pt>
+<images/part4/3CNN-merge3-256.png, id=841, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-merge3-256.png Graphic file (type png)
 <use images/part4/3CNN-merge3-256.png>
 Package pdftex.def Info: images/part4/3CNN-merge3-256.png  used on input line 2
 65.
 (pdftex.def)             Requested size: 224.06393pt x 141.15901pt.
-<images/part4/3CNN-merge3-512.png, id=782, 702.625pt x 442.65375pt>
+<images/part4/3CNN-merge3-512.png, id=842, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-merge3-512.png Graphic file (type png)
 <use images/part4/3CNN-merge3-512.png>
 Package pdftex.def Info: images/part4/3CNN-merge3-512.png  used on input line 2
@@ -2173,19 +2190,19 @@ Package pdftex.def Info: images/part4/3CNN-merge3-512.png  used on input line 2
 (pdftex.def)             Requested size: 224.06393pt x 141.15901pt.
  [56.56 <./images/part4/3CNN-merge3-128.png> <./images/part4/3CNN-merge3-256.pn
 g> <./images/part4/3CNN-merge3-512.png>]
-<images/part4/3CNN-dense-128.png, id=792, 702.625pt x 442.65375pt>
+<images/part4/3CNN-dense-128.png, id=852, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-dense-128.png Graphic file (type png)
 <use images/part4/3CNN-dense-128.png>
 Package pdftex.def Info: images/part4/3CNN-dense-128.png  used on input line 27
 9.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-<images/part4/3CNN-dense-256.png, id=793, 702.625pt x 442.65375pt>
+<images/part4/3CNN-dense-256.png, id=853, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-dense-256.png Graphic file (type png)
 <use images/part4/3CNN-dense-256.png>
 Package pdftex.def Info: images/part4/3CNN-dense-256.png  used on input line 28
 3.
 (pdftex.def)             Requested size: 248.96162pt x 156.8426pt.
-<images/part4/3CNN-dense-512.png, id=794, 702.625pt x 442.65375pt>
+<images/part4/3CNN-dense-512.png, id=854, 702.625pt x 442.65375pt>
 File: images/part4/3CNN-dense-512.png Graphic file (type png)
 <use images/part4/3CNN-dense-512.png>
 Package pdftex.def Info: images/part4/3CNN-dense-512.png  used on input line 28
@@ -2196,7 +2213,7 @@ Package pdftex.def Info: images/part4/3CNN-dense-512.png  used on input line 28
 
  <./images/part4/3CNN-dense-128.png> <./images/part4/3CNN-dense-256.png> <./ima
 ges/part4/3CNN-dense-512.png>]
-<images/part4/resources_CNN.png, id=804, 1912.14375pt x 845.1575pt>
+<images/part4/resources_CNN.png, id=864, 1912.14375pt x 845.1575pt>
 File: images/part4/resources_CNN.png Graphic file (type png)
 <use images/part4/resources_CNN.png>
 Package pdftex.def Info: images/part4/resources_CNN.png  used on input line 298
@@ -2225,21 +2242,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [59.59
 
 ]
-<images/part4/4CNN_train_category_accuracy.png, id=824, 331.2375pt x 222.8325pt
+<images/part4/4CNN_train_category_accuracy.png, id=884, 331.2375pt x 222.8325pt
 >
 File: images/part4/4CNN_train_category_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_train_category_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_train_category_accuracy.png  used on
  input line 398.
 (pdftex.def)             Requested size: 248.96162pt x 167.48438pt.
-<images/part4/4CNN_val_category_accuracy.png, id=825, 331.2375pt x 219.82124pt>
+<images/part4/4CNN_val_category_accuracy.png, id=885, 331.2375pt x 219.82124pt>
 
 File: images/part4/4CNN_val_category_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_val_category_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_val_category_accuracy.png  used on i
 nput line 402.
 (pdftex.def)             Requested size: 248.96162pt x 165.22105pt.
-<images/part4/4CNN_train_category_crossentropy.png, id=826, 331.2375pt x 211.79
+<images/part4/4CNN_train_category_crossentropy.png, id=886, 331.2375pt x 211.79
 124pt>
 File: images/part4/4CNN_train_category_crossentropy.png Graphic file (type png)
 
@@ -2247,26 +2264,26 @@ File: images/part4/4CNN_train_category_crossentropy.png Graphic file (type png)
 Package pdftex.def Info: images/part4/4CNN_train_category_crossentropy.png  use
 d on input line 411.
 (pdftex.def)             Requested size: 248.96162pt x 159.1856pt.
-<images/part4/4CNN_val_category_crossentropy.png, id=827, 331.2375pt x 218.8175
+<images/part4/4CNN_val_category_crossentropy.png, id=887, 331.2375pt x 218.8175
 pt>
 File: images/part4/4CNN_val_category_crossentropy.png Graphic file (type png)
 <use images/part4/4CNN_val_category_crossentropy.png>
 Package pdftex.def Info: images/part4/4CNN_val_category_crossentropy.png  used 
 on input line 415.
 (pdftex.def)             Requested size: 248.96162pt x 164.46663pt.
-<images/part4/4CNN_train_top_k_accuracy.png, id=828, 331.2375pt x 213.79875pt>
+<images/part4/4CNN_train_top_k_accuracy.png, id=888, 331.2375pt x 213.79875pt>
 File: images/part4/4CNN_train_top_k_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_train_top_k_accuracy.png  used on in
 put line 423.
 (pdftex.def)             Requested size: 248.96162pt x 160.69446pt.
-<images/part4/4CNN_val_top_k_accuracy.png, id=829, 331.2375pt x 214.8025pt>
+<images/part4/4CNN_val_top_k_accuracy.png, id=889, 331.2375pt x 214.8025pt>
 File: images/part4/4CNN_val_top_k_accuracy.png Graphic file (type png)
 <use images/part4/4CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/4CNN_val_top_k_accuracy.png  used on inpu
 t line 427.
 (pdftex.def)             Requested size: 248.96162pt x 161.4489pt.
-<images/part4/4CNN_timing.png, id=830, 1036.87375pt x 224.84pt>
+<images/part4/4CNN_timing.png, id=890, 1036.87375pt x 224.84pt>
 File: images/part4/4CNN_timing.png Graphic file (type png)
 <use images/part4/4CNN_timing.png>
 Package pdftex.def Info: images/part4/4CNN_timing.png  used on input line 435.
@@ -2276,12 +2293,12 @@ Overfull \hbox (20.51236pt too wide) in paragraph at lines 435--436
  [] 
  []
 
-<images/part4/4CNN-conv-1.png, id=831, 637.38126pt x 150.5625pt>
+<images/part4/4CNN-conv-1.png, id=891, 637.38126pt x 150.5625pt>
 File: images/part4/4CNN-conv-1.png Graphic file (type png)
 <use images/part4/4CNN-conv-1.png>
 Package pdftex.def Info: images/part4/4CNN-conv-1.png  used on input line 443.
 (pdftex.def)             Requested size: 497.92325pt x 117.61975pt.
-<images/part4/4CNN-conv-2.png, id=832, 644.4075pt x 150.5625pt>
+<images/part4/4CNN-conv-2.png, id=892, 644.4075pt x 150.5625pt>
 File: images/part4/4CNN-conv-2.png Graphic file (type png)
 <use images/part4/4CNN-conv-2.png>
 Package pdftex.def Info: images/part4/4CNN-conv-2.png  used on input line 447.
@@ -2292,13 +2309,13 @@ opy.png> <./images/part4/4CNN_val_category_crossentropy.png> <./images/part4/4C
 NN_train_top_k_accuracy.png> <./images/part4/4CNN_val_top_k_accuracy.png>]
 [62.62 <./images/part4/4CNN_timing.png> <./images/part4/4CNN-conv-1.png> <./ima
 ges/part4/4CNN-conv-2.png>]
-<images/part4/4CNN-merge3-1.png, id=864, 636.3775pt x 150.5625pt>
+<images/part4/4CNN-merge3-1.png, id=924, 636.3775pt x 150.5625pt>
 File: images/part4/4CNN-merge3-1.png Graphic file (type png)
 <use images/part4/4CNN-merge3-1.png>
 Package pdftex.def Info: images/part4/4CNN-merge3-1.png  used on input line 460
 .
 (pdftex.def)             Requested size: 497.92325pt x 117.80354pt.
-<images/part4/4CNN-merge3-2.png, id=865, 632.3625pt x 150.5625pt>
+<images/part4/4CNN-merge3-2.png, id=925, 632.3625pt x 150.5625pt>
 File: images/part4/4CNN-merge3-2.png Graphic file (type png)
 <use images/part4/4CNN-merge3-2.png>
 Package pdftex.def Info: images/part4/4CNN-merge3-2.png  used on input line 464
@@ -2307,13 +2324,13 @@ Package pdftex.def Info: images/part4/4CNN-merge3-2.png  used on input line 464
  [63.63
 
  <./images/part4/4CNN-merge3-1.png> <./images/part4/4CNN-merge3-2.png>]
-<images/part4/4CNN-dense-1.png, id=874, 647.41875pt x 150.5625pt>
+<images/part4/4CNN-dense-1.png, id=934, 647.41875pt x 150.5625pt>
 File: images/part4/4CNN-dense-1.png Graphic file (type png)
 <use images/part4/4CNN-dense-1.png>
 Package pdftex.def Info: images/part4/4CNN-dense-1.png  used on input line 476.
 
 (pdftex.def)             Requested size: 497.92325pt x 115.79793pt.
-<images/part4/4CNN-dense-2.png, id=875, 642.4pt x 150.5625pt>
+<images/part4/4CNN-dense-2.png, id=935, 642.4pt x 150.5625pt>
 File: images/part4/4CNN-dense-2.png Graphic file (type png)
 <use images/part4/4CNN-dense-2.png>
 Package pdftex.def Info: images/part4/4CNN-dense-2.png  used on input line 480.
@@ -2322,7 +2339,7 @@ Package pdftex.def Info: images/part4/4CNN-dense-2.png  used on input line 480.
  [64.64
 
  <./images/part4/4CNN-dense-1.png> <./images/part4/4CNN-dense-2.png>]
-<images/part4/final_CNN_train_category_accuracy.png, id=888, 342.27875pt x 217.
+<images/part4/final_CNN_train_category_accuracy.png, id=948, 342.27875pt x 217.
 81375pt>
 File: images/part4/final_CNN_train_category_accuracy.png Graphic file (type png
 )
@@ -2330,14 +2347,14 @@ File: images/part4/final_CNN_train_category_accuracy.png Graphic file (type png
 Package pdftex.def Info: images/part4/final_CNN_train_category_accuracy.png  us
 ed on input line 535.
 (pdftex.def)             Requested size: 248.96162pt x 158.43437pt.
-<images/part4/final_CNN_val_category_accuracy.png, id=889, 331.2375pt x 220.825
+<images/part4/final_CNN_val_category_accuracy.png, id=949, 331.2375pt x 220.825
 pt>
 File: images/part4/final_CNN_val_category_accuracy.png Graphic file (type png)
 <use images/part4/final_CNN_val_category_accuracy.png>
 Package pdftex.def Info: images/part4/final_CNN_val_category_accuracy.png  used
  on input line 539.
 (pdftex.def)             Requested size: 248.96162pt x 165.9755pt.
-<images/part4/final_CNN_train_category_crossentropy.png, id=890, 330.23375pt x 
+<images/part4/final_CNN_train_category_crossentropy.png, id=950, 330.23375pt x 
 214.8025pt>
 File: images/part4/final_CNN_train_category_crossentropy.png Graphic file (type
  png)
@@ -2345,7 +2362,7 @@ File: images/part4/final_CNN_train_category_crossentropy.png Graphic file (type
 Package pdftex.def Info: images/part4/final_CNN_train_category_crossentropy.png
   used on input line 548.
 (pdftex.def)             Requested size: 248.96162pt x 161.94382pt.
-<images/part4/final_CNN_val_category_crossentropy.png, id=891, 331.2375pt x 214
+<images/part4/final_CNN_val_category_crossentropy.png, id=951, 331.2375pt x 214
 .8025pt>
 File: images/part4/final_CNN_val_category_crossentropy.png Graphic file (type p
 ng)
@@ -2358,14 +2375,14 @@ used on input line 552.
 ] [66.66 <./images/part4/final_CNN_train_category_accuracy.png> <./images/part4
 /final_CNN_val_category_accuracy.png> <./images/part4/final_CNN_train_category_
 crossentropy.png> <./images/part4/final_CNN_val_category_crossentropy.png>]
-<images/part4/final_CNN_train_top_k_accuracy.png, id=908, 337.26pt x 223.83624p
+<images/part4/final_CNN_train_top_k_accuracy.png, id=968, 337.26pt x 223.83624p
 t>
 File: images/part4/final_CNN_train_top_k_accuracy.png Graphic file (type png)
 <use images/part4/final_CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: images/part4/final_CNN_train_top_k_accuracy.png  used 
 on input line 561.
 (pdftex.def)             Requested size: 248.96162pt x 165.23662pt.
-<images/part4/final_CNN_val_top_k_accuracy.png, id=909, 331.2375pt x 215.80624p
+<images/part4/final_CNN_val_top_k_accuracy.png, id=969, 331.2375pt x 215.80624p
 t>
 File: images/part4/final_CNN_val_top_k_accuracy.png Graphic file (type png)
 <use images/part4/final_CNN_val_top_k_accuracy.png>
@@ -2380,120 +2397,126 @@ LaTeX Warning: Reference `amortecimentos_1' on page 67 undefined on input line
 [67.67
 
  <./images/part4/final_CNN_train_top_k_accuracy.png> <./images/part4/final_CNN_
-val_top_k_accuracy.png>]) (conclusion.tex [68.68]) (references.tex
+val_top_k_accuracy.png>] [68.68]
+Chapter 5.
 [69.69
 
-] (dissertation.bbl [70.70
+] [70.70] [71.71] [72.72] [73.73] [74.74] [75.75] [76.76] [77.77]
+[78.78] [79.79] [80.80] [81.81] [82.82] [83.83] [84.84] [85.85] [86.86]
+[87.87]) (conclusion.tex [88.88]) (references.tex [89.89
+
+] (dissertation.bbl
+[90.90
 
 
-])) (lists.tex [71.71] (dissertation.lof
-[72.72
+])) (lists.tex [91.91] (dissertation.lof [92.92
 
 ])
 \tf@lof=\write6
 \openout6 = `dissertation.lof'.
 
- [73.73] (dissertation.lot)
+ [93.93]
+(dissertation.lot)
 \tf@lot=\write7
 \openout7 = `dissertation.lot'.
 
- [74.74
+ [94.94
 
 ]) (appendix.tex
-<images/presentation-01.png, id=1032, 1011.78pt x 758.835pt>
+<images/presentation-01.png, id=1175, 1011.78pt x 758.835pt>
 File: images/presentation-01.png Graphic file (type png)
 <use images/presentation-01.png>
 Package pdftex.def Info: images/presentation-01.png  used on input line 23.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-02.png, id=1033, 1011.78pt x 758.835pt>
+<images/presentation-02.png, id=1176, 1011.78pt x 758.835pt>
 File: images/presentation-02.png Graphic file (type png)
 <use images/presentation-02.png>
 Package pdftex.def Info: images/presentation-02.png  used on input line 28.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-03.png, id=1034, 1011.78pt x 758.835pt>
+<images/presentation-03.png, id=1177, 1011.78pt x 758.835pt>
 File: images/presentation-03.png Graphic file (type png)
 <use images/presentation-03.png>
 Package pdftex.def Info: images/presentation-03.png  used on input line 33.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-04.png, id=1035, 1011.78pt x 758.835pt>
+<images/presentation-04.png, id=1178, 1011.78pt x 758.835pt>
 File: images/presentation-04.png Graphic file (type png)
 <use images/presentation-04.png>
 Package pdftex.def Info: images/presentation-04.png  used on input line 38.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-05.png, id=1036, 1011.78pt x 758.835pt>
+<images/presentation-05.png, id=1179, 1011.78pt x 758.835pt>
 File: images/presentation-05.png Graphic file (type png)
 <use images/presentation-05.png>
 Package pdftex.def Info: images/presentation-05.png  used on input line 43.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-06.png, id=1037, 1011.78pt x 758.835pt>
+<images/presentation-06.png, id=1180, 1011.78pt x 758.835pt>
 File: images/presentation-06.png Graphic file (type png)
 <use images/presentation-06.png>
 Package pdftex.def Info: images/presentation-06.png  used on input line 48.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-07.png, id=1038, 1011.78pt x 758.835pt>
+<images/presentation-07.png, id=1181, 1011.78pt x 758.835pt>
 File: images/presentation-07.png Graphic file (type png)
 <use images/presentation-07.png>
 Package pdftex.def Info: images/presentation-07.png  used on input line 53.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-08.png, id=1039, 1011.78pt x 758.835pt>
+<images/presentation-08.png, id=1182, 1011.78pt x 758.835pt>
 File: images/presentation-08.png Graphic file (type png)
 <use images/presentation-08.png>
 Package pdftex.def Info: images/presentation-08.png  used on input line 58.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-09.png, id=1040, 1011.78pt x 758.835pt>
+<images/presentation-09.png, id=1183, 1011.78pt x 758.835pt>
 File: images/presentation-09.png Graphic file (type png)
 <use images/presentation-09.png>
 Package pdftex.def Info: images/presentation-09.png  used on input line 63.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-10.png, id=1041, 1011.78pt x 758.835pt>
+<images/presentation-10.png, id=1184, 1011.78pt x 758.835pt>
 File: images/presentation-10.png Graphic file (type png)
 <use images/presentation-10.png>
 Package pdftex.def Info: images/presentation-10.png  used on input line 68.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-11.png, id=1042, 1011.78pt x 758.835pt>
+<images/presentation-11.png, id=1185, 1011.78pt x 758.835pt>
 File: images/presentation-11.png Graphic file (type png)
 <use images/presentation-11.png>
 Package pdftex.def Info: images/presentation-11.png  used on input line 73.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-12.png, id=1043, 1011.78pt x 758.835pt>
+<images/presentation-12.png, id=1186, 1011.78pt x 758.835pt>
 File: images/presentation-12.png Graphic file (type png)
 <use images/presentation-12.png>
 Package pdftex.def Info: images/presentation-12.png  used on input line 78.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-13.png, id=1044, 1011.78pt x 758.835pt>
+<images/presentation-13.png, id=1187, 1011.78pt x 758.835pt>
 File: images/presentation-13.png Graphic file (type png)
 <use images/presentation-13.png>
 Package pdftex.def Info: images/presentation-13.png  used on input line 83.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-14.png, id=1045, 1011.78pt x 758.835pt>
+<images/presentation-14.png, id=1188, 1011.78pt x 758.835pt>
 File: images/presentation-14.png Graphic file (type png)
 <use images/presentation-14.png>
 Package pdftex.def Info: images/presentation-14.png  used on input line 88.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
-<images/presentation-15.png, id=1046, 1011.78pt x 758.835pt>
+<images/presentation-15.png, id=1189, 1011.78pt x 758.835pt>
 File: images/presentation-15.png Graphic file (type png)
 <use images/presentation-15.png>
 Package pdftex.def Info: images/presentation-15.png  used on input line 93.
 (pdftex.def)             Requested size: 354.1283pt x 265.59624pt.
- [75.75
+ [95.95
 
- <./images/presentation-01.png> <./images/presentation-02.png>] [76.76 <./image
-s/presentation-03.png> <./images/presentation-04.png>] [77.77 <./images/present
-ation-05.png> <./images/presentation-06.png>] [78.78 <./images/presentation-07.
-png> <./images/presentation-08.png>] [79.79 <./images/presentation-09.png> <./i
-mages/presentation-10.png>] [80.80 <./images/presentation-11.png> <./images/pre
-sentation-12.png>] [81.81 <./images/presentation-13.png> <./images/presentation
--14.png>]
-[82.82 <./images/presentation-15.png>]
-<images/part4/cnn_architecture.png, id=1110, 1073.00874pt x 3182.89125pt>
+ <./images/presentation-01.png> <./images/presentation-02.png>] [96.96 <./image
+s/presentation-03.png> <./images/presentation-04.png>] [97.97 <./images/present
+ation-05.png> <./images/presentation-06.png>] [98.98 <./images/presentation-07.
+png> <./images/presentation-08.png>] [99.99 <./images/presentation-09.png> <./i
+mages/presentation-10.png>]
+[100.100 <./images/presentation-11.png> <./images/presentation-12.png>]
+[101.101 <./images/presentation-13.png> <./images/presentation-14.png>]
+[102.102 <./images/presentation-15.png>]
+<images/part4/cnn_architecture.png, id=1253, 1073.00874pt x 3182.89125pt>
 File: images/part4/cnn_architecture.png Graphic file (type png)
 <use images/part4/cnn_architecture.png>
 Package pdftex.def Info: images/part4/cnn_architecture.png  used on input line 
 102.
 (pdftex.def)             Requested size: 214.59795pt x 636.56699pt.
- [83.83
+ [103.103
 
-] [84.84] [85.85] [86.86] [87.87])
+] [104.104] [105.105] [106.106] [107.107])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 66.
 See the caption package documentation for explanation.
@@ -2506,14 +2529,14 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 259.
 See the caption package documentation for explanation.
 
-[88.88] [89.89 <./images/part4/cnn_architecture.png>]
+[108.108] [109.109 <./images/part4/cnn_architecture.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
  (dissertation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 001A97A9AF71D942689E7307CBA8DD5A;2874.
+(rerunfilecheck)             Checksum: 0DBE2046510F30CB73865A14FDA0351E;12206.
 
 
 LaTeX Warning: There were undefined references.
@@ -2524,13 +2547,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 17057 strings out of 495203
- 277285 string characters out of 3181306
- 409436 words of memory out of 3000000
- 19439 multiletter control sequences out of 15000+200000
+ 20414 strings out of 495203
+ 321014 string characters out of 3181306
+ 434837 words of memory out of 3000000
+ 22751 multiletter control sequences out of 15000+200000
  25726 words of font info for 69 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,16n,83p,1478b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,16n,83p,1478b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labi1440.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1000.p
 k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1000.p
@@ -2558,9 +2581,9 @@ texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/denys/.miktex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/denys/.miktex/texm
 fs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/denys/.miktex/texmfs
 /install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (89 pages, 4033514 bytes).
+Output written on dissertation.pdf (109 pages, 4077538 bytes).
 PDF statistics:
- 1644 PDF objects out of 1728 (max. 8388607)
- 318 named destinations out of 1000 (max. 500000)
- 768 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1842 PDF objects out of 2073 (max. 8388607)
+ 350 named destinations out of 1000 (max. 500000)
+ 864 words of extra memory for PDF output out of 10000 (max. 10000000)
 

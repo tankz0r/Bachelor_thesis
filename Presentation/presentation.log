@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  10 JUN 2018 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  11 JUN 2018 18:00
 entering extended mode
 **./presentation.tex
 (presentation.tex
@@ -1699,7 +1699,7 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Here is how much of TeX's memory you used:
  18709 strings out of 495203
  347254 string characters out of 3181306
- 424626 words of memory out of 3000000
+ 424624 words of memory out of 3000000
  21503 multiletter control sequences out of 15000+200000
  16623 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1716,9 +1716,9 @@ k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
 </home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (16 pages, 360991 bytes).
+Output written on presentation.pdf (16 pages, 360393 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
+ 397 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
