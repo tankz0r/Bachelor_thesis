@@ -6,7 +6,7 @@ In this section I need to:
 \begin{itemize}
 	\item visualize results of each training step, to understand hyperparameters better
 	\item estimate networks by types 
-	\item chose hyperparameters to gain the best evaluation metrics  
+	\item choose hyperparameters to gain the best evaluation metrics  
 	\item train each network on different amount of epochs
 	\item save network parameters and weights after each epoch. It will give me a possibility to restore the best model if network accuracy goes down.
 \end{itemize}
@@ -17,7 +17,7 @@ Training time is a very important parameter. Therefore, I would like to train NN
 
 \section{Base line model} \label{sect4_2}
 
-Firstly, I built the baseline model which CNN models should achieve in the future. I started this step with LSTM networks, as most often mentioned in the articles on NLP problems. At this step I was trying different configurations of LSTM parameters. The architecture which gave me the best score is shown in the Figure \ref{img:part4-bilstm}. According to my experiments bidirectional recurrent networks perform better than the same type and same size by parameters one directional networks, therefore it was chosen as the main layer. As input to the NN I gave two embedded sequences of words: one for the description of advert , another for title. This model has the bi-LSTM layer with 100 units. Each sequence goes through the bi-LSTM layer and then merged together. To solve overfitting in this model I used BatchNormalization and dropout. LSTM dropout rate was chosen manually and was equal to 0.332. Besides the bi-LSTM layer, there are two fully connected layers: one at the end because we want to estimate probabilities for each class, so it has 183 neurons in it and one in the middle with 130 neurons. As a training algorithm I chose Adam with default parameters: (lr=0.001, beta\_1=0.9, beta\_2=0.999, epsilon=1e-08, decay=0.0). As I have mentioned earlier, to better understand the network I visualize the histograms and percentile weights in each layer. The model was trained on 15 epochs.
+Firstly, I built the baseline model which CNN models should achieve in the future. I started this step with LSTM networks, as most often mentioned in the articles on NLP problems. At this step I was trying different configurations of LSTM parameters. The architecture which gave me the best score is shown in Figure \ref{img:part4-bilstm}. According to my experiments bidirectional recurrent networks perform better than the same type and same size by parameters one directional networks, therefore it was chosen as the main layer. As input to the NN I gave two embedded sequences of words: one for the description of advert, the other for title. This model has the bi-LSTM layer with 100 units. Each sequence goes through the bi-LSTM layer and then merged together. To solve overfitting in this model I used BatchNormalization and dropout. LSTM dropout rate was chosen manually and was equal to 0.332. Besides the bi-LSTM layer, there are two fully connected layers: one at the end because we want to estimate probabilities for each class, so it has 183 neurons in it and one in the middle with 130 neurons. As a training algorithm I chose Adam with default parameters: (lr=0.001, beta\_1=0.9, beta\_2=0.999, epsilon=1e-08, decay=0.0). As I have mentioned earlier, to better understand the network I visualize the histograms and percentile weights in each layer. The model was trained on 15 epochs.
 
 
 \begin{figure}[ht] 
@@ -55,7 +55,7 @@ Figure \ref{img:bilstm_val_category_crossentropy} shows that categorical cross e
 	\label{img:bilstm_val_category_crossentropy}  
 \end{figure}
 
-The most important metric for this task was top categorical accuracy which can be seen in the Figure \ref{img:bilstm_val_top_k_accuracy}. On training data the model showed 0.9189 accuracy and on the test data - 0.9319.   
+The most important metric for this task was top categorical accuracy which can be seen in Figure \ref{img:bilstm_val_top_k_accuracy}. On training data the model showed 0.9189 accuracy and on the test data - 0.9319.   
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -231,7 +231,7 @@ According to the results \ref{img:3CNN_categorical_accuracy}, \ref{img:3CNN_cate
 
 \clearpage
 
-Histograms of convolution layers Figure \ref{img:3CNN_conv_layers} look almost the same. They do not change significantly from the initial distribution. It can mean these layers do not learn much. 
+Histograms of convolution layers Figure \ref{img:3CNN_conv_layers} look almost the same. They do not change significantly from the initial distribution. It can mean that layers do not learn much. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -272,7 +272,7 @@ Merged layers Figure \ref{img:3CNN_merged_layers} are also very similar, because
 \end{figure}
 
 \clearpage
-We can easily notice the difference in the shape of the distribution Figure \ref{img:3CNN_dense_layers} on the initial epoch and the final. The model with 512 filters has a normal distribution with lower variance comparing to the one with 128 filters. It is noticeable, that this the final distribution changed comparing to initial one, that means that layer learned some information. 
+We can easily notice the difference in the shape of the distribution Figure \ref{img:3CNN_dense_layers} on the initial epoch and the final. The model with 512 filters has a normal distribution with lower variance comparing to the one with 128 filters. It is noticeable, that the final distribution changed comparing to initial one, which means that layer learned some information. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -291,7 +291,7 @@ We can easily notice the difference in the shape of the distribution Figure \ref
 
 \clearpage
 The CNN model requires fewer resources for training than bi-LSTM. Therefore, I was able to use 
-5 times bigger batch size. We can see consumption of resources in the Figure \ref{img:resources_CNN}
+5 times bigger batch size. We can see consumption of resources in Figure \ref{img:resources_CNN}
 
 \begin{figure}[ht] 
 	\center
@@ -317,7 +317,7 @@ In this section, I tried to use different regularization to get rid of overfitti
 Modifications:
 \begin{enumerate}
 	\item In the previous section the convolution layer did not train enough,
-	 so I thought it was caused because of big dropout rate. Therefore I decreased it in two times.
+	 was caused, in my opinion by a big dropout rate. Therefore, I decreased it in two times.
 	\item I also added the l2-regularization equals to 0.01 both for convolution layers and dense layer. 
 	Dropout equals to the rate 0.5 both for dense and convolution layers. 
 	Moreover, I decided to configure my training algorithm, so I used Adam with learning rate 1e-4. 
@@ -390,8 +390,8 @@ Modifications:
 
 \noindent
 \\
-According to the results Figures \ref{img:4CNN_categorical_accuracy}, \ref{img:4CNN_category_crossentropy}, \ref{img:4CNN_top_k_accuracy}, \ref{img:4CNN_timing}, it can be clearly seen that model with modifications number 3 and 4 were overfitted for sure.
-Model number 1 has lower overfit rate. The most stable model was number 2, which demonstrated the same results on test and train dataset. 
+According to the results shown in Figures \ref{img:4CNN_categorical_accuracy}, \ref{img:4CNN_category_crossentropy}, \ref{img:4CNN_top_k_accuracy}, \ref{img:4CNN_timing}, it can be clearly seen that models with modifications number 3 and 4 were overfitted for sure.
+Model number 1 has a lower overfit rate. The most stable model was number 2, which demonstrated the same results on test and train dataset. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -452,7 +452,7 @@ Model number 1 has lower overfit rate. The most stable model was number 2, which
 
 \clearpage
 If we compare results of weights histograms Figures \ref{img:Convolutional models with modification convolution layers}, \ref{img:Convolutional models with modification merged layers} with the ones in Section \ref{sect4_3} we can see a significant difference in distributions.
-Which is mostly caused by different types of regularizations. We can also see that convolution layers from model 1 and 3 change through epochs which
+Which is mostly caused by different types of regularizations. We can also see that convolution layers from model 1 and 3 change through epochs, which
 means that they learn.  
 
 \begin{figure}[ht]
@@ -468,8 +468,8 @@ means that they learn.
 \end{figure}
 
 \clearpage
-Similar situation we can see with dense layers Figure \ref{img:Convolutional models with modification Histogram of dense layers}. The weights are put into ranges between -0.1 and 0.1 where l2-regularizations was used.
-The changes through epochs we can see only in first two models which are marked with blue and gray colors.   
+Similar situation can be seen with dense layers in Figure \ref{img:Convolutional models with modification Histogram of dense layers}. The weights are put into ranges between -0.1 and 0.1 where l2-regularizations were used.
+The changes through epochs we can be seen only in first two models which are marked in blue and gray.   
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -484,13 +484,13 @@ The changes through epochs we can see only in first two models which are marked 
 \end{figure}
 
 
-As we can see regularizations play the key role to avoid overfitting of the models. High dropout rate in combination with l2-regularization for dense and convolutions layers showed the best stability. Therefore, I chose model number 2 for the further training. 
+As we can see regularizations play the key role to avoid the overfitting of the models. High dropout rate in combination with l2-regularization for dense and convolutions layers showed the best stability. Therefore, I chose model number 2 for the further training. 
 
 \clearpage
 \section{Final model} \label{sect4_5}
 
 In this section I trained the best model from the Section \ref{sect4_5} on 25 epochs.
-I has following parameters:
+I have the following parameters:
 
 \begin{itemize}
 	\item 300 filters
@@ -502,7 +502,7 @@ I has following parameters:
 
 One more modification which was made: from the previous Section \ref{sect4_5}
 according to many metrics model with these configurations trained slower than others because 
-it has the lowest learning rate 1e-4. To speed up the training process I increased the learning rate in the beginning to be equal 1e-3. Then as the CNN slowly converges to its optimal value
+it has the lowest learning rate 1e-4. To speed up the training process I increased the learning rate at the beginning to be equal 1e-3. Then as the CNN slowly converges to its optimal value
 the learning was decreased to 1e-4 to slow down - otherwise it may overshoot the optimal value.
 Such modifications gave me improvement in speed and the stability of the model at the same time.
 The final results can be seen in Figures \ref{img:final_CNN_categorical_accuracy}, 
@@ -589,7 +589,7 @@ The final results can be seen in Figures \ref{img:final_CNN_categorical_accuracy
 	29       & 0.97      & 0.99   & 0.98     & 12346   \\
 \end{longtable}
 
-Here is the concise version of final classification report for each class. Full version can be found in APPENDIX B. As we can see in the Table \ref{amortecimentos_1} model showed the best results on the categories with big number of advertisements: 14, 29. It makes mistakes on categories with less samples: 11 and 15 respectively and can hardly ever make a right predictions on the categories where the number of observations are less then 10. 
+Here is the concise version of final classification report for each class. Full version can be found in APPENDIX B. As we can see in the Table \ref{amortecimentos_1} model showed the best results on the categories with a big number of advertisements: 14, 29. It makes mistakes on categories with less samples: 11 and 15 respectively and can hardly ever make a right predictions on the categories where the number of observations are less than 10. 
 
 \section{Summary of the section} \label{sect4_6}
 
@@ -599,4 +599,86 @@ built on top of word2vec. I did a little tuning
 of hyperparameters to achieve the highest scores. 
 According to the results of experiments which CNN models achieved, are the same and in some components even better than the ones of Bi-LSTM models.I can make a conclusion that Convolution Neural Networks perform remarkably well for NLP related problems and specially for text classification. 
 
+
+\chapter{ФУНКЦІОНАЛЬНО-ВАРТІСНИЙ АНАЛІЗ ПРОГРАМНОГО ПРОДУКТУ}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\section{Постановка задачі техніко-економічного аналізу}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\subsection{Обґрунтування функцій програмного продукту}
+\subsection{Варіанти реалізації основних функцій}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\section{Обґрунтування системи параметрів ПП}
+\subsection{Опис параметрів}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\subsection{Кількісна оцінка параметрів}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\subsection{Аналіз експертного оцінювання параметрів}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\section{Аналіз рівня якості варіантів реалізації функцій}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\section{Економічний аналіз варіантів розробки ПП}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\section{Вибір кращого варіанта ПП техніко-економічного рівня}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\section{Висновки до розділу 5}
+\newpage
+\thispagestyle{empty}
+\mbox{}processed/train.csv
+%5.1 Постановка задачі техніко-економічного аналізу	69
+%5.1.1 Обґрунтування функцій програмного продукту	70
+%5.1.2 Варіанти реалізації основних функцій	71
+%5.2 Обґрунтування системи параметрів ПП	73
+%5.2.1 Опис параметрів	73
+%5.2.2 Кількісна оцінка параметрів	74
+%5.2.3 Аналіз експертного оцінювання параметрів	76
+%5.3 Аналіз рівня якості варіантів реалізації функцій	80
+%5.4 Економічний аналіз варіантів розробки ПП	81
+%5.5 Вибір кращого варіанта ПП техніко-економічного рівня	86
+%Висновки до розділу 5
+ 
 

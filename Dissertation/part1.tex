@@ -2,7 +2,7 @@
 \section{Statement of the classification problem} \label{sect1_2}
 
 
-Classification problem is a problem of identifying to which category a new observation belongs to. An example can be a situation when you receive a new email and the algorithm automatically decides whether it belongs to social network, promotions or business letters.
+A classification problem is a problem of identifying to which category a new observation belongs to. An example can be a situation when you receive a new email and the algorithm automatically decides whether it belongs to social network, promotions or business letters.
 
 
 \newcommand{\docsetlabeled}{\mathbb{D}}
@@ -38,7 +38,7 @@ The classes in text classification often have some interesting structure such as
 \end{figure}
 
 
-\section{A short review of existing mathematical models, which can be used to solve the classification problem} \label{sect1_3}
+\section{Short review of existing mathematical model which can be used to solve the classification problem} \label{sect1_3}
 
 \begin{figure}[ht] 
 	\center
@@ -74,9 +74,9 @@ Now let us find out what validation is for?
 To better understand each point we need to examine it more deeply.
 
 \subsection{Model Evaluation Applications}
-Very important property of learning models is Generalization performance. In general we want to estimate the predictive performance of our model on future data.  Therefore, it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
+A very important property of learning models is Generalization performance. In general, we want to estimate the predictive performance of our model on future data.  Therefore, it is necessary to use special techniques and metrics that are suitable for a particular task to track the performance of our models. 
 
-When we have a set of candidate models model selection helps us to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
+When we have a set of candidate models, model selection helps us to increase the predictive performance by tweaking the learning algorithm and selecting the best performing model from a given hypothesis space.
  
 Before machine learning engineers find the best model, they make a bunch of experiments. Running a learning algorithm over a training dataset with different hyperparameter settings and various features will result in different models. The final goal is to select the best one from the set, ranking their performances against each other.
 
@@ -106,7 +106,7 @@ Classification problems are probably the most common type of ML problem, and the
 
 \begin{enumerate}
 	\item Accuracy \ref{accuracy} \\
-	Accuracy simply measures what percent of your predictions was correct. It's the ratio between the number of correct predictions and the total number of predictions.
+	Accuracy simply measures what percent of your predictions is correct. It is the ratio between the number of correct predictions and the total number of predictions.
 	
 	\begin{equation}
 	\label{accuracy}
@@ -115,7 +115,7 @@ Classification problems are probably the most common type of ML problem, and the
 \begin{doublespacing}
 \end{doublespacing}
 	
-	Accuracy measures merely what percent of forecasts were correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
+	Accuracy measures merely what percent of forecasts are correct. Accuracy is also the most misused metric. It is actually only suitable when there is an *equal number of observations in each class* (which is rarely the case) and that all *predictions and prediction errors are equally important, which is often not the case.
 	
 	\item Confusion Matrix 1.4 \\
 	The confusion matrix is a handy presentation of the accuracy of a model with 2 or more classes. The table presents predictions on the x-axis and accuracy outcomes on the y-axis. The cells of the table are the number of predictions made by a machine learning algorithm.
@@ -186,6 +186,6 @@ Classification problems are probably the most common type of ML problem, and the
 
 In the first section the relevance of the problem and the main concepts associated with it are considered, namely, classification, its formation, intellectual analysis. It is a review of the main methods and algorithms of classification and criteria for its management.
 
-Since it is important to investigate not only the ways to classify texts, but also attempts to understand main features, which had the highest importance. It is important to study the theory of how to represent textual information before applying algorithms. Then, from the examined algorithms, the deep neural networks will be used. 
+Since it is important to investigate not only the ways to classify texts, but also attempt to understand main features, which had the highest importance. It is important to study the theory of how to represent textual information before applying algorithms. Then, from the examined algorithms, deep neural networks will be used. 
 
 With the criterion for further work, the top-5 accuracy and F1-score curve were selected.

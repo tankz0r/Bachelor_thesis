@@ -4,6 +4,7 @@
 \usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath,mathtext}
 \usepackage{cite,enumerate,float,indentfirst}
+\usepackage{verbatim,longtable}
 
 \graphicspath{{../Dissertation/images/}}
 
@@ -25,7 +26,7 @@
 			     \thesisCity, \thesisYear
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
-			p. \insertframenumber{} из \inserttotalframenumber \hspace*{2ex}
+			p. \insertframenumber{} of \inserttotalframenumber \hspace*{2ex}
 		\end{beamercolorbox}}%
 		\vskip0pt%
 	}
@@ -177,7 +178,7 @@
 		\frametitle{Regularizations}
 		Modifications:
 		\begin{enumerate}
-			\item Dropout rate decreased it in two times.
+			\item Dropout rate decreased in two times.
 			\item l2-regularization equals to 0.01 both for convolution layers and dense layer. 
 			Dropout = 0.5 both for dense and convolution layers. 
 		    training algorithm - Adam with learning rate 1e-4. 
@@ -232,10 +233,33 @@
 		\end{frame}
 		
 		\begin{frame}
+			\frametitle{Results}
+			\begin{longtable}[c]{|l|c|c|l|l|}
+				\hline  category & precision & recall &  f1-score & support\\ \hline
+				\endhead
+				\hline
+				\endlastfoot
+
+				11       & 0.78      & 0.58   & 0.66     & 623     \\
+				14       & 0.93      & 0.99   & 0.96     & 8070    \\
+				15       & 0.82      & 0.68   & 0.74     & 362     \\
+				16       & 0.93      & 0.95   & 0.94     & 1656    \\
+				20       & 0.82      & 0.91   & 0.86     & 1151    \\
+				25       & 0.75      & 0.9    & 0.82     & 1910    \\
+				29       & 0.97      & 0.99   & 0.98     & 12346   \\
+				\hline
+			\end{longtable}
+		\end{frame}
+		
+		\begin{frame}
 			\frametitle{Future work}
 			\begin{itemize}
-				\item train embeddings on the given dataset
-				\item use pictures and attributes as additional source of information for better classification
+				\item train networks with other training algorithms. For example, it is possible
+				to try SGD or RMSprop with appropriate parameters;
+				\item make an assemble of neural networks to best use each one‘s strong qualities;
+				\item try to use different words sequences length for titles and descriptions;
+				\item as the results on categories were not really impressive it is possible to add
+				them into one large.
 			\end{itemize}
 		\end{frame}
 		
