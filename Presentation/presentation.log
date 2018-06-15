@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.20)  15 JUN 2018 22:10
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  11 JUN 2018 18:00
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.20)  15 JUN 2018 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1214,28 +1210,28 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks47
 \verbatim@line=\toks48
 \verbatim@in@stream=\read2
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/tools/longtable.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip57
 \LTright=\skip58
 \LTpre=\skip59
 \LTpost=\skip60
-\LTchunksize=\count157
-\LTcapwidth=\dimen191
+\LTchunksize=\count156
+\LTcapwidth=\dimen189
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
 \LT@lastfoot=\box58
-\LT@cols=\count158
-\LT@rows=\count159
-\c@LT@tables=\count160
-\c@LT@chunks=\count161
+\LT@cols=\count157
+\LT@rows=\count158
+\c@LT@tables=\count159
+\c@LT@chunks=\count160
 \LT@p@ftn=\toks49
 )
 (../common/data.tex)
@@ -1262,50 +1258,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 44.
 
-(./presentation.aux
-! Undefined control sequence.
-l.19 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 \babel@aux{e
-                 nglish}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+(./presentation.aux)
 \openout1 = `presentation.aux'.
 
-<<<<<<< HEAD
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 47.
- (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-=======
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
@@ -1323,8 +1278,7 @@ LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 48.
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 48.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 48.
@@ -1365,33 +1319,18 @@ LaTeX Font Info:    ... okay on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-<<<<<<< HEAD
-\scratchcounter=\count156
-\scratchdimen=\dimen189
-\scratchbox=\box55
-\nofMPsegments=\count157
-\nofMParguments=\count158
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count159
-\MPscratchDim=\dimen190
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
-\everyMPtoPDFconversion=\toks48
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-=======
-\scratchcounter=\count162
-\scratchdimen=\dimen192
+\scratchcounter=\count161
+\scratchdimen=\dimen190
 \scratchbox=\box59
-\nofMPsegments=\count163
-\nofMParguments=\count164
+\nofMPsegments=\count162
+\nofMParguments=\count163
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count165
-\MPscratchDim=\dimen193
-\MPnumerator=\count166
-\makeMPintoPDFobject=\count167
+\MPscratchCnt=\count164
+\MPscratchDim=\dimen191
+\MPnumerator=\count165
+\makeMPintoPDFobject=\count166
 \everyMPtoPDFconversion=\toks51
-) (/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1418,11 +1357,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-<<<<<<< HEAD
-\c@section@level=\count162
-=======
-\c@section@level=\count168
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+\c@section@level=\count167
 )
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
@@ -1514,318 +1449,245 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 47.
+LaTeX Info: Redefining \includegraphics on input line 48.
  (./presentation.nav)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 LaTeX Font Warning: Font shape `T2A/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 49.
+(Font)              size <5> substituted on input line 50.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<<<<<<< HEAD
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 69.
-=======
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 73.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 69.
+LaTeX Font Info:    No file OMScmss.fd. on input line 73.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 69.
+(Font)              for symbol `textbullet' on input line 73.
 
-[4
+[3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-<<<<<<< HEAD
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
-=======
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-<<<<<<< HEAD
-line 82.
-=======
-line 70.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+line 86.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-<<<<<<< HEAD
 )
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
-=======
-) [3
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\T2A/cmss/m/n/14.4 Clean Toy-ota
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 \T2A/cmss/m/n/14.4 Camry 2008
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 83--83
+Underfull \hbox (badness 2035) in paragraph at lines 86--86
 []\T2A/cmss/m/n/14.4 Fairly used Toy-ota 08
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 83--83
+Underfull \hbox (badness 1348) in paragraph at lines 86--86
 \T2A/cmss/m/n/14.4 V4 en-gine fab-ric seats
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\T2A/cmss/m/n/14.4 Nice, qual-ity,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 \T2A/cmss/m/n/14.4 adorable,unique dress
+ []
+
+[4
+
+]
+Overfull \hbox (18.33209pt too wide) in paragraph at lines 117--117
+ [] 
  []
 
 [5
 
-]
-Overfull \hbox (18.33209pt too wide) in paragraph at lines 114--114
- [] 
+] <../Dissertation/images/embed_vectors.png, id=49, 604.2575pt x 297.11pt>
+File: ../Dissertation/images/embed_vectors.png Graphic file (type png)
+
+<use ../Dissertation/images/embed_vectors.png>
+Package pdftex.def Info: ../Dissertation/images/embed_vectors.png used on input
+ line 133.
+(pdftex.def)             Requested size: 142.2587pt x 99.58347pt.
+
+Overfull \hbox (36.6138pt too wide) in paragraph at lines 133--133
+[][]  
  []
 
 [6
 
-] <../Dissertation/images/embed_vectors.png, id=54, 604.2575pt x 297.11pt>
-File: ../Dissertation/images/embed_vectors.png Graphic file (type png)
+ <../Dissertation/images/embed_vectors.png (PNG copy)>]
+Underfull \hbox (badness 1264) in paragraph at lines 153--153
+[]\T2A/cmss/m/n/14.4 category cross en-
+ []
 
-<use ../Dissertation/images/embed_vectors.png>
-<<<<<<< HEAD
-Package pdftex.def Info: ../Dissertation/images/embed_vectors.png used on input
- line 129.
-=======
-Package pdftex.def Info: ../Dissertation/images/embed_vectors.png  used on inpu
-t line 130.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
-(pdftex.def)             Requested size: 142.2587pt x 99.58347pt.
 
-Overfull \hbox (36.6138pt too wide) in paragraph at lines 130--130
-[][]  
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 153--153
+ [] 
  []
 
 [7
 
- <../Dissertation/images/embed_vectors.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-[]\T2A/cmss/m/n/14.4 category crossen-
- []
-
-
-Overfull \hbox (13.23767pt too wide) in paragraph at lines 150--150
- [] 
- []
-
-[8
-
-] <../Dissertation/images/CNN.png, id=68, 961.5925pt x 392.46625pt>
+] <../Dissertation/images/CNN.png, id=63, 961.5925pt x 392.46625pt>
 File: ../Dissertation/images/CNN.png Graphic file (type png)
 
 <use ../Dissertation/images/CNN.png>
-<<<<<<< HEAD
-Package pdftex.def Info: ../Dissertation/images/CNN.png used on input line 164.
+Package pdftex.def Info: ../Dissertation/images/CNN.png used on input line 168.
 
-=======
-Package pdftex.def Info: ../Dissertation/images/CNN.png  used on input line 165
-.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
 (pdftex.def)             Requested size: 288.47997pt x 117.74077pt.
- [9
+ [8
 
  <../Dissertation/images/CNN.png>]
-<../Dissertation/images/part4//3CNN_train_category_accuracy.png, id=74, 331.237
+<../Dissertation/images/part4//3CNN_train_category_accuracy.png, id=69, 331.237
 5pt x 216.81pt>
 File: ../Dissertation/images/part4//3CNN_train_category_accuracy.png Graphic fi
 le (type png)
 
 <use ../Dissertation/images/part4//3CNN_train_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4//3CNN_train_category_accu
-<<<<<<< HEAD
-racy.png used on input line 173.
-=======
-racy.png  used on input line 174.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+racy.png used on input line 177.
 (pdftex.def)             Requested size: 142.26378pt x 93.1173pt.
 
-<../Dissertation/images/part4//3CNN_val_category_accuracy.png, id=76, 331.2375p
+<../Dissertation/images/part4//3CNN_val_category_accuracy.png, id=71, 331.2375p
 t x 217.81375pt>
 File: ../Dissertation/images/part4//3CNN_val_category_accuracy.png Graphic file
  (type png)
 
 <use ../Dissertation/images/part4//3CNN_val_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4//3CNN_val_category_accura
-<<<<<<< HEAD
-cy.png used on input line 173.
-=======
-cy.png  used on input line 174.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+cy.png used on input line 177.
 (pdftex.def)             Requested size: 142.26378pt x 93.5484pt.
 
-<../Dissertation/images/part4/3CNN_train_top_k_accuracy.png, id=77, 331.2375pt 
+<../Dissertation/images/part4/3CNN_train_top_k_accuracy.png, id=72, 331.2375pt 
 x 214.8025pt>
 File: ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png Graphic file (
 type png)
  <use ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/3CNN_train_top_k_accuracy
-<<<<<<< HEAD
-.png used on input line 173.
-=======
-.png  used on input line 174.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+.png used on input line 177.
 (pdftex.def)             Requested size: 142.26378pt x 92.25511pt.
 
-<../Dissertation/images/part4/3CNN_val_top_k_accuracy.png, id=78, 331.2375pt x 
+<../Dissertation/images/part4/3CNN_val_top_k_accuracy.png, id=73, 331.2375pt x 
 215.80624pt>
 File: ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png Graphic file (ty
 pe png)
  <use ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/3CNN_val_top_k_accuracy.p
-<<<<<<< HEAD
-ng used on input line 173.
-=======
-ng  used on input line 174.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+ng used on input line 177.
 (pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
 
-[10
+[9
 
  <../Dissertation/images/part4//3CNN_train_category_accuracy.png> <../Dissertat
 ion/images/part4//3CNN_val_category_accuracy.png> <../Dissertation/images/part4
 /3CNN_train_top_k_accuracy.png> <../Dissertation/images/part4/3CNN_val_top_k_ac
-curacy.png>] [11
+curacy.png>] [10
 
 ]
-<../Dissertation/images/part4/4CNN-dense-1.png, id=93, 647.41875pt x 150.5625pt
+<../Dissertation/images/part4/4CNN-dense-1.png, id=88, 647.41875pt x 150.5625pt
 >
 File: ../Dissertation/images/part4/4CNN-dense-1.png Graphic file (type png)
-<<<<<<< HEAD
  <use ../Dissertation/images/part4/4CNN-dense-1.png>
 Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-1.png used on 
-input line 203.
-=======
-<use ../Dissertation/images/part4/4CNN-dense-1.png>
-Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-1.png  used on
- input line 204.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+input line 207.
 (pdftex.def)             Requested size: 307.28987pt x 71.46278pt.
 
-<../Dissertation/images/part4/4CNN-dense-2.png, id=94, 642.4pt x 150.5625pt>
+<../Dissertation/images/part4/4CNN-dense-2.png, id=89, 642.4pt x 150.5625pt>
 File: ../Dissertation/images/part4/4CNN-dense-2.png Graphic file (type png)
 
 <use ../Dissertation/images/part4/4CNN-dense-2.png>
-<<<<<<< HEAD
 Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-2.png used on 
-input line 203.
-=======
-Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-2.png  used on
- input line 204.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+input line 207.
 (pdftex.def)             Requested size: 307.28987pt x 72.02335pt.
- [12
+ [11
 
  <../Dissertation/images/part4/4CNN-dense-1.png> <../Dissertation/images/part4/
 4CNN-dense-2.png>]
-<../Dissertation/images/part4/final_CNN_train_category_accuracy.png, id=102, 34
-2.27875pt x 217.81375pt>
+<../Dissertation/images/part4/final_CNN_train_category_accuracy.png, id=97, 342
+.27875pt x 217.81375pt>
 File: ../Dissertation/images/part4/final_CNN_train_category_accuracy.png Graphi
 c file (type png)
 
 <use ../Dissertation/images/part4/final_CNN_train_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_category_
-<<<<<<< HEAD
-accuracy.png used on input line 212.
-=======
-accuracy.png  used on input line 213.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+accuracy.png used on input line 216.
 (pdftex.def)             Requested size: 142.26378pt x 90.53392pt.
 
-<../Dissertation/images/part4/final_CNN_val_category_accuracy.png, id=103, 331.
-2375pt x 220.825pt>
+<../Dissertation/images/part4/final_CNN_val_category_accuracy.png, id=98, 331.2
+375pt x 220.825pt>
 File: ../Dissertation/images/part4/final_CNN_val_category_accuracy.png Graphic 
 file (type png)
 
 <use ../Dissertation/images/part4/final_CNN_val_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_category_ac
-<<<<<<< HEAD
-curacy.png used on input line 212.
-=======
-curacy.png  used on input line 213.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+curacy.png used on input line 216.
 (pdftex.def)             Requested size: 142.26378pt x 94.84169pt.
 
-<../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png, id=104, 337.2
-6pt x 223.83624pt>
+<../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png, id=99, 337.26
+pt x 223.83624pt>
 File: ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png Graphic f
 ile (type png)
 
 <use ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_top_k_acc
-<<<<<<< HEAD
-uracy.png used on input line 212.
-=======
-uracy.png  used on input line 213.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+uracy.png used on input line 216.
 (pdftex.def)             Requested size: 142.26378pt x 94.42043pt.
 
-<../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png, id=105, 331.237
+<../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png, id=100, 331.237
 5pt x 215.80624pt>
 File: ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png Graphic fil
 e (type png)
 
 <use ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_top_k_accur
-<<<<<<< HEAD
-acy.png used on input line 212.
-=======
-acy.png  used on input line 213.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+acy.png used on input line 216.
 (pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
 
-Overfull \vbox (0.11317pt too high) detected at line 213
+Overfull \vbox (0.11317pt too high) detected at line 216
  []
 
-[13
+[12
 
  <../Dissertation/images/part4/final_CNN_train_category_accuracy.png> <../Disse
 rtation/images/part4/final_CNN_val_category_accuracy.png> <../Dissertation/imag
 es/part4/final_CNN_train_top_k_accuracy.png> <../Dissertation/images/part4/fina
 l_CNN_val_top_k_accuracy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
 []\T2A/cmss/m/n/14.4 category crossen-
  []
 
 
-Overfull \hbox (13.23767pt too wide) in paragraph at lines 233--233
+Overfull \hbox (13.23767pt too wide) in paragraph at lines 236--236
  [] 
  []
 
-[14
+[13
+
+] [14
 
 ] [15
 
@@ -1841,19 +1703,11 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 233--233
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
-=======
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
- (presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1866,11 +1720,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 18545 strings out of 493013
- 343164 string characters out of 6135681
- 426650 words of memory out of 5000000
- 21576 multiletter control sequences out of 15000+600000
+ 18663 strings out of 493013
+ 344659 string characters out of 6135681
+ 429152 words of memory out of 5000000
+ 21689 multiletter control sequences out of 15000+600000
  16880 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,55p,803b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1885,34 +1738,10 @@ ts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfsx1440.pfb>
-Output written on presentation.pdf (16 pages, 355614 bytes).
+Output written on presentation.pdf (16 pages, 356196 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  120 compressed objects within 2 object streams
-=======
- 18709 strings out of 495203
- 347254 string characters out of 3181306
- 424624 words of memory out of 3000000
- 21503 multiletter control sequences out of 15000+200000
- 16623 words of font info for 41 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 56i,17n,55p,806b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass0800.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1000.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx1440.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass2074.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass0600.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasi1440.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1440.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1200.p
-k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
-</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (16 pages, 360393 bytes).
-PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
->>>>>>> a0e5594c54d06de3cae30d0405fa9794dc0766e2
  33 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
