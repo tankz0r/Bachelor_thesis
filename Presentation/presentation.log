@@ -1,46 +1,49 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.22)  23 MAY 2018 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.20)  15 JUN 2018 22:10
 entering extended mode
-**./presentation.tex
-(presentation.tex
-LaTeX2e <2017-04-15>
-Babel <3.17> and hyphenation patterns for 1 language(s) loaded.
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamer.cls
-Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasemodes.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/06 v2.5c e-TeX tools for LaTeX (JAW)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**presentation.tex
+(./presentation.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+Document Class: beamer 2017/01/22 v3.40 A class for typesetting presentations
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count79
 )
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 \beamer@tempbox=\box26
 \beamer@tempcount=\count80
 \c@beamerpauses=\count81
 
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasedecode.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
 \beamer@slideinframe=\count82
 \beamer@minimum=\count83
 )
 \beamer@commentbox=\box27
 \beamer@modecount=\count84
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-\headdp=\dimen102
-\footheight=\dimen103
-\sidebarheight=\dimen104
-\beamer@tempdim=\dimen105
-\beamer@finalheight=\dimen106
-\beamer@animht=\dimen107
-\beamer@animdp=\dimen108
-\beamer@animwd=\dimen109
-\beamer@leftmargin=\dimen110
-\beamer@rightmargin=\dimen111
-\beamer@leftsidebar=\dimen112
-\beamer@rightsidebar=\dimen113
-\beamer@boxsize=\dimen114
-\beamer@vboxoffset=\dimen115
-\beamer@descdefault=\dimen116
-\beamer@descriptionwidth=\dimen117
+\headheight=\dimen102
+\headdp=\dimen103
+\footheight=\dimen104
+\sidebarheight=\dimen105
+\beamer@tempdim=\dimen106
+\beamer@finalheight=\dimen107
+\beamer@animht=\dimen108
+\beamer@animdp=\dimen109
+\beamer@animwd=\dimen110
+\beamer@leftmargin=\dimen111
+\beamer@rightmargin=\dimen112
+\beamer@leftsidebar=\dimen113
+\beamer@rightsidebar=\dimen114
+\beamer@boxsize=\dimen115
+\beamer@vboxoffset=\dimen116
+\beamer@descdefault=\dimen117
+\beamer@descriptionwidth=\dimen118
 \beamer@lastskip=\skip41
 \beamer@areabox=\box28
 \beamer@animcurrent=\box29
@@ -61,105 +64,110 @@ Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 \beamer@animationtempb=\count95
 \beamer@xpos=\count96
 \beamer@ypos=\count97
-\beamer@ypos@offset=\count98
-\beamer@showpartnumber=\count99
-\beamer@currentsubsection=\count100
-\beamer@coveringdepth=\count101
-\beamer@sectionadjust=\count102
-\beamer@tocsectionnumber=\count103
+\beamer@showpartnumber=\count98
+\beamer@currentsubsection=\count99
+\beamer@coveringdepth=\count100
+\beamer@sectionadjust=\count101
+\beamer@tocsectionnumber=\count102
 
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseoptions.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
 \beamer@paperwidth=\skip42
 \beamer@paperheight=\skip43
 
-(/home/denys/.miktex/texmfs/install/tex/latex/geometry-de/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count104
-\Gm@cntv=\count105
-\c@Gm@tempcnt=\count106
-\Gm@bindingoffset=\dimen118
-\Gm@wd@mp=\dimen119
-\Gm@odd@mp=\dimen120
-\Gm@even@mp=\dimen121
-\Gm@layoutwidth=\dimen122
-\Gm@layoutheight=\dimen123
-\Gm@layouthoffset=\dimen124
-\Gm@layoutvoffset=\dimen125
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks15
-
-(/home/denys/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(/home/denys/.miktex/texmfs/install/tex/latex/extsizes/size14.clo
+)
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen126
-\Gin@req@width=\dimen127
-)
-(/home/denys/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.te
-x
-\pgfutil@everybye=\toks16
-\pgfutil@tempdima=\dimen128
-\pgfutil@tempdimb=\dimen129
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-li
-sts.tex))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count106
+))
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box34
-(/home/denys/.miktex/texmfs/install/tex/latex/ms/everyshi.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.c
-ode.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
 \pgfkeys@tmptoks=\toks19
 ))
-\pgf@x=\dimen130
-\pgf@y=\dimen131
-\pgf@xa=\dimen132
-\pgf@ya=\dimen133
-\pgf@xb=\dimen134
-\pgf@yb=\dimen135
-\pgf@xc=\dimen136
-\pgf@yc=\dimen137
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count107
@@ -169,33 +177,31 @@ ode.tex
 \t@pgf@toka=\toks20
 \t@pgf@tokb=\toks21
 \t@pgf@tokc=\toks22
-
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
-ef
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-p
-df.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.
-code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count111
 \pgfsyssoftpath@bigbuffer@items=\count112
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.
-code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (/home/denys/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/home/denys/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -209,156 +215,146 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen138
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen139
 \pgfmath@count=\count113
 \pgfmath@box=\box35
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.
-tex
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
 .code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigo
-nometric.code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rando
-m.code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.compa
-rison.code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.
-code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round
-.code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.
-code.tex)
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex)))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count114
 ))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.co
-de.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen139
-\pgf@picmaxx=\dimen140
-\pgf@picminy=\dimen141
-\pgf@picmaxy=\dimen142
-\pgf@pathminx=\dimen143
-\pgf@pathmaxx=\dimen144
-\pgf@pathminy=\dimen145
-\pgf@pathmaxy=\dimen146
-\pgf@xx=\dimen147
-\pgf@xy=\dimen148
-\pgf@yx=\dimen149
-\pgf@yy=\dimen150
-\pgf@zx=\dimen151
-\pgf@zy=\dimen152
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconst
-ruct.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen153
-\pgf@path@lasty=\dimen154
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage
-.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen155
-\pgf@shorten@start@additional=\dimen156
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.co
-de.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box36
 \pgf@hbox=\box37
 \pgf@layerbox@main=\box38
 \pgf@picture@serial@count=\count115
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicst
-ate.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen157
+\pgflinewidth=\dimen158
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransform
-ations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen158
-\pgf@pt@y=\dimen159
-\pgf@pt@temp=\dimen160
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.cod
-e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.c
-ode.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproce
-ssing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.co
-de.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen161
+\pgfarrowsep=\dimen162
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.cod
-e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen162
+\pgf@max=\dimen163
 \pgf@sys@shading@range@num=\count116
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.cod
-e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.
-code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box39
 ))
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.co
-de.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspare
-ncy.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.
-code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-)))
-(/home/denys/.miktex/texmfs/install/tex/latex/pgf/utilities/xxcolor.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count117
 \XC@countmixins=\count118
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))
-(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -375,7 +371,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -396,78 +392,80 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen163
+\@linkdim=\dimen164
 \Hy@linkcounter=\count119
 \Hy@pagecounter=\count120
 
-(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count121
 
-(/home/denys/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4383.
-Package hyperref Info: Option `implicit' set `false' on input line 4383.
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4362.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4362.
+Package hyperref Info: Option `implicit' set `false' on input line 4362.
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4762.
+Package hyperref Info: Bookmarks ON on input line 4735.
 \c@Hy@tempcnt=\count122
 
-(/home/denys/.miktex/texmfs/install/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen164
+LaTeX Info: Redefining \url on input line 5088.
+\XeTeXLinkMargin=\dimen165
 \Fld@menulength=\count123
-\Field@Width=\dimen165
-\Fld@charsize=\dimen166
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring OFF on input line 6362.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
 \Hy@abspage=\count124
 
 
 Package hyperref Message: Stopped early.
 
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
- (/home/denys/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count125
 \c@bookmark@seq@number=\count126
 
-(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaserequires.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasecompatibility.st
-y) (/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasefont.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks26
 \symAMSa=\mathgroup4
@@ -475,87 +473,86 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/denys/.miktex/texmfs/install/tex/latex/sansmathaccent/sansmathaccent.sty
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
 Package: sansmathaccent 2013/03/28
-(/home/denys/.miktex/texmfs/install/tex/latex/filehook/filehook.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasetranslator.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator.sty
-Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
-))
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasemisc.sty)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasetwoscreens.sty)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseoverlay.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
 \beamer@argscount=\count127
 \beamer@lastskipcover=\skip44
 \beamer@trivlistdepth=\count128
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasetitle.sty)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasesection.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
 \c@lecture=\count129
 \c@part=\count130
 \c@section=\count131
 \c@subsection=\count132
 \c@subsubsection=\count133
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframe.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
 \beamer@zoomcount=\count134
 \beamer@zoomframecount=\count135
-\beamer@frametextheight=\dimen167
+\beamer@frametextheight=\dimen168
 \c@subsectionslide=\count136
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
 \beamer@envbody=\toks27
-\framewidth=\dimen168
+\framewidth=\dimen169
 \c@framenumber=\count137
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseverbatim.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframesize.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
 \beamer@splitbox=\box43
 \beamer@autobreakcount=\count138
-\beamer@autobreaklastheight=\dimen169
+\beamer@autobreaklastheight=\dimen170
 \beamer@frametitletoks=\toks28
 \beamer@framesubtitletoks=\toks29
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframecomponents.
-sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
 \beamer@footins=\box44
-) (/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasecolor.sty
-\beamer@bg@ht=\dimen170
-\beamer@bg@wd=\dimen171
-\beamer@bg@dp=\dimen172
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasenotes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
 \beamer@frameboxcopy=\box45
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasetoc.sty)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasetemplates.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 \beamer@sbttoks=\toks30
 
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseauxtemplates.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaseboxes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
 \bmb@box=\box46
 \bmb@colorbox=\box47
 \bmb@boxshadow=\box48
 \bmb@boxshadowball=\box49
 \bmb@boxshadowballlarge=\box50
-\bmb@temp=\dimen173
-\bmb@dima=\dimen174
-\bmb@dimb=\dimen175
-\bmb@prevheight=\dimen176
+\bmb@temp=\dimen171
+\bmb@dima=\dimen172
+\bmb@dimb=\dimen173
+\bmb@prevheight=\dimen174
 )
-\beamer@blockheadheight=\dimen177
+\beamer@blockheadheight=\dimen175
 ))
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbaselocalstructure.s
-ty (/home/denys/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks31
 )
@@ -564,28 +561,28 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasenavigation.sty
-\beamer@section@min@dim=\dimen178
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+\beamer@section@min@dim=\dimen176
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasetheorems.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks32
-\ex@=\dimen179
+\ex@=\dimen177
 ))
-(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen180
+\pmbraise@=\dimen178
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count141
@@ -600,7 +597,7 @@ LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-\big@size=\dimen181
+\big@size=\dimen179
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count146
@@ -613,12 +610,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \column@=\count151
 \maxfields@=\count152
 \andhelp@=\toks34
-\eqnshift@=\dimen182
-\alignsep@=\dimen183
-\tagshift@=\dimen184
-\tagwidth@=\dimen185
-\totwidth@=\dimen186
-\lineht@=\dimen187
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
 \@envbody=\toks35
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -626,8 +623,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
-Package: amsthm 2017/10/31 v2.20.4
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks37
 \thm@bodyfont=\toks38
 \thm@headfont=\toks39
@@ -640,43 +637,44 @@ Package: amsthm 2017/10/31 v2.20.4
 )
 \c@theorem=\count153
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerbasethemes.sty))
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerthemedefault.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerfontthemedefault.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault
+.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefa
+ult.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemede
+fault.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemede
+fault.sty
+\beamer@dima=\dimen186
+\beamer@dimb=\dimen187
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemedefault.st
-y)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemedefault.st
-y
-\beamer@dima=\dimen188
-\beamer@dimb=\dimen189
-)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerouterthemedefault.st
-y))) (/home/denys/.miktex/texmfs/install/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemede
+fault.sty))) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/02/22 v2.0g Standard LaTeX package
 
-(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2aenc.def
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 )
 LaTeX Font Info:    Try loading font information for T2A+cmss on input line 105
 .
 
-(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2acmss.fd
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-(/home/denys/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks43
 \inpenc@posthook=\toks44
 
-(/home/denys/.miktex/texmfs/install/tex/latex/base/utf8.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/home/denys/.miktex/texmfs/install/tex/latex/base/t1enc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -917,7 +915,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/home/denys/.miktex/texmfs/install/tex/latex/base/ot1enc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -958,7 +956,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/home/denys/.miktex/texmfs/install/tex/latex/base/omsenc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -976,7 +974,7 @@ Now handling font encoding PD1 ...
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
-(/home/denys/.miktex/texmfs/install/tex/latex/base/t2aenc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -1176,67 +1174,49 @@ File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/home/denys/.miktex/texmfs/install/tex/generic/babel/babel.sty
-Package: babel 2018/01/24 3.17 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
 
-(/home/denys/.miktex/texmfs/install/tex/generic/babel/switch.def
-File: switch.def 2018/01/24 3.17 Babel switching mechanism
-)
-*************************************
-* Local config file bblopts.cfg used
-*
-(/home/denys/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(/home/denys/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/home/denys/.miktex/texmfs/install/tex/generic/babel/babel.def
-File: babel.def 2018/01/24 3.17 Babel common definitions
-
-(/home/denys/.miktex/texmfs/install/tex/generic/babel/switch.def
-File: switch.def 2018/01/24 3.17 Babel switching mechanism
-)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count154
-\U@D=\dimen190
-
-(/home/denys/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
-LaTeX Info: Redefining \textlatin on input line 1799.
-\bbl@dirlevel=\count155
+\U@D=\dimen188
+LaTeX Info: Redefining \textlatin on input line 1448.
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@american = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/home/denys/.miktex/texmfs/install/tex/latex/t2/mathtext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/t2/mathtext.sty
 Package: mathtext 1999/01/28 v1.0 transparent text-and-math defs
 LaTeX Info: Redefining \halign on input line 111.
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/cite/cite.sty
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count156
+\c@float@type=\count155
 \float@exts=\toks45
 \float@box=\box53
 \@float@everytoks=\toks46
 \@floatcapt=\box54
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (../common/data.tex)
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerthemePittsburgh.sty
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemecircles.st
-y))
-(/home/denys/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemewhale.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemePittsbu
+rgh.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemeci
+rcles.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewh
+ale.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 43.
@@ -1254,7 +1234,29 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 43.
 
-(presentation.aux)
+(./presentation.aux
+! Undefined control sequence.
+l.19 \babel@aux
+               {english}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \babel@aux{e
+                 nglish}{}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
 \openout1 = `presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -1273,8 +1275,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 47.
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 47.
-
-(/home/denys/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 47.
@@ -1313,49 +1314,53 @@ LaTeX Font Info:    ... okay on input line 47.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/home/denys/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
-\scratchdimen=\dimen191
+\scratchcounter=\count156
+\scratchdimen=\dimen189
 \scratchbox=\box55
-\nofMPsegments=\count158
-\nofMParguments=\count159
+\nofMPsegments=\count157
+\nofMParguments=\count158
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count160
-\MPscratchDim=\dimen192
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen190
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
 \everyMPtoPDFconversion=\toks48
-) (/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/home/denys/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 47.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/home/denys/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count163
+\c@section@level=\count162
 )
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
 
-(presentation.out) (presentation.out)
+(./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
@@ -1417,53 +1422,72 @@ LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
 ut line 47.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-basic-dicti
-onary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
+ic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-bibliograph
-y-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bib
+liography-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-environment
--dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-env
+ironment-dictionary/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-months-dict
-ionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-mon
+ths-dictionary/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-numbers-dic
-tionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-num
+bers-dictionary/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(/home/denys/.miktex/texmfs/install/tex/latex/translator/translator-theorem-dic
-tionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-the
+orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (presentation.nav) [1
+)
+LaTeX Info: Redefining \includegraphics on input line 47.
+ (./presentation.nav)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-{/home/denys/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2
+
+
+LaTeX Font Warning: Font shape `T2A/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 49.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 69.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    No file OMScmss.fd. on input line 69.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 69.
+
+[4
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 82.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 69.
+line 82.
 
-(/home/denys/.miktex/texmfs/install/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [3
-
-]
+)
 Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []\T2A/cmss/m/n/14.4 Clean Toy-ota
  []
@@ -1493,28 +1517,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 \T2A/cmss/m/n/14.4 adorable,unique dress
  []
 
-[4
+[5
 
 ]
 Overfull \hbox (18.33209pt too wide) in paragraph at lines 113--113
  [] 
  []
 
-[5
+[6
 
-]
-<../Dissertation/images/embed_vectors.png, id=48, 604.2575pt x 297.11pt>
+] <../Dissertation/images/embed_vectors.png, id=54, 604.2575pt x 297.11pt>
 File: ../Dissertation/images/embed_vectors.png Graphic file (type png)
+
 <use ../Dissertation/images/embed_vectors.png>
-Package pdftex.def Info: ../Dissertation/images/embed_vectors.png  used on inpu
-t line 129.
+Package pdftex.def Info: ../Dissertation/images/embed_vectors.png used on input
+ line 129.
 (pdftex.def)             Requested size: 142.2587pt x 99.58347pt.
 
 Overfull \hbox (36.6138pt too wide) in paragraph at lines 129--129
 [][]  
  []
 
-[6
+[7
 
  <../Dissertation/images/embed_vectors.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 149--149
@@ -1526,112 +1550,127 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 149--149
  [] 
  []
 
-[7
+[8
 
-]
-<../Dissertation/images/CNN.png, id=62, 961.5925pt x 392.46625pt>
+] <../Dissertation/images/CNN.png, id=68, 961.5925pt x 392.46625pt>
 File: ../Dissertation/images/CNN.png Graphic file (type png)
+
 <use ../Dissertation/images/CNN.png>
-Package pdftex.def Info: ../Dissertation/images/CNN.png  used on input line 164
-.
+Package pdftex.def Info: ../Dissertation/images/CNN.png used on input line 164.
+
 (pdftex.def)             Requested size: 288.47997pt x 117.74077pt.
- [8
+ [9
 
  <../Dissertation/images/CNN.png>]
-<../Dissertation/images/part4//3CNN_train_category_accuracy.png, id=68, 331.237
+<../Dissertation/images/part4//3CNN_train_category_accuracy.png, id=74, 331.237
 5pt x 216.81pt>
 File: ../Dissertation/images/part4//3CNN_train_category_accuracy.png Graphic fi
 le (type png)
+
 <use ../Dissertation/images/part4//3CNN_train_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4//3CNN_train_category_accu
-racy.png  used on input line 173.
+racy.png used on input line 173.
 (pdftex.def)             Requested size: 142.26378pt x 93.1173pt.
-<../Dissertation/images/part4//3CNN_val_category_accuracy.png, id=70, 331.2375p
+
+<../Dissertation/images/part4//3CNN_val_category_accuracy.png, id=76, 331.2375p
 t x 217.81375pt>
 File: ../Dissertation/images/part4//3CNN_val_category_accuracy.png Graphic file
  (type png)
+
 <use ../Dissertation/images/part4//3CNN_val_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4//3CNN_val_category_accura
-cy.png  used on input line 173.
+cy.png used on input line 173.
 (pdftex.def)             Requested size: 142.26378pt x 93.5484pt.
-<../Dissertation/images/part4/3CNN_train_top_k_accuracy.png, id=71, 331.2375pt 
+
+<../Dissertation/images/part4/3CNN_train_top_k_accuracy.png, id=77, 331.2375pt 
 x 214.8025pt>
 File: ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png Graphic file (
 type png)
-<use ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png>
+ <use ../Dissertation/images/part4/3CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/3CNN_train_top_k_accuracy
-.png  used on input line 173.
+.png used on input line 173.
 (pdftex.def)             Requested size: 142.26378pt x 92.25511pt.
-<../Dissertation/images/part4/3CNN_val_top_k_accuracy.png, id=72, 331.2375pt x 
+
+<../Dissertation/images/part4/3CNN_val_top_k_accuracy.png, id=78, 331.2375pt x 
 215.80624pt>
 File: ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png Graphic file (ty
 pe png)
-<use ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png>
+ <use ../Dissertation/images/part4/3CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/3CNN_val_top_k_accuracy.p
-ng  used on input line 173.
+ng used on input line 173.
 (pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
- [9
+
+[10
 
  <../Dissertation/images/part4//3CNN_train_category_accuracy.png> <../Dissertat
 ion/images/part4//3CNN_val_category_accuracy.png> <../Dissertation/images/part4
 /3CNN_train_top_k_accuracy.png> <../Dissertation/images/part4/3CNN_val_top_k_ac
-curacy.png>] [10
+curacy.png>] [11
 
 ]
-<../Dissertation/images/part4/4CNN-dense-1.png, id=87, 647.41875pt x 150.5625pt
+<../Dissertation/images/part4/4CNN-dense-1.png, id=93, 647.41875pt x 150.5625pt
 >
 File: ../Dissertation/images/part4/4CNN-dense-1.png Graphic file (type png)
-<use ../Dissertation/images/part4/4CNN-dense-1.png>
-Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-1.png  used on
- input line 203.
+ <use ../Dissertation/images/part4/4CNN-dense-1.png>
+Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-1.png used on 
+input line 203.
 (pdftex.def)             Requested size: 307.28987pt x 71.46278pt.
-<../Dissertation/images/part4/4CNN-dense-2.png, id=88, 642.4pt x 150.5625pt>
+
+<../Dissertation/images/part4/4CNN-dense-2.png, id=94, 642.4pt x 150.5625pt>
 File: ../Dissertation/images/part4/4CNN-dense-2.png Graphic file (type png)
+
 <use ../Dissertation/images/part4/4CNN-dense-2.png>
-Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-2.png  used on
- input line 203.
+Package pdftex.def Info: ../Dissertation/images/part4/4CNN-dense-2.png used on 
+input line 203.
 (pdftex.def)             Requested size: 307.28987pt x 72.02335pt.
- [11
+ [12
 
  <../Dissertation/images/part4/4CNN-dense-1.png> <../Dissertation/images/part4/
 4CNN-dense-2.png>]
-<../Dissertation/images/part4/final_CNN_train_category_accuracy.png, id=96, 342
-.27875pt x 217.81375pt>
+<../Dissertation/images/part4/final_CNN_train_category_accuracy.png, id=102, 34
+2.27875pt x 217.81375pt>
 File: ../Dissertation/images/part4/final_CNN_train_category_accuracy.png Graphi
 c file (type png)
+
 <use ../Dissertation/images/part4/final_CNN_train_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_category_
-accuracy.png  used on input line 212.
+accuracy.png used on input line 212.
 (pdftex.def)             Requested size: 142.26378pt x 90.53392pt.
-<../Dissertation/images/part4/final_CNN_val_category_accuracy.png, id=97, 331.2
-375pt x 220.825pt>
+
+<../Dissertation/images/part4/final_CNN_val_category_accuracy.png, id=103, 331.
+2375pt x 220.825pt>
 File: ../Dissertation/images/part4/final_CNN_val_category_accuracy.png Graphic 
 file (type png)
+
 <use ../Dissertation/images/part4/final_CNN_val_category_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_category_ac
-curacy.png  used on input line 212.
+curacy.png used on input line 212.
 (pdftex.def)             Requested size: 142.26378pt x 94.84169pt.
-<../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png, id=98, 337.26
-pt x 223.83624pt>
+
+<../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png, id=104, 337.2
+6pt x 223.83624pt>
 File: ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png Graphic f
 ile (type png)
+
 <use ../Dissertation/images/part4/final_CNN_train_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_train_top_k_acc
-uracy.png  used on input line 212.
+uracy.png used on input line 212.
 (pdftex.def)             Requested size: 142.26378pt x 94.42043pt.
-<../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png, id=99, 331.2375
-pt x 215.80624pt>
+
+<../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png, id=105, 331.237
+5pt x 215.80624pt>
 File: ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png Graphic fil
 e (type png)
+
 <use ../Dissertation/images/part4/final_CNN_val_top_k_accuracy.png>
 Package pdftex.def Info: ../Dissertation/images/part4/final_CNN_val_top_k_accur
-acy.png  used on input line 212.
+acy.png used on input line 212.
 (pdftex.def)             Requested size: 142.26378pt x 92.6862pt.
 
 Overfull \vbox (0.11317pt too high) detected at line 212
  []
 
-[12
+[13
 
  <../Dissertation/images/part4/final_CNN_train_category_accuracy.png> <../Disse
 rtation/images/part4/final_CNN_val_category_accuracy.png> <../Dissertation/imag
@@ -1646,11 +1685,11 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 232--232
  [] 
  []
 
-[13
-
-] [14
+[14
 
 ] [15
+
+] [16
 
 ]
 \tf@nav=\write6
@@ -1664,35 +1703,43 @@ Overfull \hbox (13.23767pt too wide) in paragraph at lines 232--232
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
- (presentation.aux)
+ (./presentation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 18589 strings out of 495203
- 345720 string characters out of 3181306
- 422114 words of memory out of 3000000
- 21390 multiletter control sequences out of 15000+200000
- 16623 words of font info for 41 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 56i,17n,55p,806b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass0800.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1000.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx1440.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass2074.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass0600.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasi1440.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1440.p
-k> </home/denys/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lass1200.p
-k></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
-</home/denys/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (15 pages, 358474 bytes).
+ 18545 strings out of 493013
+ 343164 string characters out of 6135681
+ 426650 words of memory out of 5000000
+ 21576 multiletter control sequences out of 15000+600000
+ 16880 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,17n,55p,803b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfsx1440.pfb>
+Output written on presentation.pdf (16 pages, 355614 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
