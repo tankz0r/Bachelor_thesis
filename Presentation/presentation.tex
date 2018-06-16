@@ -6,6 +6,7 @@
 \usepackage{cite,enumerate,float,indentfirst}
 \usepackage{verbatim,longtable}
 
+
 \graphicspath{{../Dissertation/images/}}
 
 \beamertemplatenavigationsymbolsempty
@@ -160,9 +161,8 @@
 				\includegraphics [scale=0.3] {CNN}
 			\end{figure}
 			\begin{itemize}
-				\item 300 filters
+				\item 128, 256, 512 filters
 				\item size of filter: 3, 4, 5
-				\item l2-regularization equals to 0.01 
 				\item dropout equals to the rate 0.5
 			\end{itemize}	
 		\end{frame}
@@ -174,6 +174,9 @@
 			\vfil
 			\hfil\hfil\includegraphics[width=5cm]{part4/3CNN_train_top_k_accuracy}
 			\hfil\hfil\includegraphics[width=5cm]{part4/3CNN_val_top_k_accuracy}\newline
+			\textcolor{red}{---} 512
+			\textcolor{blue}{---} 256
+			\textcolor{orange}{---} 128  filters
 		\end{frame}
 		
 		
@@ -196,12 +199,13 @@
 		\begin{frame}
 			\frametitle{Regularizations}
 			\begin{figure}[ht]
+				\caption{\textit{Histogram of dense layers} }
 				\begin{minipage}[ht]{1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-1.png} \\ а, b}
+					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-1.png} \\ 1, 2}
 				\end{minipage}
 				\hfill
 				\begin{minipage}[ht]{1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ c, d}
+					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ 3, 4}
 				\end{minipage}
 			\end{figure}
 		\end{frame}
