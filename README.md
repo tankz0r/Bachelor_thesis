@@ -3,10 +3,10 @@
 **ABSTRACT**  
 The object of study is advertisements at e-commerce platform. The subject of study is classification model for advertisements.  
 The aim of the study is:  
-  - to develop research methods and algorithms for text transformation into vectors;
-	- to study algorithms and methods for text classification;
-	- to build a software for advertisements classification
-	- item to analyze results  
+- to develop research methods and algorithms for text transformation into vectors;
+- to study algorithms and methods for text classification;
+- to build a software for advertisements classification
+- item to analyze results  
   
 Theoretical and methodological basis of the study is the work of foreign researches in the field of data mining, mathematical modeling, data classification and marketing.  
 A software has been created to classify advertisements using their title and descriptions, and present the results of the program on real data.  
