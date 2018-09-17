@@ -17,7 +17,7 @@ framework for working with Neural Networks Keras. Recommendations for further re
 **SUMMARY**  
 Word representation as vectors in the vector space in combination with Deep learning Neural Networks demonstrate high quality classification of textual data. The layers of NN get meaningful information of each class and can well distinguish one from another. In this thesis we proved that Convolution NNs can perform the same and in some components even better than Recurrent NNs and they are a right choice to work with textual data. Convolution NNs demonstrated high accuracy on unknown data with appropriate speed. However it is necessary to spend some time to pick the right regularization for layers to avoid overfitting problems.  
 
-![4cnn-dense-2](https://user-images.githubusercontent.com/13698885/45641718-88fe9500-bab6-11e8-81ef-2dc1915ecbba.png)
+![selection_039](https://user-images.githubusercontent.com/13698885/45641871-fb6f7500-bab6-11e8-949b-f0a51d1c5840.jpg)
 
 Future work:  
 	- train networks with other training algorithms. For example, it is possible to try SGD or RMSprop with appropriate parameters  
