@@ -27,7 +27,7 @@ Firstly, I built the baseline model which CNN models should achieve in the futur
 	\label{img:part4-bilstm} 
 \end{figure}
 
-As can be seen from the results of model training in Figure \ref{img:/bilstm_val_category_accuracy}, categorical accuracy on the training set and validation set performs equally well: 0.7975 and 0.8203 respectively. Surprisingly, the results on train are slightly better than on training data.   
+As can be seen from the results of model training in Figure \ref{img:/bilstm_val_category_accuracy}, categorical accuracy on the training set and validation set performs equally well: 0.8003 and 0.7975 respectively. 
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -41,7 +41,7 @@ As can be seen from the results of model training in Figure \ref{img:/bilstm_val
 	\label{img:/bilstm_val_category_accuracy}  
 \end{figure}
 
-Figure \ref{img:bilstm_val_category_crossentropy} shows that categorical cross entropy decrease on each epoch as it was expected. After 15 epochs results were the following: 0.8532 on the training set and 0.7478 on test.    
+Figure \ref{img:bilstm_val_category_crossentropy} shows that categorical cross entropy decrease on each epoch as it was expected. After 15 epochs results were the following: on 0.7478 the training set and 0.8532 on test.    
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -55,7 +55,7 @@ Figure \ref{img:bilstm_val_category_crossentropy} shows that categorical cross e
 	\label{img:bilstm_val_category_crossentropy}  
 \end{figure}
 
-The most important metric for this task was top categorical accuracy which can be seen in Figure \ref{img:bilstm_val_top_k_accuracy}. On training data the model showed 0.9189 accuracy and on the test data - 0.9319.   
+The most important metric for this task was top categorical accuracy which can be seen in Figure \ref{img:bilstm_val_top_k_accuracy}. On training data the model showed 0.9319 accuracy and on the test data - 0.9189.   
 
 \begin{figure}[ht]
 	\begin{minipage}[ht]{1\linewidth}
@@ -598,87 +598,3 @@ experiments with recurrent and convolutional neural networks
 built on top of word2vec. I did a little tuning
 of hyperparameters to achieve the highest scores. 
 According to the results of experiments which CNN models achieved, are the same and in some components even better than the ones of Bi-LSTM models.I can make a conclusion that Convolution Neural Networks perform remarkably well for NLP related problems and specially for text classification. 
-
-
-\chapter{ФУНКЦІОНАЛЬНО-ВАРТІСНИЙ АНАЛІЗ ПРОГРАМНОГО ПРОДУКТУ}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\section{Постановка задачі техніко-економічного аналізу}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\subsection{Обґрунтування функцій програмного продукту}
-\subsection{Варіанти реалізації основних функцій}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\section{Обґрунтування системи параметрів ПП}
-\subsection{Опис параметрів}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\subsection{Кількісна оцінка параметрів}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\subsection{Аналіз експертного оцінювання параметрів}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\section{Аналіз рівня якості варіантів реалізації функцій}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\section{Економічний аналіз варіантів розробки ПП}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\section{Вибір кращого варіанта ПП техніко-економічного рівня}
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\section{Висновки до розділу 5}
-\newpage
-\thispagestyle{empty}
-\mbox{}processed/train.csv
-%5.1 Постановка задачі техніко-економічного аналізу	69
-%5.1.1 Обґрунтування функцій програмного продукту	70
-%5.1.2 Варіанти реалізації основних функцій	71
-%5.2 Обґрунтування системи параметрів ПП	73
-%5.2.1 Опис параметрів	73
-%5.2.2 Кількісна оцінка параметрів	74
-%5.2.3 Аналіз експертного оцінювання параметрів	76
-%5.3 Аналіз рівня якості варіантів реалізації функцій	80
-%5.4 Економічний аналіз варіантів розробки ПП	81
-%5.5 Вибір кращого варіанта ПП техніко-економічного рівня	86
-%Висновки до розділу 5
- 
-

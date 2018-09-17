@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Feature vector\relax }}{17}{table.caption.9}
@@ -20,10 +20,9 @@
 \contentsline {table}{\numberline {4.6}{\ignorespaces Analysis of top k accuracy\relax }}{60}{table.caption.57}
 \contentsline {table}{\numberline {4.7}{\ignorespaces Final results\relax }}{65}{table.caption.65}
 \contentsline {table}{\numberline {4.8}{\ignorespaces Classification report}}{67}{table.4.8}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Classification report}}{103}{table.Alph0.1}
-\contentsline {table}{\numberline {1}{\ignorespaces Classification report}}{104}{table.Alph0.1}
-\contentsline {table}{\numberline {1}{\ignorespaces Classification report}}{105}{table.Alph0.1}
-\contentsline {table}{\numberline {1}{\ignorespaces Classification report}}{106}{table.Alph0.1}
-\contentsline {table}{\numberline {1}{\ignorespaces Classification report}}{107}{table.Alph0.1}
-\contentsline {table}{\numberline {1}{\ignorespaces Classification report}}{108}{table.Alph0.1}
+\contentsline {table}{\numberline {9}{\ignorespaces Classification report}}{82}{table.Alph0.9}
+\contentsline {table}{\numberline {9}{\ignorespaces Classification report}}{83}{table.Alph0.9}
+\contentsline {table}{\numberline {9}{\ignorespaces Classification report}}{84}{table.Alph0.9}
+\contentsline {table}{\numberline {9}{\ignorespaces Classification report}}{85}{table.Alph0.9}
+\contentsline {table}{\numberline {9}{\ignorespaces Classification report}}{86}{table.Alph0.9}
+\contentsline {table}{\numberline {9}{\ignorespaces Classification report}}{87}{table.Alph0.9}
