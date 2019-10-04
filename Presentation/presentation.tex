@@ -4,8 +4,6 @@
 \usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath,mathtext}
 \usepackage{cite,enumerate,float,indentfirst}
-\usepackage{verbatim,longtable}
-
 
 \graphicspath{{../Dissertation/images/}}
 
@@ -27,7 +25,7 @@
 			     \thesisCity, \thesisYear
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
-			p. \insertframenumber{} of \inserttotalframenumber \hspace*{2ex}
+			p. \insertframenumber{} из \inserttotalframenumber \hspace*{2ex}
 		\end{beamercolorbox}}%
 		\vskip0pt%
 	}
@@ -53,9 +51,7 @@
 				
 		\begin{frame}
 			\frametitle{Introduction}
-			{\textbf{Aim}} of this thesis is to build an effective model which would have
-			high accuracy and appropriate speed for classification of advertisements at the e-
-			commerce platform\\ 
+			{\textbf{Aim}} of this thesis is building an effective model which have high accuracy and an appropriate speed for classification of advertisements at the e-commerce platform Jiji.ng. \\ 
 			\textbf{Object of study} is advertisements at e-commerce platform 
 			\\
 			\textbf{Subject of study} is classification model for advertisements: 	
@@ -66,8 +62,7 @@
 				\begin{itemize}
 					\item e-commerce sales are quickly increasing
 					\item large online e-commerce websites serve millions of users’ requests per day
-					\item make the processes of registrations and purchases as
-					much convenient and fast as possible.
+					\item processes of registrations and purchases as much convenient and fast as possible
 					\item users have to make a choice from more than hundred categories
 					\item  automatic category prediction is very important in terms of saving moderators' time and as a result, decreasing the number of necessary moderators to process them
 				\end{itemize}	
@@ -145,7 +140,7 @@
 					\\ \hline
 					categorical accuracy   &  0.7975 & 0.8203
 					\\ \hline
-					category cross entropy  &  0.8532 & 0.7478
+					category crossentropy  &  0.8532 & 0.7478
 					\\ \hline
 					top k accuracy   &  0.9189 & 0.9219.
 					\\ \hline		
@@ -161,8 +156,9 @@
 				\includegraphics [scale=0.3] {CNN}
 			\end{figure}
 			\begin{itemize}
-				\item 128, 256, 512 filters
+				\item 300 filters
 				\item size of filter: 3, 4, 5
+				\item l2-regularization equals to 0.01 
 				\item dropout equals to the rate 0.5
 			\end{itemize}	
 		\end{frame}
@@ -174,9 +170,6 @@
 			\vfil
 			\hfil\hfil\includegraphics[width=5cm]{part4/3CNN_train_top_k_accuracy}
 			\hfil\hfil\includegraphics[width=5cm]{part4/3CNN_val_top_k_accuracy}\newline
-			\textcolor{red}{---} 512
-			\textcolor{blue}{---} 256
-			\textcolor{orange}{---} 128  filters
 		\end{frame}
 		
 		
@@ -184,11 +177,11 @@
 		\frametitle{Regularizations}
 		Modifications:
 		\begin{enumerate}
-			\item Dropout rate decreased in two times.
+			\item Dropout rate decreased it in two times.
 			\item l2-regularization equals to 0.01 both for convolution layers and dense layer. 
 			Dropout = 0.5 both for dense and convolution layers. 
 		    training algorithm - Adam with learning rate 1e-4. 
-			\item l2-regularization equals to 1e-3. 
+			\item l2-regularization equals to = rate 1e-3. 
 			Dropout = 0.25 both for dense and convolution layers. 
 			\item l2-regularization =  0.001 for convolution layers and 0.01 for dense layers. 
 			Dropout rate = 0.25 for convolution layers and 0.5 for dense layers.
@@ -199,13 +192,12 @@
 		\begin{frame}
 			\frametitle{Regularizations}
 			\begin{figure}[ht]
-				\caption{\textit{Histogram of dense layers} }
 				\begin{minipage}[ht]{1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-1.png} \\ 1, 2}
+					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-1.png} \\ а, b}
 				\end{minipage}
 				\hfill
 				\begin{minipage}[ht]{1\linewidth}
-					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ 3, 4}
+					\center{\includegraphics[width=1\linewidth]{part4/4CNN-dense-2.png} \\ c, d}
 				\end{minipage}
 			\end{figure}
 		\end{frame}
@@ -231,42 +223,19 @@
 					\\ \hline
 					categorical accuracy   &  0.8250 & 0.8307
 					\\ \hline
-					category cross entropy  &   0.5800 & 0.6612
+					category crossentropy  &   0.5800 & 0.6612
 					\\ \hline
-					top k accuracy   &  0.9545 & 0.9473
+					top k accuracy   &  0.9445 & 0.9473
 					\\ \hline		
 				\end{tabular}
 			\end{table}
 		\end{frame}
 		
 		\begin{frame}
-			\frametitle{Results}
-			\begin{longtable}[c]{|l|c|c|l|l|}
-				\hline  category & precision & recall &  f1-score & support\\ \hline
-				\endhead
-				\hline
-				\endlastfoot
-
-				11       & 0.78      & 0.58   & 0.66     & 623     \\
-				14       & 0.93      & 0.99   & 0.96     & 8070    \\
-				15       & 0.82      & 0.68   & 0.74     & 362     \\
-				16       & 0.93      & 0.95   & 0.94     & 1656    \\
-				20       & 0.82      & 0.91   & 0.86     & 1151    \\
-				25       & 0.75      & 0.9    & 0.82     & 1910    \\
-				29       & 0.97      & 0.99   & 0.98     & 12346   \\
-				\hline
-			\end{longtable}
-		\end{frame}
-		
-		\begin{frame}
 			\frametitle{Future work}
 			\begin{itemize}
-				\item train networks with other training algorithms. For example, it is possible
-				to try SGD or RMSprop with appropriate parameters;
-				\item make an assemble of neural networks to best use each one‘s strong qualities;
-				\item try to use different words sequences length for titles and descriptions;
-				\item as the results on categories were not really impressive it is possible to add
-				them into one large.
+				\item train embeddings on the given dataset
+				\item use pictures and attributes as additional source of information for better classification
 			\end{itemize}
 		\end{frame}
 		
