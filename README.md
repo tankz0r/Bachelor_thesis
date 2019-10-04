@@ -15,7 +15,7 @@ Word representation as vectors in the vector space in combination with Deep lear
 
 ![selection_039](https://user-images.githubusercontent.com/13698885/45641871-fb6f7500-bab6-11e8-949b-f0a51d1c5840.jpg)
 
-Future work:  
+**Future work:**  
 	- train networks with other optimization algorithms.
 	- make an assemble of NNs  
 	- use different length of words sequences for titles and descriptions  
