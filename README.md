@@ -2,13 +2,13 @@
 
 **ABSTRACT**  
 The object of study is advertisements at e-commerce platform. The subject of study is classification model for advertisements.  
-The aim of the study is:  
-- to develop research methods and algorithms for text transformation into vectors;
-- to study algorithms and methods for text classification;
-- to build a software for advertisements classification.
+The aim of the study is to:  
+- find the best methods to represent words in vector space;
+- study algorithms and methods for text classification;
+- build a software for advertisements classification.
   
 Software has been created to classify advertisements using their title and descriptions
-The methodology is implemented on the basis of Deep Neural Networks: CNN and RNN. I tried different architectures of NNS, special regularizations and common techniques to overcome overfitting problem and achive the best result. All experiments were conducted using the Python programming language and framework for quick prototyping of Neural Networks - Keras. 
+The methodology is implemented on the basis of Deep Neural Networks: CNN and RNN. I tried different architectures of NNs, special regularizations and common techniques to achive the best result. All experiments were conducted using the Python programming language and framework for quick prototyping of Neural Networks - Keras. 
 
 **SUMMARY**  
 Word representation as vectors in the vector space in combination with Deep learning Neural Networks demonstrate high quality classification on textual data. The layers of NN get meaningful information of each class and can be well distinguish one from another. In this thesis was clearly seen that CNNs can perform nearly the same and in some cases even better than RNNs and they are a right choice to work with textual data. CNNs demonstrated high accuracy on unknown data with appropriate speed. However it is necessary to spend some time to pick the right regularization for layers to avoid overfitting problems.  
