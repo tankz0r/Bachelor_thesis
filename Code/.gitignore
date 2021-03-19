@@ -1,0 +1,12 @@
+!/data/aux/stopwords.vocab
+!/data/aux/spelling_corrections.json
+
+*.pyc
+.idea
+__pycache__/
+data/
+CNN_lvl2_model/
+models/
+sacred_run_logs/
+venv/
+libs/
