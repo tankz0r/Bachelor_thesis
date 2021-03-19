@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertation.aux
+The style file: ../BibTeX-Styles/utf8gost71u.bst
+Database file #1: ../biblio/othercites.bib
+Warning--entry type for "assignment1" isn't style-file defined
+--line 130 of file ../biblio/othercites.bib
+Warning--entry type for "CNN_habr" isn't style-file defined
+--line 137 of file ../biblio/othercites.bib
+Warning--entry type for "model_evaluation" isn't style-file defined
+--line 145 of file ../biblio/othercites.bib
+Warning--entry type for "wildml" isn't style-file defined
+--line 164 of file ../biblio/othercites.bib
+Warning--entry type for "wiki_def_rnn" isn't style-file defined
+--line 172 of file ../biblio/othercites.bib
+Warning--entry type for "colah_lstm" isn't style-file defined
+--line 179 of file ../biblio/othercites.bib
+(There were 6 warnings)
