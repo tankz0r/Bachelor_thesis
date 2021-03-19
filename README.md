@@ -1,4 +1,4 @@
-### [Text Classification with Deep Learning](https://github.com/tankz0r/Bachelor_thesis/blob/master/Thesis/thesis.pdf)
+### [Text Classification with Deep Learning](https://github.com/denyslazarenko/Text-Classification-with-Deep-Learning/blob/master/Script/Thesis/thesis.pdf)
 
 **ABSTRACT**  
 The object of study is advertisements at e-commerce platform. The subject of study is classification model for advertisements.  
